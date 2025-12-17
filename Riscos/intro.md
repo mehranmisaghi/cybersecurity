@@ -12,4 +12,4 @@
 10. Plano de Resposta a Riscos
 11. Cultura de Riscos
 ## Modelo de Gestão de Riscos
-![Modelo de Gestão de Riscos](https://github.com/mehranmisaghi/cybersecurity/Riscos/modelo-g-riscos.png)
+![Modelo de Gestão de Riscos](https://github.com/mehranmisaghi/cybersecurity/blob/main/Riscos/modelo-g-riscos.png)
