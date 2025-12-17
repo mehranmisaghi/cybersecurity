@@ -15,7 +15,8 @@ Repositório para material didático de cibersegurança
 - Normas de SI, PI
   - Políticas de SI
   - PCN
-- Mitigação de Riscos
+- Gestão de Riscos
+  1. [Aula XX - Gestão de Riscos](intro/intro.md)  
 - PCN
 - IA
 ### Segurança Ofensiva
