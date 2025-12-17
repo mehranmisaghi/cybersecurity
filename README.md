@@ -16,7 +16,7 @@ Repositório para material didático de cibersegurança
   - Políticas de SI
   - PCN
 - Gestão de Riscos
-  1. [Aula XX - Gestão de Riscos](Risk/intro.md)  
+  1. [Aula XX - Gestão de Riscos](Riscos/intro.md)  
 - PCN
 - IA
 ### Segurança Ofensiva
