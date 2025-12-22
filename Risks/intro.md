@@ -13,3 +13,4 @@
 11. Cultura de Riscos
 ## Modelo de Gestão de Riscos
 ![Modelo de Gestão de Riscos](https://github.com/mehranmisaghi/cybersecurity/blob/main/Riscos/modelo-g-riscos.png)
+- ISO 31000
