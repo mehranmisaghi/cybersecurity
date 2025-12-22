@@ -1,6 +1,6 @@
 ## Segurança do Perímetro
 - fortinet
-- [HackerTarger](https://hackertarget.com/)
+- [HackerTarget](https://hackertarget.com/)
 ## E-mail
 - PGP
 - proofpoint
