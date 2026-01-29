@@ -1,7 +1,7 @@
 ---
 title: 'Introdução a SI'
 description: 'Introdução a SI por meio de panorama real'
-permalink: intro.md
+permalink: /intro.md
 ---
 
 # Aual 1 - Introdução a SI
