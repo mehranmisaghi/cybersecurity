@@ -1,4 +1,5 @@
-# SID0234 - Segurança da Informação (Horário: 	2M23 3M45 (23/02/2026 - 03/07/2026) )
+# SID0234 - Segurança da Informação 
+## Horário: 	2M23 3M45 (23/02/2026 - 03/07/2026) 
 Repositório para material didático de cibersegurança
 ## Ementa da Disciplina
  Introdução à segurança da informação. Normas de segurança. Serviços de segurança. Mecanismos de segurança. Política de segurança da informação e comunicações. 
