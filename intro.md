@@ -6,7 +6,6 @@ permalink: intro.md
 
 # Aual 1 - Introdução a SI
 Repositório para material didático de cibersegurança
-## Ementa da Disciplina
 ### Fundamentos de Segurança
 ### E para começar bem o ano começamos com as tendências de cibersegurança para 2026
 - Trabalhar com material de Clavis, no SIGAA
