@@ -20,6 +20,9 @@ Repositório para material didático de cibersegurança
 - Perímetros de SI
 - Segurança web
   - HSTS (https://securityheaders.com/) rodar com n8n.io
+    - para interpretar Aguarde o resultado. Na seção "Headers", procure por Strict-Transport-Security.
+Se ele estiver presente (com uma marca de verificação verde): O HSTS está ativo. O site também mostrará o valor do cabeçalho, informando por quanto tempo a regra é válida (max-age) e se ela se aplica a subdomínios (includeSubDomains).
+Se ele estiver ausente (listado em "Missing Headers" com um 'i' vermelho): O site não está enviando o cabeçalho HSTS.
   - SSL checker (https://www.sslshopper.com/ssl-checker.html)
   - SSL Lab (https://www.ssllabs.com/ssltest/)
 - Segurança em SO
