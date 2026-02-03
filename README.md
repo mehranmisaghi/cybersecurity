@@ -12,11 +12,16 @@ Repositório para material didático de cibersegurança
   - malware
 - IA
   1. [Cybersecurity Framework Profile for AI - NIST, dezembro 2025](https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8596.iprd.pdf) 
+  2. Usar agente IA (n8n) para automação de checagem, backup, ou verificação de segurança diária e mandar
 ### Segurança Defensiva
 - Conceitos de Criptografia
   - S, AS, IBC, CLC
   - PKI
 - Perímetros de SI
+- Segurança web
+  - HSTS (https://securityheaders.com/) rodar com n8n.io
+  - SSL checker (https://www.sslshopper.com/ssl-checker.html)
+  - SSL Lab (https://www.ssllabs.com/ssltest/)
 - Segurança em SO
 - Normas de SI, PI
   - Políticas de SI
