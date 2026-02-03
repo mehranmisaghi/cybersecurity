@@ -15,8 +15,11 @@ Repositório para material didático de cibersegurança
   2. Usar agente IA (n8n) para automação de checagem, backup, ou verificação de segurança diária e mandar
 ### Segurança Defensiva
 - Conceitos de Criptografia
-  - S, AS, IBC, CLC
+-   S, AS, IBC, CLC
   - PKI
+  - [crytpto-tool -online](https://www.cryptool.org/en/cto/)
+  - Usar ferramentas de hash, como ssh256 e ferramentas online
+  
 - Perímetros de SI
 - Segurança web
   - Análise com navegador
