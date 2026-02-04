@@ -4,6 +4,7 @@ Repositório para material didático de cibersegurança
 ## Ementa da Disciplina
  Introdução à segurança da informação. Normas de segurança. Serviços de segurança. Mecanismos de segurança. Política de segurança da informação e comunicações. 
 ### Fundamentos de Segurança
+Falar da [Alerta vermelha de segurança](https://www.linkedin.com/posts/jaugusto-barros_cyberwaveidciber-cybermindidciber-activity-7420072857621340161-T5N2/?utm_source=share&utm_medium=member_android&rcm=ACoAAAFr4hwBj8IIIfdQXgZ87nD1v4n1v-F79PA)
 ### E para começar bem o ano começamos com as tendências de cibersegurança para 2026
 - Trabalhar com material de Clavis, no SIGAA
 - Conceitos de Segurança e Privacidade
@@ -17,7 +18,7 @@ Repositório para material didático de cibersegurança
 - Conceitos de Criptografia
 -   S, AS, IBC, CLC
   - PKI
-  - [crytpto-tool -online](https://www.cryptool.org/en/cto/)
+  - [crypto-tool -online](https://www.cryptool.org/en/cto/)
   - Usar ferramentas de hash, como ssh256 e ferramentas online
   
 - Perímetros de SI
