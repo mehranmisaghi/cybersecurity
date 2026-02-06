@@ -6,6 +6,7 @@ Repositório para material didático de cibersegurança
 ### Fundamentos de Segurança
 Falar da [Alerta vermelha de segurança](https://www.linkedin.com/posts/jaugusto-barros_cyberwaveidciber-cybermindidciber-activity-7420072857621340161-T5N2/?utm_source=share&utm_medium=member_android&rcm=ACoAAAFr4hwBj8IIIfdQXgZ87nD1v4n1v-F79PA)
 ### E para começar bem o ano começamos com as tendências de cibersegurança para 2026
+## mostrar a figura de ecossistema de cibersegurança
 - Trabalhar com material de Clavis, no SIGAA
 - Conceitos de Segurança e Privacidade
 - Ameaças e Vulnerabilidades
@@ -23,21 +24,7 @@ Falar da [Alerta vermelha de segurança](https://www.linkedin.com/posts/jaugusto
   
 - Perímetros de SI
 - Segurança web
-  - Análise com navegador
-    - Acesse o site que você quer analisar (use https:// no início).
-Abra as Ferramentas de Desenvolvedor. A forma mais comum é pressionar a tecla F12. (Outros atalhos: Ctrl+Shift+I no Windows/Linux ou Cmd+Option+I no Mac).
-Vá para a aba "Network" (ou "Rede").
-Recarregue a página (pressionando F5 ou no botão de recarregar do navegador). Isso é importante para capturar todas as solicitações.
-Na lista de solicitações que aparecer, clique na primeira da lista. Geralmente, é o próprio nome do domínio (ex: google.com).
-No painel que se abre à direita, procure pela seção "Response Headers" (Cabeçalhos de Resposta).
-Leia a lista de cabeçalhos e procure por strict-transport-security.
-Se você encontrar esse cabeçalho na lista, o HSTS está ativado para aquele site. Se não encontrar, ele não está.
-  - HSTS (https://securityheaders.com/) rodar com n8n.io
-    - para interpretar Aguarde o resultado. Na seção "Headers", procure por Strict-Transport-Security.
-Se ele estiver presente (com uma marca de verificação verde): O HSTS está ativo. O site também mostrará o valor do cabeçalho, informando por quanto tempo a regra é válida (max-age) e se ela se aplica a subdomínios (includeSubDomains).
-Se ele estiver ausente (listado em "Missing Headers" com um 'i' vermelho): O site não está enviando o cabeçalho HSTS.
-  - SSL checker (https://www.sslshopper.com/ssl-checker.html)
-  - SSL Lab (https://www.ssllabs.com/ssltest/)
+- falar do protcolo https, ssl
 - Segurança em SO
 - Normas de SI, PI
   - Políticas de SI
@@ -51,6 +38,24 @@ Se ele estiver ausente (listado em "Missing Headers" com um 'i' vermelho): O sit
   - Injection
   - Scanning
   - Gap Analysis
+- Análise com navegador
+    - Acesse o site que você quer analisar (use https:// no início).
+Abra as Ferramentas de Desenvolvedor. A forma mais comum é pressionar a tecla F12. (Outros atalhos: Ctrl+Shift+I no Windows/Linux ou Cmd+Option+I no Mac).
+Vá para a aba "Network" (ou "Rede").
+Recarregue a página (pressionando F5 ou no botão de recarregar do navegador). Isso é importante para capturar todas as solicitações.
+Na lista de solicitações que aparecer, clique na primeira da lista. Geralmente, é o próprio nome do domínio (ex: google.com).
+No painel que se abre à direita, procure pela seção "Response Headers" (Cabeçalhos de Resposta).
+Leia a lista de cabeçalhos e procure por strict-transport-security.
+Se você encontrar esse cabeçalho na lista, o HSTS está ativado para aquele site. Se não encontrar, ele não está.
+  - HSTS (https://securityheaders.com/) rodar com n8n.io
+    - para interpretar Aguarde o resultado. Na seção "Headers", procure por Strict-Transport-Security.
+Se ele estiver presente (com uma marca de verificação verde): O HSTS está ativo. O site também mostrará o valor do cabeçalho, informando por quanto tempo a regra é válida (max-age) e se ela se aplica a subdomínios (includeSubDomains).
+Se ele estiver ausente (listado em "Missing Headers" com um 'i' vermelho): O site não está enviando o cabeçalho HSTS.
+  - SSL checker (https://www.sslshopper.com/ssl-checker.html)
+  - (SSL Lab) [https://www.ssllabs.com/ssltest/]
+- 
+  (Pentest tools)[https://pentest-tools.com/] usar para mostrar
+  (Trabalho para ser feito. Destinar uma dupla para cada ferramenta da lista)[https://owasp.org/www-community/Vulnerability_Scanning_Tools]
 - Criptanálise
 ### IAM
 ### Audit
