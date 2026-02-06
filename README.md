@@ -12,6 +12,7 @@ Falar da [Alerta vermelha de segurança](https://www.linkedin.com/posts/jaugusto
 - Ameaças e Vulnerabilidades
   - vírus
   - malware
+      - (Free malware checker)[https://sitecheck.sucuri.net/]
 - IA
   1. [Cybersecurity Framework Profile for AI - NIST, dezembro 2025](https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8596.iprd.pdf) 
   2. Usar agente IA (n8n) para automação de checagem, backup, ou verificação de segurança diária e mandar
