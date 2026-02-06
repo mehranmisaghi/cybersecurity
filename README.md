@@ -12,7 +12,7 @@ Falar da [Alerta vermelha de segurança](https://www.linkedin.com/posts/jaugusto
 - Ameaças e Vulnerabilidades
   - vírus
   - malware
-      - (Free malware checker)[https://sitecheck.sucuri.net/]
+      - [Free malware checker](https://sitecheck.sucuri.net/)
 - IA
   1. [Cybersecurity Framework Profile for AI - NIST, dezembro 2025](https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8596.iprd.pdf) 
   2. Usar agente IA (n8n) para automação de checagem, backup, ou verificação de segurança diária e mandar
@@ -52,10 +52,10 @@ Se você encontrar esse cabeçalho na lista, o HSTS está ativado para aquele si
     - para interpretar Aguarde o resultado. Na seção "Headers", procure por Strict-Transport-Security.
 Se ele estiver presente (com uma marca de verificação verde): O HSTS está ativo. O site também mostrará o valor do cabeçalho, informando por quanto tempo a regra é válida (max-age) e se ela se aplica a subdomínios (includeSubDomains).
 Se ele estiver ausente (listado em "Missing Headers" com um 'i' vermelho): O site não está enviando o cabeçalho HSTS.
-  - SSL checker (https://www.sslshopper.com/ssl-checker.html)
-  - (SSL Lab) [https://www.ssllabs.com/ssltest/]
+  - [SSL checker](https://www.sslshopper.com/ssl-checker.html)
+  - [SSL Lab](https://www.ssllabs.com/ssltest/) 
 - 
-  (Pentest tools)[https://pentest-tools.com/] usar para mostrar
+  [Pentest tools](https://pentest-tools.com/) usar para mostrar
   (Trabalho para ser feito. Destinar uma dupla para cada ferramenta da lista)[https://owasp.org/www-community/Vulnerability_Scanning_Tools]
 - Criptanálise
 ### IAM
