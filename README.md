@@ -29,6 +29,8 @@ Falar da [Alerta vermelha de segurança](https://www.linkedin.com/posts/jaugusto
 - falar do protcolo https, ssl
 - Segurança em SO
 - Normas de SI, PI
+  - [artigo sobre nova versão de NBR 27701](https://www.linkedin.com/pulse/conhe%C3%A7a-nova-iso-27701-brasil-e-seu-impacto-na-gest%C3%A3o-alberto-bastos-dyh7e/)
+      - utilizar os anexos para fazer trabalhos e apps ou planilhas. Disponiblizar anexo da norma
   - Políticas de SI
   - PCN
 - Gestão de Riscos
