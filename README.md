@@ -9,6 +9,7 @@ Falar da [Alerta vermelha de segurança](https://www.linkedin.com/posts/jaugusto
 ### E para começar bem o ano começamos com as tendências de cibersegurança para 2026
 ## mostrar a figura de ecossistema de cibersegurança
 - Trabalhar com material de Clavis, no SIGAA
+- Falar do dia de Internet segura (https://www.youtube.com/live/jA9sGS4tIOs?si=d335JP18XaF1huls) ECA digital, parceria de Britânia com Brasil
 - Conceitos de Segurança e Privacidade
 - Ameaças e Vulnerabilidades
   - vírus
