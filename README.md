@@ -26,6 +26,7 @@ Falar da [Alerta vermelha de segurança](https://www.linkedin.com/posts/jaugusto
   - Usar ferramentas de hash, como ssh256 e ferramentas online
   
 - Perímetros de SI
+  - [usar simuladores de firewall](https://www.firewall.com.br/)
 - Segurança web
 - falar do protcolo https, ssl
 - Segurança em SO
