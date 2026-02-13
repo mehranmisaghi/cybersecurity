@@ -1,12 +1,8 @@
 # SID0234 - Segurança da Informação 
-
 ## Horário: 	2M23 3M45 (23/02/2026 - 03/07/2026) 
-
 Repositório para material didático de cibersegurança
-
 ## Ementa da Disciplina
  Introdução à segurança da informação. Normas de segurança. Serviços de segurança. Mecanismos de segurança. Política de segurança da informação e comunicações. 
-
 ### Fundamentos de Segurança
 [é perigoso? pode usar?](https://www.tecmundo.com.br/produto/410516-nao-tem-nada-que-seja-proibido-diz-criador-de-conteudo-que-ligou-starlink-em-aviao.htm?utm_term=Autofeed&utm_medium=Social&utm_source=Facebook&fbclid=IwY2xjawPzD-1leHRuA2FlbQIxMABicmlkETFucVBYdU5TTHMybVNEQzN4c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHtH2UUhNj7-2DzK0FVA3wQkydi1YY--5oB5TyFMZIGbBccQhL66VK24GDpMo_aem_fNJnLFnkGq7-iw1EpSup7w#Echobox=1770392201)
 Falar da [Alerta vermelha de segurança](https://www.linkedin.com/posts/jaugusto-barros_cyberwaveidciber-cybermindidciber-activity-7420072857621340161-T5N2/?utm_source=share&utm_medium=member_android&rcm=ACoAAAFr4hwBj8IIIfdQXgZ87nD1v4n1v-F79PA)
