@@ -34,6 +34,7 @@ Repositório para material didático de cibersegurança
   - Modelos Convencionais de Criptografia:
     - Simétrica e Assimétrica
     - Cifras mais utilizadas (Rinadael - AES)
+    - Esteganografia
     - Modelos de avaliação
     - Ferramentas on-line de de modelos criptográficos
 
