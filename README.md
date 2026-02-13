@@ -9,6 +9,10 @@ Repositório para material didático de cibersegurança
 
 ## Cronograma Sugerido
 [Aula Inaugural (23/02/2026 - 23/02/2026)](Intro/intro.md)
+  . Conceitos Básicos
+  . Classificação da Informação
+  . Ameaças e vulnerabilidades
+  . Vírus e malware
 
 [Conceitos Básicos de Segurança e Cibersegurança (24/02/2026 - 03/03/2026)](Intro/basico.md)
 
