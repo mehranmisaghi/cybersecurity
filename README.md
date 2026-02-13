@@ -9,22 +9,27 @@ Repositório para material didático de cibersegurança
 
 ## Cronograma Sugerido
 [Aula Inaugural (23/02/2026 - 23/02/2026)](Intro/intro.md)
+  - Ementa, metodologia, formas de avaliação
+  - Panorama de cibersegurança atual
+
+[Conceitos Básicos de Segurança e Cibersegurança (24/02/2026 - 03/03/2026)](Intro/basico.md)
   - Conceitos Básicos
   - Classificação da Informação
   - Ameaças e vulnerabilidades
   - Vírus e malware
 
-[Conceitos Básicos de Segurança e Cibersegurança (24/02/2026 - 03/03/2026)](Intro/basico.md)
-
-    
-
-Normas de Segurança da Informação (09/03/2026 - 16/03/2026)
-
- 
-
-    Normas de Segurança da Informação e Privacidade da Informação
-    LGPD
-
+[Normas e Frameworks de Segurança da Informação (09/03/2026 - 16/03/2026)](Frameworks/README.md)
+  - Normas relacionados com a SI:
+    - 27001, 27002, 27005
+  - Normas relacionadas com a PI e LGPD:
+    - 27701
+  - Frameworks mais comuns:
+    - CIS
+    - CMM
+    - NIST Cybersecurity Framework
+    - NIST 800-53 r5
+    - Federal Information Security Modernization Act (FISMA) 
+  
 Fundamentos de Criptografia e Ferramentas utilizadas (17/03/2026 - 30/03/2026)
 
 Modelos Convencionais de Criptografia:
