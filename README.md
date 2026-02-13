@@ -52,7 +52,7 @@ Repositório para material didático de cibersegurança
   - Conceitos e Tipos
   - Ferramentas de simulação
 
-Engenharia Social (27/04/2026 - 27/04/2026)
+[Engenharia Social (27/04/2026 - 27/04/2026)](social.md)
 
 Conceitos e Ferramentas de Engenharia Social
 Gestão de Riscos (28/04/2026 - 05/05/2026)
