@@ -54,15 +54,13 @@ Repositório para material didático de cibersegurança
 
 [Engenharia Social (27/04/2026 - 27/04/2026)](social.md)
 
-Conceitos e Ferramentas de Engenharia Social
-Gestão de Riscos (28/04/2026 - 05/05/2026)
-
-    Riscos que rondam as organizações
-    Inteligência Artificial
-    NBR ISO/IEC 27005 e 31000
-    Gestão de Riscos
-    Contingência e Continuidade de Negócios
-    Framework de Cibersegurança para IA (NIST)
+[Gestão de Riscos (28/04/2026 - 05/05/2026)](Risks/README.md)
+  - Riscos que rondam as organizações
+  - Inteligência Artificial
+  - NBR ISO/IEC 27005 e 31000
+  - Gestão de Riscos
+  - Contingência e Continuidade de Negócios
+  - Framework de Cibersegurança para IA (NIST)
 
 Projeto de Segurança I (PSI) (11/05/2026 - 25/05/2026)
 
