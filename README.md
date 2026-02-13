@@ -47,11 +47,11 @@ Repositório para material didático de cibersegurança
   - Ferramentas utilizadas
 
 ## Prova Única (13/04/2026 - 13/04/2026)
-
-Uma prova objetiva/dissertativa para avaliar os conhecimentos adquridos até então.
-
  
-Perímetro de Segurança (14/04/2026 - 20/04/2026)
+[Perímetro de Segurança (14/04/2026 - 20/04/2026)](firewall.md)
+  - Conceitos e Tipos
+  - Ferramentas de simulação
+
 Engenharia Social (27/04/2026 - 27/04/2026)
 
 Conceitos e Ferramentas de Engenharia Social
