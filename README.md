@@ -1,4 +1,4 @@
-# SID0234 - Segurança da Informação 
+# SID0234 - Segurança da Informação [2026/1]
 
 ## Horário: 	2M23 3M45 (23/02/2026 - 03/07/2026) 
 
