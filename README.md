@@ -8,15 +8,11 @@ Repositório para material didático de cibersegurança
  Introdução à segurança da informação. Normas de segurança. Serviços de segurança. Mecanismos de segurança. Política de segurança da informação e comunicações. 
 
 ## Cronograma Sugerido
-Aula Inaugural (23/02/2026 - 23/02/2026)
+[Aula Inaugural (23/02/2026 - 23/02/2026)](Intro/intro.md)
 
-Nesta aula serão apresentados a ementa, metodologia, ferramentas utilizadas e formas de avaliação. Será apresentada uma breve panorama de cibersegurança no mundo em que vivemos
-Conceitos Básicos de Segurança e Cibersegurança (24/02/2026 - 03/03/2026)
+[Conceitos Básicos de Segurança e Cibersegurança (24/02/2026 - 03/03/2026)](Intro/basico.md)
 
-    Conceitos Básicos
-    Classificação da Informação
-    Ameaças e vulnerabilidades
-    Vírus e malware
+    
 
 Normas de Segurança da Informação (09/03/2026 - 16/03/2026)
 
