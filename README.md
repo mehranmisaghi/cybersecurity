@@ -7,6 +7,108 @@ Repositório para material didático de cibersegurança
 ## Ementa da Disciplina
  Introdução à segurança da informação. Normas de segurança. Serviços de segurança. Mecanismos de segurança. Política de segurança da informação e comunicações. 
 
+## Cronograma Sugerido
+Aula Inaugural (23/02/2026 - 23/02/2026)
+
+Nesta aula serão apresentados a ementa, metodologia, ferramentas utilizadas e formas de avaliação. Será apresentada uma breve panorama de cibersegurança no mundo em que vivemos
+Conceitos Básicos de Segurança e Cibersegurança (24/02/2026 - 03/03/2026)
+
+    Conceitos Básicos
+    Classificação da Informação
+    Ameaças e vulnerabilidades
+    Vírus e malware
+
+Normas de Segurança da Informação (09/03/2026 - 16/03/2026)
+
+ 
+
+    Normas de Segurança da Informação e Privacidade da Informação
+    LGPD
+
+Fundamentos de Criptografia e Ferramentas utilizadas (17/03/2026 - 30/03/2026)
+
+Modelos Convencionais de Criptografia:
+
+    Simétrica e Assimétrica
+    Cifras mais utilizadas (Rinadael - AES)
+    Modelos de avaliação
+    Ferramentas on-line de de modelos criptográficos
+
+Modelos Alernativos de Criptografia:
+
+    Criptografia Baseada na Identidade
+    Criptografia Sem Certificado
+    Criptografia Quântica e Pós Quântica
+
+ 
+
+ 
+Protocolos Criptográrficos e ferramentas relacionadas (31/03/2026 - 07/04/2026)
+
+    Protocolos criptográficos (HTTPS, HSTS, SSL, SSH, DNSSEC, PGP, Kerberos)
+    Ferramentas utilizadas
+
+Prova Única (13/04/2026 - 13/04/2026)
+
+Uma prova objetiva/dissertativa para avaliar os conhecimentos adquridos até então.
+
+ 
+Perímetro de Segurança (14/04/2026 - 20/04/2026)
+Engenharia Social (27/04/2026 - 27/04/2026)
+
+Conceitos e Ferramentas de Engenharia Social
+Gestão de Riscos (28/04/2026 - 05/05/2026)
+
+    Riscos que rondam as organizações
+    Inteligência Artificial
+    NBR ISO/IEC 27005 e 31000
+    Gestão de Riscos
+    Contingência e Continuidade de Negócios
+    Framework de Cibersegurança para IA (NIST)
+
+Projeto de Segurança I (PSI) (11/05/2026 - 25/05/2026)
+
+Como os conceitos apreendidos os alunos precisam desenvolver uma ferramenta de Diagnóstico ou (C)onformidade que apresente no formato de um dashboard, uma das seguintes opções:
+
+Conformidade:
+
+    NBR ISO/IEC 27001
+    NBR ISO/IEC 27701
+
+Diagnóstico:
+
+    Gestão de Riscos
+
+Políticas de Segurança e Políticas de Privacidade da Informação (26/05/2026 - 01/06/2026)
+
+Etapas para elaboração de políticas de segurança e políticas de privacidade da informação.
+Projeto de Segurança II (PSII) (02/06/2026 - 15/06/2026)
+
+Elaboração de Políticas de segurança para ambientes específicos conforme anunciados na sala de aula no momento oportuno.
+Monitoramento e auditoria (16/06/2026 - 16/06/2026)
+
+Conceitos de monitoramento e auditoria. Questões normativas e regulatórias.
+Tendências e Oportunidades em Cibersegurança (22/06/2026 - 22/06/2026)
+
+    Carreiras
+    Certificações
+    IA Agêntica X confecção desenfreada de malware (apocalipse digital)
+
+Projeto de Segurança III (PSIII) (23/06/2026 - 30/06/2026)
+
+Com auxílio de agentes de automação de IA (n8n ou ferramentas semelhantes) automatize e crie uma ferramenta para um dos seguintes cenários (detalhes serão fornecidos no momento oportuno):
+
+Diagnóstico de vulnerabilidades de um servidor web
+
+    Examinar os protocolos criptográficos e detalhar e sugerir ações corretivas
+
+
+Diagnóstico de vulnerabilidades de um banco de dados via web
+
+    SQL injection e ferramentas semelhantes
+
+SIGAA | Diretoria de Tecnologia da Informação - (47) 3331-7800 | Copyright © 2006-2026 - UFRN - jboss-sigaa-01.sig.ifc.edu.br.sigaa01 - v4.12.14.27
+
 ### Fundamentos de Segurança
 [é perigoso? pode usar?](https://www.tecmundo.com.br/produto/410516-nao-tem-nada-que-seja-proibido-diz-criador-de-conteudo-que-ligou-starlink-em-aviao.htm?utm_term=Autofeed&utm_medium=Social&utm_source=Facebook&fbclid=IwY2xjawPzD-1leHRuA2FlbQIxMABicmlkETFucVBYdU5TTHMybVNEQzN4c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHtH2UUhNj7-2DzK0FVA3wQkydi1YY--5oB5TyFMZIGbBccQhL66VK24GDpMo_aem_fNJnLFnkGq7-iw1EpSup7w#Echobox=1770392201)
 Falar da [Alerta vermelha de segurança](https://www.linkedin.com/posts/jaugusto-barros_cyberwaveidciber-cybermindidciber-activity-7420072857621340161-T5N2/?utm_source=share&utm_medium=member_android&rcm=ACoAAAFr4hwBj8IIIfdQXgZ87nD1v4n1v-F79PA)
