@@ -1,11 +1,19 @@
 # SID0234 - Segurança da Informação [2026/1]
-
+Repositório para material didático de Segurança da Informação
 ## Horário: 	2M23 3M45 (23/02/2026 - 03/07/2026) 
 
-Repositório para material didático de Segurança da Informação
+## Ementa
+Introdução à segurança da informação. Normas de segurança. Serviços de segurança. Mecanismos de segurança. Política de segurança da informação e comunicações. 
 
-## Ementa da Disciplina
- Introdução à segurança da informação. Normas de segurança. Serviços de segurança. Mecanismos de segurança. Política de segurança da informação e comunicações. 
+## Metodologia
+- Aulas expositiva dialogadas com uso de ferramentas de simulação de ambientes.
+- Aulas invertidas (trazer um caso real e chegar no problema raíz e discutir os conceitos)
+- Estudos de casos reais
+
+## Avaliação 
+- Exercícios e revisão de conceitos apreendidos
+- Uma Prova objetiva/dissertativa com peso 4.
+- Três Projetos de Segurança (cada um com peso 2).
 
 ## Cronograma Sugerido
 [Aula Inaugural (23/02/2026 - 23/02/2026)](Intro/intro.md)
