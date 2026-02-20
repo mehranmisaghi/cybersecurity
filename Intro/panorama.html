@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avaliação Interativa – Tendências 2026</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #203a43;
+}
+
+.question {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f1f5f9;
+}
+
+.question h3 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #203a43;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #162a33;
+}
+
+.resultado {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aprovado {
+    background: #d4edda;
+    color: #155724;
+}
+
+.reprovado {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.feedback {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff3cd;
+    border-left: 5px solid #ff9800;
+    border-radius: 8px;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.wrong {
+    color: red;
+    font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Avaliação – Tendências 2026</h1>
+    <div id="quiz"></div>
+    <button onclick="corrigir()">Finalizar Avaliação</button>
+    <div id="resultado"></div>
+    <div id="feedbackDetalhado"></div>
+</div>
+
+<script>
+
+const questoes = [
+{
+pergunta: "A consolidação da IA como infraestrutura estratégica implica:",
+opcoes: [
+"Substituição integral das decisões humanas.",
+"Integração transversal da tecnologia nos processos organizacionais.",
+"Restrição da inovação à área de TI.",
+"Redução da necessidade de governança.",
+"Automação limitada a tarefas simples."
+],
+resposta: 1
+},
+{
+pergunta: "No modelo data-driven, a maturidade organizacional depende principalmente de:",
+opcoes: [
+"Volume irrestrito de dados.",
+"Integração entre tecnologia, liderança e processos.",
+"Automatização sem supervisão.",
+"Redução da transparência informacional.",
+"Exclusão da análise qualitativa."
+],
+resposta: 1
+},
+{
+pergunta: "A complexificação das ameaças digitais decorre de:",
+opcoes: [
+"Diminuição da conectividade global.",
+"Uso de IA por agentes maliciosos.",
+"Redução dos sistemas interconectados.",
+"Eliminação de vulnerabilidades.",
+"Descontinuidade tecnológica."
+],
+resposta: 1
+},
+{
+pergunta: "Considerar segurança como responsabilidade estratégica significa:",
+opcoes: [
+"Incorporá-la à governança organizacional.",
+"Delegá-la apenas ao setor técnico.",
+"Tratá-la como custo secundário.",
+"Aplicá-la somente após incidentes.",
+"Reduzi-la a protocolos operacionais."
+],
+resposta: 0
+},
+{
+pergunta: "A reconfiguração das competências profissionais exige:",
+opcoes: [
+"Especialização isolada.",
+"Resistência à transformação digital.",
+"Pensamento crítico e capacidade analítica.",
+"Redução da interdisciplinaridade.",
+"Ênfase exclusiva em tarefas operacionais."
+],
+resposta: 2
+}
+];
+
+// Embaralhar questões
+questoes.sort(() => Math.random() - 0.5);
+
+const quizDiv = document.getElementById("quiz");
+
+questoes.forEach((q, index) => {
+    const div = document.createElement("div");
+    div.classList.add("question");
+
+    const titulo = document.createElement("h3");
+    titulo.textContent = `${index + 1}. ${q.pergunta}`;
+    div.appendChild(titulo);
+
+    const opcoesEmbaralhadas = q.opcoes
+        .map((opcao, i) => ({texto: opcao, correta: i === q.resposta}))
+        .sort(() => Math.random() - 0.5);
+
+    q.opcoesEmbaralhadas = opcoesEmbaralhadas;
+
+    opcoesEmbaralhadas.forEach((op, i) => {
+        const label = document.createElement("label");
+        label.innerHTML = `
+            <input type="radio" name="q${index}" value="${i}">
+            ${op.texto}
+        `;
+        div.appendChild(label);
+    });
+
+    quizDiv.appendChild(div);
+});
+
+function corrigir() {
+
+    let pontuacao = 0;
+    let feedbackHTML = "";
+
+    questoes.forEach((q, index) => {
+        const selecionado = document.querySelector(`input[name="q${index}"]:checked`);
+        if (selecionado) {
+            const valor = parseInt(selecionado.value);
+            const alternativa = q.opcoesEmbaralhadas[valor];
+
+            if (alternativa.correta) {
+                pontuacao++;
+            } else {
+                const correta = q.opcoesEmbaralhadas.find(op => op.correta).texto;
+
+                feedbackHTML += `
+                <div class="feedback">
+                    <p><strong>Questão ${index + 1}</strong></p>
+                    <p class="wrong">Sua resposta: ${alternativa.texto}</p>
+                    <p class="correct">Resposta correta: ${correta}</p>
+                </div>
+                `;
+            }
+        }
+    });
+
+    const percentual = (pontuacao / questoes.length) * 100;
+    const resultadoDiv = document.getElementById("resultado");
+    const feedbackDiv = document.getElementById("feedbackDetalhado");
+
+    if (percentual >= 70) {
+        resultadoDiv.className = "resultado aprovado";
+        resultadoDiv.textContent = `✅ Você acertou ${pontuacao} de ${questoes.length} (${percentual.toFixed(0)}%). Excelente desempenho!`;
+    } else {
+        resultadoDiv.className = "resultado reprovado";
+        resultadoDiv.textContent = `⚠ Você acertou ${pontuacao} de ${questoes.length} (${percentual.toFixed(0)}%). Revise o conteúdo.`;
+    }
+
+    feedbackDiv.innerHTML = feedbackHTML;
+}
+
+</script>
+
+</body>
+</html>

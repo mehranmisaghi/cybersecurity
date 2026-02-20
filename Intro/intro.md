@@ -115,3 +115,7 @@ _Oportunidades de Pesquisa_
 - Cultura organizacional digital
 - Segurança como política pública
 - **Formação profissional**
+
+# Aula 1 - Exercícios
+
+[teste os seus conhecimentos] (https://github.com/mehranmisaghi/cybersecurity/blob/main/panorama.html)
