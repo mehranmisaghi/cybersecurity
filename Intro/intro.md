@@ -119,4 +119,4 @@ _Oportunidades de Pesquisa_
 # Aula 1 - Exercícios
 Teste os seus conhecimentos em
 
- https://mehranmisaghi.github.io/cybersecurity/panorama.html
+ https://mehranmisaghi.github.io/cybersecurity/Intro/panorama.html
