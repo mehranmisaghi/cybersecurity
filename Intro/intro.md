@@ -10,7 +10,7 @@ O material disponibiliado foi gerado com auxílio de IA, baseado material do Cla
 ## Tendências 2026: Transformações Tecnológicas, Sociais e Organizacionais
 **1. Introdução**
 
-    O cenário de 2026 aponta para uma forte integração entre tecnologia, mudanças organizacionais e novos comportamentos sociais. As transformações digitais deixam de ser tendência futura e passam a moldar, de forma concreta, instituições, empresas e a própria sociedade.
+O cenário de 2026 aponta para uma forte integração entre tecnologia, mudanças organizacionais e novos comportamentos sociais. As transformações digitais deixam de ser tendência futura e passam a moldar, de forma concreta, instituições, empresas e a própria sociedade.
 
 
 **2. Inteligência Artificial como Infraestrutura Estratégica**
