@@ -15,7 +15,7 @@ O cenário de 2026 aponta para uma forte integração entre tecnologia, mudança
 
 **2. Inteligência Artificial como Infraestrutura Estratégica**
 
-    Uma das mudanças mais significativas é a consolidação da Inteligência Artificial (IA) como parte essencial das organizações — não apenas como diferencial competitivo, mas como base estrutural.
+Uma das mudanças mais significativas é a consolidação da Inteligência Artificial (IA) como parte essencial das organizações — não apenas como diferencial competitivo, mas como base estrutural.
 
 _2.1 Da experimentação à integração sistêmica_
 
