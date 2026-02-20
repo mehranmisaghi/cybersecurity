@@ -117,5 +117,6 @@ _Oportunidades de Pesquisa_
 - **Formação profissional**
 
 # Aula 1 - Exercícios
+Teste os seus conhecimentos em
 
-[teste os seus conhecimentos] (https://github.com/mehranmisaghi/cybersecurity/blob/main/panorama.html)
+ https://mehranmisaghi.github.io/cybersecurity/panorama.html
