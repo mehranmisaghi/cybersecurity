@@ -6,10 +6,10 @@ permalink: Intro/basico.md
 
 # Conceitos Básicos de Segurança e Cibersegurança
 Continuar com a panorama
-    Conceitos Básicos
-    Classificação da Informação
-    Ameaças e vulnerabilidades
-    Vírus e malware
+    - Conceitos Básicos
+    - Classificação da Informação
+    - Ameaças e vulnerabilidades
+    - Vírus e malware
 ## Free Resource for Keyloggers & Spyware
 - [Malwarebytes Free](https://www.malwarebytes.com/mwb-download)
 - [Avast Free Antivirus](https://www.avast.com/free-antivirus-download)
