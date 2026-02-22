@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz — Classificação da Informação (Segurança da Informação)</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --card2:#101f3d;
+      --text:#e8eefc;
+      --muted:#b8c4e6;
+      --line:rgba(232,238,252,.12);
+      --accent:#7aa7ff;
+      --good:#39d98a;
+      --bad:#ff5c7a;
+      --warn:#ffcc66;
+      --btn:#1b2e57;
+      --btn2:#203a6e;
+      --focus:#9cc0ff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% 0%, #13244a 0%, var(--bg) 55%) fixed;
+      color:var(--text);
+      line-height:1.35;
+    }
+    header{
+      max-width: 980px;
+      margin: 24px auto 10px;
+      padding: 0 16px;
+    }
+    h1{
+      margin: 0 0 6px;
+      font-size: 1.35rem;
+      letter-spacing: .2px;
+    }
+    .sub{
+      margin:0;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    main{
+      max-width: 980px;
+      margin: 12px auto 60px;
+      padding: 0 16px;
+    }
+    .toolbar{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+      margin: 12px 0 14px;
+      padding: 12px;
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+    .toolbar .left, .toolbar .right{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
+    .pill{
+      padding:8px 10px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      color:var(--muted);
+      background: rgba(255,255,255,.03);
+      font-size:.9rem;
+      display:flex;
+      gap:8px;
+      align-items:center;
+    }
+    .pill strong{color:var(--text); font-weight:650}
+    button{
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, var(--btn2), var(--btn));
+      color:var(--text);
+      padding: 9px 12px;
+      border-radius: 10px;
+      cursor:pointer;
+      font-weight:650;
+    }
+    button:hover{filter: brightness(1.05)}
+    button:active{transform: translateY(1px)}
+    button:disabled{
+      opacity:.55;
+      cursor:not-allowed;
+      transform:none;
+    }
+    .ghost{
+      background: rgba(255,255,255,.03);
+      border: 1px solid var(--line);
+    }
+    .danger{
+      background: linear-gradient(180deg, rgba(255,92,122,.20), rgba(255,92,122,.12));
+      border-color: rgba(255,92,122,.35);
+    }
+    .grid{
+      display:grid;
+      gap: 12px;
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+    }
+    .qhead{
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      justify-content:space-between;
+      margin-bottom: 8px;
+    }
+    .qnum{
+      min-width: 86px;
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+    .badge{
+      width:max-content;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: .78rem;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+    }
+    .badge.diff-m{border-color: rgba(255,204,102,.35); color: var(--warn)}
+    .badge.diff-d{border-color: rgba(122,167,255,.35); color: var(--accent)}
+    .qtitle{
+      font-weight: 750;
+      margin: 0;
+      font-size: 1rem;
+      flex:1;
+    }
+    .options{
+      margin-top: 10px;
+      display:grid;
+      gap: 8px;
+    }
+    label.opt{
+      display:flex;
+      gap: 10px;
+      padding: 10px 10px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.02);
+      cursor:pointer;
+      align-items:flex-start;
+    }
+    label.opt:hover{border-color: rgba(156,192,255,.35)}
+    input[type="radio"]{
+      margin-top: 2px;
+      accent-color: var(--focus);
+      transform: scale(1.05);
+    }
+    .opt span{
+      color: var(--text);
+    }
+    .muted{
+      color:var(--muted);
+      font-size:.92rem;
+    }
+    .results{
+      margin-top: 14px;
+      padding: 14px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(57,217,138,.10), rgba(255,255,255,.03));
+    }
+    .score{
+      display:flex;
+      gap: 12px;
+      flex-wrap:wrap;
+      align-items:baseline;
+      justify-content:space-between;
+    }
+    .score h2{
+      margin:0;
+      font-size: 1.1rem;
+    }
+    .score .meta{
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .review{
+      margin-top: 12px;
+      display:grid;
+      gap: 10px;
+    }
+    .review .item{
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.02);
+    }
+    .ok{border-color: rgba(57,217,138,.35)}
+    .no{border-color: rgba(255,92,122,.35)}
+    .item .top{
+      display:flex;
+      gap: 8px;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .tag{
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: .78rem;
+      border:1px solid var(--line);
+      color: var(--muted);
+      background: rgba(255,255,255,.03);
+      white-space:nowrap;
+    }
+    .tag.ok{color: var(--good); border-color: rgba(57,217,138,.35)}
+    .tag.no{color: var(--bad); border-color: rgba(255,92,122,.35)}
+    .explain{
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: .93rem;
+    }
+    .foot{
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .sr-only{
+      position:absolute;
+      width:1px;height:1px;
+      padding:0;margin:-1px;
+      overflow:hidden;clip:rect(0,0,0,0);
+      white-space:nowrap;border:0;
+    }
+    a{color: var(--accent)}
+
+    .name-input{
+      padding:6px 9px;
+      border-radius: 999px;
+      border:1px solid var(--line);
+      background: rgba(0,0,0,.2);
+      color:var(--text);
+      font-size:.9rem;
+      min-width: 160px;
+    }
+    .name-input::placeholder{color:rgba(184,196,230,.7)}
+
+    /* Certificado */
+    #certificate{
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 14px;
+      border: 1px solid rgba(122,167,255,.45);
+      background: radial-gradient(circle at top, rgba(122,167,255,.24), rgba(15,26,51,1));
+    }
+    #certificate h3{
+      margin:0 0 8px;
+      font-size: 1.1rem;
+      text-align:center;
+      letter-spacing:.08em;
+    }
+    #certificate p{
+      margin:4px 0;
+      font-size:.95rem;
+      text-align:center;
+    }
+    #certificate .cert-note{
+      margin-top:10px;
+      font-size:.85rem;
+      color:var(--muted);
+    }
+    #certName{font-weight:700}
+    @media print{
+      body{
+        background:#fff;
+        color:#000;
+      }
+      header, .toolbar, #quiz, .results, .foot{
+        display:none !important;
+      }
+      #certificate{
+        border:1px solid #000;
+        background:#fff;
+        margin:40px auto;
+        max-width:700px;
+      }
+      #certificate p, #certificate h3{
+        color:#000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Quiz — Classificação da Informação</h1>
+    <p class="sub">15 questões objetivas (nível médio e difícil). Baseadas nas notas de aula de Segurança da Informação.</p>
+  </header>
+
+  <main>
+    <section class="toolbar" aria-label="Controles do quiz" id="toolbar">
+      <div class="left">
+        <div class="pill" title="Quantidade de questões">
+          Questões: <strong id="count">15</strong>
+        </div>
+        <div class="pill" title="Regras de correção">
+          Tentativas: <strong>1</strong> • Sem consulta
+        </div>
+        <div class="pill" title="Progresso de respostas">
+          Respondidas: <strong id="answered">0</strong>/<span id="total">15</span>
+        </div>
+        <div class="pill" title="Nome do estudante">
+          Nome:
+          <input id="studentName" class="name-input" type="text" maxlength="80" placeholder="(opcional)" />
+        </div>
+      </div>
+      <div class="right">
+        <button id="btnShuffle" class="ghost" type="button" title="Embaralhar ordem das questões">Embaralhar</button>
+        <button id="btnSubmit" type="button">Corrigir</button>
+        <button id="btnReset" class="danger" type="button">Reiniciar</button>
+      </div>
+    </section>
+
+    <section id="quiz" class="grid" aria-label="Questões do quiz"></section>
+
+    <section id="results" class="results" hidden aria-label="Resultado e revisão">
+      <div class="score">
+        <h2 id="scoreTitle">Resultado</h2>
+        <div class="meta" id="scoreMeta"></div>
+      </div>
+      <div class="review" id="review"></div>
+      <p class="foot">
+        Dica: revise conceitos de dono da informação x custodiante, need-to-know/menor privilégio, rotulagem, retenção/descarte e relação com LGPD (dados pessoais/sensíveis).
+      </p>
+    </section>
+
+    <section id="certificate" hidden aria-label="Certificado de aprovação">
+      <h3>CERTIFICADO DE APROVAÇÃO</h3>
+      <p>Certificamos que <span id="certName">[Estudante]</span> concluiu o</p>
+      <p><strong>Quiz de Classificação da Informação em Segurança da Informação</strong></p>
+      <p>com desempenho de <strong id="certScore">0%</strong>, atingindo nota mínima para aprovação.</p>
+      <p class="cert-note">
+        Este certificado é gerado automaticamente para fins acadêmicos internos.<br />
+        Para imprimir, utilize o atalho de impressão do navegador (Ctrl+P / Cmd+P).
+      </p>
+    </section>
+  </main>
+
+  <script>
+    // ===============================
+    // Banco de questões (15)
+    // ===============================
+    const QUESTIONS = [
+      {
+        id: "q1",
+        diff: "d",
+        text: "Qual combinação representa melhor o princípio por trás de uma boa classificação da informação?",
+        options: [
+          "Maximizar a confidencialidade de tudo para reduzir incidentes.",
+          "Aplicar controles proporcionais ao risco/impacto e aos requisitos legais/contratuais.",
+          "Classificar somente o que é digital, pois o físico é coberto por segurança patrimonial.",
+          "Classificar por departamento (RH, Financeiro etc.), pois isso simplifica auditoria."
+        ],
+        answer: 1,
+        explain: "Classificação existe para orientar controles proporcionais ao risco (impacto em C/I/D) e obrigações legais/contratuais, evitando tanto excesso quanto falta de proteção."
+      },
+      {
+        id: "q2",
+        diff: "m",
+        text: "Em governança, quem normalmente decide a classificação e aprova acessos (responsável final pela informação)?",
+        options: [
+          "Custodiante (TI/Segurança).",
+          "Usuário final que cria o arquivo.",
+          "Dono da informação (Information Owner).",
+          "Auditoria interna."
+        ],
+        answer: 2,
+        explain: "O dono da informação é quem define classificação e regras de uso/acesso; TI/Segurança (custodiante) implementa controles."
+      },
+      {
+        id: "q3",
+        diff: "d",
+        text: "Uma planilha com nomes e CPFs foi agregada removendo identificadores diretos e ficando apenas totais por faixa etária. Qual afirmação é a mais correta para classificação/manuseio?",
+        options: [
+          "Sempre permanece como dado pessoal; portanto, deve ser Restrito/Crítico.",
+          "Pode deixar de ser dado pessoal se não houver reidentificação razoável; a classe pode reduzir conforme risco, mas deve ser avaliado caso a caso.",
+          "Automaticamente vira Público, pois não tem CPF.",
+          "Deve ser descartada, pois agregação é proibida pela LGPD."
+        ],
+        answer: 1,
+        explain: "A remoção de identificadores pode reduzir risco; ainda assim é preciso avaliar possibilidade de reidentificação (contexto, granularidade, cruzamento)."
+      },
+      {
+        id: "q4",
+        diff: "m",
+        text: "Qual alternativa melhor descreve o que deve ser classificado?",
+        options: [
+          "Apenas documentos formais (PDF/DOCX), pois são auditáveis.",
+          "Apenas bancos de dados; arquivos em pastas não entram.",
+          "Informação em repouso, em trânsito e em uso, incluindo mensagens, logs e backups.",
+          "Somente o que contém dados pessoais (LGPD)."
+        ],
+        answer: 2,
+        explain: "O escopo inclui dados estruturados e não estruturados, e suas formas: em uso, trânsito e repouso (incluindo cópias e derivados)."
+      },
+      {
+        id: "q5",
+        diff: "d",
+        text: "Qual é um erro comum que tende a reduzir a eficácia do programa de classificação?",
+        options: [
+          "Ter 3 a 5 níveis de classificação.",
+          "Definir regras de manuseio verificáveis (ex.: MFA, repositórios aprovados).",
+          "Marcar tudo como confidencial (“tudo é secreto”).",
+          "Revisar periodicamente a classificação."
+        ],
+        answer: 2,
+        explain: "“Tudo é confidencial” inviabiliza operação, gera exceções e reduz adesão; classificação deve ser aplicada com proporcionalidade."
+      },
+      {
+        id: "q6",
+        diff: "m",
+        text: "O princípio need-to-know se relaciona diretamente a qual controle?",
+        options: [
+          "Retenção e descarte.",
+          "Controle de acesso (menor privilégio).",
+          "Criptografia em trânsito.",
+          "Controle de versão."
+        ],
+        answer: 1,
+        explain: "Need-to-know orienta acesso apenas a quem precisa; é implementado via IAM, grupos, revisões e menor privilégio."
+      },
+      {
+        id: "q7",
+        diff: "d",
+        text: "Qual cenário melhor justifica aumentar a classe (ex.: de Interno para Confidencial) mesmo sem dados pessoais?",
+        options: [
+          "Documento com organograma atualizado.",
+          "Política de mesa limpa (clean desk).",
+          "Estratégia de precificação/roadmap de produto ainda não divulgado.",
+          "Cardápio do restaurante universitário."
+        ],
+        answer: 2,
+        explain: "Classificação considera valor de negócio e vantagem competitiva, não só LGPD. Roadmap/precificação pode causar impacto relevante se divulgado."
+      },
+      {
+        id: "q8",
+        diff: "m",
+        text: "Qual é a melhor regra de compartilhamento para informação Confidencial, segundo práticas comuns?",
+        options: [
+          "Compartilhar livremente por qualquer mensageiro para agilizar a operação.",
+          "Enviar sempre por e-mail pessoal para evitar bloqueios corporativos.",
+          "Compartilhar por canal/repositório aprovado com controle de acesso, preferindo link autenticado e com expiração quando aplicável.",
+          "Publicar em repositório público, pois a integridade é mais importante."
+        ],
+        answer: 2,
+        explain: "Confidencial normalmente exige canal aprovado, controle de acesso e redução de exposição (links autenticados, expiração, proibição de e-mail pessoal)."
+      },
+      {
+        id: "q9",
+        diff: "d",
+        text: "Sobre rotulagem (labeling), qual prática é mais robusta e útil operacionalmente?",
+        options: [
+          "Rótulos genéricos sem classe (ex.: “importante”).",
+          "Rótulo com classe + contexto mínimo (ex.: dono/projeto e data de revisão, quando aplicável).",
+          "Não rotular para evitar chamar atenção.",
+          "Rotular somente após ocorrer um incidente."
+        ],
+        answer: 1,
+        explain: "Rótulos devem ser acionáveis e auditáveis. Incluir classe e contexto (dono/projeto) ajuda manuseio, decisões de acesso e revisões."
+      },
+      {
+        id: "q10",
+        diff: "m",
+        text: "Qual controle tende a ser obrigatório para classe Restrito/Crítico em muitos ambientes?",
+        options: [
+          "Publicação em portal institucional para transparência.",
+          "MFA obrigatório e armazenamento segregado (ex.: vault), com logs e controle rigoroso.",
+          "Acesso livre, mas com criptografia opcional.",
+          "Somente controle físico (armário) sem logs digitais."
+        ],
+        answer: 1,
+        explain: "Restrito/Crítico pede controles fortes: MFA, segregação, cofre de segredos, auditoria e, quando possível, bloqueios de cópia."
+      },
+      {
+        id: "q11",
+        diff: "d",
+        text: "Qual relação entre classificação e resposta a incidentes é mais correta?",
+        options: [
+          "Classificação não ajuda em incidentes; é apenas burocracia.",
+          "Classificação permite priorizar contenção e comunicação com base no impacto (ex.: vazamento de dados sensíveis vs. material público).",
+          "Classificação serve apenas para reduzir custos de armazenamento.",
+          "Classificação substitui a necessidade de logs e auditoria."
+        ],
+        answer: 1,
+        explain: "Em incidentes, a classe/criticidade orienta priorização, obrigações de notificação e severidade do impacto."
+      },
+      {
+        id: "q12",
+        diff: "m",
+        text: "Qual alternativa representa melhor um motivo para “desclassificar” (reduzir classe) ao longo do tempo?",
+        options: [
+          "A informação ficou velha; portanto, pode ser pública automaticamente.",
+          "A informação foi oficialmente divulgada ao público, reduzindo o impacto da divulgação.",
+          "A informação está em backup; então deve baixar de classe.",
+          "A informação foi impressa; então não precisa de classe."
+        ],
+        answer: 1,
+        explain: "Temporalidade importa: após divulgação oficial, o impacto de confidencialidade pode cair; ainda assim, avaliar integridade/versão oficial."
+      },
+      {
+        id: "q13",
+        diff: "d",
+        text: "Qual escolha é mais alinhada à ideia de controles ‘verificáveis’ por classe?",
+        options: [
+          "“Tenha cuidado ao compartilhar.”",
+          "“Informação importante: trate bem.”",
+          "“Para Confidencial: armazenar somente em repositório corporativo com permissões por grupo e logs; proibir e-mail pessoal.”",
+          "“Evite problemas; não vaze.”"
+        ],
+        answer: 2,
+        explain: "Regras precisam ser específicas e auditáveis (onde armazenar, como compartilhar, requisitos como MFA/logs), não apenas recomendações genéricas."
+      },
+      {
+        id: "q14",
+        diff: "m",
+        text: "Qual documento normativo é referência atualizada e amplamente usada para controles de segurança, incluindo práticas relacionadas à classificação e manuseio?",
+        options: [
+          "ISO/IEC 27002:2022.",
+          "ISO 9001:2015.",
+          "ITIL v2.",
+          "PMBOK 4ª edição."
+        ],
+        answer: 0,
+        explain: "ISO/IEC 27002:2022 é referência para controles de segurança (base para programas e políticas, incluindo aspectos de classificação/rotulagem/manuseio)."
+      },
+      {
+        id: "q15",
+        diff: "d",
+        text: "Qual situação melhor evidencia por que cópias/derivações (exports, anexos, prints, backups) devem entrar no escopo de classificação?",
+        options: [
+          "Porque cópias nunca vazam; apenas o original vaza.",
+          "Porque o risco pode se deslocar do sistema controlado para canais menos controlados (ex.: anexo no e-mail, export local, backup).",
+          "Porque backups sempre são públicos por padrão.",
+          "Porque prints eliminam dados sensíveis automaticamente."
+        ],
+        answer: 1,
+        explain: "Cópias e derivados frequentemente escapam dos controles do repositório original; por isso devem ser contemplados por regras de manuseio, retenção e descarte."
+      }
+    ];
+
+    const STORAGE_KEY = "quiz_classificacao_attempt_v1";
+
+    // Estado renderizado: perguntas com opções embaralhadas
+    let stateQuestions = [];
+    let submitted = false;
+
+    const elQuiz = document.getElementById("quiz");
+    const elResults = document.getElementById("results");
+    const elReview = document.getElementById("review");
+    const elAnswered = document.getElementById("answered");
+    const elTotal = document.getElementById("total");
+    const elCount = document.getElementById("count");
+    const btnSubmit = document.getElementById("btnSubmit");
+    const btnReset = document.getElementById("btnReset");
+    const btnShuffle = document.getElementById("btnShuffle");
+    const elToolbar = document.getElementById("toolbar");
+    const elStudentName = document.getElementById("studentName");
+    const elCert = document.getElementById("certificate");
+    const elCertName = document.getElementById("certName");
+    const elCertScore = document.getElementById("certScore");
+
+    elTotal.textContent = String(QUESTIONS.length);
+    elCount.textContent = String(QUESTIONS.length);
+
+    function escapeHtml(str){
+      return String(str)
+        .replaceAll("&","&")
+        .replaceAll("<","<")
+        .replaceAll(">",">")
+        .replaceAll('"',""")
+        .replaceAll("'","'");
+    }
+
+    function shuffleArray(arr){
+      for(let i=arr.length-1;i>0;i--){
+        const j = Math.floor(Math.random()*(i+1));
+        [arr[i],arr[j]] = [arr[j],arr[i]];
+      }
+      return arr;
+    }
+
+    function getDiffLabel(d){
+      return d === "d" ? "Difícil" : "Médio";
+    }
+    function getDiffClass(d){
+      return d === "d" ? "diff-d" : "diff-m";
+    }
+
+    function buildStateQuestions(){
+      const base = shuffleArray([...QUESTIONS]);
+      stateQuestions = base.map((q) => {
+        const opts = q.options.map((text, idx) => ({
+          text,
+          isCorrect: idx === q.answer
+        }));
+        return {
+          id: q.id,
+          diff: q.diff,
+          text: q.text,
+          explain: q.explain,
+          options: shuffleArray(opts)
+        };
+      });
+    }
+
+    function answeredCount(){
+      let count = 0;
+      for(const q of stateQuestions){
+        const chosen = document.querySelector(`input[name="${q.id}"]:checked`);
+        if(chosen) count++;
+      }
+      return count;
+    }
+
+    function updateAnswered(){
+      elAnswered.textContent = String(answeredCount());
+      btnSubmit.disabled = submitted;
+    }
+
+    function renderQuiz(){
+      submitted = false;
+      elResults.hidden = false; // manter visível para bloqueio; será ajustado abaixo
+      elResults.hidden = true;
+      elReview.innerHTML = "";
+      elCert.hidden = true;
+
+      const html = stateQuestions.map((q, idx) => {
+        const qText = escapeHtml(q.text);
+        const opts = q.options.map((opt, oi) => {
+          const id = `${q.id}_${oi}`;
+          return `
+            <label class="opt" for="${id}">
+              <input type="radio" id="${id}" name="${q.id}" value="${oi}" />
+              <span>${escapeHtml(opt.text)}</span>
+            </label>
+          `;
+        }).join("");
+
+        return `
+          <article class="card" data-qid="${q.id}">
+            <div class="qhead">
+              <div class="qnum">
+                <span class="badge">Q${idx+1}</span>
+                <span class="badge ${getDiffClass(q.diff)}">${getDiffLabel(q.diff)}</span>
+              </div>
+              <p class="qtitle">${qText}</p>
+            </div>
+            <div class="options" role="radiogroup" aria-label="Opções da questão ${idx+1}">
+              ${opts}
+            </div>
+          </article>
+        `;
+      }).join("");
+
+      elQuiz.innerHTML = html;
+
+      elQuiz.querySelectorAll('input[type="radio"]').forEach(r => {
+        r.addEventListener("change", () => updateAnswered());
+      });
+
+      updateAnswered();
+      btnSubmit.disabled = false;
+    }
+
+    // Exibir bloqueio quando aluno já fez a tentativa neste navegador
+    function renderLocked(){
+      elToolbar.style.display = "none";
+      elQuiz.innerHTML = "";
+      elResults.hidden = false;
+      const scoreTitle = document.getElementById("scoreTitle");
+      const scoreMeta = document.getElementById("scoreMeta");
+      scoreTitle.textContent = "Quiz já realizado neste navegador";
+      scoreMeta.textContent = "Regra: cada estudante pode fazer o teste somente uma vez. Os resultados anteriores não são armazenados automaticamente.";
+      elReview.innerHTML = `
+        <div class="item">
+          <div class="explain">
+            Caso você precise registrar ou comprovar sua nota, siga as orientações do(a) professor(a)
+            (por exemplo, enviar print da tela logo após a correção).
+          </div>
+        </div>
+      `;
+      elCert.hidden = true;
+      btnSubmit.disabled = true;
+      btnReset.disabled = true;
+      btnShuffle.disabled = true;
+    }
+
+    // Correção
+    function grade(){
+      if(submitted) return;
+
+      const total = stateQuestions.length;
+      let correct = 0;
+      let unanswered = 0;
+
+      const reviewItems = [];
+
+      stateQuestions.forEach((q, idx) => {
+        const chosenEl = document.querySelector(`input[name="${q.id}"]:checked`);
+        const chosenIndex = chosenEl ? Number(chosenEl.value) : null;
+
+        if(chosenIndex === null) unanswered++;
+
+        const chosenOpt = chosenIndex !== null ? q.options[chosenIndex] : null;
+        const isCorrect = chosenOpt ? chosenOpt.isCorrect : false;
+        if(isCorrect) correct++;
+
+        const correctOpt = q.options.find(o => o.isCorrect);
+
+        const chosenText = chosenOpt ? chosenOpt.text : "(não respondida)";
+        const correctText = correctOpt ? correctOpt.text : "(erro de configuração)";
+
+        reviewItems.push({
+          idx: idx+1,
+          isCorrect,
+          qText: q.text,
+          chosenText,
+          correctText,
+          explain: q.explain
+        });
+      });
+
+      // travar inputs
+      submitted = true;
+      elQuiz.querySelectorAll('input[type="radio"]').forEach(r => r.disabled = true);
+      btnSubmit.disabled = true;
+      btnReset.disabled = true;
+      btnShuffle.disabled = true;
+
+      // marcar tentativa neste navegador
+      try{
+        localStorage.setItem(STORAGE_KEY, "done");
+      }catch(e){}
+
+      // score
+      const pct = Math.round((correct/total)*100);
+      const scoreTitle = document.getElementById("scoreTitle");
+      const scoreMeta = document.getElementById("scoreMeta");
+
+      const wrongItems = reviewItems.filter(i => !i.isCorrect);
+      const wrongList = wrongItems.length
+        ? "Você errou as questões: " + wrongItems.map(i => i.idx).join(", ") + "."
+        : "Você acertou todas as questões.";
+
+      scoreTitle.textContent = `Resultado: ${correct}/${total} (${pct}%)`;
+      scoreMeta.textContent = `Não respondidas: ${unanswered}. ${wrongList}`;
+
+      // revisão: mostrar, para cada questão, o que o estudante errou/acertou
+      elReview.innerHTML = reviewItems.map(item => {
+        const tagClass = item.isCorrect ? "ok" : "no";
+        const tagText = item.isCorrect ? "Correta" : "Incorreta";
+        return `
+          <div class="item ${tagClass}">
+            <div class="top">
+              <div><strong>Q${item.idx}.</strong> ${escapeHtml(item.qText)}</div>
+              <span class="tag ${tagClass}">${tagText}</span>
+            </div>
+            <div class="explain">
+              Sua resposta: <strong>${escapeHtml(item.chosenText)}</strong><br />
+              Gabarito: <strong>${escapeHtml(item.correctText)}</strong><br />
+              Explicação: ${escapeHtml(item.explain)}
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      elResults.hidden = false;
+
+      // Certificado se >= 60%
+      if(pct >= 60){
+        const name = elStudentName.value.trim() || "Estudante";
+        elCertName.textContent = name;
+        elCertScore.textContent = `${pct}%`;
+        elCert.hidden = false;
+      }else{
+        elCert.hidden = true;
+      }
+
+      elResults.scrollIntoView({behavior:"smooth", block:"start"});
+    }
+
+    // Ações UI
+    btnSubmit.addEventListener("click", () => {
+      const a = answeredCount();
+      if(a < stateQuestions.length){
+        const ok = confirm(`Você respondeu ${a}/${stateQuestions.length}. Deseja corrigir mesmo assim?`);
+        if(!ok) return;
+      }
+      grade();
+    });
+
+    btnReset.addEventListener("click", () => {
+      if(submitted) return;
+      const ok = confirm("Reiniciar o quiz? Isso apagará suas respostas.");
+      if(!ok) return;
+      // mantém mesma ordem das questões atuais, apenas limpa respostas
+      renderQuiz();
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+
+    btnShuffle.addEventListener("click", () => {
+      if(submitted) return;
+      const a = answeredCount();
+      if(a > 0){
+        const ok = confirm("Embaralhar agora apagará as respostas atuais. Continuar?");
+        if(!ok) return;
+      }
+      buildStateQuestions();
+      renderQuiz();
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+
+    // Inicializa
+    (function init(){
+      let alreadyDone = false;
+      try{
+        alreadyDone = localStorage.getItem(STORAGE_KEY) === "done";
+      }catch(e){
+        alreadyDone = false;
+      }
+
+      if(alreadyDone){
+        renderLocked();
+      }else{
+        buildStateQuestions();
+        renderQuiz();
+      }
+    })();
+  </script>
+</body>
+</html>
