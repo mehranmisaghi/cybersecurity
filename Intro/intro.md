@@ -8,7 +8,7 @@ permalink: Intro/intro.md
 
 ## Aula 1 - Slides da aula
 
-[link para primiera](https://www.canva.com/design/DAHBxZoDfPY/Kp-j0HCk3-IEq7pJL5wg4A/edit?utm_content=DAHBxZoDfPY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton))
+[Slides da Primeira aula](https://www.canva.com/design/DAHBxZoDfPY/Kp-j0HCk3-IEq7pJL5wg4A/edit?utm_content=DAHBxZoDfPY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 O texto abaixo foi gerado com auxílio de IA, baseado material do [Desafios de Cibersegurança para 2026](https://clavis.com.br/wp-content/uploads/2026/01/infografico-tendencias-2026-Clavis.pdf?utm_medium=email&utm_campaign=infografico_tendencias_2026_recebimento&utm_source=RD+Station) e serve para refletir sobre atuais tendências na área de cibersegurança:
 
