@@ -15,6 +15,7 @@ permalink: Intro/basico.md
 
 - [Cap 1 a cap3 do Geus 2003](https://mehranmisaghi.github.io/cybersecurity/materiais/geus2003.pdf)
 - [Cap 1 do Kim 2018](https://mehranmisaghi.github.io/cybersecurity/materiais/kim2018-cap1.pdf)
+[fa](https://mehranmisaghi.github.io/cybersecurity/conceitos1.html)
 
 
     - Conceitos Básicos
