@@ -5,7 +5,18 @@ permalink: Intro/basico.md
 ---
 
 # Conceitos Básicos de Segurança e Cibersegurança
-- Continuar com a panorama
+
+## Aula 2 - Conceitos iniciais
+- Continuar com a panorama de cibersegurança em 2026
+
+- ## [Slides da aula 2](https://www.canva.com/design/DAHCLqcxYXQ/C3ZlwnXlBlkxWG4JK2Qoew/edit?utm_content=DAHCLqcxYXQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+## Os materiais de estudo desta aula
+
+- [Cap 1 a cap3 do Geus 2003](https://mehranmisaghi.github.io/cybersecurity/materiais/geus2003.pdf)
+- [Cap 1 do Kim 2018](https://mehranmisaghi.github.io/cybersecurity/materiais/kim2018-cap1.pdf)
+
+
     - Conceitos Básicos
     - Classificação da Informação
     - Ameaças e vulnerabilidades
