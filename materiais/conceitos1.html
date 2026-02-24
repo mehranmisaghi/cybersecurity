@@ -1,230 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz — Propriedades de Segurança</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz (Fácil) — Propriedades de Segurança</title>
   <style>
     :root{
-      --bg1:#0b1220;
-      --bg2:#111b34;
-      --card:#0f172a;
-      --text:#e5e7eb;
-      --muted:#a7b0c0;
-      --accent:#60a5fa;
-      --ok:#22c55e;
-      --bad:#ef4444;
-      --warn:#f59e0b;
-      --border: rgba(255,255,255,0.10);
-      --shadow: rgba(0,0,0,0.35);
+      --bg:#0b1220; --card:#0f172a; --card2:#0b1326;
+      --text:#e5e7eb; --muted:#a7b0c0; --border:rgba(255,255,255,.10);
+      --accent:#60a5fa; --ok:#22c55e; --bad:#ef4444;
+      --shadow:rgba(0,0,0,.35);
     }
-
-    *{ box-sizing: border-box; }
+    *{box-sizing:border-box}
     body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
-      color: var(--text);
+      margin:0; padding:24px;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
       background:
-        radial-gradient(1200px 600px at 20% 0%, #1a2a6c 0%, rgba(26,42,108,0) 60%),
-        radial-gradient(1000px 600px at 80% 10%, #0f766e 0%, rgba(15,118,110,0) 55%),
-        linear-gradient(180deg, var(--bg1), var(--bg2));
-      min-height: 100vh;
-      padding: 24px;
+        radial-gradient(1000px 600px at 20% 0%, #1a2a6c 0%, rgba(26,42,108,0) 60%),
+        radial-gradient(900px 600px at 80% 10%, #0f766e 0%, rgba(15,118,110,0) 55%),
+        linear-gradient(180deg, var(--bg), #111b34);
+      min-height:100vh;
     }
-
-    .container{ max-width: 980px; margin: 0 auto; }
-
-    header{
-      display:flex;
-      gap:16px;
-      align-items:flex-start;
-      justify-content:space-between;
-      margin-bottom: 18px;
-      flex-wrap: wrap;
+    .wrap{max-width:980px;margin:0 auto}
+    .hero{
+      border:1px solid var(--border);
+      background:linear-gradient(90deg, rgba(96,165,250,.25), rgba(34,197,94,.15));
+      border-radius:16px;
+      padding:16px 18px;
+      box-shadow:0 12px 30px var(--shadow);
+      display:flex; gap:12px; flex-wrap:wrap; align-items:flex-start; justify-content:space-between;
     }
-
-    .title{
-      flex: 1 1 520px;
-      background: linear-gradient(90deg, rgba(96,165,250,0.25), rgba(34,197,94,0.15));
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 16px 18px;
-      box-shadow: 0 12px 30px var(--shadow);
-    }
-
-    h1{ font-size: 18px; margin: 0 0 6px 0; letter-spacing: .2px; }
-    .subtitle{ margin:0; color: var(--muted); font-size: 13px; line-height: 1.35; }
-
-    .pillbar{
-      display:flex; gap:10px; flex-wrap:wrap;
-      align-items:center; justify-content:flex-end;
-      flex: 1 1 260px;
-    }
+    h1{margin:0 0 6px 0;font-size:18px}
+    .sub{margin:0;color:var(--muted);font-size:13px;line-height:1.35}
     .pill{
-      font-size: 12px;
-      color: var(--muted);
-      border: 1px solid var(--border);
-      background: rgba(15, 23, 42, 0.6);
-      padding: 10px 12px;
-      border-radius: 999px;
-      box-shadow: 0 10px 24px var(--shadow);
-      white-space: nowrap;
+      font-size:12px;color:var(--muted);
+      border:1px solid var(--border);
+      background:rgba(15,23,42,.55);
+      padding:10px 12px;border-radius:999px;
+      box-shadow:0 10px 24px var(--shadow);
+      white-space:nowrap;
     }
-    .pill strong{ color: var(--text); font-weight: 650; }
-
-    .grid{ display:grid; grid-template-columns: 1fr; gap: 14px; margin-bottom: 16px; }
-
-    .qcard{
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      background: linear-gradient(180deg, rgba(15,23,42,0.95), rgba(11,19,38,0.95));
-      box-shadow: 0 12px 30px var(--shadow);
-      padding: 16px;
+    .pill strong{color:var(--text)}
+    .grid{display:grid;gap:14px;margin-top:14px}
+    .card{
+      border:1px solid var(--border);
+      background:linear-gradient(180deg, rgba(15,23,42,.95), rgba(11,19,38,.95));
+      border-radius:16px;
+      padding:16px;
+      box-shadow:0 12px 30px var(--shadow);
     }
-    .qhead{ display:flex; gap:10px; align-items:flex-start; justify-content:space-between; margin-bottom: 10px; }
+    .qhead{display:flex;gap:10px;align-items:flex-start}
     .qnum{
-      width: 34px; height: 34px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: rgba(96,165,250,0.12);
-      display:flex; align-items:center; justify-content:center;
-      font-weight: 800;
-      flex: 0 0 auto;
+      width:34px;height:34px;border-radius:10px;
+      border:1px solid var(--border);
+      background:rgba(96,165,250,.12);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:900;
+      flex:0 0 auto;
     }
-    .qtitle{ margin:0; font-size: 14.5px; line-height: 1.35; }
-
-    .options{ display:grid; gap: 8px; margin-top: 12px; }
-    .opt{
-      position: relative;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      background: rgba(255,255,255,0.03);
-      padding: 12px 12px 12px 44px;
-      cursor: pointer;
-      transition: border-color .2s ease, background .2s ease, transform .06s ease;
+    .qtitle{margin:0;font-size:14.5px;line-height:1.35}
+    .topic{margin-top:6px;color:var(--muted);font-size:12px}
+    .opts{display:grid;gap:8px;margin-top:12px}
+    label.opt{
+      display:block; position:relative;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.03);
+      border-radius:12px;
+      padding:12px 12px 12px 44px;
+      cursor:pointer;
+      transition:.15s ease;
       user-select:none;
     }
-    .opt:hover{ border-color: rgba(96,165,250,0.45); background: rgba(96,165,250,0.08); }
-    .opt:active{ transform: scale(0.996); }
-    .opt input{
-      position:absolute; left: 12px; top: 50%;
-      transform: translateY(-50%);
-      width: 18px; height: 18px;
-      accent-color: var(--accent);
-      cursor:pointer;
+    label.opt:hover{border-color:rgba(96,165,250,.45);background:rgba(96,165,250,.08)}
+    label.opt input{
+      position:absolute; left:12px; top:50%;
+      transform:translateY(-50%);
+      width:18px;height:18px;
+      accent-color:var(--accent);
     }
-
-    .actions{
-      display:flex; gap: 10px;
-      align-items:center; justify-content:space-between;
-      flex-wrap: wrap;
-      margin-top: 10px;
+    .actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;align-items:center;margin-top:12px}
+    button{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      padding:12px 14px;border-radius:12px;
+      cursor:pointer;font-weight:800;
+      box-shadow:0 12px 24px var(--shadow);
     }
-
-    .btn{
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,0.04);
-      color: var(--text);
-      padding: 12px 14px;
-      border-radius: 12px;
-      cursor: pointer;
-      font-weight: 700;
-      letter-spacing: .2px;
-      transition: background .2s ease, border-color .2s ease, transform .06s ease;
-      box-shadow: 0 12px 24px var(--shadow);
+    button.primary{
+      background:linear-gradient(90deg, rgba(96,165,250,.95), rgba(34,197,94,.85));
+      color:#081124;border-color:rgba(255,255,255,.16);
     }
-    .btn:hover{ border-color: rgba(96,165,250,0.55); background: rgba(96,165,250,0.10); }
-    .btn:active{ transform: scale(0.995); }
-
-    .btn.primary{
-      background: linear-gradient(90deg, rgba(96,165,250,0.95), rgba(34,197,94,0.85));
-      border-color: rgba(255,255,255,0.16);
-      color: #081124;
-    }
-    .btn.primary:hover{ background: linear-gradient(90deg, rgba(96,165,250,1), rgba(34,197,94,1)); }
-
-    .hint{ font-size: 12px; color: var(--muted); margin: 0; line-height: 1.35; }
-    .hint.warn{ color: var(--warn); }
-
-    .results{
-      margin-top: 18px;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      background: linear-gradient(180deg, rgba(15,23,42,0.95), rgba(11,19,38,0.95));
-      box-shadow: 0 12px 30px var(--shadow);
-      padding: 16px;
-      display:none;
-    }
-    .rhead{
-      display:flex; gap: 12px;
-      align-items:flex-start; justify-content:space-between;
-      flex-wrap: wrap;
-      margin-bottom: 12px;
-    }
-    .score{ font-size: 16px; font-weight: 900; margin: 0; }
-    .score small{ display:block; font-size: 12px; color: var(--muted); font-weight: 650; margin-top: 2px; }
-
-    .columns{ display:grid; grid-template-columns: 1fr; gap: 12px; }
-    @media (min-width: 900px){ .columns{ grid-template-columns: 1fr 1fr; } }
-
+    .hint{margin:0;color:var(--muted);font-size:12px;line-height:1.35}
+    .results{display:none;margin-top:16px}
+    .cols{display:grid;gap:12px}
+    @media (min-width: 900px){ .cols{grid-template-columns:1fr 1fr} }
     .panel{
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 12px;
-      background: rgba(255,255,255,0.03);
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.03);
+      border-radius:14px;
+      padding:12px;
     }
-    .panel h2{ font-size: 13.5px; margin: 0 0 10px 0; letter-spacing: .2px; }
-
+    .panel h2{margin:0 0 10px 0;font-size:13.5px}
     .item{
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 10px;
-      background: rgba(255,255,255,0.03);
-      margin-bottom: 10px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.03);
+      border-radius:12px;
+      padding:10px;
+      margin-bottom:10px;
     }
-    .item:last-child{ margin-bottom: 0; }
-
-    .k{ font-size: 12px; color: var(--muted); margin: 6px 0 0 0; line-height: 1.35; }
-    .k strong{ color: var(--text); }
-    .ok{ color: var(--ok); font-weight: 800; }
-    .bad{ color: var(--bad); font-weight: 800; }
-
-    .footer{ margin-top: 14px; color: var(--muted); font-size: 12px; text-align: center; }
+    .item:last-child{margin-bottom:0}
+    .k{margin:6px 0 0 0;color:var(--muted);font-size:12px;line-height:1.35}
+    .ok{color:var(--ok);font-weight:900}
+    .bad{color:var(--bad);font-weight:900}
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <header>
-      <div class="title">
-        <h1>Quiz — Propriedades de Segurança</h1>
-        <p class="subtitle">
-          8 questões objetivas sobre confidencialidade, integridade, disponibilidade, não repúdio e autenticidade.
-          Perguntas e alternativas são sorteadas/embaralhadas automaticamente.
-        </p>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Quiz (Fácil) — Propriedades de Segurança</h1>
+        <p class="sub">8 questões sobre confidencialidade, integridade, disponibilidade, não repúdio e autenticidade. Ao final, mostra acertos e erros.</p>
       </div>
-      <div class="pillbar">
-        <div class="pill"><strong>Progresso:</strong> <span id="progress">0/8</span></div>
-        <div class="pill"><strong>Correção:</strong> automática</div>
-        <div class="pill"><strong>Randomização:</strong> ativa</div>
-      </div>
-    </header>
+      <div class="pill"><strong>Progresso:</strong> <span id="progress">0/8</span></div>
+    </div>
 
     <div id="quiz" class="grid"></div>
 
     <div class="actions">
-      <button id="btnFinish" class="btn primary" type="button">Finalizar e corrigir</button>
-      <button id="btnReset" class="btn" type="button" style="display:none;">Nova tentativa</button>
-      <p id="status" class="hint">Você pode finalizar mesmo com questões em branco (elas contarão como erradas).</p>
+      <button id="finish" class="primary" type="button">Finalizar e corrigir</button>
+      <button id="again" type="button" style="display:none;">Nova tentativa</button>
+      <p class="hint">Pode finalizar com questões em branco (contam como erradas).</p>
     </div>
 
-    <section id="results" class="results">
-      <div class="rhead">
-        <p id="score" class="score"></p>
-        <p class="hint" style="margin:0;">Relatório: corretas e erradas (com sua resposta e o gabarito).</p>
-      </div>
-
-      <div class="columns">
+    <div id="results" class="card results">
+      <p id="score" style="margin:0;font-weight:950;"></p>
+      <p class="hint" style="margin:6px 0 12px 0;">Relatório abaixo (corretas e erradas com gabarito).</p>
+      <div class="cols">
         <div class="panel">
           <h2>Corretas</h2>
           <div id="correctList"></div>
@@ -234,371 +147,229 @@
           <div id="wrongList"></div>
         </div>
       </div>
-
-      <div class="footer">Pronto para GitHub Pages.</div>
-    </section>
+    </div>
   </div>
 
 <script>
-  function shuffle(arr){
-    const a = arr.slice();
-    for(let i = a.length - 1; i > 0; i--){
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-  }
+  const bank = [
+    { topic:"Confidencialidade", q:"O que é confidencialidade?", options:[
+      "Garantir que apenas pessoas autorizadas vejam a informação",
+      "Garantir que a informação nunca seja alterada",
+      "Garantir que o sistema nunca fique fora do ar",
+      "Garantir que qualquer pessoa possa acessar dados",
+      "Garantir que o autor sempre negue uma ação"
+    ], correct:0 },
+    { topic:"Integridade", q:"Integridade da informação significa:", options:[
+      "Manter a informação correta, sem alterações indevidas",
+      "Deixar o sistema mais rápido",
+      "Garantir que todos leiam os dados",
+      "Garantir que o sistema sempre esteja no ar",
+      "Trocar senhas frequentemente"
+    ], correct:0 },
+    { topic:"Disponibilidade", q:"Disponibilidade significa que:", options:[
+      "O sistema deve estar acessível quando necessário",
+      "Os dados devem ser secretos",
+      "Os dados nunca podem ser copiados",
+      "Não é preciso autenticação",
+      "Qualquer erro deve ser ignorado"
+    ], correct:0 },
+    { topic:"Não repúdio", q:"Não repúdio está mais relacionado a:", options:[
+      "Evitar que alguém negue que realizou uma ação",
+      "Evitar que alguém leia dados",
+      "Evitar lentidão do sistema",
+      "Garantir que sempre exista backup",
+      "Garantir que não exista log"
+    ], correct:0 },
+    { topic:"Autenticidade", q:"Autenticidade está ligada a:", options:[
+      "Confirmar a identidade de quem acessa/manda a informação",
+      "Evitar queda de energia",
+      "Aumentar o espaço em disco",
+      "Reduzir o número de servidores",
+      "Criptografar sem chave"
+    ], correct:0 },
+    { topic:"Confidencialidade", q:"Qual exemplo é mais ligado a confidencialidade?", options:[
+      "Usar criptografia para proteger dados",
+      "Usar redundância para evitar quedas",
+      "Usar hash para detectar alterações",
+      "Fazer teste de carga",
+      "Monitorar uptime"
+    ], correct:0 },
+    { topic:"Integridade", q:"Qual exemplo é mais ligado à integridade?", options:[
+      "Verificar se um arquivo foi alterado usando hash",
+      "Criar vários servidores para aguentar mais acessos",
+      "Aumentar a internet para não cair",
+      "Remover autenticação para facilitar",
+      "Diminuir logs para economizar"
+    ], correct:0 },
+    { topic:"Disponibilidade", q:"Qual prática ajuda mais na disponibilidade?", options:[
+      "Redundância e failover (se um falha, outro assume)",
+      "Assinar digitalmente todas as telas",
+      "Trocar o nome do domínio",
+      "Excluir logs para economizar espaço",
+      "Remover senhas do sistema"
+    ], correct:0 },
 
-  function escapeHtml(s){
-    return String(s).replace(/[&<>"']/g, (c) => ({
-      "&":"&", "<":"<", ">":">", "\"":""", "'":"'"
+    // extras (para sorteio ficar realmente “aleatório”)
+    { topic:"Autenticidade", q:"Qual exemplo é mais ligado a autenticidade?", options:[
+      "Login com senha/2FA para confirmar quem é o usuário",
+      "Backup diário em nuvem",
+      "Replicação do banco de dados",
+      "Cache no navegador",
+      "Compactação de imagens"
+    ], correct:0 },
+    { topic:"Não repúdio", q:"Qual recurso é mais associado a não repúdio?", options:[
+      "Assinatura digital",
+      "Somente criptografia simétrica",
+      "Somente balanceamento de carga",
+      "Somente firewall",
+      "Somente RAID"
+    ], correct:0 }
+  ];
+
+  function shuffle(a){
+    const x = a.slice();
+    for(let i=x.length-1;i>0;i--){
+      const j = Math.floor(Math.random()*(i+1));
+      [x[i],x[j]] = [x[j],x[i]];
+    }
+    return x;
+  }
+  function esc(s){
+    return String(s).replace(/[&<>"']/g, c => ({
+      "&":"&","<":"<",">":">","\"":""","'":"'"
     }[c]));
   }
 
-  // Banco maior (12) para permitir sorteio real de 8 a cada tentativa
-  const bank = [
-    // MÉDIO
-    {
-      difficulty: "Médio",
-      topic: "Confidencialidade",
-      q: "Qual cenário caracteriza principalmente uma violação de confidencialidade?",
-      options: [
-        "Um atacante altera o valor de uma fatura antes do processamento.",
-        "Um serviço fica indisponível por 2 horas após uma falha elétrica.",
-        "Dados pessoais são acessados por alguém sem autorização.",
-        "Um usuário nega ter enviado uma ordem assinada digitalmente.",
-        "Um servidor aceita conexões sem validar o certificado do cliente."
-      ],
-      correctIndex: 2
-    },
-    {
-      difficulty: "Médio",
-      topic: "Integridade",
-      q: "Qual mecanismo é mais diretamente associado à verificação de integridade de um arquivo (detectar alteração) após armazenamento?",
-      options: [
-        "Criptografia simétrica (ex.: AES) sem autenticação",
-        "Hash criptográfico (ex.: SHA-256) armazenado para comparação posterior",
-        "Balanceamento de carga",
-        "Replicação geográfica",
-        "RBAC isoladamente"
-      ],
-      correctIndex: 1
-    },
-    {
-      difficulty: "Médio",
-      topic: "Disponibilidade",
-      q: "Qual medida é tipicamente mais alinhada a disponibilidade em um serviço web crítico?",
-      options: [
-        "Assinatura digital de todas as respostas HTTP",
-        "Hash de logs para auditoria",
-        "Criptografia de dados em repouso",
-        "Redundância + failover automático em múltiplas zonas/regiões",
-        "Pinagem de certificado para evitar MITM"
-      ],
-      correctIndex: 3
-    },
-    {
-      difficulty: "Médio",
-      topic: "Autenticidade",
-      q: "Autenticidade, em geral, responde a qual pergunta central?",
-      options: [
-        "Os dados não foram alterados desde a origem?",
-        "O serviço está disponível quando necessário?",
-        "Quem está se comunicando é realmente quem afirma ser?",
-        "Ninguém conseguirá ler os dados, mesmo com acesso ao disco?",
-        "O emissor será incapaz de negar a ação posteriormente?"
-      ],
-      correctIndex: 2
-    },
-    {
-      difficulty: "Médio",
-      topic: "Não repúdio",
-      q: "Qual recurso é mais associado a fornecer evidência verificável de autoria de uma ação digital?",
-      options: [
-        "Assinatura digital baseada em criptografia assimétrica",
-        "Somente criptografia simétrica com chave compartilhada",
-        "Somente RAID no servidor",
-        "Somente cache CDN",
-        "Somente controle de acesso por senha"
-      ],
-      correctIndex: 0
-    },
-    {
-      difficulty: "Médio",
-      topic: "Confidencialidade",
-      q: "Em termos de proteção de dados, qual prática está mais ligada a confidencialidade?",
-      options: [
-        "Criptografar dados em trânsito com TLS",
-        "Fazer backups diários em múltiplas regiões",
-        "Aplicar hashes nos arquivos sem segredo",
-        "Ativar escalabilidade automática (autoscaling)",
-        "Usar checksums para detectar corrupção acidental"
-      ],
-      correctIndex: 0
-    },
-
-    // DIFÍCIL
-    {
-      difficulty: "Difícil",
-      topic: "Não repúdio",
-      q: "Qual afirmação descreve melhor o objetivo de não repúdio em uma transação digital?",
-      options: [
-        "Impedir que terceiros leiam o conteúdo da transação.",
-        "Impedir indisponibilidade causada por DDoS.",
-        "Garantir que alterações na transação sejam sempre detectadas.",
-        "Impedir que o autor negue posteriormente que realizou a ação.",
-        "Garantir que o destinatário não consiga provar recebimento."
-      ],
-      correctIndex: 3
-    },
-    {
-      difficulty: "Difícil",
-      topic: "Autenticidade vs Integridade",
-      q: "Um hash SHA-256 confere com um valor previamente conhecido e confiável. O que isso garante diretamente?",
-      options: [
-        "Confidencialidade",
-        "Integridade do conteúdo em relação ao esperado",
-        "Autenticidade do remetente",
-        "Não repúdio",
-        "Disponibilidade"
-      ],
-      correctIndex: 1
-    },
-    {
-      difficulty: "Difícil",
-      topic: "Assinatura digital",
-      q: "Qual opção é mais associada a autenticação + integridade + não repúdio em uma mensagem?",
-      options: [
-        "Criptografia simétrica do conteúdo com chave compartilhada",
-        "Hash simples sem proteção (apenas SHA-256 do texto)",
-        "Assinatura digital com chave privada do emissor e verificação via chave pública",
-        "Redundância em datacenters e balanceador de carga",
-        "TLS sem validação de certificado (modo inseguro)"
-      ],
-      correctIndex: 2
-    },
-    {
-      difficulty: "Difícil",
-      topic: "Disponibilidade",
-      q: "Uma onda de requisições maliciosas exaure CPU/conexões e derruba o serviço. Qual propriedade foi primariamente afetada?",
-      options: [
-        "Confidencialidade",
-        "Integridade",
-        "Disponibilidade",
-        "Não repúdio",
-        "Autenticidade"
-      ],
-      correctIndex: 2
-    },
-    {
-      difficulty: "Difícil",
-      topic: "Integridade (HMAC)",
-      q: "Qual alternativa descreve melhor o HMAC no contexto de integridade?",
-      options: [
-        "Um hash sem chave, útil para provar autoria.",
-        "Um hash com chave secreta, útil para detectar alterações e autenticar a origem entre partes que compartilham a chave.",
-        "Uma técnica de alta disponibilidade baseada em múltiplas zonas.",
-        "Um método de criptografia assimétrica para confidencialidade.",
-        "Um recurso para impedir negação (não repúdio) sem chaves assimétricas."
-      ],
-      correctIndex: 1
-    },
-    {
-      difficulty: "Difícil",
-      topic: "Autenticidade (mTLS)",
-      q: "Em mutual TLS (mTLS), qual objetivo adicional é atingido em comparação ao TLS padrão (somente servidor autenticado)?",
-      options: [
-        "Criptografia mais fraca, porém mais rápida",
-        "Autenticação do cliente por certificado, fortalecendo a autenticidade de ambas as pontas",
-        "Eliminação de certificados, reduzindo custos",
-        "Garantia de não repúdio sem assinatura digital",
-        "Proteção exclusiva contra indisponibilidade (DDoS)"
-      ],
-      correctIndex: 1
-    }
-  ];
-
-  // Seleciona 8: tenta 4 médias + 4 difíceis
-  const mediumPool = shuffle(bank.filter(q => q.difficulty === "Médio"));
-  const hardPool   = shuffle(bank.filter(q => q.difficulty === "Difícil"));
-
-  let selected = [];
-  selected = selected.concat(mediumPool.slice(0, 4));
-  selected = selected.concat(hardPool.slice(0, 4));
-
-  // Se por algum motivo faltar, completa com o que sobrar
-  if(selected.length < 8){
-    const remaining = shuffle(
-      bank.filter(q => !selected.includes(q))
-    );
-    selected = selected.concat(remaining.slice(0, 8 - selected.length));
-  }
-
-  // Embaralha a ordem final das perguntas
-  selected = shuffle(selected);
-
-  // Prepara perguntas com alternativas embaralhadas mantendo índice correto
-  const questions = selected.map((item, idx) => {
-    const tagged = item.options.map((text, i) => ({ text, isCorrect: i === item.correctIndex }));
-    const shuffledTagged = shuffle(tagged);
-    const newCorrectIndex = shuffledTagged.findIndex(o => o.isCorrect);
-
+  // Sorteia 8 perguntas e embaralha alternativas preservando gabarito
+  const selected = shuffle(bank).slice(0, 8).map((it, idx) => {
+    const tagged = it.options.map((t,i)=>({t, ok:i===it.correct}));
+    const sh = shuffle(tagged);
     return {
-      id: "q" + idx + "_" + Math.random().toString(16).slice(2),
-      topic: item.topic,
-      difficulty: item.difficulty, // não exibimos no começo; usamos no relatório
-      q: item.q,
-      options: shuffledTagged.map(o => o.text),
-      correctIndex: newCorrectIndex
+      id: "q"+idx+"_"+Math.random().toString(16).slice(2),
+      topic: it.topic,
+      q: it.q,
+      options: sh.map(o=>o.t),
+      correct: sh.findIndex(o=>o.ok)
     };
   });
 
   const quizEl = document.getElementById("quiz");
-  const btnFinish = document.getElementById("btnFinish");
-  const btnReset = document.getElementById("btnReset");
-  const statusEl = document.getElementById("status");
   const progressEl = document.getElementById("progress");
-
+  const finishBtn = document.getElementById("finish");
+  const againBtn = document.getElementById("again");
   const resultsEl = document.getElementById("results");
   const scoreEl = document.getElementById("score");
-  const correctListEl = document.getElementById("correctList");
-  const wrongListEl = document.getElementById("wrongList");
+  const correctList = document.getElementById("correctList");
+  const wrongList = document.getElementById("wrongList");
 
   function render(){
     quizEl.innerHTML = "";
-    questions.forEach((q, idx) => {
+    selected.forEach((q, i) => {
       const card = document.createElement("div");
-      card.className = "qcard";
-
-      const head = document.createElement("div");
-      head.className = "qhead";
-      head.innerHTML = `
-        <div class="qnum">${idx + 1}</div>
-        <div style="flex:1; min-width:0;">
-          <p class="qtitle">${escapeHtml(q.q)}</p>
+      card.className = "card";
+      card.innerHTML = `
+        <div class="qhead">
+          <div class="qnum">${i+1}</div>
+          <div style="flex:1;min-width:0;">
+            <p class="qtitle">${esc(q.q)}</p>
+            <div class="topic">Tópico: ${esc(q.topic)}</div>
+          </div>
+        </div>
+        <div class="opts">
+          ${q.options.map((opt, oi) => `
+            <label class="opt">
+              <input type="radio" name="${q.id}" value="${oi}">
+              ${esc(opt)}
+            </label>
+          `).join("")}
         </div>
       `;
-
-      const opts = document.createElement("div");
-      opts.className = "options";
-
-      q.options.forEach((optText, optIdx) => {
-        const optId = `${q.id}_opt${optIdx}`;
-        const label = document.createElement("label");
-        label.className = "opt";
-        label.setAttribute("for", optId);
-        label.innerHTML = `
-          <input id="${optId}" type="radio" name="${q.id}" value="${optIdx}">
-          ${escapeHtml(optText)}
-        `;
-        opts.appendChild(label);
-      });
-
-      card.appendChild(head);
-      card.appendChild(opts);
       quizEl.appendChild(card);
     });
 
-    // progress watcher
     document.querySelectorAll('input[type="radio"]').forEach(el => {
       el.addEventListener("change", updateProgress);
     });
-
     updateProgress();
   }
 
   function updateProgress(){
-    const answered = questions.reduce((acc, q) => {
-      const checked = document.querySelector(`input[name="${q.id}"]:checked`);
-      return acc + (checked ? 1 : 0);
-    }, 0);
+    let answered = 0;
+    for(const q of selected){
+      if(document.querySelector(`input[name="${q.id}"]:checked`)) answered++;
+    }
     progressEl.textContent = `${answered}/8`;
   }
 
   function getAnswers(){
-    return questions.map(q => {
+    return selected.map(q => {
       const checked = document.querySelector(`input[name="${q.id}"]:checked`);
-      return checked ? parseInt(checked.value, 10) : null;
+      return checked ? Number(checked.value) : null;
     });
   }
 
   function disableAll(){
     document.querySelectorAll('input[type="radio"]').forEach(el => el.disabled = true);
-    btnFinish.disabled = true;
-  }
-
-  function correctItemHTML(i, chosenIndex){
-    const q = questions[i];
-    const chosenText = chosenIndex === null ? "(em branco)" : q.options[chosenIndex];
-    return `
-      <div class="item">
-        <div><strong>${i + 1}.</strong> ${escapeHtml(q.q)}</div>
-        <p class="k"><strong>Tópico:</strong> ${escapeHtml(q.topic)}</p>
-        <p class="k"><span class="ok">Correta:</span> ${escapeHtml(chosenText)}</p>
-      </div>
-    `;
-  }
-
-  function wrongItemHTML(i, chosenIndex){
-    const q = questions[i];
-    const chosenText = chosenIndex === null ? "(em branco)" : q.options[chosenIndex];
-    const correctText = q.options[q.correctIndex];
-    return `
-      <div class="item">
-        <div><strong>${i + 1}.</strong> ${escapeHtml(q.q)}</div>
-        <p class="k"><strong>Tópico:</strong> ${escapeHtml(q.topic)}</p>
-        <p class="k"><span class="bad">Sua resposta:</span> ${escapeHtml(chosenText)}</p>
-        <p class="k"><span class="ok">Resposta correta:</span> ${escapeHtml(correctText)}</p>
-      </div>
-    `;
+    finishBtn.disabled = true;
   }
 
   function finish(){
     const answers = getAnswers();
-
-    let correct = 0;
-    const correctIdxs = [];
-    const wrongIdxs = [];
+    let hits = 0;
+    const okIdx = [];
+    const badIdx = [];
 
     answers.forEach((ans, i) => {
-      if(ans !== null && ans === questions[i].correctIndex){
-        correct++;
-        correctIdxs.push(i);
+      if(ans !== null && ans === selected[i].correct){
+        hits++; okIdx.push(i);
       } else {
-        wrongIdxs.push(i);
+        badIdx.push(i);
       }
     });
 
-    const total = questions.length;
-    const pct = Math.round((correct / total) * 100);
+    const pct = Math.round((hits / selected.length) * 100);
+    scoreEl.textContent = `Resultado: ${hits}/8 (${pct}%)`;
 
-    scoreEl.innerHTML = `Resultado: ${correct}/${total} (${pct}%)<small>Veja abaixo as corretas e as erradas com o gabarito.</small>`;
+    correctList.innerHTML = okIdx.length ? okIdx.map(i => {
+      const q = selected[i];
+      const a = answers[i];
+      return `
+        <div class="item">
+          <div><strong>${i+1}.</strong> ${esc(q.q)}</div>
+          <p class="k"><strong>Tópico:</strong> ${esc(q.topic)}</p>
+          <p class="k"><span class="ok">Correta:</span> ${esc(q.options[a])}</p>
+        </div>
+      `;
+    }).join("") : `<p class="hint" style="margin:0;">Nenhuma correta.</p>`;
 
-    correctListEl.innerHTML = correctIdxs.length
-      ? correctIdxs.map(i => correctItemHTML(i, answers[i])).join("")
-      : `<p class="hint" style="margin:0;">Nenhuma correta nesta tentativa.</p>`;
-
-    wrongListEl.innerHTML = wrongIdxs.length
-      ? wrongIdxs.map(i => wrongItemHTML(i, answers[i])).join("")
-      : `<p class="hint" style="margin:0;">Nenhuma errada. Excelente.</p>`;
+    wrongList.innerHTML = badIdx.length ? badIdx.map(i => {
+      const q = selected[i];
+      const a = answers[i];
+      const your = (a === null) ? "(em branco)" : q.options[a];
+      const right = q.options[q.correct];
+      return `
+        <div class="item">
+          <div><strong>${i+1}.</strong> ${esc(q.q)}</div>
+          <p class="k"><strong>Tópico:</strong> ${esc(q.topic)}</p>
+          <p class="k"><span class="bad">Sua resposta:</span> ${esc(your)}</p>
+          <p class="k"><span class="ok">Resposta correta:</span> ${esc(right)}</p>
+        </div>
+      `;
+    }).join("") : `<p class="hint" style="margin:0;">Nenhuma errada. Excelente.</p>`;
 
     resultsEl.style.display = "block";
-    btnReset.style.display = "inline-block";
-    statusEl.textContent = "Correção concluída. Role para ver o relatório.";
-    statusEl.classList.remove("warn");
-
+    againBtn.style.display = "inline-block";
     disableAll();
-    resultsEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    resultsEl.scrollIntoView({behavior:"smooth", block:"start"});
   }
 
-  function reset(){
-    window.location.reload();
-  }
+  function again(){ location.reload(); }
 
-  btnFinish.addEventListener("click", finish);
-  btnReset.addEventListener("click", reset);
+  finishBtn.addEventListener("click", finish);
+  againBtn.addEventListener("click", again);
 
   render();
 </script>
 </body>
 </html>
+
