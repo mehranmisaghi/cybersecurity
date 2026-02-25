@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz — Geus 2003, Cap1</title>
+  <style>
+    :root { --ok:#0b6b2a; --bad:#8a1020; --muted:#555; --border:#ddd; }
+    body { font-family: Arial, Helvetica, sans-serif; margin: 24px; line-height: 1.35; }
+    header { margin-bottom: 18px; }
+    h1 { font-size: 20px; margin: 0 0 6px; }
+    .sub { color: var(--muted); margin: 0; }
+    .q { border: 1px solid var(--border); border-radius: 10px; padding: 14px 14px 10px; margin: 12px 0; }
+    .q h2 { font-size: 16px; margin: 0 0 10px; }
+    .opts { margin: 0; padding: 0; list-style: none; }
+    .opts li { margin: 8px 0; }
+    label { cursor: pointer; }
+    .actions { display: flex; gap: 10px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+    button { cursor: pointer; padding: 8px 12px; border: 1px solid #aaa; background: #f7f7f7; border-radius: 8px; }
+    button:hover { background: #efefef; }
+    .feedback { margin-top: 10px; padding: 10px; border-radius: 8px; display:none; }
+    .feedback.ok { display:block; background: #e8f6ee; color: var(--ok); border: 1px solid #bfe3cc; }
+    .feedback.bad { display:block; background: #fdecee; color: var(--bad); border: 1px solid #f3c0c6; }
+    .feedback.neutral { display:block; background: #f2f2f2; color: #222; border: 1px solid #ddd; }
+    .small { font-size: 12px; color: var(--muted); margin-top: 6px; }
+    .summary { margin-top: 18px; padding: 12px; border: 1px dashed #bbb; border-radius: 10px; }
+    .summary strong { display: inline-block; margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Quiz — Geus 2003, Cap1 </h1>
+    <p class="sub">Selecione uma alternativa por questão e clique em “Verificar”.</p>
+  </header>
+
+  <main id="quiz"></main>
+
+  <section class="summary" aria-live="polite">
+    <div><strong>Progresso:</strong> <span id="progress">0/10 verificadas</span></div>
+    <div><strong>Acertos:</strong> <span id="score">0</span></div>
+    <div class="small">Dica: você pode alterar uma resposta e verificar novamente.</div>
+    <div class="actions" style="margin-top:12px;">
+      <button type="button" id="checkAll">Verificar todas</button>
+      <button type="button" id="resetAll">Limpar tudo</button>
+    </div>
+  </section>
+
+  <script>
+    const questions = [
+      {
+        text: "Segundo o texto, quais são as três propriedades mais importantes para a segurança da informação?",
+        options: {
+          A: "Autenticidade, legalidade e auditabilidade",
+          B: "Disponibilidade, sigilo e integridade",
+          C: "Confidencialidade, usabilidade e desempenho",
+          D: "Redundância, escalabilidade e criptografia",
+          E: "Integridade, compatibilidade e mobilidade"
+        },
+        correct: "B"
+      },
+      {
+        text: "De acordo com o capítulo, a segurança deve ser vista principalmente como:",
+        options: {
+          A: "Um custo inevitável e sem retorno",
+          B: "Um conjunto de ferramentas para “pegar hackers”",
+          C: "Um elemento habilitador dos negócios",
+          D: "Uma atividade exclusiva da equipe de rede",
+          E: "Um recurso que substitui a gestão de riscos"
+        },
+        correct: "C"
+      },
+      {
+        text: "O texto afirma que acreditar que “um firewall resolve os problemas de segurança” é:",
+        options: {
+          A: "Uma boa prática recomendada para pequenas empresas",
+          B: "Uma verdade técnica, desde que haja antivírus",
+          C: "Um erro disseminado e perigoso",
+          D: "Uma exigência para ambientes cooperativos",
+          E: "Um mito que só vale para redes sem fio"
+        },
+        correct: "C"
+      },
+      {
+        text: "Segundo o capítulo, por que “segurança pela obscuridade” é arriscada?",
+        options: {
+          A: "Porque aumenta a largura de banda necessária",
+          B: "Porque depende de ninguém descobrir as brechas e os valores da rede",
+          C: "Porque impede o uso de VPN",
+          D: "Porque elimina a necessidade de autenticação",
+          E: "Porque reduz a produtividade dos usuários sempre"
+        },
+        correct: "B"
+      },
+      {
+        text: "No contexto do capítulo, afirmar que uma organização está “100% segura” é:",
+        options: {
+          A: "Correto, desde que haja IDS/IPS e PKI",
+          B: "Possível apenas em redes desconectadas da Internet",
+          C: "Um grande erro; não existe modelo à prova de hackers",
+          D: "Verdade se o orçamento de segurança for separado do de TI",
+          E: "Possível com segurança em camadas suficiente"
+        },
+        correct: "C"
+      },
+      {
+        text: "O texto cita que a evolução das vulnerabilidades e incidentes reportados é evidência de:",
+        options: {
+          A: "Estagnação das ameaças desde os anos 1990",
+          B: "Diminuição do risco conforme cresce a conectividade",
+          C: "Aumento do número de incidentes e vulnerabilidades ao longo do tempo",
+          D: "Que vírus deixaram de ser relevantes após 2001",
+          E: "Que apenas ataques internos importam"
+        },
+        correct: "C"
+      },
+      {
+        text: "Qual conjunto de fatores é citado como contribuinte para o aumento das vulnerabilidades?",
+        options: {
+          A: "Menor conectividade, padronização de tecnologias, menos atacantes",
+          B: "Competitividade e pressa, alta conectividade, mais atacantes, avanço tecnológico",
+          C: "Mais orçamento, mais firewalls, mais auditoria",
+          D: "Uso de mainframes, redes dedicadas, baixa integração",
+          E: "Criptografia forte, SSO, segmentação de rede"
+        },
+        correct: "B"
+      },
+      {
+        text: "Em relação à estratégia organizacional, o capítulo sugere que o objetivo deve ser:",
+        options: {
+          A: "Proteger totalmente os recursos a qualquer custo",
+          B: "Evitar qualquer medida que impacte usuários",
+          C: "Proteger ao máximo os recursos, assumindo riscos e planejando contingência",
+          D: "Focar apenas em tecnologia, pois processos humanos são irrelevantes",
+          E: "Depender apenas de mecanismos de perímetro"
+        },
+        correct: "C"
+      },
+      {
+        text: "Na abordagem “em camadas” (analogia da cebola), a principal vantagem é:",
+        options: {
+          A: "Eliminar a necessidade de monitoramento",
+          B: "Permitir que um único controle resolva tudo",
+          C: "Forçar o atacante a transpor múltiplas barreiras até alcançar a informação",
+          D: "Reduzir a complexidade ao mínimo possível",
+          E: "Garantir segurança total se houver camadas suficientes"
+        },
+        correct: "C"
+      },
+      {
+        text: "Sobre ambientes cooperativos, o texto caracteriza que eles:",
+        options: {
+          A: "Dependem de isolamento total entre organizações",
+          B: "Evitam integração para reduzir riscos",
+          C: "Conectam múltiplas organizações e tecnologias para eficiência, aumentando a complexidade de proteção",
+          D: "Eliminam a necessidade de políticas internas",
+          E: "Tornam a Internet um ambiente confiável por definição"
+        },
+        correct: "C"
+      }
+    ];
+
+    const quizEl = document.getElementById("quiz");
+    const progressEl = document.getElementById("progress");
+    const scoreEl = document.getElementById("score");
+
+    function render() {
+      quizEl.innerHTML = "";
+      questions.forEach((q, idx) => {
+        const qNum = idx + 1;
+        const wrapper = document.createElement("section");
+        wrapper.className = "q";
+        wrapper.dataset.index = idx;
+
+        const title = document.createElement("h2");
+        title.textContent = qNum + ") " + q.text;
+        wrapper.appendChild(title);
+
+        const ul = document.createElement("ul");
+        ul.className = "opts";
+
+        ["A","B","C","D","E"].forEach(letter => {
+          const li = document.createElement("li");
+
+          const id = `q${idx}_${letter}`;
+          li.innerHTML = `
+            <label for="${id}">
+              <input type="radio" name="q${idx}" id="${id}" value="${letter}" />
+              <strong>${letter})</strong> ${q.options[letter]}
+            </label>
+          `;
+          ul.appendChild(li);
+        });
+
+        wrapper.appendChild(ul);
+
+        const actions = document.createElement("div");
+        actions.className = "actions";
+        actions.innerHTML = `
+          <button type="button" data-action="check">Verificar</button>
+          <button type="button" data-action="clear">Limpar questão</button>
+        `;
+        wrapper.appendChild(actions);
+
+        const fb = document.createElement("div");
+        fb.className = "feedback";
+        fb.id = `fb${idx}`;
+        wrapper.appendChild(fb);
+
+        quizEl.appendChild(wrapper);
+      });
+      updateSummary();
+    }
+
+    function getSelected(idx) {
+      const checked = document.querySelector(`input[name="q${idx}"]:checked`);
+      return checked ? checked.value : null;
+    }
+
+    function setFeedback(idx, type, msg) {
+      const fb = document.getElementById(`fb${idx}`);
+      fb.className = "feedback " + type;
+      fb.textContent = msg;
+    }
+
+    function clearFeedback(idx) {
+      const fb = document.getElementById(`fb${idx}`);
+      fb.className = "feedback";
+      fb.textContent = "";
+      fb.style.display = "";
+    }
+
+    function clearQuestion(idx) {
+      const radios = document.querySelectorAll(`input[name="q${idx}"]`);
+      radios.forEach(r => r.checked = false);
+      clearFeedback(idx);
+      updateSummary();
+    }
+
+    function checkQuestion(idx) {
+      const selected = getSelected(idx);
+      const q = questions[idx];
+
+      if (!selected) {
+        setFeedback(idx, "neutral", "Selecione uma alternativa.");
+        updateSummary();
+        return;
+      }
+
+      if (selected === q.correct) {
+        setFeedback(idx, "ok", "Muito bem, acertou esta!");
+      } else {
+        const correctText = q.options[q.correct];
+        setFeedback(idx, "bad", `Errado. A alternativa correta é ${q.correct}) ${correctText}`);
+      }
+      updateSummary();
+    }
+
+    function updateSummary() {
+      let verified = 0;
+      let correctCount = 0;
+
+      questions.forEach((q, idx) => {
+        const fb = document.getElementById(`fb${idx}`);
+        const hasFeedback = fb && fb.textContent && fb.textContent.trim().length > 0;
+        if (hasFeedback && !fb.textContent.startsWith("Selecione")) verified++;
+
+        // Conta acerto só se há alternativa marcada e (marcada = correta)
+        const selected = getSelected(idx);
+        if (selected && selected === q.correct) correctCount++;
+      });
+
+      progressEl.textContent = `${verified}/10 verificadas`;
+      scoreEl.textContent = String(correctCount);
+    }
+
+    quizEl.addEventListener("click", (e) => {
+      const btn = e.target.closest("button");
+      if (!btn) return;
+
+      const section = e.target.closest(".q");
+      if (!section) return;
+
+      const idx = Number(section.dataset.index);
+      const action = btn.dataset.action;
+
+      if (action === "check") checkQuestion(idx);
+      if (action === "clear") clearQuestion(idx);
+    });
+
+    document.getElementById("checkAll").addEventListener("click", () => {
+      questions.forEach((_, idx) => checkQuestion(idx));
+    });
+
+    document.getElementById("resetAll").addEventListener("click", () => {
+      questions.forEach((_, idx) => clearQuestion(idx));
+    });
+
+    render();
+  </script>
+</body>
+</html>
