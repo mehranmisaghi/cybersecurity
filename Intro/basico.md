@@ -14,8 +14,7 @@ permalink: Intro/basico.md
 ## Os materiais de estudo desta aula
 
 - [Cap 1 a cap3 do Geus 2003](https://mehranmisaghi.github.io/cybersecurity/materiais/geus2003.pdf) 
-(<span style="color:red">Novo</span>)
-- [Teste os seus conhecimentos do Capítulo 1 de Geus 2003](https://mehranmisaghi.github.io/cybersecurity/Intro/cap1geus.html) 
+- [Teste os seus conhecimentos do Capítulo 1 de Geus 2003](https://mehranmisaghi.github.io/cybersecurity/Intro/cap1geus.html) <font color="red">Novo</font>
 - [Cap 1 do Kim 2018](https://mehranmisaghi.github.io/cybersecurity/materiais/kim2018-cap1.pdf)
 
 # Faça o trabalho proposto
