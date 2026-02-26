@@ -23,7 +23,7 @@ permalink: Intro/basico.md
 
 ## Você já fez isto da aula passada?
     - Cap 1 a cap3 do Geus 2003
-    - Quis do Cap 1
+    - Quiz do Cap 1
     - Cap 1 do Kim 2018
     - Trabalho em grupo
 
