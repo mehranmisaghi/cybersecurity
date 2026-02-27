@@ -69,3 +69,40 @@ Mas, onde se aplica a classificação?
 - Logs de eventos de autenticação: **Confidencial** 
 
 ---
+## Bora exercitar agora!
+
+Veja a necessidade de cada situação e classifique as informações
+---
+
+## Cenário 1 — Documentação de projeto
+Seu time quer publicar no GitHub uma página com a visão geral da arquitetura do sistema, incluindo:
+- nomes de serviços e responsabilidades
+- exemplos de carga de trabalho (sem dados reais)
+- nomes de times e ferramentas (dev/hml/prod)
+---
+
+## Cenário 2 — Planilha com dados de clientes
+Uma analista compartilha por e-mail uma planilha contendo:
+- nome completo
+- e-mail
+- telefone
+- data de nascimento
+- status de pagamento
+- observações de atendimento
+---
+
+## Cenário 3 — Credenciais e tokens
+Durante um incidente, alguém cola no chat do time:
+- um token de acesso (ainda válido) para uma API interna
+- um trecho de configuração contendo URL do serviço 
+- instruções rápidas para “testar” a chamada
+---
+
+## Cenário 4 — Resultados financeiros e estratégia
+Você vai apresentar em uma reunião um documento com:
+- receita mensal detalhada por produto
+- previsão de faturamento do próximo trimestre
+- custos por fornecedor
+- percentuais de reajuste de preços
+---
+
