@@ -21,7 +21,8 @@ permalink: Intro/basico.md
 
 
 ## Aula 3
-
+## [Slides da aula 3](https://www.canva.com/design/DAHCi2APjLU/KcYPKDI5Rth48-jVcsKDNQ/edit?utm_content=DAHCi2APjLU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+---
 ## Você já fez isto da aula passada?
     - Cap 1 a cap3 do Geus 2003
     - Quiz do Cap 1
