@@ -8,11 +8,11 @@ permalink: Intro/classificacao.md
 
 A ideia deste documento é auxiliar de forma bastante prática compreender a necessidade e forma de **classificar a informação**. pois:
 
-    Conforme a NBR ISO/IEC 27002:2022: "Convém que as informações sejam classificadas de acordo com as necessidades de segurança da informação da organização com base na confidencialidade, integridade, disponibilidade e requisitos relevantes das partes interessadas". 
+- Conforme a NBR ISO/IEC 27002:2022: "Convém que as informações sejam classificadas de acordo com as necessidades de segurança da informação da organização com base na confidencialidade, integridade, disponibilidade e requisitos relevantes das partes interessadas". 
 
 Mas, onde se aplica a classificação?
 
-    A classificação deve ser aplicada a qualquer informação produzida, recebida ou mantida pelo time (documentos, planilhas, e-mails, tickets, logs, dumps, backups, prints, repositórios, anexos, etc.).
+ - A classificação deve ser aplicada a qualquer informação produzida, recebida ou mantida pelo time (documentos, planilhas, e-mails, tickets, logs, dumps, backups, prints, repositórios, anexos, etc.).
 
 ---
 
