@@ -33,7 +33,7 @@ permalink: Intro/basico.md
 
 ## Aula 4 (talvez)
 - Continuação de Conceitos Básicos
-- Classificação da Informação - colocar material de callsificação
+[Classificação da informação](classificacao.md)
 
 - Vírus e malware
 ## Free Resource for Keyloggers & Spyware
