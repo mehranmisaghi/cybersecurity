@@ -1,6 +1,8 @@
 # Frameworks de Segurança da Informação
 Frameworks de Segurança da Informação podem ser definidas como estruturas padronizadas contendo diretrizes, melhores práticas e controles que ajudam organizações a gerenciar riscos cibernéticos, proteger dados, prevenir, detectar e responder a ameaças, estabelecendo um caminho sistemático para a segurança e conformidade. Eles funcionam como guias que permitem identificar lacunas, implementar políticas e melhorar a postura de segurança:
 - ISO/IEC 27001
+
+- [Framework, Guias e Modelos do Programa de Privacidade e Segurança da Informação (PPSI) do Governo Federal](https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/framework-guias-e-modelos)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [CIS Control](https://www.cisecurity.org/)
 - [Cybersecurity Maturity Model Certification (CMMC) Program](https://www.federalregister.gov/)
