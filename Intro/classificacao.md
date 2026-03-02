@@ -3,7 +3,9 @@ title: 'Classificação das informações'
 description: 'Fundamenetos de classificação da informação'
 permalink: Intro/classificacao.md
 ---
-   
+### Slides da Aula 4 - Classificação da Informação
+[Slides da Aula](https://www.canva.com/design/DAHCv6Aoqe0/IucrLr2soN37fIhR3oikFw/edit?utm_content=DAHCv6Aoqe0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+)   
 # Classificação da Informação
 
 A ideia deste documento é auxiliar de forma bastante prática compreender a necessidade e forma de **classificar a informação**. pois:

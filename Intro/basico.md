@@ -34,7 +34,6 @@ permalink: Intro/basico.md
     - Vamos ver diversas formas de coleta
 ---
 ## Aula 4 
-- Continuação de Conceitos Básicos
 [Classificação da informação](classificacao.md)
 ---
 ## Aula 5 (talvez)
