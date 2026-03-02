@@ -34,8 +34,8 @@ permalink: Intro/basico.md
 ## Mapas de ataques cibernéticos
 - [Mapa de Ataques Cibernéticos em Tempo Real - Claranet](https://www.claranet.com/br/blog/mapa-ciberataques-mundial-online)
     - Vamos ver diversas formas de coleta
-- [World Monitor]((https://worldmonitor.app)
-)
+- [World Monitor](https://worldmonitor.app)
+
 ---
 ## Aula 4 
 [Classificação da informação](classificacao.md)
