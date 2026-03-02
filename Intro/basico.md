@@ -17,10 +17,10 @@ permalink: Intro/basico.md
 - [Teste os seus conhecimentos do Capítulo 1 de Geus 2003](https://mehranmisaghi.github.io/cybersecurity/Intro/cap1geus.html) 
 - [Cap 1 do Kim 2018](https://mehranmisaghi.github.io/cybersecurity/materiais/kim2018-cap1.pdf)
 
-# Faça o trabalho proposto
+## Faça o trabalho proposto
 
 
-## Aula 3
+## Aula 3 - Continuação dos conceitos básicos
 ## [Slides da aula 3](https://www.canva.com/design/DAHCi2APjLU/KcYPKDI5Rth48-jVcsKDNQ/edit?utm_content=DAHCi2APjLU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ---
 ## Você já fez isto da aula passada?
@@ -30,8 +30,12 @@ permalink: Intro/basico.md
     - Trabalho em grupo
 
 - Vamos comentar sobre o trabalho em grupo.
-- [Mapa de Ataques Cibernéticos em Tempo Real](https://www.claranet.com/br/blog/mapa-ciberataques-mundial-online):
+---
+## Mapas de ataques cibernéticos
+- [Mapa de Ataques Cibernéticos em Tempo Real - Claranet](https://www.claranet.com/br/blog/mapa-ciberataques-mundial-online)
     - Vamos ver diversas formas de coleta
+- [World Monitor]((https://worldmonitor.app)
+)
 ---
 ## Aula 4 
 [Classificação da informação](classificacao.md)
