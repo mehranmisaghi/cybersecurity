@@ -4,7 +4,7 @@ description: 'Introdução a SI por meio de panorama real'
 permalink: /intro.md
 ---
 
-# Aual 1 - Introdução a SI
+# Aula 1 - Introdução a SI
 Repositório para material didático de cibersegurança
 ### Fundamentos de Segurança
 ### E para começar bem o ano começamos com as tendências de cibersegurança para 2026
