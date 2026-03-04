@@ -1,3 +1,12 @@
+---
+title: 'Vírus e Malware'
+description: 'Tipos de malware'
+permalink: Intro/virus.md
+---
+
+# Conceitos Básicos de Segurança e Cibersegurança
+
+## Aula 5 - Vírus e Malware
 # Tipos de Malware 
 
 Com auxílio de IA, este texto tem por objetivo apresentar 8 categorias comuns de _malware_.
@@ -59,3 +68,17 @@ Software malicioso (ou potencialmente indesejado) que exibe anúncios invasivos,
 Malware que altera configurações do navegador (homepage, mecanismo de busca, extensões), injeta anúncios e redireciona buscas. Pode forçar instalação de extensões maliciosas. Exemplo [ChromeLoader](https://unit42.paloaltonetworks.com/chromeloader-malware/)
 
 ---
+
+# Bora trabalhar!
+Coloque algumas ferramentas gratuitas para detecção/remoção de malware.
+
+## Algumas ferramentas de detecção/remoção de malware
+- [Malwarebytes Free](https://www.malwarebytes.com/mwb-download)
+- [Avast Free Antivirus](https://www.avast.com/free-antivirus-download)
+- [Sophos Home Free: Keylogger detection and removal for Macs and PCs.](https://home.sophos.com)
+-[Kaspersky Virus Removal Tool](https://www.kaspersky.com/downloads/free-virus-removal-tool)
+- [AVG Antivirus Free: Fast, lightweight spyware scanner and detector](https://www.avg.com/en/signal/anti-spyware-tool)
+---
+## O que deve ser feito?
+- Reunir em grupos de 5 componentes, escolher uma das ferramentas para apresentar e comparar a ferramenta escolhida com as demais ferraemntas desta lista.
+- Caso queira utilizar outra ferramentas para apresentar, pode falar comigo a respeito disso *antes*.
