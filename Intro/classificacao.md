@@ -107,4 +107,5 @@ Você vai apresentar em uma reunião um documento com:
 - custos por fornecedor
 - percentuais de reajuste de preços
 ---
-
+# Bora Trabalhar!
+- Fazer os exercícios citados no slide da aula
