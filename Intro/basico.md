@@ -42,7 +42,7 @@ permalink: Intro/basico.md
 [Classificação da informação](classificacao.md)
 
 ---
-## Aula 5 (talvez)
+## Aula 5 
 
 [Vírus e malware](virus.md)
 
