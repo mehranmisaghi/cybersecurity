@@ -11,4 +11,3 @@ Frameworks de Segurança da Informação podem ser definidas como estruturas pad
 - [NIST 800-53 r5](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf)
 [Framework de Privacidade e Segurança da Informação (SGD/MGI)](https://www.gov.br/governodigital/pt-br/privacidade-e-seguranca/ppsi/guia_framework_psi.pdf)
 - [NIST versus CIS](https://novared.com.br/wp-content/uploads/2025/11/EBook-NovaRed-Jornada-de-Ciberseguranca.pdf)
-
