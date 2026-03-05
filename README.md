@@ -28,9 +28,9 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 
 [Normas e Frameworks de Segurança da Informação (09/03/2026 - 16/03/2026)](Frameworks/27000.md)
   - Normas relacionados com a SI:
-    - 27001, 27002, 27005
+    - [27001, 27002, 27005](Frameworks/27000.md)
   - Normas relacionadas com a PI e LGPD:
-    - 27701
+    - [27701](Frameworks/27701.md)
   - Frameworks mais comuns:
     - CIS
     - CMM
