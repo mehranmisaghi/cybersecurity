@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br"><div style="
+      all: initial!important;
+      z-index: 2147483647!important;
+      width: auto!important;
+      position: fixed!important;
+      bottom: 16px!important;
+      left: 16px!important;
+    "><template shadowrootmode="open"><style type="text/css">
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.snackbar-container {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 14px;
+  z-index: 2147483647;
+
+  .snackbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #322F35;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 14px 16px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: snackbar-opening 0.25s ease-in-out forwards;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+
+    &:not(.active) {
+      animation-name: snackbar-closing;
+      animation-duration: 0.35s;
+    }
+
+    .t-message {
+      color: #F5EFF7;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.28px;
+    }
+  }
+}
+
+@keyframes snackbar-opening {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes snackbar-closing {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  75% {
+    max-height: 30px;
+    padding: 16px;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    max-height: 0;
+    padding: 0;
+    transform: translateY(100%);
+  }
+}
+</style><div class="snackbar-container"></div></template><style type="text/css">
+@font-face {
+  font-family: 'Roboto';
+  src: url("chrome-extension://pogjckjponckompmmfngpcpkfggnnafi/assets/Roboto-Regular.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+</style></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>:root{--litepicker-container-months-color-bg: #fff;--litepicker-container-months-box-shadow-color: #ddd;--litepicker-footer-color-bg: #fafafa;--litepicker-footer-box-shadow-color: #ddd;--litepicker-tooltip-color-bg: #fff;--litepicker-month-header-color: #333;--litepicker-button-prev-month-color: #9e9e9e;--litepicker-button-next-month-color: #9e9e9e;--litepicker-button-prev-month-color-hover: #2196f3;--litepicker-button-next-month-color-hover: #2196f3;--litepicker-month-width: calc(var(--litepicker-day-width) * 7);--litepicker-month-weekday-color: #9e9e9e;--litepicker-month-week-number-color: #9e9e9e;--litepicker-day-width: 38px;--litepicker-day-color: #333;--litepicker-day-color-hover: #2196f3;--litepicker-is-today-color: #f44336;--litepicker-is-in-range-color: #bbdefb;--litepicker-is-locked-color: #9e9e9e;--litepicker-is-start-color: #fff;--litepicker-is-start-color-bg: #2196f3;--litepicker-is-end-color: #fff;--litepicker-is-end-color-bg: #2196f3;--litepicker-button-cancel-color: #fff;--litepicker-button-cancel-color-bg: #9e9e9e;--litepicker-button-apply-color: #fff;--litepicker-button-apply-color-bg: #2196f3;--litepicker-button-reset-color: #909090;--litepicker-button-reset-color-hover: #2196f3;--litepicker-highlighted-day-color: #333;--litepicker-highlighted-day-color-bg: #ffeb3b}.show-week-numbers{--litepicker-month-width: calc(var(--litepicker-day-width) * 8)}.litepicker{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;font-size:0.8em;display:none}.litepicker button{border:none;background:none}.litepicker .container__main{display:-webkit-box;display:-ms-flexbox;display:flex}.litepicker .container__months{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;background-color:var(--litepicker-container-months-color-bg);border-radius:5px;-webkit-box-shadow:0 0 5px var(--litepicker-container-months-box-shadow-color);box-shadow:0 0 5px var(--litepicker-container-months-box-shadow-color);width:calc(var(--litepicker-month-width) + 10px);-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__months.columns-2{width:calc((var(--litepicker-month-width) * 2) + 20px)}.litepicker .container__months.columns-3{width:calc((var(--litepicker-month-width) * 3) + 30px)}.litepicker .container__months.columns-4{width:calc((var(--litepicker-month-width) * 4) + 40px)}.litepicker .container__months.split-view .month-item-header .button-previous-month,.litepicker .container__months.split-view .month-item-header .button-next-month{visibility:visible}.litepicker .container__months .month-item{padding:5px;width:var(--litepicker-month-width);-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__months .month-item-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-weight:500;padding:10px 5px;text-align:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:var(--litepicker-month-header-color)}.litepicker .container__months .month-item-header div{-webkit-box-flex:1;-ms-flex:1;flex:1}.litepicker .container__months .month-item-header div>.month-item-name{margin-right:5px}.litepicker .container__months .month-item-header div>.month-item-year{padding:0}.litepicker .container__months .month-item-header .reset-button{color:var(--litepicker-button-reset-color)}.litepicker .container__months .month-item-header .reset-button>svg{fill:var(--litepicker-button-reset-color)}.litepicker .container__months .month-item-header .reset-button *{pointer-events:none}.litepicker .container__months .month-item-header .reset-button:hover{color:var(--litepicker-button-reset-color-hover)}.litepicker .container__months .month-item-header .reset-button:hover>svg{fill:var(--litepicker-button-reset-color-hover)}.litepicker .container__months .month-item-header .button-previous-month,.litepicker .container__months .month-item-header .button-next-month{visibility:hidden;text-decoration:none;padding:3px 5px;border-radius:3px;-webkit-transition:color 0.3s, border 0.3s;transition:color 0.3s, border 0.3s;cursor:default}.litepicker .container__months .month-item-header .button-previous-month *,.litepicker .container__months .month-item-header .button-next-month *{pointer-events:none}.litepicker .container__months .month-item-header .button-previous-month{color:var(--litepicker-button-prev-month-color)}.litepicker .container__months .month-item-header .button-previous-month>svg,.litepicker .container__months .month-item-header .button-previous-month>img{fill:var(--litepicker-button-prev-month-color)}.litepicker .container__months .month-item-header .button-previous-month:hover{color:var(--litepicker-button-prev-month-color-hover)}.litepicker .container__months .month-item-header .button-previous-month:hover>svg{fill:var(--litepicker-button-prev-month-color-hover)}.litepicker .container__months .month-item-header .button-next-month{color:var(--litepicker-button-next-month-color)}.litepicker .container__months .month-item-header .button-next-month>svg,.litepicker .container__months .month-item-header .button-next-month>img{fill:var(--litepicker-button-next-month-color)}.litepicker .container__months .month-item-header .button-next-month:hover{color:var(--litepicker-button-next-month-color-hover)}.litepicker .container__months .month-item-header .button-next-month:hover>svg{fill:var(--litepicker-button-next-month-color-hover)}.litepicker .container__months .month-item-weekdays-row{display:-webkit-box;display:-ms-flexbox;display:flex;justify-self:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;color:var(--litepicker-month-weekday-color)}.litepicker .container__months .month-item-weekdays-row>div{padding:5px 0;font-size:85%;-webkit-box-flex:1;-ms-flex:1;flex:1;width:var(--litepicker-day-width);text-align:center}.litepicker .container__months .month-item:first-child .button-previous-month{visibility:visible}.litepicker .container__months .month-item:last-child .button-next-month{visibility:visible}.litepicker .container__months .month-item.no-previous-month .button-previous-month{visibility:hidden}.litepicker .container__months .month-item.no-next-month .button-next-month{visibility:hidden}.litepicker .container__days{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;justify-self:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:center;-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__days>div,.litepicker .container__days>a{padding:5px 0;width:var(--litepicker-day-width)}.litepicker .container__days .day-item{color:var(--litepicker-day-color);text-align:center;text-decoration:none;border-radius:3px;-webkit-transition:color 0.3s, border 0.3s;transition:color 0.3s, border 0.3s;cursor:default}.litepicker .container__days .day-item:hover{color:var(--litepicker-day-color-hover);-webkit-box-shadow:inset 0 0 0 1px var(--litepicker-day-color-hover);box-shadow:inset 0 0 0 1px var(--litepicker-day-color-hover)}.litepicker .container__days .day-item.is-today{color:var(--litepicker-is-today-color)}.litepicker .container__days .day-item.is-locked{color:var(--litepicker-is-locked-color)}.litepicker .container__days .day-item.is-locked:hover{color:var(--litepicker-is-locked-color);-webkit-box-shadow:none;box-shadow:none;cursor:default}.litepicker .container__days .day-item.is-in-range{background-color:var(--litepicker-is-in-range-color);border-radius:0}.litepicker .container__days .day-item.is-start-date{color:var(--litepicker-is-start-color);background-color:var(--litepicker-is-start-color-bg);border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:0;border-bottom-right-radius:0}.litepicker .container__days .day-item.is-start-date.is-flipped{border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-end-date{color:var(--litepicker-is-end-color);background-color:var(--litepicker-is-end-color-bg);border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-end-date.is-flipped{border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:0;border-bottom-right-radius:0}.litepicker .container__days .day-item.is-start-date.is-end-date{border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-highlighted{color:var(--litepicker-highlighted-day-color);background-color:var(--litepicker-highlighted-day-color-bg)}.litepicker .container__days .week-number{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:var(--litepicker-month-week-number-color);font-size:85%}.litepicker .container__footer{text-align:right;padding:10px 5px;margin:0 5px;background-color:var(--litepicker-footer-color-bg);-webkit-box-shadow:inset 0px 3px 3px 0px var(--litepicker-footer-box-shadow-color);box-shadow:inset 0px 3px 3px 0px var(--litepicker-footer-box-shadow-color);border-bottom-left-radius:5px;border-bottom-right-radius:5px}.litepicker .container__footer .preview-date-range{margin-right:10px;font-size:90%}.litepicker .container__footer .button-cancel{background-color:var(--litepicker-button-cancel-color-bg);color:var(--litepicker-button-cancel-color);border:0;padding:3px 7px 4px;border-radius:3px}.litepicker .container__footer .button-cancel *{pointer-events:none}.litepicker .container__footer .button-apply{background-color:var(--litepicker-button-apply-color-bg);color:var(--litepicker-button-apply-color);border:0;padding:3px 7px 4px;border-radius:3px;margin-left:10px;margin-right:10px}.litepicker .container__footer .button-apply:disabled{opacity:0.7}.litepicker .container__footer .button-apply *{pointer-events:none}.litepicker .container__tooltip{position:absolute;margin-top:-4px;padding:4px 8px;border-radius:4px;background-color:var(--litepicker-tooltip-color-bg);-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.25);box-shadow:0 1px 3px rgba(0,0,0,0.25);white-space:nowrap;font-size:11px;pointer-events:none;visibility:hidden}.litepicker .container__tooltip:before{position:absolute;bottom:-5px;left:calc(50% - 5px);border-top:5px solid rgba(0,0,0,0.12);border-right:5px solid transparent;border-left:5px solid transparent;content:""}.litepicker .container__tooltip:after{position:absolute;bottom:-4px;left:calc(50% - 4px);border-top:4px solid var(--litepicker-tooltip-color-bg);border-right:4px solid transparent;border-left:4px solid transparent;content:""}
+</style>
+    
+    <title>Questionário ISO/IEC 27001, 27002, 27005 e 27701</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; background: #f8f8f8; padding: 30px; border-radius: 10px; }
+        h1 { text-align: center; }
+        .question { margin-bottom: 25px; padding: 15px; background: #fff; border-radius: 6px; }
+        button { margin-top: 15px; padding: 8px 24px; }
+        .result { font-weight: bold; margin-top: 10px; }
+        .feedback { font-style: italic; margin-top: 5px; }
+        .correct { color: green; }
+        .incorrect { color: red; }
+    </style>
+<meta id="dcngeagmmhegagicpcmpinaoklddcgon"><link href="./27000q_files/css2" rel="stylesheet"></head>
+<body>
+    <h1>Teste os seus conhecimentos sobre as normas estudadas!</h1>
+    <form id="quizForm">
+        <!-- PERGUNTAS -->
+        <div class="question">
+            1) Qual norma tem foco principal na criação de um Sistema de Gestão de Segurança da Informação (SGSI)?<br>
+            <input type="radio" name="q1" value="A"> A) ISO/IEC 27001<br>
+            <input type="radio" name="q1" value="B"> B) ISO/IEC 27005<br>
+            <input type="radio" name="q1" value="C"> C) ISO/IEC 27701<br>
+            <input type="radio" name="q1" value="D"> D) ISO/IEC 27002<br>
+            <div class="result" id="r1"></div>
+        </div>
+        <div class="question">
+            2) Qual das normas detalha controles práticos divididos nas categorias organizacional, pessoas, físicos e tecnológicos?<br>
+            <input type="radio" name="q2" value="A"> A) ISO/IEC 27001<br>
+            <input type="radio" name="q2" value="B"> B) ISO/IEC 27002<br>
+            <input type="radio" name="q2" value="C"> C) ISO/IEC 27005<br>
+            <input type="radio" name="q2" value="D"> D) ISO/IEC 27701<br>
+            <div class="result" id="r2"></div>
+        </div>
+        <div class="question">
+            3) Qual norma traz diretrizes específicas para a gestão de riscos de segurança da informação?<br>
+            <input type="radio" name="q3" value="A"> A) ISO/IEC 27002<br>
+            <input type="radio" name="q3" value="B"> B) ISO/IEC 27701<br>
+            <input type="radio" name="q3" value="C"> C) ISO/IEC 27001<br>
+            <input type="radio" name="q3" value="D"> D) ISO/IEC 27005<br>
+            <div class="result" id="r3"></div>
+        </div>
+        <div class="question">
+            4) Qual destas normas serve como uma extensão da 27001 para proteção de dados pessoais e privacidade?<br>
+            <input type="radio" name="q4" value="A"> A) ISO/IEC 27002<br>
+            <input type="radio" name="q4" value="B"> B) ISO/IEC 27701<br>
+            <input type="radio" name="q4" value="C"> C) ISO/IEC 27005<br>
+            <input type="radio" name="q4" value="D"> D) ISO/IEC 27003<br>
+            <div class="result" id="r4"></div>
+        </div>
+        <div class="question">
+            5) Qual documento deve ser consultado para definir políticas e boas práticas para controles de segurança da informação?<br>
+            <input type="radio" name="q5" value="A"> A) ISO/IEC 27002<br>
+            <input type="radio" name="q5" value="B"> B) ISO/IEC 27701<br>
+            <input type="radio" name="q5" value="C"> C) ISO/IEC 27005<br>
+            <input type="radio" name="q5" value="D"> D) ISO/IEC 27004<br>
+            <div class="result" id="r5"></div>
+        </div>
+        <div class="question">
+            6) Sobre a ISO/IEC 27005, marque a alternativa correta:<br>
+            <input type="radio" name="q6" value="A"> A) Define controles obrigatórios de segurança<br>
+            <input type="radio" name="q6" value="B"> B) Fornece orientações para gestão de riscos<br>
+            <input type="radio" name="q6" value="C"> C) Estabelece papéis de controladores de dados<br>
+            <input type="radio" name="q6" value="D"> D) Aplica-se apenas a bancos de dados<br>
+            <div class="result" id="r6"></div>
+        </div>
+        <div class="question">
+            7) Qual controle é reforçado pela 27701, mas não detalhado originalmente na 27001?<br>
+            <input type="radio" name="q7" value="A"> A) Backup de dados<br>
+            <input type="radio" name="q7" value="B"> B) Consentimento de uso de dados pessoais<br>
+            <input type="radio" name="q7" value="C"> C) Classificação da informação<br>
+            <input type="radio" name="q7" value="D"> D) Gestão de incidentes<br>
+            <div class="result" id="r7"></div>
+        </div>
+        <div class="question">
+            8) A responsabilidade pelo atendimento à solicitação de acesso de titulares de dados é reforçada em:<br>
+            <input type="radio" name="q8" value="A"> A) ISO/IEC 27001<br>
+            <input type="radio" name="q8" value="B"> B) ISO/IEC 27701<br>
+            <input type="radio" name="q8" value="C"> C) ISO/IEC 27005<br>
+            <input type="radio" name="q8" value="D"> D) ISO/IEC 27002<br>
+            <div class="result" id="r8"></div>
+        </div>
+        <div class="question">
+            9) Um exemplo de controle físico sugerido na 27002 é:<br>
+            <input type="radio" name="q9" value="A"> A) Eliminação segura de mídias<br>
+            <input type="radio" name="q9" value="B"> B) Revisão de contratos de fornecedores<br>
+            <input type="radio" name="q9" value="C"> C) Processo de consentimento para titulares<br>
+            <input type="radio" name="q9" value="D"> D) Análise de risco<br>
+            <div class="result" id="r9"></div>
+        </div>
+        <div class="question">
+            10) A análise de impacto e probabilidade de riscos é etapa central de qual norma?<br>
+            <input type="radio" name="q10" value="A"> A) ISO/IEC 27005<br>
+            <input type="radio" name="q10" value="B"> B) ISO/IEC 27002<br>
+            <input type="radio" name="q10" value="C"> C) ISO/IEC 27701<br>
+            <input type="radio" name="q10" value="D"> D) ISO/IEC 27003<br>
+            <div class="result" id="r10"></div>
+        </div>
+        <div class="question">
+            11) O conceito de "privacidade by design" é mencionado explicitamente na:<br>
+            <input type="radio" name="q11" value="A"> A) ISO/IEC 27003<br>
+            <input type="radio" name="q11" value="B"> B) ISO/IEC 27701<br>
+            <input type="radio" name="q11" value="C"> C) ISO/IEC 27002<br>
+            <input type="radio" name="q11" value="D"> D) ISO/IEC 27001<br>
+            <div class="result" id="r11"></div>
+        </div>
+        <div class="question">
+            12) Sobre a ISO/IEC 27001, escolha a afirmativa correta:<br>
+            <input type="radio" name="q12" value="A"> A) Não pode ser certificada<br>
+            <input type="radio" name="q12" value="B"> B) É aplicável apenas a empresas de TI<br>
+            <input type="radio" name="q12" value="C"> C) Foca em requisitos e gestão de SGSI<br>
+            <input type="radio" name="q12" value="D"> D) Não exige melhoria contínua<br>
+            <div class="result" id="r12"></div>
+        </div>
+        <div class="question">
+            13) A gestão de ativos, um dos temas presentes na 27002, trata de:<br>
+            <input type="radio" name="q13" value="A"> A) Exclusivamente computadores<br>
+            <input type="radio" name="q13" value="B"> B) Todos os bens de informação (hardware, software, dados etc.)<br>
+            <input type="radio" name="q13" value="C"> C) Apenas mídias removíveis<br>
+            <input type="radio" name="q13" value="D"> D) Só pessoas<br>
+            <div class="result" id="r13"></div>
+        </div>
+        <div class="question">
+            14) Para considerar compliance com a LGPD utilizando normas internacionais, especialmente para proteção e direitos do titular, a empresa deve adotar:<br>
+            <input type="radio" name="q14" value="A"> A) Apenas ISO/IEC 27005<br>
+            <input type="radio" name="q14" value="B"> B) ISO/IEC 27701 junto com 27001/27002<br>
+            <input type="radio" name="q14" value="C"> C) Somente ISO/IEC 27001<br>
+            <input type="radio" name="q14" value="D"> D) Qualquer ISO<br>
+            <div class="result" id="r14"></div>
+        </div>
+        <div class="question">
+            15) O monitoramento contínuo dos controles técnicos implementados é abordado detalhadamente na:<br>
+            <input type="radio" name="q15" value="A"> A) ISO/IEC 27001<br>
+            <input type="radio" name="q15" value="B"> B) ISO/IEC 27701<br>
+            <input type="radio" name="q15" value="C"> C) ISO/IEC 27002<br>
+            <input type="radio" name="q15" value="D"> D) ISO/IEC 27005<br>
+            <div class="result" id="r15"></div>
+        </div>
+        <button type="button" onclick="verificarRespostas()">Verificar Respostas</button>
+    </form>
+    <div id="notaFinal"></div>
+
+<script>
+const gabarito = ['A','B','D','B','A','B','B','B','A','A','B','C','B','B','C'];
+const explicacoes = [
+    'A ISO/IEC 27001 traz o SGSI como principal foco.',
+    'A 27002 detalha controles práticos em 4 categorias.',
+    'A 27005 é a norma de gestão de riscos.',
+    'A 27701 é uma extensão da 27001 para privacidade.',
+    'A 27002 trata de boas práticas e controles de segurança.',
+    'A 27005 provê diretrizes para gestão de riscos.',
+    'Consentimento é tema ampliado e detalhado na 27701.',
+    'A 27701 reforça o atendimento ao titular de dados.',
+    'Eliminação segura é um exemplo de controle físico da 27002.',
+    'A análise de impacto/probabilidade é central na 27005.',
+    'Privacidade by design é explícita na 27701.',
+    'A 27001 define os requisitos para o SGSI.',
+    'Gestão de ativos cobre todos os bens da informação.',
+    'Para compliance LGPD é indicada a 27701 com a 27001/02.',
+    'A 27002 aborda o monitoramento técnico detalhadamente.'
+];
+
+function verificarRespostas() {
+    let acertos = 0;
+    for(let i=1; i<=15; i++){
+        let radios = document.getElementsByName('q'+i);
+        let marcado = null;
+        for(let j=0; j<radios.length; j++){
+            if(radios[j].checked){ marcado = radios[j].value; break; }
+        }
+        let resposta = gabarito[i-1];
+        let resultDiv = document.getElementById('r'+i);
+        if(marcado === resposta){
+            resultDiv.innerHTML = '<span class="correct">Acertou!</span> <span class="feedback">'+explicacoes[i-1]+'</span>';
+            acertos++;
+        }else{
+            if(marcado === null){
+                resultDiv.innerHTML = '<span class="incorrect">Não respondida.</span> <span class="feedback">'+explicacoes[i-1]+'</span>';
+            }else{
+                resultDiv.innerHTML = '<span class="incorrect">Errou.</span> <span class="feedback">'+explicacoes[i-1]+'</span>';
+            }
+        }
+    }
+    document.getElementById('notaFinal').innerHTML = '<h2>Você acertou '+acertos+' de 15 questões.</h2>';
+}
+</script>
+
+
+</body><div><template shadowrootmode="closed"><div><main><div class="sc-1uwbbvd-0 cTwtgP"></div></main><style data-styled="active" data-styled-version="6.1.12"></style></div></template></div></html>
