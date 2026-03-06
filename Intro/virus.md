@@ -15,6 +15,7 @@ permalink: Intro/virus.md
 
 Com auxílio de IA, este texto tem por objetivo apresentar 8 categorias comuns de _malware_.
 
+
 ---
 
 ## 1) Ransomware
