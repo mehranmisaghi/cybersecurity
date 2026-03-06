@@ -4,7 +4,7 @@ description: 'CIS Controls'
 permalink: Frameworks/cis.md
 ---
 ## Aula 7/8
--  [Slides da aula]()
+-  [Slides da aula](https://www.canva.com/design/DAHDMp_9M84/KVOfEr_28jo3HMMhKjVYwA/edit?utm_content=DAHDMp_9M84&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - Material abaixo foi criado e revisado com auxílio de IA.
 
 ## CIS Controls
