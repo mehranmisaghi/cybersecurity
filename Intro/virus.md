@@ -7,7 +7,11 @@ permalink: Intro/virus.md
 # Conceitos Básicos de Segurança e Cibersegurança
 
 ## Aula 5 - Vírus e Malware
-# Tipos de Malware 
+
+## Materiais para Estudar
+- [Slides da aula](https://www.canva.com/design/DAHDMLdOLdo/14NILJ6pwX8upQNZWxUqpA/edit?utm_content=DAHDMLdOLdo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+## Tipos de Malware 
 
 Com auxílio de IA, este texto tem por objetivo apresentar 8 categorias comuns de _malware_.
 
