@@ -32,7 +32,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Normas relacionadas com a PI e LGPD:
     - [27701](Frameworks/27701.md)
   - Frameworks mais comuns:
-    - CIS
+    - [CIS](Frameworks/cis.md)
     - CMM
     - NIST Cybersecurity Framework
     - NIST 800-53 r5
