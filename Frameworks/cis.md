@@ -104,5 +104,5 @@ São ligados à governança e ao gerenciamento dos processos de segurança.
 
 ---
 
-# [Bora trabalhar!](materiais/ciscontrolq.html)
+# [Bora trabalhar!]((https://mehranmisaghi.github.io/cybersecurity/materiais/ciscontrolq.html)
 
