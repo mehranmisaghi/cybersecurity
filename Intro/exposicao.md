@@ -11,7 +11,7 @@ permalink: Intro/exposicao.md
 ---
 # Vazamento de E-mails e Senhas
 
-O seus credenciais possibilitam acessar dados em *seu nome*. É muito importante saber da eficácia e possiblidade de vazamento da sua conta de e-mail, bem como a senha que você utiliza.
+- **O seus credenciais possibilitam acessar dados em *seu nome*. É muito importante saber da eficácia e possiblidade de vazamento da sua conta de e-mail, bem como a senha que você utiliza.**
 ---
 
 ## **Alguns serviços de verificação de vazamento de e-mail**
@@ -39,3 +39,6 @@ O seus credenciais possibilitam acessar dados em *seu nome*. É muito importante
  Verifica a foraça da senha e se houve exposição em bancos de dados vazados.
 
 ---
+## Bora trabalhar um pouco
+- Verifique os seus credenciais nas ferramentas citadas. A resposta será sempre a mesma? Justifique a sua resposta.
+- Baseada na resposta obtida na ferramenta, o que deve ser feito?
