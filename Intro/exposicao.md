@@ -4,10 +4,10 @@ description: 'Exposição de senhas/e-mails'
 permalink: Intro/exposicao.md
 ---
 
-## Aula 6 - Vazamento de senhas/e-mails
+## Aula 5.1 - Vazamento de senhas/e-mails
 
 ## Materiais para Estudar
-- [Slides da aula]()
+- [Slides da aula](https://www.canva.com/design/DAHDfl_7Cw4/TxSEIdjHRZ_nccYM95s2VA/edit?utm_content=DAHDfl_7Cw4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ---
 # Vazamento de E-mails e Senhas
 
