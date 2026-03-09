@@ -28,9 +28,6 @@ O seus credenciais possibilitam acessar dados em *seu nome*. É muito importante
 - [**BreachDirectory**](https://breachdirectory.org/)  
   Busca rápida por e-mail em múltiplas bases públicas de dados vazados.
 
-- [**BreachAlarm**](https://breachalarm.com/)  
-  Consulta se o e-mail já apareceu em vazamentos públicos.
-
 ---
 
 ## **Checagem de Senhas Vazadas**
