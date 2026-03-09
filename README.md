@@ -21,10 +21,11 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Panorama de cibersegurança atual
 
 [Conceitos Básicos de Segurança e Cibersegurança (24/02/2026 - 03/03/2026)](Intro/basico.md)
-  - Conceitos Básicos
+  - [Conceitos Básicos](Intro/basico.md) 
   - [Classificação da Informação](Intro/classificacao.md)
   - Ameaças e vulnerabilidades
   - [Vírus e malware](Intro/virus.md)
+  - [Vazamento e exposição de contas/senha](Intro/exposicao.md)
 
 [Normas e Frameworks de Segurança da Informação (09/03/2026 - 16/03/2026)](Frameworks/27000.md)
   - Normas relacionados com a SI:
