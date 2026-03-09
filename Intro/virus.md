@@ -87,3 +87,11 @@ Coloque algumas ferramentas gratuitas para detecção/remoção de malware.
 ## O que deve ser feito?
 - Reunir em grupos de 5 componentes, escolher uma das ferramentas para apresentar e comparar a ferramenta escolhida com as demais ferraemntas desta lista.
 - Caso queira utilizar outra ferramentas para apresentar, pode falar comigo a respeito disso *antes*.
+
+## Trabalho já definido (09/03/2026)
+
+- [Malwarebytes Free](https://www.malwarebytes.com/mwb-download) (*Sid, Camila, Gabriela e José*)
+- [Avast Free Antivirus](https://www.avast.com/free-antivirus-download) (*Otávio, Fábio, Sara, Ana e Henrique*)
+- [Sophos Home Free: Keylogger detection and removal for Macs and PCs.](https://home.sophos.com) (*Maria(2), Gustavo, Rafael e Ganriel Alves*)
+-[Kaspersky Virus Removal Tool](https://www.kaspersky.com/downloads/free-virus-removal-tool) (*Gabriel {Gomes, Lopes}, Ricardo e Paulo*)
+- [AVG Antivirus Free: Fast, lightweight spyware scanner and detector](https://www.avg.com/en/signal/anti-spyware-tool) (Pedro, Alex, João e Stephane)
