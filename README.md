@@ -26,7 +26,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - [Vírus e malware](Intro/virus.md)
   - [Vazamento e exposição de contas/senha](Intro/exposicao.md)
   - [Ameaças e vulnerabilidades](Intro/ameacas.md)
-]
+
 
 [Normas e Frameworks de Segurança da Informação (09/03/2026 - 16/03/2026)](Frameworks/27000.md)
   - Normas relacionados com a SI:
