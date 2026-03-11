@@ -64,9 +64,11 @@ Explorar as vulenrabilidade de uma base de dados por meio de comoandos de sql.
 ### 4.4 Ataques de Força Bruta
 Utilizar formas probailísticas de tentar a senha/token/pin (fatorial)
 
+### 4.5 DDoS
+Utilizar ferraemntas como ping distriubido para derrubar serviços/servidores. (usando ping) 
 ---
 
-## 5. Recomendações Básicas de Proteção
+## 5. Como se proteger?
 
 - Mantenha sistemas/softwares sempre atualizados.
 - Use autenticação em dois ou mais fatores (2FA/MFA).
@@ -78,7 +80,7 @@ Utilizar formas probailísticas de tentar a senha/token/pin (fatorial)
 
 ---
 
-## 6. Referências
+## Referências
 
 - [Cartilha de Segurança da Internet do NIC.br](https://cartilha.cert.br/)
 - [OWASP Top 10 Project](https://owasp.org/www-project-top-ten/)
