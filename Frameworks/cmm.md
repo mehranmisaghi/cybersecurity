@@ -52,24 +52,19 @@ O **CMM** (Modelo de Maturidade) é uma estrutura utilizada para avaliar o grau 
 - **Descrição:** Os processos são monitorados e mensurados, usando indicadores para controle; ações corretivas são tomadas com base em métricas.
 - **Exemplo:** Monitoramento contínuo de logs; relatórios de incidentes consolidados.
 - **Exemplo aplicado:** Uso de SIEM para identificar comportamentos anômalos; políticas revisadas periodicamente conforme dados apresentados.
-- **Referência:**
-  - [ISO/IEC 27001 - Information Security](https://www.iso.org/isoiec-27001-information-security.html)
 
 ---
 
 ### 5. Otimizado
-- **Descrição:** Busca-se a melhoria contínua com uso de melhores práticas, automação e inovação; feedbacks e aprendizados sustentam avanços.
+- **Descrição:** Buscar a melhoria contínua com uso de melhores práticas, automação e inovação; feedbacks e aprendizados sustentam avanços.
 - **Exemplo:** Integração de inteligência artificial para análise preditiva; automação para respostas a incidentes.
-- **Exemplo aplicado:** Detecção automática de phishing, com bloqueio e alerta imediato sem intervenção humana.
-- **Referência:**
-  - [Security Automation - SANS](https://www.sans.org/cyber-security-courses/security-automation/)
+
 
 ---
 
 ## Outras referências correltas
 
 - [Boas práticas e controles - CIS Controls](https://www.cisecurity.org/controls/cis-controls-list)
-- [Exemplos de incidentes - Incident Response](https://www.incidentresponse.com/example-cybersecurity-incidents/)
 - [Guia prático para usuários e empresas - Cartilha CERT.br](https://cartilha.cert.br/)
 
 ---
