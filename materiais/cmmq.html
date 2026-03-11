@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Algumas perguntas sobre CMM e Segurança Cibernética</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; background: #f8f8f8; }
+    h1 { text-align: center; }
+    .question { background: #fff; padding: 16px; margin: 20px 0; border-radius: 7px; box-shadow: 0 2px 6px #d0d0d0; }
+    .feedback { margin-top: 10px; font-weight: bold; }
+    #finalScore { margin: 30px 0; font-size: 1.2em; font-weight: bold; text-align: center; }
+    button { margin: 20px auto 0 auto; display: block; }
+  </style>
+</head>
+<body>
+    <h1>Algumas perguntas sobre CMM e Segurança Cibernética</h1>
+
+  <p>Responda todas as perguntas e clique em <b>Corrigir tudo</b> para ver seu resultado final!</p>
+  <form id="quizForm">
+    <!-- Questões adicionadas por JS -->
+  </form>
+  <button type="button" onclick="corrigirTudo()">Corrigir tudo</button>
+  <div id="finalScore"></div>
+  <script>
+    // Perguntas do Quiz
+    const quizQuestions = [
+      {
+        q: "Qual nível do CMM é caracterizado pela improvisação e falta completa de processos formalizados?",
+        options: ["Definido", "Inicial", "Gerenciado", "Otimizado"],
+        answer: 1
+      },
+      {
+        q: "No contexto de segurança cibernética, qual ação é típica do nível Otimizado do CMM?",
+        options: ["Política de senhas documentada", "Treinamento anual de phishing", "Detecção automática e bloqueio de ameaças em tempo real", "Atualização manual de antivírus"],
+        answer: 2
+      },
+      {
+        q: "Um processo de resposta a incidentes documentado e treinamentos regulares estão presentes em qual nível do CMM?",
+        options: ["Inicial", "Repetível", "Definido", "Otimizado"],
+        answer: 2
+      },
+      {
+        q: "Sobre o CMM, assinale a alternativa incorreta:",
+        options: ["O CMM propõe a automação de processos somente no nível Gerenciado", "O CMM serve para avaliar a maturidade de processos organizacionais", "A melhoria contínua é buscada principalmente no nível Otimizado", "Indicadores e métricas são usados a partir do nível Gerenciado"],
+        answer: 0
+      },
+      {
+        q: "No nível Repetível do CMM, normalmente:",
+        options: ["Já existe automação de resposta a incidentes", "Processos são baseados no improviso de cada funcionário", "Existem políticas básicas que podem ser repetidas quando necessário", "Todos processos são documentados e padronizados"],
+        answer: 2
+      },
+      {
+        q: "Qual referência internacional é fortemente associada à segurança da informação e à maturidade de processos?",
+        options: ["ISO/IEC 27001", "ITIL", "PCI DSS", "GDPR"],
+        answer: 0
+      },
+      {
+        q: "Um dashboard com métricas e relatório de incidentes de segurança caracteriza qual nível?",
+        options: ["Inicial", "Repetível", "Definido", "Gerenciado"],
+        answer: 3
+      },
+      {
+        q: "No contexto do CMM, Machine Learning para identificar ameaças é exemplo de qual nível?",
+        options: ["Otimizado", "Gerenciado", "Definido", "Repetível"],
+        answer: 0
+      },
+      {
+        q: "Marque a alternativa que NÃO corresponde ao nível Definido:",
+        options: ["Processos documentados", "Treinamentos periódicos", "Monitoramento automatizado em tempo real", "Políticas comunicadas na organização"],
+        answer: 2
+      },
+      {
+        q: "Sobre a evolução da resposta a phishing segundo o CMM, qual alternativa está correta?",
+        options: ["Nível Inicial: alerta automático e bloqueio imediato de e-mails suspeitos", "Nível Definido: realização de simulações e treinamentos regulares", "Nível Otimizado: ausência de automação nos alertas", "Nível Repetível: uso de machine learning para análise de e-mails"],
+        answer: 1
+      },
+      {
+        q: "O uso de indicadores de desempenho para ajustar políticas de segurança se encaixa em qual nível do CMM?",
+        options: ["Inicial", "Gerenciado", "Definido", "Otimizado"],
+        answer: 1
+      },
+      {
+        q: "Escolha a afirmação verdadeira:",
+        options: ["O nível Inicial é suficiente para organizações críticas de infraestrutura", "O CMM deixa de ser aplicável após o nível Definido", "O aprimoramento contínuo é esperado apenas no nível Otimizado", "Indicadores são utilizados apenas no nível Otimizado"],
+        answer: 2
+      },
+      {
+        q: "Uma empresa que realiza backups formais, faz simulações de resposta e treina sua equipe está em qual nível?",
+        options: ["Repetível", "Otimizado", "Definido", "Inicial"],
+        answer: 2
+      },
+      {
+        q: "O uso de referência NIST Cybersecurity Framework é mais associado a qual estágio do CMM?",
+        options: ["Inicial", "Definido", "Repetível", "Gerenciado"],
+        answer: 1
+      },
+      {
+        q: "Quando o processo de segurança inclui feedbacks, análise, inovação e integração automatizada de ameaças, o nível é:",
+        options: ["Otimizado", "Definido", "Gerenciado", "Repetível"],
+        answer: 0
+      }
+    ];
+
+    // Renderizar perguntas
+    function loadQuiz() {
+      const form = document.getElementById('quizForm');
+      quizQuestions.forEach((item, i) => {
+        const div = document.createElement('div');
+        div.className = 'question';
+        div.id = 'q' + i;
+
+        const questionTitle = document.createElement('p');
+        questionTitle.innerHTML = `<strong>${i+1}.</strong> ${item.q}`;
+        div.appendChild(questionTitle);
+
+        item.options.forEach((opt, j) => {
+          const label = document.createElement('label');
+          label.style.display = 'block';
+          const input = document.createElement('input');
+          input.type = 'radio';
+          input.name = 'question' + i;
+          input.value = j;
+          label.appendChild(input);
+          label.appendChild(document.createTextNode(' ' + opt));
+          div.appendChild(label);
+        });
+
+        const feedback = document.createElement('div');
+        feedback.className = 'feedback';
+        feedback.id = 'feedback' + i;
+        div.appendChild(feedback);
+
+        form.appendChild(div);
+      });
+    }
+
+    // Função de correção de todas perguntas
+    function corrigirTudo() {
+      let score = 0;
+      let total = quizQuestions.length;
+      let todasRespondidas = true;
+
+      quizQuestions.forEach((item, index) => {
+        const radios = document.getElementsByName('question' + index);
+        let selected = -1;
+        for(let i=0; i<radios.length; i++) {
+          if(radios[i].checked) {
+            selected = i;
+          }
+        }
+        const feedbackEl = document.getElementById('feedback' + index);
+
+        if(selected === -1) {
+          feedbackEl.style.color = '#f00';
+          feedbackEl.textContent = 'Por favor, selecione uma opção.';
+          todasRespondidas = false;
+        } else if(selected === item.answer) {
+          feedbackEl.style.color = 'green';
+          feedbackEl.textContent = 'Você acertou!';
+          score++;
+        } else {
+          feedbackEl.style.color = '#a00';
+          const correta = item.options[item.answer];
+          feedbackEl.textContent = `Errado! Resposta correta: "${correta}"`;
+        }
+      });
+
+      // Exibe o resultado final
+      const finalScore = document.getElementById("finalScore");
+      if (todasRespondidas) {
+        finalScore.style.color = "black";
+        finalScore.innerHTML = `Você acertou <b>${score}</b> de <b>${total}</b> perguntas.`;
+      } else {
+        finalScore.style.color = "#c00";
+        finalScore.textContent = "Responda todas as perguntas antes de corrigir.";
+      }
+    }
+
+    window.onload = loadQuiz;
+  </script>
+</body>
+</html>

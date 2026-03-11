@@ -66,16 +66,6 @@ O **CMM** (Modelo de Maturidade) é uma estrutura utilizada para avaliar o grau 
 
 ---
 
-## Exemplo prático de evolução nos níveis (Tema: Phishing)
-
-- **Nível Inicial:** Nenhuma orientação, usuários caem em golpes facilmente.
-- **Nível Repetível:** Após um incidente, envia-se alerta para todos evitarem e-mails suspeitos.
-- **Nível Definido:** Treinamentos e simulações periódicas de phishing; política clara definida.
-- **Nível Gerenciado:** Métricas de cliques em e-mails simulados, acompanhamento em dashboards.
-- **Nível Otimizado:** Sistema automatizado de detecção de phishing, bloqueio rápido e relatórios em tempo real.
-
----
-
 ## Outras referências correltas
 
 - [Boas práticas e controles - CIS Controls](https://www.cisecurity.org/controls/cis-controls-list)
@@ -83,4 +73,7 @@ O **CMM** (Modelo de Maturidade) é uma estrutura utilizada para avaliar o grau 
 - [Guia prático para usuários e empresas - Cartilha CERT.br](https://cartilha.cert.br/)
 
 ---
+##  Bora trabalhar!
+- [Teste os seus conhecimentos](https://mehranmisaghi.github.io/cybersecurity/materiais/cmmq.html)
+
 
