@@ -15,12 +15,12 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 - Uma Prova objetiva/dissertativa com peso 4.
 - Três Projetos de Segurança (cada um com peso 2).
 
-## Cronograma Sugerido
+## Cronograma Sugerido (alterado)
 [Aula Inaugural (23/02/2026 - 23/02/2026)](Intro/intro.md)
   - Ementa, metodologia, formas de avaliação
   - Panorama de cibersegurança atual
 
-[Conceitos Básicos de Segurança e Cibersegurança (24/02/2026 - 03/03/2026)](Intro/basico.md)
+[Conceitos Básicos de Segurança e Cibersegurança (24/02/2026 - 16/03/2026)](Intro/basico.md)
   - [Conceitos Básicos](Intro/basico.md) 
   - [Classificação da Informação](Intro/classificacao.md)
   - [Vírus e malware](Intro/virus.md)
@@ -28,7 +28,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - [Ameaças e vulnerabilidades](Intro/ameacas.md)
 
 
-[Normas e Frameworks de Segurança da Informação (09/03/2026 - 16/03/2026)](Frameworks/27000.md)
+[Normas e Frameworks de Segurança da Informação (17/03/2026 - 30/03/2026)](Frameworks/27000.md)
   - Normas relacionados com a SI:
     - [27001, 27002, 27005](Frameworks/27000.md)
   - Normas relacionadas com a PI e LGPD:
@@ -40,7 +40,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - NIST 800-53 r5
     - Federal Information Security Modernization Act (FISMA) 
   
-[Fundamentos de Criptografia e Ferramentas utilizadas (17/03/2026 - 30/03/2026)](Crypto/README.md)
+[Fundamentos de Criptografia e Ferramentas utilizadas (31/03/2026 - 07/04/2026)](Crypto/README.md)
   - Modelos Convencionais de Criptografia:
     - Simétrica e Assimétrica
     - Cifras mais utilizadas (Rinadael - AES)
@@ -53,17 +53,19 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - Criptografia Sem Certificado
     - Criptografia Quântica e Pós Quântica
  
-[Protocolos Criptográrficos e ferramentas relacionadas (31/03/2026 - 07/04/2026)](Crypto/protocolos.md)
+[Protocolos Criptográrficos e ferramentas relacionadas (13/04/2026 - 14/04/2026)](Crypto/protocolos.md)
   - Protocolos criptográficos (HTTPS, HSTS, SSL, SSH, DNSSEC, PGP, Kerberos)
   - Ferramentas utilizadas
 
 ## Prova Única (13/04/2026 - 13/04/2026)
  
-[Perímetro de Segurança (14/04/2026 - 20/04/2026)](firewall.md)
+[Perímetro de Segurança (20/04/2026 - 21/04/2026)](firewall.md)
   - Conceitos e Tipos
   - Ferramentas de simulação
 
-[Engenharia Social (27/04/2026 - 27/04/2026)](social.md)
+## Prova Única (27/04/2026)
+
+[Engenharia Social (28/04/2026 - 28/04/2026)](social.md)
 
 [Gestão de Riscos (28/04/2026 - 05/05/2026)](Risks/README.md)
   - Riscos que rondam as organizações
