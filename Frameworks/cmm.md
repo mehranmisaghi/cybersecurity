@@ -3,8 +3,8 @@ title: 'Normas e Frameworks da Segurança da Informação'
 description: 'CMM'
 permalink: Frameworks/cmm.md
 ---
-## Aula 7/8
--  [Slides da aula]()
+## Aula 7.2
+-  [Slides da aula](https://www.canva.com/design/DAHDwhJBw_c/tQKiQAOVGNFVggiVTCEjVg/edit?utm_content=DAHDwhJBw_c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - Material abaixo foi criado e revisado com auxílio de IA.
 
 # CMM (Capability Maturity Model) aplicado à Segurança Cibernética
