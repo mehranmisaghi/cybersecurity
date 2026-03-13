@@ -71,4 +71,5 @@ O **CMM** (Modelo de Maturidade) é uma estrutura utilizada para avaliar o grau 
 ##  Bora trabalhar!
 - [Teste os seus conhecimentos](https://mehranmisaghi.github.io/cybersecurity/materiais/cmmq.html)
 
-
+## O que vamos aprender agora?
+- [Outros Frameworks](csfnist.md)
