@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Questionário — NIST CSF, NIST SP 800-53 Rev.5 e FISMA</title>
+  <style>
+    body{font-family:Arial, sans-serif; margin:40px; line-height:1.55; color:#1f2a33;}
+    h1{margin:0 0 10px 0;}
+    .muted{color:#5c6b76; margin:0 0 24px 0;}
+    .question{border:1px solid #d7dee5; border-radius:10px; padding:16px 16px; margin:14px 0;}
+    .q-title{margin:0 0 10px 0;}
+    .options label{display:block; margin:6px 0; cursor:pointer;}
+    .actions{margin:20px 0;}
+    button{padding:10px 14px; border:0; border-radius:10px; cursor:pointer; font-weight:700;}
+    #btnGrade{background:#1f6feb; color:#fff;}
+    #btnReset{background:#e9eef3; color:#1f2a33; margin-left:10px;}
+    #results{margin-top:24px; padding:16px; border-radius:10px; border:1px solid #d7dee5; display:none;}
+    .ok{background:#e9f8ef; border-color:#bfe8cc;}
+    .bad{background:#fff2f2; border-color:#f1c0c0;}
+    .warn{background:#fff8e6; border-color:#f0d49a;}
+    .result-item{margin:10px 0; padding:10px; border-radius:10px; border:1px solid #d7dee5;}
+    .tag{display:inline-block; padding:2px 8px; border-radius:999px; font-size:12px; font-weight:700; margin-right:8px;}
+    .tag-ok{background:#1a7f37; color:#fff;}
+    .tag-bad{background:#cf222e; color:#fff;}
+    .tag-warn{background:#9a6700; color:#fff;}
+    .small{font-size:13px; color:#3b4b57;}
+    .score{font-size:18px; font-weight:800; margin:0 0 10px 0;}
+    code{background:#f2f4f7; padding:2px 6px; border-radius:6px;}
+  </style>
+</head>
+<body>
+
+  <h1>Questionário — NIST CSF, NIST SP 800-53 Rev. 5 e FISMA</h1>
+  <p class="muted">Selecione uma alternativa por questão e clique em “Corrigir”. Ao final, você verá o que acertou e o que errou.</p>
+
+  <form id="quizForm">
+
+    <div class="question" data-q="q1">
+      <p class="q-title"><strong>1. Qual é o principal objetivo do NIST Cybersecurity Framework (CSF)?</strong></p>
+      <div class="options">
+        <label><input type="radio" name="q1" value="A"> A) Definir requisitos legais obrigatórios para todas as empresas privadas</label>
+        <label><input type="radio" name="q1" value="B"> B) Organizar e gerenciar riscos de cibersegurança por meio de resultados e boas práticas</label>
+        <label><input type="radio" name="q1" value="C"> C) Substituir todos os padrões de segurança existentes</label>
+        <label><input type="radio" name="q1" value="D"> D) Criar algoritmos de criptografia</label>
+      </div>
+    </div>
+
+    <div class="question" data-q="q2">
+      <p class="q-title"><strong>2. No CSF, as áreas de alto nível que organizam as atividades de segurança são chamadas de:</strong></p>
+      <div class="options">
+        <label><input type="radio" name="q2" value="A"> A) Domínios</label>
+        <label><input type="radio" name="q2" value="B"> B) Baselines</label>
+        <label><input type="radio" name="q2" value="C"> C) Funções</label>
+        <label><input type="radio" name="q2" value="D"> D) Controles críticos</label>
+      </div>
+    </div>
+
+    <div class="question" data-q="q3">
+      <p class="q-title"><strong>3. Qual das seguintes opções é uma função do NIST CSF?</strong></p>
+      <div class="options">
+        <label><input type="radio" name="q3" value="A"> A) Encrypt</label>
+        <label><input type="radio" name="q3" value="B"> B) Govern</label>
+        <label><input type="radio" name="q3" value="C"> C) Develop</label>
+        <label><input type="radio" name="q3" value="D"> D) Configure</label>
+      </div>
+    </div>
+
+    <div class="question" data-q="q4">
+      <p class="q-title"><strong>4. No contexto do CSF, o que representa um “Perfil Atual”?</strong></p>
+      <div class="options">
+        <label><input type="radio" name="q4" value="A"> A) O estado atual das práticas de segurança da organização</label>
+        <label><input type="radio" name="q4" value="B"> B) O modelo de maturidade futuro da organização</label>
+        <label><input type="radio" name="q4" value="C"> C) Um relatório obrigatório do governo federal</label>
+        <label><input type="radio" name="q4" value="D"> D) Um inventário de hardware da organização</label>
+      </div>
+    </div>
+
+    <div class="question" data-q="q5">
+      <p class="q-title"><strong>5. O NIST SP 800-53 Rev.5 é melhor descrito como:</strong></p>
+      <div class="options">
+        <label><input type="radio" name="q5" value="A"> A) Um framework de governança corporativa</label>
+        <label><input type="radio" name="q5" value="B"> B) Um catálogo de controles de segurança e privacidade</label>
+        <label><input type="radio" name="q5" value="C"> C) Um padrão de criptografia</label>
+        <label><input type="radio" name="q5" value="D"> D) Um software de auditoria automatizada</label>
+      </div>
+    </div>
+
+    <div class="question" data-q="q6">
+      <p class="q-title"><strong>6. No NIST SP 800-53, os controles são organizados em:</strong></p>
+      <div class="options">
+        <label><input type="radio" name="q6" value="A"> A) Protocolos</label>
+        <label><input type="radio" name="q6" value="B"> B) Famílias de controles</label>
+        <label><input type="radio" name="q6" value="C"> C) Perfis organizacionais</label>
+        <label><input type="radio" name="q6" value="D"> D) Camadas de criptografia</label>
+      </div>
+    </div>
+
+    <div class="question" data-q="q7">
+      <p class="q-title"><strong>7. Qual documento do NIST fornece diretrizes para avaliação dos controles do 800-53?</strong></p>
+      <div class="options">
+        <label><input type="radio" name="q7" value="A"> A) NIST SP 800-37</label>
+        <label><input type="radio" name="q7" value="B"> B) NIST SP 800-30</label>
+        <label><input type="radio" name="q7" value="C"> C) NIST SP 800-53A</label>
+        <label><input type="radio" name="q7" value="D"> D) NIST SP 800-39</label>
+      </div>
+    </div>
+
+    <div class="question" data-q="q8">
+      <p class="q-title"><strong>8. A FISMA (Federal Information Security Modernization Act) é:</strong></p>
+      <div class="options">
+        <label><input type="radio" name="q8" value="A"> A) Um software de monitoramento de segurança</label>
+        <label><input type="radio" name="q8" value="B"> B) Um framework voluntário do setor privado</label>
+        <label><input type="radio" name="q8" value="C"> C) Uma lei dos EUA que estabelece requisitos de segurança para agências federais</label>
+        <label><input type="radio" name="q8" value="D"> D) Um padrão internacional de criptografia</label>
+      </div>
+    </div>
+
+    <div class="question" data-q="q9">
+      <p class="q-title"><strong>9. No contexto da FISMA, qual organização publica padrões técnicos de segurança como o NIST SP 800-53?</strong></p>
+      <div class="options">
+        <label><input type="radio" name="q9" value="A"> A) DHS</label>
+        <label><input type="radio" name="q9" value="B"> B) NIST</label>
+        <label><input type="radio" name="q9" value="C"> C) NSA</label>
+        <label><input type="radio" name="q9" value="D"> D) ISO</label>
+      </div>
+    </div>
+
+    <div class="question" data-q="q10">
+      <p class="q-title"><strong>10. Qual é a principal diferença entre o CSF e o NIST SP 800-53?</strong></p>
+      <div class="options">
+        <label><input type="radio" name="q10" value="A"> A) O CSF é um software e o 800-53 é um padrão técnico</label>
+        <label><input type="radio" name="q10" value="B"> B) O CSF define resultados e estrutura de gestão, enquanto o 800-53 detalha controles de segurança</label>
+        <label><input type="radio" name="q10" value="C"> C) O CSF é obrigatório e o 800-53 é opcional</label>
+        <label><input type="radio" name="q10" value="D"> D) Não existe diferença entre eles</label>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="btnGrade" type="button">Corrigir</button>
+      <button id="btnReset" type="reset">Limpar respostas</button>
+    </div>
+
+  </form>
+
+  <div id="results"></div>
+
+<script>
+  (function(){
+    const answerKey = {
+      q1: "B",
+      q2: "C",
+      q3: "B",
+      q4: "A",
+      q5: "B",
+      q6: "B",
+      q7: "C",
+      q8: "C",
+      q9: "B",
+      q10:"B"
+    };
+
+    const explanations = {
+      q1: "O CSF organiza e apoia a gestão de risco em cibersegurança por meio de outcomes e boas práticas (não é lei nem algoritmo).",
+      q2: "No CSF, o nível macro é composto pelas Funções (Functions).",
+      q3: "No CSF 2.0, 'Govern' é uma das funções (junto com Identify, Protect, Detect, Respond, Recover).",
+      q4: "Perfil Atual descreve o estado atual das práticas/capacidades frente aos outcomes do CSF.",
+      q5: "O 800-53 Rev. 5 é um catálogo de controles de segurança e privacidade.",
+      q6: "No 800-53, os controles são agrupados em famílias (control families).",
+      q7: "O 800-53A descreve métodos/procedimentos para avaliação de controles do 800-53.",
+      q8: "FISMA é uma lei dos EUA voltada a requisitos de segurança para agências federais.",
+      q9: "O NIST publica padrões técnicos e diretrizes como o 800-53.",
+      q10:"CSF é framework de outcomes/gestão; 800-53 detalha controles específicos."
+    };
+
+    function getSelectedValue(qName){
+      const el = document.querySelector(`input[name="${qName}"]:checked`);
+      return el ? el.value : null;
+    }
+
+    function grade(){
+      const resultsEl = document.getElementById("results");
+      resultsEl.style.display = "block";
+      resultsEl.className = "";
+
+      let correct = 0;
+      let answered = 0;
+      const total = Object.keys(answerKey).length;
+
+      // reset per-question styling
+      document.querySelectorAll(".question").forEach(q => {
+        q.style.borderColor = "#d7dee5";
+        q.style.background = "transparent";
+      });
+
+      let html = "";
+
+      // compute
+      for (const qName of Object.keys(answerKey)){
+        const selected = getSelectedValue(qName);
+        const expected = answerKey[qName];
+
+        if (selected !== null) answered++;
+
+        const isCorrect = selected === expected;
+        if (isCorrect) correct++;
+
+        // highlight question block
+        const qBlock = document.querySelector(`.question[data-q="${qName}"]`);
+        if (selected === null){
+          qBlock.style.borderColor = "#f0d49a";
+          qBlock.style.background = "#fff8e6";
+        } else if (isCorrect){
+          qBlock.style.borderColor = "#bfe8cc";
+          qBlock.style.background = "#e9f8ef";
+        } else {
+          qBlock.style.borderColor = "#f1c0c0";
+          qBlock.style.background = "#fff2f2";
+        }
+
+        // build per-question result line
+        let tagClass = "tag-warn";
+        let tagText = "NÃO RESPONDIDA";
+        if (selected !== null && isCorrect){
+          tagClass = "tag-ok";
+          tagText = "ACERTOU";
+        } else if (selected !== null && !isCorrect){
+          tagClass = "tag-bad";
+          tagText = "ERROU";
+        }
+
+        const selectedText = (selected === null) ? "—" : selected;
+        html += `
+          <div class="result-item">
+            <div>
+              <span class="tag ${tagClass}">${tagText}</span>
+              <strong>${qName.toUpperCase()}</strong>
+              <span class="small"> | sua resposta: <code>${selectedText}</code> | correta: <code>${expected}</code></span>
+            </div>
+            <div class="small" style="margin-top:6px;">${explanations[qName]}</div>
+          </div>
+        `;
+      }
+
+      const pct = Math.round((correct / total) * 100);
+      const unanswered = total - answered;
+
+      // summary styling
+      if (correct === total){
+        resultsEl.className = "ok";
+      } else if (correct >= Math.ceil(total * 0.7)){
+        resultsEl.className = "warn";
+      } else {
+        resultsEl.className = "bad";
+      }
+
+      resultsEl.innerHTML = `
+        <p class="score">Resultado: ${correct}/${total} (${pct}%)</p>
+        <p class="small">Respondidas: ${answered}/${total} | Em branco: ${unanswered}</p>
+        <hr style="border:none; border-top:1px solid #d7dee5; margin:14px 0;">
+        <div>${html}</div>
+      `;
+
+      // scroll to results
+      resultsEl.scrollIntoView({behavior:"smooth", block:"start"});
+    }
+
+    document.getElementById("btnGrade").addEventListener("click", grade);
+
+    document.getElementById("btnReset").addEventListener("click", function(){
+      const resultsEl = document.getElementById("results");
+      resultsEl.style.display = "none";
+      resultsEl.innerHTML = "";
+      resultsEl.className = "";
+
+      document.querySelectorAll(".question").forEach(q => {
+        q.style.borderColor = "#d7dee5";
+        q.style.background = "transparent";
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
