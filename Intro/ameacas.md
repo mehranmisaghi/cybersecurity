@@ -88,5 +88,5 @@ Utilizar ferraemntas como ping distriubido para derrubar serviços/servidores. (
 - [National Vulnerability Database do NIST](https://nvd.nist.gov/)
 
 ---
-## O que vamos apresender agora?
+## O que vamos aprender agora?
 - [Normas e frameworks de Segurança da Informação](/Frameworks/27000.md)
