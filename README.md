@@ -36,9 +36,9 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Frameworks mais comuns:
     - [CIS](Frameworks/cis.md)
     - [CMM](Frameworks/cmm.md)
-    - NIST Cybersecurity Framework
-    - NIST 800-53 r5
-    - Federal Information Security Modernization Act (FISMA) 
+    - [NIST Cybersecurity Framework](Frameworks/csfnist.md)
+    - [NIST 800-53 r5](Frameworks/csfnist.md)
+    - [Federal Information Security Modernization Act (FISMA)](Frameworks/csfnist.md)
   
 [Fundamentos de Criptografia e Ferramentas utilizadas (31/03/2026 - 07/04/2026)](Crypto/README.md)
   - Modelos Convencionais de Criptografia:
