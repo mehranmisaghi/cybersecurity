@@ -53,7 +53,7 @@ De: suporte@dominiomalicioso.com
 Assunto: Atualize Sua Senha
 
 Prezado usuário,  
-Sua conta foi comprometida. Clique [AQUI](http://sitemalicioso.com) para redefinir sua senha.
+Sua conta foi comprometida. Clique [AQUI](http://sistemamalicioso.com) para redefinir sua senha.
 ```
 
 ---
