@@ -5,7 +5,7 @@ permalink: Intro/ameacas.md
 ---
 
 # Aula 5.2 - Ameaças, Vulnerabilidades e Ataques
-
+## [Slides da aula](https://www.canva.com/design/DAHEBp2zkrY/1SoVPT4foV5LgLWYJ3VxEw/edit?utm_content=DAHEBp2zkrY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ### **O que é uma ameaça?**
 Ameaça normalmente consiste em uma situação, ação ou agente que pode explorar uma _vulnerabilidade_ e causar **dano à informação ou ao sistema**.
@@ -15,7 +15,7 @@ Vulnerabilidade consiste em _falha em sistemas, softwares, pessoas ou processos_
 
 ---
 
-## 2. Principais Ameaças em Cibersegurança
+## Principais Ameaças em Cibersegurança
 
 - **Malware:** Softwares maliciosos como visto em [aula de malware](virus.md)
 - **Engenharia Social:** Engano/manipulação para obter as informações por meio de persuação ou intimidação.
@@ -23,7 +23,7 @@ Vulnerabilidade consiste em _falha em sistemas, softwares, pessoas ou processos_
 
 ---
 
-## 3. Algumas vulnerabilidades mais comuns
+## Algumas vulnerabilidades mais comuns
 
 - Senhas fracas ou não trocadas
 - Sistemas e softwares desatualizados/obsoletos/legados
@@ -37,15 +37,15 @@ Vulnerabilidade consiste em _falha em sistemas, softwares, pessoas ou processos_
 
 ---
 
-## 4. Alguns tipos de Ataques Cibernéticos
+## Alguns tipos de Ataques Cibernéticos
 
-### 4.1 Man-in-the-Middle (MITM)
+### Man-in-the-Middle (MITM)
 
 Interceptação e possível alteração de comunicação entre duas partes sem que elas saibam.
 
 ---
 
-### 4.2 Phishing
+### Phishing
 
 **Exemplo de e-mail phishing:**
 ```
@@ -58,17 +58,17 @@ Sua conta foi comprometida. Clique [AQUI](http://sistemamalicioso.com) para rede
 
 ---
 
-### 4.3 SQL Injection
+### SQL Injection
 Explorar as vulenrabilidade de uma base de dados por meio de comoandos de sql.
 
-### 4.4 Ataques de Força Bruta
+### Ataques de Força Bruta
 Utilizar formas probailísticas de tentar a senha/token/pin (fatorial)
 
-### 4.5 DDoS
+### DDoS
 Utilizar ferraemntas como ping distriubido para derrubar serviços/servidores. (usando ping) 
 ---
 
-## 5. Como se proteger?
+## Como se proteger?
 
 - Mantenha sistemas/softwares sempre atualizados.
 - Use autenticação em dois ou mais fatores (2FA/MFA).
