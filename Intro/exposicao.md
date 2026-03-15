@@ -42,3 +42,6 @@ permalink: Intro/exposicao.md
 ## Bora trabalhar um pouco
 - Verifique os seus credenciais nas ferramentas citadas. A resposta será sempre a mesma? Justifique a sua resposta.
 - Baseada na resposta obtida na ferramenta, o que deve ser feito?
+
+## Próxima aula
+-[Ameaças, vulnerabilidades e ataques](ameacas.md) 
