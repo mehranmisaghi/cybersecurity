@@ -88,12 +88,14 @@ Coloque algumas ferramentas gratuitas para detecção/remoção de malware.
 - Reunir em grupos de 5 componentes, escolher uma das ferramentas para apresentar e comparar a ferramenta escolhida com as demais ferraemntas desta lista.
 - Caso queira utilizar outra ferramentas para apresentar, pode falar comigo a respeito disso *antes*.
 
-## Trabalho já definido (09/03/2026)
+## Trabalhos já definidos (09/03/2026) e apresentados/entregues no dia 16/03
 
 - [Malwarebytes Free](https://www.malwarebytes.com/mwb-download) (*Sid, Camila, Gabriela e José*)
 - [Avast Free Antivirus](https://www.avast.com/free-antivirus-download) (*Otávio, Fábio, Sara, Ana e Henrique*)
 - [Sophos Home Free: Keylogger detection and removal for Macs and PCs.](https://home.sophos.com) (*Maria(2), Gustavo, Rafael e Gabriel Alves*)
+    - [Apresentação do grupo - 16/03](https://www.canva.com/design/DAHDf08N-8Q/bRfwTtc8RX2bkM0iofc46A/edit?utm_content=DAHDf08N-8Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - [Kaspersky Virus Removal Tool](https://www.kaspersky.com/downloads/free-virus-removal-tool) (*Gabriel {Gomes, Lopes}, Ricardo e Paulo*)
-- [AVG Antivirus Free: Fast, lightweight spyware scanner and detector](https://www.avg.com/en/signal/anti-spyware-tool) (Pedro, Alex, João e Stephane)
+- [AVG Antivirus Free: Fast, lightweight spyware scanner and detector](https://www.avg.com/en/signal/anti-spyware-tool) (*Pedro, Alex, João e Stephane*)
+    - [Apresentação do grupo - 16/03](https://www.canva.com/design/DAHD8qAEaaA/PAQO2hmyBA-60DaRYW6ioA/edit?utm_content=DAHD8qAEaaA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ## A nossa próxima aula
 - [Exposição/vazamento de senhas/e-mails](exposicao.md)
