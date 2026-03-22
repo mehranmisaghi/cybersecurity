@@ -23,7 +23,7 @@ Algumas empresas consideram prioritárias. Também acredito nisto.
 *Manter atualizado os dispostivos e ativos com auxílio de uma ferramenta*
 
 **2. Inventário e Controle de Ativos de Software**  
-*Idem anterior, contendo conrole de licenciamento e softwares mais utilizados*.
+*Idem anterior, contendo controle de licenciamento e softwares mais utilizados*.
 
 **3. Proteção dos Dados**  
 *Implementar controles para proteger dados sensíveis.* (Utilizar criptografia para arquivos confidenicais por exemplo)  
