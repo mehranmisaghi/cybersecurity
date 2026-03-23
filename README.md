@@ -56,8 +56,6 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 [Protocolos Criptográrficos e ferramentas relacionadas (13/04/2026 - 14/04/2026)](Crypto/protocolos.md)
   - Protocolos criptográficos (HTTPS, HSTS, SSL, SSH, DNSSEC, PGP, Kerberos)
   - Ferramentas utilizadas
-
-## Prova Única (13/04/2026 - 13/04/2026)
  
 [Perímetro de Segurança (20/04/2026 - 21/04/2026)](firewall.md)
   - Conceitos e Tipos
