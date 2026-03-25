@@ -1,5 +1,5 @@
-import dns.resolver
-import dns.exception
+import dns.resolver # type: ignore
+import dns.exception # type: ignore
 dominio = "dominio.com"
 registros = ["A", "AAAA", "MX", "NS"] #1
 
