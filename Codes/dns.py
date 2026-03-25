@@ -1,6 +1,6 @@
 import socket
 dominio = "dominio.com"
-nomes = ["ns1", "ns2", "www", "ftp", "ïntranet"]
+nomes = ["ns1", "ns2", "www", "ftp", "intranet"]
 for nome in nomes:
     DNS = nome + "." + dominio
     try:
