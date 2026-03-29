@@ -5,7 +5,7 @@ permalink: Framewoks/csfnist.md
 ---
 
 # Aula 7.3 - NIST Cybersecurity Framework (CSF), NIST SP 800-53 Rev. 5 e FISMA
-
+- Material gerado com auxílio de IA e revisado!
 ---
 
 ## NIST Cybersecurity Framework (CSF)
@@ -151,8 +151,6 @@ NIST SP 800-39 (gestão de risco organizacional):
 FISMA background (NIST):
 - https://csrc.nist.gov/projects/risk-management/fisma-background
 
-Texto legal (Congress.gov — FISMA Modernization Act):
-- https://www.congress.gov/bill/113th-congress/senate-bill/2521
 
 ---
 ## Teste os seus conhecimentos
