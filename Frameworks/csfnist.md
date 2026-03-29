@@ -26,20 +26,20 @@ O CSF organiza práticas e resultados em níveis que facilitam planejamenton por
 - **Categorias e Subcategorias**: Resultados mais específicos.
 - **Perfis**:
   - Perfil Atual: o que já existe e seu nível de atendimento.
-  - Perfil Alvo (pretendido): o que deve existir para o apetite de risco e necessidades do negócio.
+  - Perfil pretendido: o que deve existir para o apetite de risco e necessidades do negócio.
 - **Priorização e melhoria**: usar lacunas para montar um roadmap baseado em risco.
 
 [Referência Utilizada](https://csrc.nist.gov/pubs/cswp/29/final)
 
-### Como utiliar CSF?
+### Como utilizar CSF?
 1) **Definir escopo e contexto a ser aplicado**
    - processos e sistemas críticos, requisitos regulatórios, ambiente a ser implementado (envolve cloud, IoT?).
 2) **Perfil Atual**
    - mapear políticas, processos, ferramentas, métricas e evidências por resultados.
 3) **Avaliar risco e lacunas existentes**
    - ameaças, vulnerabilidades, impacto, probabilidade; dependências e terceiros envolvidos.
-4) **Definir Perfil Alvo**
-   - outresultados pretendidos (curto/médio prazo) e justificativas.
+4) **Definir Perfil pretendido**
+   - resultados pretendidos (curto/médio prazo) e justificativas.
 5) **Roadmap**
    - iniciativas, custos, responsáveis, prazos e  dependências.
 6) **Medição e governança**
@@ -47,7 +47,7 @@ O CSF organiza práticas e resultados em níveis que facilitam planejamenton por
 
 ### Entregáveis recomendados (CSF)
 - Inventário de ativos e serviços críticos (incluindo terceiros críticos).
-- Perfil CSF Atual e Perfil CSF Alvo (com critérios de avaliação).
+- Perfil CSF Atual e Perfil CSF pretendido (com critérios de avaliação).
 - Matriz de lacunas + priorização (risco x esforço x impacto).
 - Roadmap trimestral/semestral.
 - Conjunto de métricas (operacionais e executivas).
@@ -157,3 +157,6 @@ Texto legal (Congress.gov — FISMA Modernization Act):
 ---
 ## Teste os seus conhecimentos
 -[Algumas perguntas sobre o que vimos aqui](https://mehranmisaghi.github.io/cybersecurity/materiais/csfq.html)
+
+# O que vamos aprender agora?
+- [Teste de Invasão em Redes (I)](/Codes/pentest.md)
