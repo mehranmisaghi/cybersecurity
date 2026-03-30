@@ -3,7 +3,8 @@ title: 'Teste de Invasão em Redes (I) - Reconhecimento (II)'
 description: 'Testes de Reconhecimento - Alguns exemplos'
 permalink: Codes/recon2.md
 ---
->  os códigos apresentados nestas partes são baseados no livro **Python para Pentest (Daniel Moreno) Alguns códigos foram modificados por mim**. 
+>  os códigos apresentados nestas partes são baseados no livro **Python para Pentest (Daniel Moreno). Alguns códigos foram modificados por mim**. 
+---
 ⚠️ É importante enfatizar que qualquer tipo de teste em ambiente real precisa de consentimento da empresa, na qual serão realizados os testes.
 ---
 
