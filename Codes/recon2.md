@@ -1,7 +1,7 @@
 ---
 title: 'Teste de Invasão em Redes (I) - Reconhecimento (II)'
 description: 'Testes de Reconhecimento - Alguns exemplos'
-permalink: Codes/recon.md
+permalink: Codes/recon2.md
 ---
 >  os códigos apresentados nestas partes são baseados no livro **Python para Pentest (Daniel Moreno) Alguns códigos foram modificados por mim**. 
 ⚠️ É importante enfatizar que qualquer tipo de teste em ambiente real precisa de consentimento da empresa, na qual serão realizados os testes.
@@ -65,3 +65,36 @@ Quer dizer, **um mapa completo da infraestrutura DNS**. Espero que não funcione
 [Programa de Transferência de Zona DNS](recon-dns-transfer.py)
 - Teste o programa com domínios conhecidos (com consentimento).
 - Quais são ações que parecisam ser feitas caso o programa trazer as informações completas?
+
+# 🔎 WHOIS
+WHOIS pode ser definido como um serviço que traz informações a respeito do registo de um domínio:
+
+- 📅 Data de criação
+- 📅 Data de expiração
+- 🏢 Organização responsável
+- 📧 Email de contato
+- 🌐 Servidores DNS
+- 🔒 Status do domínio
+
+---
+Agora vamos ver um código que tenta busdar as informações do registro de domínio, aqui denominado por *recon-whois.py*:
+
+```python
+
+import whois 
+
+dominio = "dominio.com"
+
+try:
+    consultaWhois = whois.whois(dominio)
+
+    print("Email (atributo):", consultaWhois.email)
+    print("Email (chave):", consultaWhois.get("email"))
+    print("Texto completo:\n", consultaWhois.text)
+
+except Exception as e:
+    print("Erro ao consultar WHOIS:", e)   
+```
+---
+## Teste você mesmo este programa
+[Busca de informações de registro](recon-whois.py)
