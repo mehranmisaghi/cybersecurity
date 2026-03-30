@@ -77,7 +77,7 @@ WHOIS pode ser definido como um serviço que traz informações a respeito do re
 - 🔒 Status do domínio
 
 ---
-Agora vamos ver um código que tenta busdar as informações do registro de domínio, aqui denominado por *recon-whois.py*:
+Agora vamos ver um código que tenta busdar as informações do registro de domínio, aqui denominado por *recon-whois.py* (Precisa instalar a biblioteca *pyhton-whois*):
 
 ```python
 
