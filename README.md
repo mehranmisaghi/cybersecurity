@@ -41,8 +41,12 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - [Federal Information Security Modernization Act (FISMA)](Frameworks/csfnist.md)
 
 [Teste de Invasão em  Redes(I)](Codes/pentest.md)
-  - Etapas de teste
-    
+  - [Etapas de teste](Codes/pentest.md)
+    - [Reconhecimento(RECON)](Codes/recon.md)
+    - [Enumeração(RECON)](Codes/recon.md)
+    - [Outras ferramentas (RECON)](Codes/recon.md)
+    - [Transferência de Zona DNS(RECON)](Codes/recon2.md)
+
 [Fundamentos de Criptografia e Ferramentas utilizadas (31/03/2026 - 07/04/2026)](Crypto/README.md)
   - Modelos Convencionais de Criptografia:
     - Simétrica e Assimétrica
