@@ -77,8 +77,11 @@ WHOIS pode ser definido como um serviço que traz informações a respeito do re
 - 🔒 Status do domínio
 
 ---
-Agora vamos ver um código que tenta busdar as informações do registro de domínio, aqui denominado por *recon-whois.py* (Precisa instalar a biblioteca *pyhton-whois*):
-
+Agora vamos ver um código que tenta busdar as informações do registro de domínio, aqui denominado por *recon-whois.py* :
+Você precisa inicialmente ter a biblioteca *python-whois*. Se não tiver, instale:
+ ```
+pip3 install python-whois
+```
 ```python
 
 import whois 
@@ -98,3 +101,99 @@ except Exception as e:
 ---
 ## Teste você mesmo este programa
 [Busca de informações de registro](recon-whois.py)
+- Qual seria outra forma de fazer isto?
+---
+# 🔎 Port Scanner
+Serve para descobrir portas abertas em um determando IP. Pode ser feito em IPv4 ou IPv6. Vamos ver cada um deles. Antes disso, precisamo instalar a biblioteca *scapy*
+```
+pip3 install scapy
+``` 
+
+## Port Sanner IPv4
+
+```python
+from scapy.all import * # versão de programa IPv4 
+
+conf.verb = 0  # Desativa mensagens detalhadas do Scapy
+
+portas = [21, 22, 23, 80, 8080]
+
+# Substitua pelo IP real de destino
+pacoteIP = IP(dst="142.250.78.110") #endereço de google.com apenas como exemplo
+
+pacoteTCP = TCP(dport=portas, flags="S")
+pacote = pacoteIP / pacoteTCP
+
+ans, unans = sr(pacote, inter=0.1, timeout=1)
+
+print("Porta\tEstado")
+
+for pacoteEnviado, pacoteRecebido in ans:
+    porta = pacoteRecebido[TCP].sport
+    flags = pacoteRecebido[TCP].sprintf("%flags%")
+    print(f"{porta}\t{flags}")
+```
+## Vamos tentar entender um pouco algumas portas
+
+| Porta           | Serviço                  |
+|-----------------|--------------------------|
+| 21        | FTP|
+| 22       | SSH             |
+| 23    | Telnet                         |
+| 80           | HTTP                           |
+| 8080        | HTTP alternativo                             |
+---
+## Como deveria ser a resposta do programa?
+| Flag          | Significado              |
+|-----------------|--------------------------|
+| SA        | SYN-ACK (porta aberta)|
+| R     |Reset (Porta fechada)             |
+---
+## Se não tiver resposta? (normalmente pode ser:)
+- Bloqueio por firewall
+- execução sem permissão de root
+---
+## Teste você mesmo este programa
+[Port scanner IPv4](recon-portscanner4.py)
+- Qual seria outra forma de fazer isto?
+---
+## Port Sanner IPv6
+
+- Antes de executar programa com IPv6, precisa saber se sua rede opera no IPv6. Para isto, execute o seguinte comando (linux/mac)
+```
+ping6 www.google.com
+```
+No caso de windows:
+```
+ping -6 www.google.com
+```
+Se responder, é sinal que a sua rede opera ativamente IPv6.
+
+```python
+from scapy.all import IPv6, TCP, sr, conf
+
+conf.verb = 0
+
+portas = [80, 443]
+
+#pacoteIP = IPv6(dst="2001:4860:4860::8888")  # Google DNS IPv6 como exemplo
+pacoteIP = IPv6(dst="2800:3f0:4001:800::200e")  # Google DNS IPv6 como exemplo
+pacoteTCP = TCP(dport=portas, flags="S")
+
+pacote = pacoteIP / pacoteTCP
+
+ans, unans = sr(pacote, timeout=2)
+
+print("Porta\tEstado")
+
+for enviado, recebido in ans:
+    if recebido[TCP].flags == 0x12:
+        print(f"{recebido[TCP].sport}\tAberta")
+    elif recebido[TCP].flags == 0x14:
+        print(f"{recebido[TCP].sport}\tFechada")
+```
+## Se não tiver resposta? (normalmente pode ser:)
+- A maioria dos servidores bloqueiam IPv6 
+- Bloqueio por firewall
+- execução sem permissão de root
+
