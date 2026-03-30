@@ -46,7 +46,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - [Enumeração(RECON)](Codes/recon.md)
     - [Outras ferramentas (RECON)](Codes/recon.md)
     - [Transferência de Zona DNS(RECON)](Codes/recon2.md)
-    - [Informações sobre registro de domínio](Codes/recon2.md)
+    - [Informações sobre registro de domínio (RECON)](Codes/recon2.md)
 
 [Fundamentos de Criptografia e Ferramentas utilizadas (31/03/2026 - 07/04/2026)](Crypto/README.md)
   - Modelos Convencionais de Criptografia:
