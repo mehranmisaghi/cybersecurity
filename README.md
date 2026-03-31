@@ -40,13 +40,16 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - [NIST 800-53 r5](Frameworks/csfnist.md)
     - [Federal Information Security Modernization Act (FISMA)](Frameworks/csfnist.md)
 
-[Teste de Invasão em  Redes(I)](Codes/pentest.md)
+[Teste de Invasão em  Redes(I) (31/03 a 07/04)](Codes/pentest.md) 
   - [Etapas de teste](Codes/pentest.md)
-    - [Reconhecimento(RECON)](Codes/recon.md)
-    - [Enumeração(RECON)](Codes/recon.md)
-    - [Outras ferramentas (RECON)](Codes/recon.md)
-    - [Transferência de Zona DNS(RECON)](Codes/recon2.md)
-    - [Informações sobre registro de domínio (RECON)](Codes/recon2.md)
+  
+[Reconhecimento(RECON)](Codes/recon.md)
+  - [Descoberta](Codes/recon.md)
+  - [Enumeração](Codes/recon.md)
+  - [Outras ferramentas](Codes/recon.md)
+  - [Transferência de Zona DNS](Codes/recon2.md)
+  - [Informações sobre registro de domínio](Codes/recon2.md)
+  - [Varredura de Portas](Codes/recon2.md)
 
 [Fundamentos de Criptografia e Ferramentas utilizadas (31/03/2026 - 07/04/2026)](Crypto/README.md)
   - Modelos Convencionais de Criptografia:
@@ -111,3 +114,6 @@ Com auxílio de agentes de automação de IA (n8n ou ferramentas semelhantes) au
 
   - Diagnóstico de vulnerabilidades de um banco de dados via web:
     - SQL injection e ferramentas semelhantes
+
+
+[def]: Codes/recon.md
