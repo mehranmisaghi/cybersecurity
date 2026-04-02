@@ -228,7 +228,7 @@ for pacoteNaoRecebido in unans:
     print(pacoteNaoRecebido[IP].dst)
 ```
 ## Vamos testar?
--[Ping Sweep](recon-ping.py)
+- [Ping Sweep](recon-ping.py)
 
 ## Se não funcionar?
 - Tem que executar como _root_ 
