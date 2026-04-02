@@ -198,3 +198,43 @@ for enviado, recebido in ans:
 - Bloqueio por firewall
 - execução sem permissão de root
 
+## Ping Sweep
+
+> Esta técnica que faz parte de reconhecimento **(RECON)**, manda ping para cada IP de uma faixa de IP e espera a resposta e apresenta os _hosts_ que responderam (ativos) e os que não responderam (inativos). Pode ser utilizado junto com a técnica de varredura de portas. Neste exemplo, **não faremos isto**. 
+---
+vamos ver um exemplo deste tipo de programa, no código de _recon-ping.py_, que utiliza a técnica de _ping sweep_:
+
+```python
+from scapy.all import IP, ICMP, sr, conf
+
+conf.verb = 0
+
+IPs = []
+
+for ip in range(1, 255):
+    IPs.append("192.168.0." + str(ip)) #substitua por faixa de IP da sua rede com autorização
+
+pacote = IP(dst=IPs) / ICMP()
+ans, unans = sr(pacote, inter=0.1, timeout=1)
+
+print("Hosts ativos")
+
+for enviado, recebido in ans:
+    print(recebido[IP].src)
+
+# Para determinar os hosts inativos:
+print("Hosts inativos")
+for pacoteNaoRecebido in unans:
+    print(pacoteNaoRecebido[IP].dst)
+```
+## Vamos testar?
+-[Ping Sweep](recon-ping.py)
+
+## Se não funcionar?
+- Tem que executar como _root_ 
+- Bloqueio por parte de firewall para requisições ICMP
+- Um site ativo também pode ter bloqueio para requisições ICMP
+
+
+
+
