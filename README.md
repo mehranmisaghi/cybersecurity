@@ -6,21 +6,26 @@ Repositório para material didático de Segurança da Informação
 Introdução à segurança da informação. Normas de segurança. Serviços de segurança. Mecanismos de segurança. Política de segurança da informação e comunicações. 
 
 ## Metodologia
+
 - Aulas expositiva dialogadas com uso de ferramentas de simulação de ambientes.
 - Aulas invertidas (trazer um caso real e chegar no problema raíz e discutir os conceitos)
 - Estudos de casos reais
 
-## Avaliação 
+## Avaliação
+
 - Exercícios e revisão de conceitos apreendidos
 - Uma Prova objetiva/dissertativa com peso 4.
 - Três Projetos de Segurança (cada um com peso 2).
 
 ## Cronograma Sugerido (alterado)
+
 [Aula Inaugural (23/02/2026 - 23/02/2026)](Intro/intro.md)
+
   - Ementa, metodologia, formas de avaliação
   - Panorama de cibersegurança atual
 
 [Conceitos Básicos de Segurança e Cibersegurança (24/02/2026 - 16/03/2026)](Intro/basico.md)
+
   - [Conceitos Básicos](Intro/basico.md) 
   - [Classificação da Informação](Intro/classificacao.md)
   - [Vírus e malware](Intro/virus.md)
@@ -29,6 +34,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 
 
 [Normas e Frameworks de Segurança da Informação (17/03/2026 - 30/03/2026)](Frameworks/27000.md)
+
   - Normas relacionados com a SI:
     - [27001, 27002, 27005](Frameworks/27000.md)
   - Normas relacionadas com a PI e LGPD:
@@ -40,10 +46,12 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - [NIST 800-53 r5](Frameworks/csfnist.md)
     - [Federal Information Security Modernization Act (FISMA)](Frameworks/csfnist.md)
 
-[Teste de Invasão em  Redes(I) (31/03 a 07/04)](Codes/pentest.md) 
+[Teste de Invasão em  Redes(I) (31/03 a 07/04)](Codes/pentest.md)
+
   - [Etapas de teste](Codes/pentest.md)
   
 [Reconhecimento(RECON)](Codes/recon.md)
+
   - [Descoberta](Codes/recon.md)
   - [Enumeração](Codes/recon.md)
   - [Outras ferramentas](Codes/recon.md)
@@ -54,6 +62,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 
 
 [Fundamentos de Criptografia e Ferramentas utilizadas (31/03/2026 - 07/04/2026)](Crypto/README.md)
+
   - Modelos Convencionais de Criptografia:
     - Simétrica e Assimétrica
     - Cifras mais utilizadas (Rinadael - AES)
@@ -67,6 +76,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - Criptografia Quântica e Pós Quântica
  
 [Protocolos Criptográrficos e ferramentas relacionadas (13/04/2026 - 14/04/2026)](Crypto/protocolos.md)
+
   - Protocolos criptográficos (HTTPS, HSTS, SSL, SSH, DNSSEC, PGP, Kerberos)
   - Ferramentas utilizadas
  
@@ -79,6 +89,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 [Engenharia Social (28/04/2026 - 28/04/2026)](social.md)
 
 [Gestão de Riscos (28/04/2026 - 05/05/2026)](Risks/README.md)
+
   - Riscos que rondam as organizações
   - Inteligência Artificial
   - NBR ISO/IEC 27005 e 31000
@@ -87,6 +98,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Framework de Cibersegurança para IA (NIST)
 
 ## Projeto de Segurança I (PSI) (11/05/2026 - 25/05/2026)
+
 Como os conceitos apreendidos os alunos precisam desenvolver uma ferramenta de Diagnóstico ou (C)onformidade que apresente no formato de um dashboard, uma das seguintes opções:
   - Conformidade:
     - NBR ISO/IEC 27001
@@ -96,12 +108,15 @@ Como os conceitos apreendidos os alunos precisam desenvolver uma ferramenta de D
     - Gestão de Riscos
 
 [Políticas de Segurança e Políticas de Privacidade da Informação (26/05/2026 - 01/06/2026)](politicas.md)
+
   - Etapas para elaboração de políticas de segurança e políticas de privacidade da informação.
 
 ## Projeto de Segurança II (PSII) (02/06/2026 - 15/06/2026)
+
 Elaboração de Políticas de segurança para ambientes específicos conforme anunciados na sala de aula no momento oportuno.
 
 [Monitoramento e auditoria (16/06/2026 - 16/06/2026)](auditoria.md)
+
   - Conceitos de monitoramento e auditoria. Questões normativas e regulatórias.
 
 [Tendências e Oportunidades em Cibersegurança (22/06/2026 - 22/06/2026)](tendencias.md)
@@ -110,6 +125,7 @@ Elaboração de Políticas de segurança para ambientes específicos conforme an
   - IA Agêntica X confecção desenfreada de malware (apocalipse digital)
 
 ## Projeto de Segurança III (PSIII) (23/06/2026 - 30/06/2026)
+
 Com auxílio de agentes de automação de IA (n8n ou ferramentas semelhantes) automatize e crie uma ferramenta para um dos seguintes cenários (detalhes serão fornecidos no momento oportuno):
   - Diagnóstico de vulnerabilidades de um servidor web:
     - Examinar os protocolos criptográficos e detalhar e sugerir ações corretivas
