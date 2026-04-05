@@ -1,6 +1,6 @@
 ---
 title: 'Teste de Invasão em Redes (I) - Reconhecimento'
-description: 'Testes de Reconhecimento - Alguns exemplos'
+description: 'Descoberta de DNS e algumas ferramentas'
 permalink: Codes/recon.md
 ---
 
@@ -127,4 +127,3 @@ dig dominio.com AAAA
 ---
 ## O que vamos aprender agora?
 [Outros testes de Reconhecimento](recon2.md)
-
