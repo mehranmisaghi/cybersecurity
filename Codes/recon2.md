@@ -231,6 +231,7 @@ for pacoteNaoRecebido in unans:
 - [Ping Sweep](recon-ping.py)
 
 ## Se não funcionar?
+
 - Tem que executar como _root_ 
 - Bloqueio por parte de firewall para requisições ICMP
 - Um site ativo também pode ter bloqueio para requisições ICMP
