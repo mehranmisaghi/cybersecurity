@@ -126,4 +126,4 @@ dig dominio.com AAAA
 
 ---
 ## O que vamos aprender agora?
-[Outros testes de Reconhecimento](recon2.md)
+[Transferência de Zona e WHOIS](recon2.md)
