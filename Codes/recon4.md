@@ -90,7 +90,8 @@ finally:
   - [Portas Abertas](Codes/recon4.md)
   - [Acesso Remoto](Codes/recon4.md)
 
-
+## Teste os seus conhecimentos em RECON
+- [Testes seus conhecimentos em RECON](https://mehranmisaghi.github.io/cybersecurity/materiais/recon.html)
 ## A nossa próxima aula
 
 - [Criptografia]()

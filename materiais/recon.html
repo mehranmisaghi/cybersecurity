@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Teste seus conhecimentos em RECON</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 30px;
+    background: #f5f5f5;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.questao {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 5px solid #ccc;
+}
+
+.correta {
+    background: #d4edda;
+    border-left: 5px solid green;
+}
+
+.errada {
+    background: #f8d7da;
+    border-left: 5px solid red;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.resultado {
+    font-size: 18px;
+    margin-top: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Teste os seus conhecimentos em RECON</h2>
+
+<form id="quiz">
+
+<div class="questao" id="q1">
+<p>1. O objetivo principal do whois é:</p>
+<input type="radio" name="q1" value="a"> Encontrar portas abertas<br>
+<input type="radio" name="q1" value="b"> Coletar informações de domínio/IP<br>
+<input type="radio" name="q1" value="c"> Explorar vulnerabilidades<br>
+<input type="radio" name="q1" value="d"> Fazer varredura<br>
+<input type="radio" name="q1" value="e"> Enumerar usuários<br>
+</div>
+
+<div class="questao" id="q2">
+<p>2. O arping funciona melhor em:</p>
+<input type="radio" name="q2" value="a"> Internet<br>
+<input type="radio" name="q2" value="b"> LAN<br>
+<input type="radio" name="q2" value="c"> DNS<br>
+<input type="radio" name="q2" value="d"> Cloud<br>
+<input type="radio" name="q2" value="e"> VPN<br>
+</div>
+
+<div class="questao" id="q3">
+<p>3. O arping usa:</p>
+<input type="radio" name="q3" value="a"> TCP<br>
+<input type="radio" name="q3" value="b"> UDP<br>
+<input type="radio" name="q3" value="c"> ARP<br>
+<input type="radio" name="q3" value="d"> HTTP<br>
+<input type="radio" name="q3" value="e"> DNS<br>
+</div>
+
+<div class="questao" id="q4">
+<p>4. Ping sweep identifica:</p>
+<input type="radio" name="q4" value="a"> Senhas<br>
+<input type="radio" name="q4" value="b"> Hosts ativos<br>
+<input type="radio" name="q4" value="c"> DNS<br>
+<input type="radio" name="q4" value="d"> Firewall<br>
+<input type="radio" name="q4" value="e"> Portas abertas<br>
+</div>
+
+<div class="questao" id="q5">
+<p>5. DNS enum falha quando:</p>
+<input type="radio" name="q5" value="a"> Porta 80 fechada<br>
+<input type="radio" name="q5" value="b"> Zona bloqueada<br>
+<input type="radio" name="q5" value="c"> ICMP ativo<br>
+<input type="radio" name="q5" value="d"> SSH ativo<br>
+<input type="radio" name="q5" value="e"> HTTP ativo<br>
+</div>
+
+<div class="questao" id="q6">
+<p>6. Banner grabbing revela:</p>
+<input type="radio" name="q6" value="a"> Firewall<br>
+<input type="radio" name="q6" value="b"> Versão do serviço<br>
+<input type="radio" name="q6" value="c"> Senha<br>
+<input type="radio" name="q6" value="d"> DNS<br>
+<input type="radio" name="q6" value="e"> IP interno<br>
+</div>
+
+<div class="questao" id="q7">
+<p>7. "SSH-2.0-OpenSSH" indica:</p>
+<input type="radio" name="q7" value="a"> Porta fechada<br>
+<input type="radio" name="q7" value="b"> Banner<br>
+<input type="radio" name="q7" value="c"> DNS<br>
+<input type="radio" name="q7" value="d"> Firewall<br>
+<input type="radio" name="q7" value="e"> ICMP<br>
+</div>
+
+<div class="questao" id="q8">
+<p>8. Registro A:</p>
+<input type="radio" name="q8" value="a"> IPv6<br>
+<input type="radio" name="q8" value="b"> IPv4<br>
+<input type="radio" name="q8" value="c"> Email<br>
+<input type="radio" name="q8" value="d"> Porta<br>
+<input type="radio" name="q8" value="e"> Subdomínio<br>
+</div>
+
+<div class="questao" id="q9">
+<p>9. Registro AAAA:</p>
+<input type="radio" name="q9" value="a"> IPv4<br>
+<input type="radio" name="q9" value="b"> IPv6<br>
+<input type="radio" name="q9" value="c"> Alias<br>
+<input type="radio" name="q9" value="d"> Porta<br>
+<input type="radio" name="q9" value="e"> DNS<br>
+</div>
+
+<div class="questao" id="q10">
+<p>10. MX define:</p>
+<input type="radio" name="q10" value="a"> Web<br>
+<input type="radio" name="q10" value="b"> Email<br>
+<input type="radio" name="q10" value="c"> DNS<br>
+<input type="radio" name="q10" value="d"> Porta<br>
+<input type="radio" name="q10" value="e"> Firewall<br>
+</div>
+
+<div class="questao" id="q11">
+<p>11. NS indica:</p>
+<input type="radio" name="q11" value="a"> DNS autoritativo<br>
+<input type="radio" name="q11" value="b"> IP<br>
+<input type="radio" name="q11" value="c"> Porta<br>
+<input type="radio" name="q11" value="d"> Firewall<br>
+<input type="radio" name="q11" value="e"> Gateway<br>
+</div>
+
+<div class="questao" id="q12">
+<p>12. Ping usa:</p>
+<input type="radio" name="q12" value="a"> TCP<br>
+<input type="radio" name="q12" value="b"> ICMP<br>
+<input type="radio" name="q12" value="c"> UDP<br>
+<input type="radio" name="q12" value="d"> DNS<br>
+<input type="radio" name="q12" value="e"> ARP<br>
+</div>
+
+<div class="questao" id="q13">
+<p>13. Sem resposta em scan:</p>
+<input type="radio" name="q13" value="a"> Aberta<br>
+<input type="radio" name="q13" value="b"> Fechada<br>
+<input type="radio" name="q13" value="c"> Filtrada<br>
+<input type="radio" name="q13" value="d"> DNS<br>
+<input type="radio" name="q13" value="e"> Whois<br>
+</div>
+
+<div class="questao" id="q14">
+<p>14. RST indica:</p>
+<input type="radio" name="q14" value="a"> Aberta<br>
+<input type="radio" name="q14" value="b"> Fechada<br>
+<input type="radio" name="q14" value="c"> Filtrada<br>
+<input type="radio" name="q14" value="d"> DNS<br>
+<input type="radio" name="q14" value="e"> ICMP<br>
+</div>
+
+<div class="questao" id="q15">
+<p>15. Zone transfer permite:</p>
+<input type="radio" name="q15" value="a"> Derrubar servidor<br>
+<input type="radio" name="q15" value="b"> Listar DNS<br>
+<input type="radio" name="q15" value="c"> Fechar portas<br>
+<input type="radio" name="q15" value="d"> Criptografia<br>
+<input type="radio" name="q15" value="e"> Reset<br>
+</div>
+
+<div class="questao" id="q16">
+<p>16. Scan lento evita:</p>
+<input type="radio" name="q16" value="a"> Firewall<br>
+<input type="radio" name="q16" value="b"> Detecção<br>
+<input type="radio" name="q16" value="c"> DNS<br>
+<input type="radio" name="q16" value="d"> Whois<br>
+<input type="radio" name="q16" value="e"> ICMP<br>
+</div>
+
+<div class="questao" id="q18">
+<p>17. Subdomínios aumentam:</p>
+<input type="radio" name="q18" value="a"> Latência<br>
+<input type="radio" name="q18" value="b"> Superfície de ataque<br>
+<input type="radio" name="q18" value="c"> DNS<br>
+<input type="radio" name="q18" value="d"> ICMP<br>
+<input type="radio" name="q18" value="e"> Firewall<br>
+</div>
+
+<div class="questao" id="q19">
+<p>18. Ocultar banner é:</p>
+<input type="radio" name="q19" value="a"> Hardening<br>
+<input type="radio" name="q19" value="b"> Exploit<br>
+<input type="radio" name="q19" value="c"> Scan<br>
+<input type="radio" name="q19" value="d"> DNS<br>
+<input type="radio" name="q19" value="e"> Whois<br>
+</div>
+
+<br>
+<button type="button" onclick="corrigir()">Finalizar</button>
+
+</form>
+
+<div class="resultado" id="resultado"></div>
+
+</div>
+
+<script>
+function corrigir() {
+    let respostas = {
+        q1:"b", q2:"b", q3:"c", q4:"b", q5:"b",
+        q6:"b", q7:"b", q8:"b", q9:"b", q10:"b",
+        q11:"a", q12:"b", q13:"c", q14:"b", q15:"b",
+        q16:"b", q17:"b", q18:"b", q19:"a", q20:"b"
+    };
+
+    let acertos = 0;
+
+    for (let q in respostas) {
+        let questao = document.getElementById(q);
+        let selecionado = document.querySelector('input[name="'+q+'"]:checked');
+
+        if (selecionado) {
+            if (selecionado.value === respostas[q]) {
+                acertos++;
+                questao.classList.add("correta");
+                questao.innerHTML += "<p>✅ Correto</p>";
+            } else {
+                questao.classList.add("errada");
+                questao.innerHTML += "<p>❌ Errado | Resposta correta: " + respostas[q].toUpperCase() + "</p>";
+            }
+        } else {
+            questao.classList.add("errada");
+            questao.innerHTML += "<p>❌ Não respondida | Correta: " + respostas[q].toUpperCase() + "</p>";
+        }
+    }
+
+    document.getElementById("resultado").innerText =
+        "Resultado: " + acertos + " / 20";
+}
+</script>
+
+</body>
+</html>
