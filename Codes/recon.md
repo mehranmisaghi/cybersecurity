@@ -25,7 +25,6 @@ Entender o ambiente antes de qualquer tentativa de exploração.
 
 ---
 
-
 # Descoberta de DNS
 
 Neste primeiro exemplo, vamos tentar descobrir servidores de domínio, conforme o código *recon-dns.py*:
@@ -127,3 +126,4 @@ dig dominio.com AAAA
 ---
 ## O que vamos aprender agora?
 [Transferência de Zona e WHOIS](recon2.md)
+

@@ -58,10 +58,13 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - [Transferência de Zona DNS](Codes/recon2.md)
   - [Informações sobre registro de domínio](Codes/recon2.md)
   - [Varredura de Portas](Codes/recon2.md)
-  - [Ping Sweep](Codes/recon2.md)
+  - [Ping Sweep](Codes/recon3.md)
+  - [Arping](Codes/recon3.md)
+  - [Portas Abertas](Codes/recon4.md)
+  - [Acesso Remoto](Codes/recon4.md)
 
 
-[Fundamentos de Criptografia e Ferramentas utilizadas (31/03/2026 - 07/04/2026)](Crypto/README.md)
+[Fundamentos de Criptografia e Ferramentas utilizadas (13/04/2026 - 20/04/2026)](Crypto/README.md)
 
   - Modelos Convencionais de Criptografia:
     - Simétrica e Assimétrica

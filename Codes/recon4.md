@@ -77,6 +77,20 @@ finally:
 - Se funcionar, traz a versão do programa de acesso remoto
 - O que fazer para não funcionar?
 
+## Resumo dos programas de Reconhecimento que vimos:
+
+  - [Descoberta](Codes/recon.md)
+  - [Enumeração](Codes/recon.md)
+  - [Outras ferramentas](Codes/recon.md)
+  - [Transferência de Zona DNS](Codes/recon2.md)
+  - [Informações sobre registro de domínio](Codes/recon2.md)
+  - [Varredura de Portas](Codes/recon2.md)
+  - [Ping Sweep](Codes/recon3.md)
+  - [Arping](Codes/recon3.md)
+  - [Portas Abertas](Codes/recon4.md)
+  - [Acesso Remoto](Codes/recon4.md)
+
+
 ## A nossa próxima aula
 
 - [Criptografia]()
