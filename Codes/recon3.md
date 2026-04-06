@@ -139,6 +139,44 @@ for pacoteNaoRecebido in unans:
 - Bloqueio por parte de firewall para requisições ICMP
 - Um site ativo também pode ter bloqueio para requisições ICMP
 
+## Arping
 
+> Esta técnica que faz parte de reconhecimento **(RECON)**, faz uma varredura para os dispositivos que estão ativos e seus _Mac address_. 
+---
+vamos ver um exemplo deste tipo de programa, no código de _recon-arping.py_:
 
+```python
+from scapy.all import Ether, ARP, srp, conf
 
+conf.verb = 0
+
+IPs = []
+
+for ip in range(1, 255):
+  IPs.append("10.1.0" + str(ip))
+  #  IPs.append("teste com endereços da sua rede" + str(ip))
+
+pacoteARP = Ether(dst="ff:ff:ff:ff:ff:ff") / ARP(pdst=IPs)
+ans, unans = srp(pacoteARP, inter=0.1, timeout=1)
+
+print("IP\t\tMAC")
+
+for enviado, recebido in ans:
+    print(f"{recebido.psrc}\t{recebido.hwsrc}")
+```
+## Quais diferenças com Ping Sweep?
+
+Diferente do ping (ICMP):
+
+- ✅ ARP não é bloqueado facilmente.
+
+- ✅ ARP descobre _MAC Address_. (Isto é bom ou ruim?)
+
+- ✅ Funciona melhor em redes locais. (Isto é bom ou ruim?)
+
+- ✅ Detecta hosts mesmo com firewall.
+
+- ❌ Não funciona na Internet.
+
+## O que vamos aprender agora?
+[Portas Abertas e Acesso Remoto](recon4.md)
