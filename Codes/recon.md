@@ -122,6 +122,7 @@ dig dominio.com AAAA
 - Teste nslookup e dig nos mesmos domínios que você testes os dois programas. 
 - Quais são diferenças nos testes (programa em python e app pronto como dig?)
 - Os testes com dig e nslookup rodam em TCP ou UDP?
+- Quais diferenças existem entre _Dig_ e _Nslookup_?
 
 ---
 ## O que vamos aprender agora?
