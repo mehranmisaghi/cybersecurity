@@ -2,7 +2,7 @@ import dns.query
 import dns.zone
 import dns.resolver
 
-dominio = "dominio.com"
+dominio = "google.com"
 
 # Consulta os servidores NS do domínio
 registrosNS = dns.resolver.resolve(dominio, "NS")
