@@ -2,50 +2,17 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Teste os seus conhecimentos em RECON</title>
+<title>Prova de Segurança de Redes</title>
 
 <style>
-body {
-    font-family: Arial;
-    margin: 30px;
-    background: #f5f5f5;
-}
-
-.container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.questao {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-left: 5px solid #ccc;
-}
-
-.correta {
-    background: #d4edda;
-    border-left: 5px solid green;
-}
-
-.errada {
-    background: #f8d7da;
-    border-left: 5px solid red;
-}
-
-h2 {
-    text-align: center;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-.resultado {
-    font-size: 18px;
-    margin-top: 20px;
-}
+body { font-family: Arial; margin: 30px; background: #f5f5f5; }
+.container { background: white; padding: 20px; border-radius: 10px; }
+.questao { margin-bottom: 20px; padding: 10px; border-left: 5px solid #ccc; }
+.correta { background: #d4edda; border-left: 5px solid green; }
+.errada { background: #f8d7da; border-left: 5px solid red; }
+h2 { text-align: center; }
+button { padding: 10px 20px; font-size: 16px; }
+.resultado { font-size: 18px; margin-top: 20px; }
 </style>
 
 </head>
@@ -56,115 +23,56 @@ button {
 
 <form id="quiz">
 
-<!-- QUESTÕES 1–20 (mantidas) -->
-<!-- (vou manter resumido aqui pra caber, mas já estão completas abaixo) -->
-
+<!-- GERAR 30 QUESTÕES -->
 <script>
-// respostas completas das 30
-let respostas = {
-q1:"b", q2:"b", q3:"c", q4:"b", q5:"b",
-q6:"b", q7:"b", q8:"b", q9:"b", q10:"b",
-q11:"a", q12:"b", q13:"c", q14:"b", q15:"b",
-q16:"b", q17:"b", q18:"b", q19:"a", q20:"b",
-q21:"c", q22:"a", q23:"d", q24:"b", q25:"c",
-q26:"a", q27:"d", q28:"b", q29:"c", q30:"a"
-};
+const perguntas = [
+["O whois é usado para:", "Portas", "Info domínio/IP", "Exploit", "Scan", "Senha", "b"],
+["Arping funciona melhor em:", "Internet", "LAN", "Cloud", "DNS", "VPN", "b"],
+["Arping usa:", "TCP", "UDP", "ARP", "HTTP", "DNS", "c"],
+["Ping sweep identifica:", "Senha", "Hosts ativos", "DNS", "Firewall", "Portas", "b"],
+["DNS enum falha quando:", "HTTP off", "Zona bloqueada", "ICMP on", "SSH on", "DNS ok", "b"],
+["Banner grabbing revela:", "Firewall", "Versão serviço", "Senha", "DNS", "IP", "b"],
+["Banner 'SSH' indica:", "Fechado", "Versão serviço", "DNS", "Firewall", "ICMP", "b"],
+["Registro A:", "IPv6", "IPv4", "Email", "Porta", "Alias", "b"],
+["Registro AAAA:", "IPv4", "IPv6", "MX", "NS", "TXT", "b"],
+["MX define:", "Web", "Email", "DNS", "Porta", "Firewall", "b"],
+["NS indica:", "DNS autoritativo", "IP", "Porta", "Firewall", "Gateway", "a"],
+["Ping usa:", "TCP", "ICMP", "UDP", "DNS", "ARP", "b"],
+["Sem resposta:", "Open", "Closed", "Filtered", "DNS", "Whois", "c"],
+["RST indica:", "Open", "Closed", "Filtered", "DNS", "ICMP", "b"],
+["Zone transfer permite:", "DDoS", "Listar DNS", "Fechar portas", "Crypto", "Reset", "b"],
+["Scan lento evita:", "Firewall", "Detecção", "DNS", "Whois", "ICMP", "b"],
+["Firewall stateful bloqueia:", "Tudo", "Inválidas", "DNS", "ARP", "Loopback", "b"],
+["Subdomínios aumentam:", "Latência", "Ataque", "DNS", "ICMP", "Firewall", "b"],
+["Ocultar banner:", "Hardening", "Exploit", "Scan", "DNS", "Whois", "a"],
+["Whois + DNS:", "DDoS", "Mapear infra", "Fechar portas", "Crypto", "Firewall", "b"],
+["DNS reverso:", "A", "MX", "PTR", "NS", "AAAA", "c"],
+["ARP resolve:", "IP→MAC", "MAC→IP", "DNS", "Porta", "Gateway", "a"],
+["SYN scan é:", "Completo", "UDP", "DNS", "Half-open", "ICMP", "d"],
+["HTTP porta:", "21", "80", "22", "25", "443", "b"],
+["Firewall gera:", "Open", "Closed", "Filtered", "DNS", "Whois", "c"],
+["Enumeração fase:", "Recon", "Exploit", "Pós", "Mitigação", "Defesa", "a"],
+["DNS brute force:", "Senha", "Porta", "Firewall", "Subdomínio", "IP", "d"],
+["TTL DNS:", "Porta", "Cache", "IP", "Host", "Firewall", "b"],
+["ICMP type 3:", "OK", "Echo", "Unreachable", "DNS", "HTTP", "c"],
+["Recon passivo:", "Whois", "SYN", "Ping", "Banner", "Exploit", "a"]
+];
+
+for (let i = 0; i < perguntas.length; i++) {
+    let q = perguntas[i];
+    document.write(`<div class="questao" id="q${i+1}">
+    <p>${i+1}. ${q[0]}</p>
+    <input type="radio" name="q${i+1}" value="a"> ${q[1]}<br>
+    <input type="radio" name="q${i+1}" value="b"> ${q[2]}<br>
+    <input type="radio" name="q${i+1}" value="c"> ${q[3]}<br>
+    <input type="radio" name="q${i+1}" value="d"> ${q[4]}<br>
+    <input type="radio" name="q${i+1}" value="e"> ${q[5]}<br>
+    </div>`);
+}
 </script>
 
-<!-- QUESTÕES NOVAS -->
-
-<div class="questao" id="q21">
-<p>21. DNS reverso usa:</p>
-<input type="radio" name="q21" value="a"> A<br>
-<input type="radio" name="q21" value="b"> MX<br>
-<input type="radio" name="q21" value="c"> PTR<br>
-<input type="radio" name="q21" value="d"> NS<br>
-<input type="radio" name="q21" value="e"> AAAA<br>
-</div>
-
-<div class="questao" id="q22">
-<p>22. ARP resolve:</p>
-<input type="radio" name="q22" value="a"> IP → MAC<br>
-<input type="radio" name="q22" value="b"> MAC → IP<br>
-<input type="radio" name="q22" value="c"> DNS → IP<br>
-<input type="radio" name="q22" value="d"> Porta → IP<br>
-<input type="radio" name="q22" value="e"> IP → DNS<br>
-</div>
-
-<div class="questao" id="q23">
-<p>23. SYN scan é considerado:</p>
-<input type="radio" name="q23" value="a"> Completo<br>
-<input type="radio" name="q23" value="b"> UDP<br>
-<input type="radio" name="q23" value="c"> DNS<br>
-<input type="radio" name="q23" value="d"> Half-open<br>
-<input type="radio" name="q23" value="e"> ICMP<br>
-</div>
-
-<div class="questao" id="q24">
-<p>24. Qual porta padrão HTTP?</p>
-<input type="radio" name="q24" value="a"> 21<br>
-<input type="radio" name="q24" value="b"> 80<br>
-<input type="radio" name="q24" value="c"> 22<br>
-<input type="radio" name="q24" value="d"> 25<br>
-<input type="radio" name="q24" value="e"> 443<br>
-</div>
-
-<div class="questao" id="q25">
-<p>25. Firewall pode transformar resposta em:</p>
-<input type="radio" name="q25" value="a"> Open<br>
-<input type="radio" name="q25" value="b"> Closed<br>
-<input type="radio" name="q25" value="c"> Filtered<br>
-<input type="radio" name="q25" value="d"> DNS<br>
-<input type="radio" name="q25" value="e"> Whois<br>
-</div>
-
-<div class="questao" id="q26">
-<p>26. Enumeração é fase de:</p>
-<input type="radio" name="q26" value="a"> Reconhecimento<br>
-<input type="radio" name="q26" value="b"> Exploração<br>
-<input type="radio" name="q26" value="c"> Pós-exploração<br>
-<input type="radio" name="q26" value="d"> Mitigação<br>
-<input type="radio" name="q26" value="e"> Defesa<br>
-</div>
-
-<div class="questao" id="q27">
-<p>27. DNS brute force descobre:</p>
-<input type="radio" name="q27" value="a"> Senhas<br>
-<input type="radio" name="q27" value="b"> Portas<br>
-<input type="radio" name="q27" value="c"> Firewall<br>
-<input type="radio" name="q27" value="d"> Subdomínios<br>
-<input type="radio" name="q27" value="e"> IP interno<br>
-</div>
-
-<div class="questao" id="q28">
-<p>28. TTL em DNS indica:</p>
-<input type="radio" name="q28" value="a"> Porta<br>
-<input type="radio" name="q28" value="b"> Tempo de cache<br>
-<input type="radio" name="q28" value="c"> IP<br>
-<input type="radio" name="q28" value="d"> Host<br>
-<input type="radio" name="q28" value="e"> Firewall<br>
-</div>
-
-<div class="questao" id="q29">
-<p>29. ICMP type 3 indica:</p>
-<input type="radio" name="q29" value="a"> Sucesso<br>
-<input type="radio" name="q29" value="b"> Echo<br>
-<input type="radio" name="q29" value="c"> Unreachable<br>
-<input type="radio" name="q29" value="d"> DNS<br>
-<input type="radio" name="q29" value="e"> HTTP<br>
-</div>
-
-<div class="questao" id="q30">
-<p>30. Reconhecimento passivo inclui:</p>
-<input type="radio" name="q30" value="a"> Whois<br>
-<input type="radio" name="q30" value="b"> Scan SYN<br>
-<input type="radio" name="q30" value="c"> Ping<br>
-<input type="radio" name="q30" value="d"> Banner grabbing<br>
-<input type="radio" name="q30" value="e"> Exploit<br>
-</div>
-
 <br>
-<button type="button" onclick="corrigir()">Finalizar Prova</button>
+<button type="button" onclick="corrigir()">Finalizar</button>
 </form>
 
 <div class="resultado" id="resultado"></div>
@@ -173,27 +81,21 @@ q26:"a", q27:"d", q28:"b", q29:"c", q30:"a"
 
 <script>
 function corrigir() {
-
     let acertos = 0;
 
-    for (let q in respostas) {
-        let questao = document.getElementById(q);
-        let selecionado = document.querySelector('input[name="'+q+'"]:checked');
+    for (let i = 0; i < perguntas.length; i++) {
+        let correta = perguntas[i][6];
+        let qid = "q" + (i+1);
+        let questao = document.getElementById(qid);
+        let sel = document.querySelector(`input[name="${qid}"]:checked`);
 
-        if (!questao) continue;
-
-        if (selecionado) {
-            if (selecionado.value === respostas[q]) {
-                acertos++;
-                questao.classList.add("correta");
-                questao.innerHTML += "<p>✅ Correto</p>";
-            } else {
-                questao.classList.add("errada");
-                questao.innerHTML += "<p>❌ Errado | Correta: " + respostas[q].toUpperCase() + "</p>";
-            }
+        if (sel && sel.value === correta) {
+            acertos++;
+            questao.classList.add("correta");
+            questao.innerHTML += "<p>✅ Correto</p>";
         } else {
             questao.classList.add("errada");
-            questao.innerHTML += "<p>❌ Não respondida | Correta: " + respostas[q].toUpperCase() + "</p>";
+            questao.innerHTML += `<p>❌ Correta: ${correta.toUpperCase()}</p>`;
         }
     }
 
