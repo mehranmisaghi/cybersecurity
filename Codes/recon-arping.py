@@ -5,7 +5,7 @@ conf.verb = 0
 IPs = []
 
 for ip in range(1, 255):
-  IPs.append("10.1.0" + str(ip))
+  IPs.append("191.52.58" + str(ip))
   #  IPs.append("teste com endereços da sua rede local" + str(ip))
 
 pacoteARP = Ether(dst="ff:ff:ff:ff:ff:ff") / ARP(pdst=IPs)
