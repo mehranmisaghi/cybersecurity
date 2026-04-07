@@ -1,7 +1,7 @@
 from scapy.all import *
 conf.verb = 0
 
-host = "seu ip"
+host = "seu ip2"
 # host = "teste com o endereço do host que deseja escanear"
 portas = [22, 80, 666, 12345]
 # 80 é a porta do HTTP, 22 é a porta do SSH, 666 é uma porta geralmente usada por malwares.
