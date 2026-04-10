@@ -17,9 +17,16 @@ O conteúdo desta parte abordará os seguintes tópicos:
     - Criptografia Sem Certificado
     - Criptografia Quântica e Pós Quântica
 ---
-## Materiais para estudar Criptografia (I) 13/04
+## Materiais para estudar Criptografia (I) 13/04 - 20/04
 
- - [Capítulo 1 e 2 do livro Stallings](materiais/cap1e2-cripto.pdf)
- - [Slides de aula - Criptografia (I)]()
+ - [Capítulo 1 e 2 do livro Stallings](Chttps://mehranmisaghi.github.io/cybersecurity/materiais/cap1e2-cripto.pdf)
+ - [Slides de aula - Criptografia (I)](https://canva.link/5f4bwz4tecbg0r5)
+ 
+ - [Animação DES](https://mehranmisaghi.github.io/cybersecurity/Crypto/DESanim.html)
+ - [Animação 3DES](https://mehranmisaghi.github.io/cybersecurity/Crypto/3DESanim.html)
+ - [Animação comparativo DES e 3DES](https://mehranmisaghi.github.io/cybersecurity/Crypto/DESanim.html)
+ - [Animação Diffie Hellman MiTM](https://mehranmisaghi.github.io/cybersecurity/Crypto/DHanimaut.html)
+ - [Animação Diffie Hellman autenticado](https://mehranmisaghi.github.io/cybersecurity/Crypto/DESanim.html)
+ - [Animação RSA](https://mehranmisaghi.github.io/cybersecurity/Crypto/RSA.html)
 
  ---
