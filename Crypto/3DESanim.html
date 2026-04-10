@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>3DES - Animação</title>
+
+<style>
+body { font-family: Arial; background:#0f172a; color:#e2e8f0; text-align:center; }
+.stage {
+    position: relative;
+    height: 420px;
+    background:#111827;
+    border-radius:12px;
+    margin:20px;
+}
+
+.box {
+    position:absolute;
+    width:160px;
+    padding:10px;
+    border-radius:10px;
+    background:#1e293b;
+    border:2px solid #475569;
+}
+
+.input { left:30px; top:160px; }
+.e1 { left:200px; top:160px; }
+.d { left:380px; top:160px; }
+.e2 { left:560px; top:160px; }
+.output { right:30px; top:160px; }
+
+.packet {
+    position:absolute;
+    top:200px;
+    padding:8px;
+    border-radius:999px;
+    color:white;
+    opacity:0;
+}
+
+.blue { background:#2563eb; }
+.green { background:#16a34a; }
+.orange { background:#ea580c; }
+.purple { background:#7c3aed; }
+
+button {
+    padding:10px;
+    margin-top:10px;
+}
+
+#info {
+    margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>3DES (Triple DES)</h2>
+
+<div class="stage">
+    <div class="box input">Texto claro</div>
+    <div class="box e1">DES (K1)<br>Encrypt</div>
+    <div class="box d">DES (K2)<br>Decrypt</div>
+    <div class="box e2">DES (K3)<br>Encrypt</div>
+    <div class="box output">Texto cifrado</div>
+
+    <div id="packets"></div>
+</div>
+
+<button onclick="start()">Iniciar</button>
+
+<div id="info">Aguardando...</div>
+
+<script>
+const packets = document.getElementById("packets");
+const info = document.getElementById("info");
+
+function create(text, color, x) {
+    let el = document.createElement("div");
+    el.className = "packet " + color;
+    el.style.left = x + "px";
+    el.textContent = text;
+    packets.appendChild(el);
+    return el;
+}
+
+function move(el, from, to, time) {
+    el.style.left = from + "px";
+    el.style.opacity = 1;
+    el.animate([{left:from+"px"}, {left:to+"px"}], {duration:time, fill:"forwards"});
+    setTimeout(()=> el.style.left = to+"px", time);
+}
+
+function start() {
+    packets.innerHTML = "";
+
+    info.innerText = "1. Texto entra no sistema";
+
+    let p1 = create("Texto", "blue", 40);
+    move(p1, 40, 200, 1500);
+
+    setTimeout(()=>{
+        info.innerText = "2. Primeira criptografia com K1";
+        move(p1, 200, 380, 1500);
+    },1600);
+
+    setTimeout(()=>{
+        info.innerText = "3. DESCRIPTOGRAFIA com K2 (parte do padrão EDE)";
+        move(p1, 380, 560, 1500);
+    },3200);
+
+    setTimeout(()=>{
+        info.innerText = "4. Nova criptografia com K3";
+        move(p1, 560, 740, 1500);
+    },4800);
+
+    setTimeout(()=>{
+        info.innerText = "Resultado: segurança muito maior que DES simples";
+    },6500);
+}
+</script>
+
+</body>
+</html>

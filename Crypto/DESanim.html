@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Animação DES</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: #e2e8f0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.stage {
+    position: relative;
+    height: 420px;
+    background: #111827;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    margin-top: 20px;
+}
+
+.box {
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    background: #1e293b;
+    border: 2px solid #475569;
+    width: 180px;
+}
+
+.input { left: 50px; top: 150px; }
+.ip { left: 260px; top: 150px; }
+.round { left: 470px; top: 100px; }
+.output { right: 50px; top: 150px; }
+
+.line {
+    position: absolute;
+    height: 3px;
+    background: #334155;
+    top: 210px;
+    left: 200px;
+    width: 600px;
+}
+
+.packet {
+    position: absolute;
+    top: 195px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    color: white;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.blue { background: #2563eb; }
+.green { background: #16a34a; }
+.orange { background: #ea580c; }
+.purple { background: #7c3aed; }
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.explain {
+    margin-top: 20px;
+    background: #111827;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+<h2>DES - Data Encryption Standard</h2>
+
+<div class="stage">
+    <div class="box input">Texto claro<br>64 bits</div>
+    <div class="box ip">Permutação Inicial (IP)</div>
+    <div class="box round">16 Rodadas<br>Feistel</div>
+    <div class="box output">Texto cifrado</div>
+
+    <div class="line"></div>
+    <div id="packets"></div>
+</div>
+
+<button onclick="startDES()">Iniciar Animação</button>
+
+<div class="explain" id="explain">
+Passo atual: aguardando.
+</div>
+
+</div>
+
+<script>
+
+const packets = document.getElementById("packets");
+const explain = document.getElementById("explain");
+
+function createPacket(text, color, left) {
+    let el = document.createElement("div");
+    el.className = "packet " + color;
+    el.style.left = left + "px";
+    el.textContent = text;
+    packets.appendChild(el);
+    return el;
+}
+
+function move(el, from, to, time) {
+    el.style.left = from + "px";
+    el.style.opacity = 1;
+    el.animate([
+        { left: from + "px" },
+        { left: to + "px" }
+    ], { duration: time, fill: "forwards" });
+
+    setTimeout(()=> el.style.left = to + "px", time);
+}
+
+function startDES() {
+    packets.innerHTML = "";
+
+    explain.innerText = "1. Texto de 64 bits entra no algoritmo.";
+
+    let p1 = createPacket("64 bits", "blue", 80);
+    move(p1, 80, 260, 2000);
+
+    setTimeout(()=>{
+        explain.innerText = "2. Permutação inicial reorganiza os bits.";
+    },2000);
+
+    setTimeout(()=>{
+        let p2 = createPacket("IP", "green", 260);
+        move(p2, 260, 470, 2000);
+        explain.innerText = "3. Dados são divididos em L e R (32 bits cada).";
+    },3000);
+
+    setTimeout(()=>{
+        let p3 = createPacket("L | R", "orange", 470);
+        move(p3, 470, 470, 1000);
+        explain.innerText = "4. Começam as 16 rodadas (estrutura Feistel).";
+    },5500);
+
+    setTimeout(()=>{
+        explain.innerText = "5. Em cada rodada: expansão, XOR com subchave, S-Boxes e permutação.";
+    },7500);
+
+    setTimeout(()=>{
+        let p4 = createPacket("16 rounds", "purple", 470);
+        move(p4, 470, 800, 2000);
+        explain.innerText = "6. Após as rodadas, ocorre a permutação final.";
+    },9500);
+
+    setTimeout(()=>{
+        explain.innerText = "7. Resultado final: texto cifrado de 64 bits.";
+    },12000);
+}
+
+</script>
+
+</body>
+</html>

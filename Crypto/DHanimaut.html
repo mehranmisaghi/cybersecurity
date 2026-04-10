@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Diffie-Hellman: com e sem autenticação</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #94a3b8;
+      margin-bottom: 24px;
+    }
+
+    .panels {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .panel {
+      background: #111827;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .panel h2 {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .unsafe h2 { color: #fca5a5; }
+    .safe h2 { color: #86efac; }
+
+    .stage {
+      position: relative;
+      height: 420px;
+      border-radius: 14px;
+      background: linear-gradient(180deg, #0b1220, #0f172a);
+      border: 1px solid #334155;
+      overflow: hidden;
+    }
+
+    .actor {
+      position: absolute;
+      width: 150px;
+      padding: 12px;
+      border-radius: 14px;
+      background: #1e293b;
+      border: 2px solid #475569;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    }
+
+    .alice { left: 20px; top: 150px; }
+    .Beto { right: 20px; top: 150px; }
+    .Carlos { left: 50%; transform: translateX(-50%); top: 110px; border-color: #ef4444; }
+
+    .cert {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 40px;
+      background: #052e16;
+      color: #dcfce7;
+      border: 1px solid #166534;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      opacity: 0;
+    }
+
+    .line {
+      position: absolute;
+      height: 3px;
+      background: #334155;
+      top: 220px;
+    }
+
+    .left-line {
+      left: 180px;
+      width: 180px;
+    }
+
+    .right-line {
+      right: 180px;
+      width: 180px;
+    }
+
+    .safe .left-line,
+    .safe .right-line {
+      width: 300px;
+    }
+
+    .packet {
+      position: absolute;
+      top: 205px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      opacity: 0;
+      white-space: nowrap;
+    }
+
+    .blue { background: #2563eb; }
+    .red { background: #dc2626; }
+    .green { background: #16a34a; }
+    .orange { background: #ea580c; }
+    .purple { background: #7c3aed; }
+
+    .status {
+      margin-top: 14px;
+      min-height: 70px;
+      padding: 12px;
+      border-radius: 10px;
+      background: #0b1220;
+      border: 1px solid #334155;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 24px 0;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 12px 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .legend {
+      margin-top: 10px;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    .bad { color: #fca5a5; font-weight: bold; }
+    .good { color: #86efac; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Diffie-Hellman: sem autenticação vs com autenticação</h1>
+    <div class="subtitle">
+      Comparação visual: sem autenticação, um intermediário pode enganar os dois lados; com autenticação, a identidade é verificada.
+    </div>
+
+    <div class="controls">
+      <button onclick="startComparison()">Iniciar animação</button>
+      <button onclick="resetAll()">Reiniciar</button>
+    </div>
+
+    <div class="panels">
+      <div class="panel unsafe">
+        <h2>Sem autenticação</h2>
+        <div class="stage" id="unsafeStage">
+          <div class="actor alice">Alice</div>
+          <div class="actor Carlos">Carlos</div>
+          <div class="actor Beto">Beto</div>
+
+          <div class="line left-line"></div>
+          <div class="line right-line"></div>
+
+          <div id="unsafePackets"></div>
+        </div>
+        <div class="status" id="unsafeStatus">
+          Estado: aguardando início.
+        </div>
+        <div class="legend">
+          Resultado esperado: <span class="bad">Carlos cria duas chaves separadas e lê/altera mensagens.</span>
+        </div>
+      </div>
+
+      <div class="panel safe">
+        <h2>Com autenticação</h2>
+        <div class="stage" id="safeStage">
+          <div class="actor alice">Alice</div>
+          <div class="actor Beto">Beto</div>
+
+          <div class="cert" id="certBadge">Certificado / assinatura verificada</div>
+
+          <div class="line left-line" style="left:180px;"></div>
+          <div class="line right-line" style="right:180px;"></div>
+
+          <div id="safePackets"></div>
+        </div>
+        <div class="status" id="safeStatus">
+          Estado: aguardando início.
+        </div>
+        <div class="legend">
+          Resultado esperado: <span class="good">Alice verifica Beto e a chave é estabelecida com o participante legítimo.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const unsafePackets = document.getElementById("unsafePackets");
+    const safePackets = document.getElementById("safePackets");
+    const unsafeStatus = document.getElementById("unsafeStatus");
+    const safeStatus = document.getElementById("safeStatus");
+    const certBadge = document.getElementById("certBadge");
+
+    function clearNode(node) {
+      node.innerHTML = "";
+    }
+
+    function resetAll() {
+      clearNode(unsafePackets);
+      clearNode(safePackets);
+      unsafeStatus.textContent = "Estado: aguardando início.";
+      safeStatus.textContent = "Estado: aguardando início.";
+      certBadge.style.opacity = "0";
+    }
+
+    function packet(container, text, color, left, top) {
+      const el = document.createElement("div");
+      el.className = `packet ${color}`;
+      el.style.left = left + "px";
+      el.style.top = top + "px";
+      el.textContent = text;
+      el.style.opacity = "1";
+      container.appendChild(el);
+      return el;
+    }
+
+    function animate(el, fromX, toX, duration) {
+      el.style.left = fromX + "px";
+      el.style.opacity = "1";
+      el.animate(
+        [
+          { left: fromX + "px", opacity: 1 },
+          { left: toX + "px", opacity: 1 }
+        ],
+        { duration: duration, fill: "forwards", easing: "linear" }
+      );
+      setTimeout(() => {
+        el.style.left = toX + "px";
+      }, duration);
+    }
+
+    function startComparison() {
+      resetAll();
+
+      unsafeStatus.textContent = "Passo 1: Alice envia o valor público, mas Carlos intercepta.";
+      safeStatus.textContent = "Passo 1: Alice recebe a identidade autenticada de Beto.";
+
+      const u1 = packet(unsafePackets, "Valor público de Alice", "blue", 170, 205);
+      animate(u1, 170, 330, 2200);
+
+      const s1 = packet(safePackets, "Certificado / prova de identidade", "green", 500, 170);
+      animate(s1, 500, 230, 2200);
+
+      setTimeout(() => {
+        certBadge.style.opacity = "1";
+        safeStatus.textContent = "Passo 2: Alice valida a assinatura/certificado. Sabe que está falando com Beto legítimo.";
+        unsafeStatus.textContent = "Passo 2: Carlos substitui a mensagem e envia o próprio valor a Beto.";
+
+        const u2 = packet(unsafePackets, "Valor falso de Carlos para Beto", "red", 350, 205);
+        animate(u2, 350, 560, 2200);
+
+        const s2 = packet(safePackets, "Valor público de Alice", "blue", 170, 230);
+        animate(s2, 170, 560, 2200);
+      }, 2500);
+
+      setTimeout(() => {
+        unsafeStatus.textContent = "Passo 3: Beto responde, mas Carlos intercepta de novo.";
+        safeStatus.textContent = "Passo 3: Beto responde diretamente a Alice.";
+
+        const u3 = packet(unsafePackets, "Valor público de Beto", "orange", 560, 250);
+        animate(u3, 560, 350, 2200);
+
+        const s3 = packet(safePackets, "Valor público de Beto", "orange", 560, 250);
+        animate(s3, 560, 170, 2200);
+      }, 5200);
+
+      setTimeout(() => {
+        unsafeStatus.textContent = "Passo 4: Carlos envia outro valor falso para Alice e fecha o ciclo do engano.";
+        safeStatus.textContent = "Passo 4: Alice e Beto calculam a mesma chave compartilhada autêntica.";
+
+        const u4 = packet(unsafePackets, "Valor falso de Carlos para Alice", "red", 350, 250);
+        animate(u4, 350, 170, 2200);
+
+        const s4 = packet(safePackets, "Chave compartilhada legítima", "purple", 300, 205);
+        s4.style.left = "300px";
+      }, 7900);
+
+      setTimeout(() => {
+        unsafeStatus.innerHTML = "Conclusão: <span class='bad'>Alice e Beto pensam que falam entre si, mas cada um compartilha uma chave com Carlos.</span>";
+        safeStatus.innerHTML = "Conclusão: <span class='good'>A autenticação impede que um intermediário se passe por Beto ou Alice.</span>";
+
+        const u5 = packet(unsafePackets, "Carlos lê e recifra mensagens", "purple", 285, 315);
+        u5.style.left = "285px";
+      }, 10600);
+    }
+  </script>
+</body>
+</html>

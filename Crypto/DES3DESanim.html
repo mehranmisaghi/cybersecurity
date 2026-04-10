@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>DES vs 3DES</title>
+
+<style>
+body { font-family: Arial; background:#0f172a; color:#e2e8f0; }
+
+.grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    padding:20px;
+}
+
+.panel {
+    background:#111827;
+    padding:15px;
+    border-radius:12px;
+}
+
+.stage {
+    position:relative;
+    height:300px;
+    background:#1e293b;
+    border-radius:10px;
+}
+
+.box {
+    position:absolute;
+    width:120px;
+    padding:8px;
+    background:#334155;
+    border-radius:8px;
+    text-align:center;
+}
+
+.left { left:20px; top:120px; }
+.mid { left:180px; top:120px; }
+.mid2 { left:320px; top:120px; }
+.mid3 { left:460px; top:120px; }
+.right { right:20px; top:120px; }
+
+.packet {
+    position:absolute;
+    top:150px;
+    padding:6px;
+    background:#2563eb;
+    color:white;
+    border-radius:999px;
+    opacity:0;
+}
+
+button {
+    display:block;
+    margin:20px auto;
+    padding:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h2 style="text-align:center;">Comparação: DES vs 3DES</h2>
+
+<button onclick="start()">Iniciar</button>
+
+<div class="grid">
+
+<div class="panel">
+<h3>DES</h3>
+<div class="stage" id="des">
+    <div class="box left">Entrada</div>
+    <div class="box mid">DES</div>
+    <div class="box right">Saída</div>
+</div>
+<p id="desText">Aguardando...</p>
+</div>
+
+<div class="panel">
+<h3>3DES</h3>
+<div class="stage" id="tdes">
+    <div class="box left">Entrada</div>
+    <div class="box mid">DES K1</div>
+    <div class="box mid2">DES K2</div>
+    <div class="box mid3">DES K3</div>
+    <div class="box right">Saída</div>
+</div>
+<p id="tdesText">Aguardando...</p>
+</div>
+
+</div>
+
+<script>
+function packet(stage, x) {
+    let el = document.createElement("div");
+    el.className = "packet";
+    el.style.left = x + "px";
+    el.style.opacity = 1;
+    stage.appendChild(el);
+    return el;
+}
+
+function move(el, from, to) {
+    el.animate([{left:from+"px"}, {left:to+"px"}], {duration:1500, fill:"forwards"});
+}
+
+function start() {
+    const desStage = document.getElementById("des");
+    const tdesStage = document.getElementById("tdes");
+
+    document.getElementById("desText").innerText = "DES: apenas uma criptografia";
+    document.getElementById("tdesText").innerText = "3DES: três etapas → mais seguro";
+
+    let p1 = packet(desStage, 20);
+    move(p1, 20, 200);
+
+    let p2 = packet(tdesStage, 20);
+    move(p2, 20, 180);
+
+    setTimeout(()=>{
+        move(p1, 200, 320);
+        move(p2, 180, 320);
+    },1600);
+
+    setTimeout(()=>{
+        move(p2, 320, 460);
+    },3200);
+
+    setTimeout(()=>{
+        move(p2, 460, 600);
+    },4800);
+
+    setTimeout(()=>{
+        document.getElementById("desText").innerText = "DES: mais rápido, porém inseguro hoje";
+        document.getElementById("tdesText").innerText = "3DES: mais seguro, porém mais lento";
+    },6500);
+}
+</script>
+
+</body>
+</html>

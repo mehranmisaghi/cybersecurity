@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>RSA Completo - Matemática Simplificada e Assinatura Digital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #94a3b8;
+      margin-bottom: 24px;
+    }
+
+    .stage {
+      position: relative;
+      height: 520px;
+      background: linear-gradient(180deg, #111827, #0b1220);
+      border: 1px solid #334155;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .actor {
+      position: absolute;
+      width: 230px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #1e293b;
+      border: 2px solid #475569;
+      box-shadow: 0 8px 20px rgba(0,0,0,.25);
+    }
+
+    .alice { left: 40px; top: 130px; }
+    .math  { left: 50%; transform: translateX(-50%); top: 40px; width: 320px; border-color: #3b82f6; background: #172554; }
+    .bob   { right: 40px; top: 130px; }
+
+    .actor h3 {
+      margin-top: 0;
+    }
+
+    .line {
+      position: absolute;
+      top: 255px;
+      left: 250px;
+      width: 760px;
+      height: 3px;
+      background: #334155;
+    }
+
+    .packet {
+      position: absolute;
+      top: 235px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: bold;
+      color: white;
+      opacity: 0;
+      white-space: nowrap;
+    }
+
+    .blue { background: #2563eb; }
+    .green { background: #16a34a; }
+    .red { background: #dc2626; }
+    .orange { background: #ea580c; }
+    .purple { background: #7c3aed; }
+    .teal { background: #0f766e; }
+
+    .controls {
+      margin: 22px 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 12px 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .panel-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .panel {
+      background: #111827;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 16px;
+      line-height: 1.6;
+    }
+
+    .step {
+      color: #cbd5e1;
+      margin-top: 8px;
+    }
+
+    .ok {
+      color: #86efac;
+      font-weight: bold;
+    }
+
+    .warn {
+      color: #fca5a5;
+      font-weight: bold;
+    }
+
+    .hl {
+      color: #93c5fd;
+      font-weight: bold;
+    }
+
+    .formula {
+      background: #0b1220;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 10px;
+      font-family: "Courier New", monospace;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn.active {
+      background: #16a34a;
+    }
+
+    .mini-title {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>RSA Completo</h1>
+    <div class="subtitle">
+      Matemática simplificada + confidencialidade + assinatura digital
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="playMode('encrypt', this)">Modo: Criptografia</button>
+      <button class="tab-btn" onclick="playMode('sign', this)">Modo: Assinatura Digital</button>
+      <button onclick="resetRSA()">Reiniciar</button>
+    </div>
+
+    <div class="stage">
+      <div class="actor alice">
+        <h3>Alice</h3>
+        <div id="aliceText">Aguardando...</div>
+      </div>
+
+      <div class="actor math">
+        <h3>Matemática simplificada</h3>
+        <div id="mathText">RSA usa aritmética modular e um par de chaves.</div>
+        <div class="formula" id="formulaBox">
+          p e q → n = p × q
+        </div>
+      </div>
+
+      <div class="actor bob">
+        <h3>Bob</h3>
+        <div id="bobText">Aguardando...</div>
+      </div>
+
+      <div class="line"></div>
+      <div id="packets"></div>
+    </div>
+
+    <div class="panel-grid">
+      <div class="panel">
+        <h3 class="mini-title">Resumo conceitual</h3>
+        <div id="stepText">Passo atual: aguardando execução.</div>
+      </div>
+
+      <div class="panel">
+        <h3 class="mini-title">Matemática simplificada</h3>
+        <div>
+          Exemplo didático:
+          <div class="formula">
+            p = 5, q = 11<br>
+            n = 55<br>
+            φ(n) = (5-1)(11-1) = 40<br>
+            escolha e = 3<br>
+            calcule d tal que e·d ≡ 1 mod 40<br>
+            d = 27
+          </div>
+          <div style="margin-top:10px">
+            Chave pública = <span class="hl">(e, n) = (3, 55)</span><br>
+            Chave privada = <span class="hl">(d, n) = (27, 55)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const packets = document.getElementById("packets");
+    const aliceText = document.getElementById("aliceText");
+    const bobText = document.getElementById("bobText");
+    const mathText = document.getElementById("mathText");
+    const formulaBox = document.getElementById("formulaBox");
+    const stepText = document.getElementById("stepText");
+
+    let currentMode = "encrypt";
+
+    function clearPackets() {
+      packets.innerHTML = "";
+    }
+
+    function packet(text, color, left, top) {
+      const el = document.createElement("div");
+      el.className = `packet ${color}`;
+      el.style.left = left + "px";
+      el.style.top = top + "px";
+      el.style.opacity = "1";
+      el.textContent = text;
+      packets.appendChild(el);
+      return el;
+    }
+
+    function move(el, fromX, toX, duration) {
+      el.style.left = fromX + "px";
+      el.animate(
+        [
+          { left: fromX + "px", opacity: 1 },
+          { left: toX + "px", opacity: 1 }
+        ],
+        { duration, fill: "forwards", easing: "linear" }
+      );
+      setTimeout(() => el.style.left = toX + "px", duration);
+    }
+
+    function resetRSA() {
+      clearPackets();
+      aliceText.textContent = "Aguardando...";
+      bobText.textContent = "Aguardando...";
+      mathText.textContent = "RSA usa aritmética modular e um par de chaves.";
+      formulaBox.innerHTML = "p e q → n = p × q";
+      stepText.textContent = "Passo atual: aguardando execução.";
+      autoPlay();
+    }
+
+    function playMode(mode, btn) {
+      currentMode = mode;
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      if (btn) btn.classList.add("active");
+      resetRSA();
+    }
+
+    function autoPlay() {
+      if (currentMode === "encrypt") {
+        playEncryption();
+      } else {
+        playSignature();
+      }
+    }
+
+    function playEncryption() {
+      clearPackets();
+      aliceText.textContent = "Quero enviar uma mensagem secreta para Bob.";
+      bobText.textContent = "Vou gerar um par de chaves RSA.";
+      stepText.textContent = "Passo 1: Bob gera a chave pública e a privada.";
+      mathText.textContent = "Escolhemos p e q; depois calculamos n e φ(n).";
+      formulaBox.innerHTML =
+        "p = 5, q = 11<br>n = 55<br>φ(n) = 40<br>e = 3<br>d = 27";
+
+      setTimeout(() => {
+        stepText.textContent = "Passo 2: Bob publica (e, n) e guarda d em segredo.";
+        bobText.textContent = "Minha chave pública é (3,55). Minha privada é (27,55).";
+        const p1 = packet("Chave pública (3,55)", "blue", 980, 230);
+        move(p1, 980, 260, 2300);
+      }, 1800);
+
+      setTimeout(() => {
+        stepText.textContent = "Passo 3: Alice usa a chave pública para cifrar.";
+        aliceText.textContent = "Se mensagem = m, calculo c = m^e mod n.";
+        mathText.textContent = "Criptografia RSA simplificada:";
+        formulaBox.innerHTML =
+          "Mensagem m = 7<br>c = 7^3 mod 55<br>c = 343 mod 55 = 13";
+      }, 4600);
+
+      setTimeout(() => {
+        const p2 = packet("Texto cifrado c = 13", "green", 260, 270);
+        move(p2, 260, 980, 2400);
+        stepText.textContent = "Passo 4: Alice envia o texto cifrado.";
+      }, 6500);
+
+      setTimeout(() => {
+        bobText.textContent = "Agora uso minha chave privada para recuperar a mensagem.";
+        mathText.textContent = "Descriptografia RSA simplificada:";
+        formulaBox.innerHTML =
+          "m = c^d mod n<br>m = 13^27 mod 55<br>resultado = 7";
+        stepText.textContent = "Passo 5: Bob calcula m = c^d mod n.";
+      }, 9300);
+
+      setTimeout(() => {
+        bobText.textContent = "Recuperei a mensagem original: 7.";
+        stepText.innerHTML = "Conclusão: <span class='ok'>qualquer um pode cifrar com a chave pública, mas só Bob decifra com a privada.</span>";
+      }, 11800);
+    }
+
+    function playSignature() {
+      clearPackets();
+      aliceText.textContent = "Quero provar que a mensagem realmente veio de mim.";
+      bobText.textContent = "Vou verificar a assinatura usando a chave pública de Alice.";
+      stepText.textContent = "Passo 1: para assinatura, Alice usa a própria chave privada.";
+      mathText.textContent = "Na assinatura, o sentido das chaves muda conceitualmente.";
+      formulaBox.innerHTML =
+        "Assinatura: s = h(m)^d mod n<br>Verificação: h(m) ?= s^e mod n";
+
+      setTimeout(() => {
+        stepText.textContent = "Passo 2: Alice calcula um resumo da mensagem (hash).";
+        aliceText.textContent = "Primeiro aplico hash na mensagem.";
+        formulaBox.innerHTML =
+          "Mensagem: 'Oi'<br>Hash simplificado: h(m) = 9";
+      }, 2200);
+
+      setTimeout(() => {
+        stepText.textContent = "Passo 3: Alice assina o hash com a chave privada.";
+        aliceText.textContent = "Assino com minha chave privada.";
+        formulaBox.innerHTML =
+          "s = h(m)^d mod n<br>s = 9^27 mod 55<br>assinatura = valor assinado";
+      }, 4700);
+
+      setTimeout(() => {
+        const p1 = packet("Mensagem + assinatura", "orange", 260, 230);
+        move(p1, 260, 980, 2500);
+        stepText.textContent = "Passo 4: Alice envia a mensagem e a assinatura.";
+      }, 7200);
+
+      setTimeout(() => {
+        bobText.textContent = "Vou usar a chave pública de Alice para verificar.";
+        mathText.textContent = "Bob não usa a privada de Alice; ele usa a pública dela.";
+        formulaBox.innerHTML =
+          "Verificação:<br>1) calcula h(m)<br>2) calcula s^e mod n<br>3) compara os dois";
+        stepText.textContent = "Passo 5: Bob verifica se a assinatura bate com o hash da mensagem.";
+      }, 10100);
+
+      setTimeout(() => {
+        bobText.textContent = "A assinatura é válida: a mensagem é autêntica e íntegra.";
+        stepText.innerHTML = "Conclusão: <span class='ok'>assinatura digital oferece autenticidade e integridade.</span>";
+      }, 12700);
+    }
+
+    autoPlay();
+  </script>
+</body>
+</html>

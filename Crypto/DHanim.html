@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diffie-Hellman e Ataque MiTM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      color: #94a3b8;
+      margin-bottom: 24px;
+    }
+
+    .stage {
+      position: relative;
+      height: 420px;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      background: linear-gradient(180deg, #111827, #0b1220);
+      overflow: hidden;
+    }
+
+    .actor {
+      position: absolute;
+      width: 180px;
+      padding: 16px;
+      border-radius: 16px;
+      background: #1e293b;
+      border: 2px solid #475569;
+      box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    }
+
+    .alice { left: 60px; top: 120px; }
+    .Carlos { left: 50%; top: 90px; transform: translateX(-50%); border-color: #ef4444; }
+    .Beto { right: 60px; top: 120px; }
+
+    .actor h2 {
+      margin: 0 0 8px 0;
+      font-size: 22px;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+      background: #334155;
+      color: #cbd5e1;
+    }
+
+    .Carlos .tag {
+      background: #7f1d1d;
+      color: #fecaca;
+    }
+
+    .bubble {
+      margin-top: 8px;
+      padding: 10px;
+      border-radius: 10px;
+      background: #0f172a;
+      border: 1px solid #334155;
+      min-height: 60px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .line {
+      position: absolute;
+      top: 205px;
+      height: 3px;
+      background: #334155;
+      z-index: 1;
+    }
+
+    .line.left { left: 240px; width: 270px; }
+    .line.right { right: 240px; width: 270px; }
+
+    .packet {
+      position: absolute;
+      top: 188px;
+      left: 0;
+      padding: 8px 12px;
+      font-size: 13px;
+      border-radius: 999px;
+      color: white;
+      font-weight: bold;
+      opacity: 0;
+      z-index: 5;
+      white-space: nowrap;
+    }
+
+    .blue { background: #2563eb; }
+    .green { background: #16a34a; }
+    .red { background: #dc2626; }
+    .orange { background: #ea580c; }
+    .purple { background: #7c3aed; }
+
+    .packet.move-a-m {
+      animation: aToM 3s linear forwards;
+    }
+
+    .packet.move-m-b {
+      animation: mToB 3s linear forwards;
+    }
+
+    .packet.move-b-m {
+      animation: bToM 3s linear forwards;
+    }
+
+    .packet.move-m-a {
+      animation: mToA 3s linear forwards;
+    }
+
+    @keyframes aToM {
+      0% { left: 250px; opacity: 1; }
+      100% { left: 500px; opacity: 1; }
+    }
+
+    @keyframes mToB {
+      0% { left: 520px; opacity: 1; }
+      100% { left: 820px; opacity: 1; }
+    }
+
+    @keyframes bToM {
+      0% { left: 820px; opacity: 1; }
+      100% { left: 520px; opacity: 1; }
+    }
+
+    @keyframes mToA {
+      0% { left: 500px; opacity: 1; }
+      100% { left: 250px; opacity: 1; }
+    }
+
+    .controls {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 12px 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .explanation {
+      margin-top: 22px;
+      padding: 18px;
+      border-radius: 12px;
+      background: #111827;
+      border: 1px solid #334155;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    .step {
+      margin-top: 8px;
+      color: #cbd5e1;
+    }
+
+    .highlight {
+      color: #fca5a5;
+      font-weight: bold;
+    }
+
+    .ok {
+      color: #86efac;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Algoritmo de Diffie-Hellman: Ataque MiTM</h1>
+    <p class="subtitle">Animação didática sobre como a falta de autenticação permite um intermediário se passar por cada lado.</p>
+
+    <div class="stage">
+      <div class="actor alice">
+        <div class="tag">Participante legítimo</div>
+        <h2>Alice</h2>
+        <div class="bubble" id="aliceText">
+          Quer estabelecer uma chave secreta com Beto.
+        </div>
+      </div>
+
+      <div class="actor Carlos">
+        <div class="tag">Intermediário malicioso</div>
+        <h2>Carlos</h2>
+        <div class="bubble" id="CarlosText">
+          Intercepta mensagens e cria duas chaves separadas.
+        </div>
+      </div>
+
+      <div class="actor Beto">
+        <div class="tag">Participante legítimo</div>
+        <h2>Beto</h2>
+        <div class="bubble" id="BetoText">
+          Acredita que está negociando diretamente com Alice.
+        </div>
+      </div>
+
+      <div class="line left"></div>
+      <div class="line right"></div>
+      <div id="packets"></div>
+    </div>
+
+    <div class="controls">
+      <button onclick="startDemo()">Iniciar animação</button>
+      <button onclick="resetDemo()">Reiniciar</button>
+    </div>
+
+    <div class="explanation">
+      <div><strong>Objetivo da animação:</strong> mostrar <span class="highlight">conceitualmente</span> o ataque Man-in-the-Middle em uma troca Diffie-Hellman sem autenticação.</div>
+      <div class="step" id="stepText">Passo atual: aguardando início.</div>
+      <div class="step"><strong>Defesa:</strong> usar <span class="ok">autenticação</span>, certificados, assinatura digital ou protocolo autenticado.</div>
+    </div>
+  </div>
+
+  <script>
+    const packets = document.getElementById("packets");
+    const stepText = document.getElementById("stepText");
+    const aliceText = document.getElementById("aliceText");
+    const BetoText = document.getElementById("BetoText");
+    const CarlosText = document.getElementById("CarlosText");
+
+    function createPacket(text, cls, moveClass, top = 188) {
+      const el = document.createElement("div");
+      el.className = `packet ${cls} ${moveClass}`;
+      el.style.top = top + "px";
+      el.textContent = text;
+      packets.appendChild(el);
+      return el;
+    }
+
+    function clearPackets() {
+      packets.innerHTML = "";
+    }
+
+    function resetDemo() {
+      clearPackets();
+      stepText.textContent = "Passo atual: aguardando início.";
+      aliceText.textContent = "Quer estabelecer uma chave secreta com Beto.";
+      BetoText.textContent = "Acredita que está negociando diretamente com Alice.";
+      CarlosText.textContent = "Intercepta mensagens e cria duas chaves separadas.";
+    }
+
+    function startDemo() {
+      resetDemo();
+
+      stepText.textContent = "Passo 1: Alice envia seu valor público para Beto, mas Carlos intercepta.";
+      aliceText.textContent = "Envio meu valor público achando que chegará ao Beto.";
+      const p1 = createPacket("Valor público de Alice", "blue", "move-a-m", 170);
+
+      setTimeout(() => {
+        CarlosText.textContent = "Recebi o valor de Alice. Não vou repassar intacto.";
+        stepText.textContent = "Passo 2: Carlos substitui a mensagem e envia o próprio valor para Beto.";
+        const p2 = createPacket("Valor público falso para Beto", "red", "move-m-b", 170);
+      }, 3200);
+
+      setTimeout(() => {
+        BetoText.textContent = "Recebi um valor e penso que veio de Alice.";
+        stepText.textContent = "Passo 3: Beto responde com seu valor público, mas Carlos intercepta novamente.";
+        const p3 = createPacket("Valor público de Beto", "green", "move-b-m", 240);
+      }, 6500);
+
+      setTimeout(() => {
+        CarlosText.textContent = "Agora também vou me passar por Beto diante de Alice.";
+        stepText.textContent = "Passo 4: Carlos envia outro valor falso para Alice.";
+        const p4 = createPacket("Valor público falso para Alice", "orange", "move-m-a", 240);
+      }, 9800);
+
+      setTimeout(() => {
+        aliceText.textContent = "Acredito que compartilho uma chave só com Beto.";
+        BetoText.textContent = "Também acredito que compartilho uma chave só com Alice.";
+        CarlosText.textContent = "Na prática, tenho uma chave com Alice e outra com Beto.";
+        stepText.textContent = "Passo 5: resultado — Alice e Beto não compartilham a mesma chave entre si; Carlos fica no meio.";
+      }, 13100);
+
+      setTimeout(() => {
+        const p5 = document.createElement("div");
+        p5.className = "packet purple";
+        p5.style.left = "470px";
+        p5.style.top = "300px";
+        p5.style.opacity = "1";
+        p5.textContent = "Sem autenticação, o MiTM funciona conceitualmente";
+        packets.appendChild(p5);
+
+        stepText.textContent = "Conclusão: Diffie-Hellman sozinho estabelece segredo, mas não autentica identidade.";
+      }, 15000);
+    }
+  </script>
+</body>
+</html>
