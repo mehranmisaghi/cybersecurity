@@ -19,7 +19,7 @@ permalink: Crypto/README.md
 ---
 ## Materiais para estudar Criptografia (I) (13/04 - 20/04)
 
- - [Capítulo 1 e 2 do livro Stallings](Chttps://mehranmisaghi.github.io/cybersecurity/materiais/cap1e2-cripto.pdf)
+ - [Capítulo 1 e 2 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap1e2-cripto.pdf)
  - [Slides de aula - Criptografia (I)](https://canva.link/5f4bwz4tecbg0r5)
  
  - [Animação DES](https://mehranmisaghi.github.io/cybersecurity/Crypto/DESanim.html)
