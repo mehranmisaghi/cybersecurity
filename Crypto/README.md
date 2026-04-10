@@ -17,7 +17,7 @@ permalink: Crypto/README.md
     - Criptografia Sem Certificado
     - Criptografia Quântica e Pós Quântica
 ---
-## Materiais para estudar Criptografia (I) 13/04 - 20/04
+## Materiais para estudar Criptografia (I) (13/04 - 20/04)
 
  - [Capítulo 1 e 2 do livro Stallings](Chttps://mehranmisaghi.github.io/cybersecurity/materiais/cap1e2-cripto.pdf)
  - [Slides de aula - Criptografia (I)](https://canva.link/5f4bwz4tecbg0r5)
