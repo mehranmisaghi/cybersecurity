@@ -67,7 +67,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 [Fundamentos de Criptografia e Ferramentas utilizadas (13/04/2026 - 20/04/2026)](Crypto/README.md)
 
   - Modelos Convencionais de Criptografia:
-    - [Simétrica e Assimétrica]((https://canva.link/5f4bwz4tecbg0r5))
+    - [Simétrica e Assimétrica](https://canva.link/5f4bwz4tecbg0r5)
     - Cifras mais utilizadas (Rinadael - AES)
     - Esteganografia
     - Modelos de avaliação
