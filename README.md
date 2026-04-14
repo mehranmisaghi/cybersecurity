@@ -87,7 +87,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Conceitos e Tipos
   - Ferramentas de simulação
 
-## **Prova Única (11/05/2026) - autalizado**
+## **Prova Única (11/05/2026) - atualizado**
 
 [Engenharia Social (28/04/2026 - 28/04/2026)](social.md)
 
