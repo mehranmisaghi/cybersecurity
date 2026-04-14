@@ -21,7 +21,7 @@ permalink: Crypto/README.md
 
  - [Capítulo 1 e 2 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap1e2-cripto.pdf)
  - [Slides de aula - Criptografia (I)](https://canva.link/5f4bwz4tecbg0r5)
- 
+ - **Fazer um pequeno programa para cifras de transposição de uma frase (falamos no dia 13/04)**
  - [Animação DES](https://mehranmisaghi.github.io/cybersecurity/Crypto/DESanim.html)
  - [Animação 3DES](https://mehranmisaghi.github.io/cybersecurity/Crypto/3DESanim.html)
  - [Animação comparativo DES e 3DES](https://mehranmisaghi.github.io/cybersecurity/Crypto/DESanim.html)
@@ -30,5 +30,5 @@ permalink: Crypto/README.md
  - [Animação RSA](https://mehranmisaghi.github.io/cybersecurity/Crypto/RSAanim.html)
 
  ---
-## Próxima aula
+## Próxima assunt: Criptografia (II)
 - AES

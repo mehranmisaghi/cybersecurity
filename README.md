@@ -87,7 +87,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Conceitos e Tipos
   - Ferramentas de simulação
 
-## Prova Única (27/04/2026)
+## **Prova Única (11/05/2026) - autalizado**
 
 [Engenharia Social (28/04/2026 - 28/04/2026)](social.md)
 
@@ -100,7 +100,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Contingência e Continuidade de Negócios
   - Framework de Cibersegurança para IA (NIST)
 
-## Projeto de Segurança I (PSI) (11/05/2026 - 25/05/2026)
+## Projeto de Segurança I (PSI) (12/05/2026 - 25/05/2026)
 
 Como os conceitos apreendidos os alunos precisam desenvolver uma ferramenta de Diagnóstico ou (C)onformidade que apresente no formato de um dashboard, uma das seguintes opções:
   - Conformidade:
