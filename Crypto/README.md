@@ -31,4 +31,6 @@ permalink: Crypto/README.md
 
  ---
 ## Próxima assunt: Criptografia (II)
-- AES
+- **Fazer um pequeno programa para cifras de transposição de uma frase (falamos no dia 13/04 e ficaram de mandar p e-mail)**
+
+ - AES
