@@ -30,7 +30,7 @@ permalink: Crypto/README.md
  - [Animação RSA](https://mehranmisaghi.github.io/cybersecurity/Crypto/RSAanim.html)
 
  ---
-## Próxima assunt: Criptografia (II)
+## Próxima assunto: Criptografia (II)
 - **Fazer um pequeno programa para cifras de transposição de uma frase (falamos no dia 13/04 e ficaram de mandar p e-mail)**
 
  - AES
