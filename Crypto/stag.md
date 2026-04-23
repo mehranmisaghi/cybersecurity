@@ -75,4 +75,4 @@ O cão **vai** pegar o osso amanhã. Ele corre **para** o parque bem cedo. A viz
 Se o invasor desconfiar da imagem e conseguir extrair os dados, ele só encontrará um arquivo cifrado e sem chave, não conseguirá chegar no arquivo/mensagem original!
 
 ---
-
+## [Fundamentos de Criptografia e Ferramentas Utilizadas](README.md)

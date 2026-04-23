@@ -68,10 +68,11 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 
   - Modelos Convencionais de Criptografia:
     - [Simétrica e Assimétrica](https://canva.link/5f4bwz4tecbg0r5)
-    - Cifras mais utilizadas (Rinadael - AES)
-    - Esteganografia
-    - Modelos de avaliação
-    - Ferramentas on-line de de modelos criptográficos
+    - [Cifras mais utilizadas (Rinadael - AES)](https://canva.link/1bm6yc3lfezfm6i)
+    - [Esteganografia](https://canva.link/1bm6yc3lfezfm6i)
+    - [Modelos de avaliação](https://canva.link/1bm6yc3lfezfm6i)
+    - [Hash](https://canva.link/1bm6yc3lfezfm6i)
+    - [PGP](https://canva.link/1bm6yc3lfezfm6i)
 
   - Modelos Alernativos de Criptografia:
     - Criptografia Baseada na Identidade
