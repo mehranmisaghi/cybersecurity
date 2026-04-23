@@ -30,7 +30,17 @@ permalink: Crypto/README.md
  - [Animação RSA](https://mehranmisaghi.github.io/cybersecurity/Crypto/RSAanim.html)
 
  ---
-## Próxima assunto: Criptografia (II)
-- **Fazer um pequeno programa para cifras de transposição de uma frase (falamos no dia 13/04 e ficaram de mandar p e-mail)**
-
+## Assuntos abordados no Criptografia (II) (27/04 - )
  - AES
+ - Avaliação de Sistemas Criptográficos
+ - [Esteganografia](stag.md)
+ - Hashes
+ - Email seguro
+ - PGP
+ ---
+## Materiais para estudar Criptografia (II) (27/04 - )
+
+  - **Fazer um pequeno programa para cifras de transposição de uma frase (falamos no dia 13/04 e ficaram de mandar p e-mail)**
+  - [Capítulo 5 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap5-stallings.pdf)
+  - [Esteganografia](stag.md)
+  - [Slides da Aula - Criptografia (II)](https://canva.link/1bm6yc3lfezfm6i)
