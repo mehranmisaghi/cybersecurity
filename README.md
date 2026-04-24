@@ -79,8 +79,9 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - Criptografia Sem Certificado
     - Criptografia Quântica e Pós Quântica
  
-[Protocolos Criptográrficos e ferramentas relacionadas (13/04/2026 - 14/04/2026)](Crypto/protocolos.md)
+[Protocolos Criptográrficos e ferramentas relacionadas (redefinir data)](Crypto/protocolos.md)
 
+ **Assuntos serão vistos junto com outros tópicos de criptografia**
   - Protocolos criptográficos (HTTPS, HSTS, SSL, SSH, DNSSEC, PGP, Kerberos)
   - Ferramentas utilizadas
  
@@ -90,7 +91,6 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 
 ## **Prova Única (11/05/2026) - atualizado**
 
-[Engenharia Social (28/04/2026 - 28/04/2026)](social.md)
 
 [Gestão de Riscos (28/04/2026 - 05/05/2026)](Risks/README.md)
 
