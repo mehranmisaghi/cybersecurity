@@ -62,7 +62,7 @@ Leia a mensagem abaixo:
 
 Leia a mensagem abaixo:
 
-O cão **vai** pegar o osso amanhã. Ele corre **para** o parque bem cedo. A vizinha costuma **casa** com as janelas abertas.
+O cão **vai** pegar o osso amanhã. Ele corre **para** o parque bem cedo. A vizinha deixa **casa** com as janelas abertas.
 
 **Mensagem oculta:** vai para casa.
 
