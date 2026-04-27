@@ -33,7 +33,7 @@ permalink: Crypto/README.md
 ## Assuntos abordados no Criptografia (II) (27/04 - )
  - AES
  - Avaliação de Sistemas Criptográficos
- - [Teste seus conhecimento](AES.md)
+ - [Teste seus conhecimentos](AES.md)
  - [Esteganografia](stag.md)
  - Hashes
  - Email seguro
