@@ -33,6 +33,7 @@ permalink: Crypto/README.md
 ## Assuntos abordados no Criptografia (II) (27/04 - )
  - AES
  - Avaliação de Sistemas Criptográficos
+ - [Teste seus conhecimento](AES.md)
  - [Esteganografia](stag.md)
  - Hashes
  - Email seguro
@@ -42,5 +43,6 @@ permalink: Crypto/README.md
 
   - **Fazer um pequeno programa para cifras de transposição de uma frase (falamos no dia 13/04 e ficaram de mandar p e-mail)**
   - [Capítulo 5 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap5-stallings.pdf)
+  - [Questões dissertativas sobre AES](AES.md)
   - [Esteganografia](stag.md)
   - [Slides da Aula - Criptografia (II)](https://canva.link/1bm6yc3lfezfm6i)
