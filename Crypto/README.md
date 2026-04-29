@@ -12,7 +12,7 @@ permalink: Crypto/README.md
     - Modelos de avaliação
     - Ferramentas on-line de de modelos criptográficos
 
-  - [Modelos Alernativos de Criptografia](https://doi.org/10.5753/sbc.9900.4.2)
+  - [Modelos Alernativos de Criptografia](criptoalternativa.md)
     - Criptografia Baseada na Identidade
     - Criptografia Sem Certificado
     - Criptografia Quântica e Pós Quântica
@@ -30,7 +30,7 @@ permalink: Crypto/README.md
  - [Animação RSA](https://mehranmisaghi.github.io/cybersecurity/Crypto/RSAanim.html)
 
  ---
-## Assuntos abordados no Criptografia (II) (27/04 - )
+## Assuntos abordados no Criptografia (II) (27/04 - 28/04)
  - AES
  - Avaliação de Sistemas Criptográficos
  - [Teste seus conhecimentos](AES.md)
@@ -39,7 +39,7 @@ permalink: Crypto/README.md
  - Email seguro
  - PGP
  ---
-## Materiais para estudar Criptografia (II) (27/04 - )
+## Materiais para estudar Criptografia (II) (27/04 - 28/04)
 
   - **Fazer um pequeno programa para cifras de transposição de uma frase (falamos no dia 13/04 e ficaram de mandar p e-mail)**
   - [Capítulo 5 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap5-stallings.pdf)

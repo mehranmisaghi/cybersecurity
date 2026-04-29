@@ -1,3 +1,8 @@
+---
+title: 'Modelos de Criptografia de Chave Pública Alternativos'
+description: 'Modelos de criptografgia alternativos'
+permalink: Crypto/criptoalternativa.md
+---
 # Resumo de Modelos de Criptografia de Chave Pública Alternativos
 
 > Este resumo foi gerado por IA a partir do [Minicurso ministrado em SBSeg 2009](https://books-sol.sbc.org.br/index.php/sbc/catalog/view/99/442/713)
@@ -188,4 +193,4 @@ A literatura sobre evolução da segurança transacionada abarca avanços profun
 **ZHENG, Y.** Digital signcryption or how to achieve cost(signature & encryption) << cost(signature) + cost(encryption). In: ANNUAL INTERNATIONAL CRYPTOLOGY CONFERENCE (CRYPTO), 17., 1997, Londres. **Lecture Notes in Computer Science**, Berlin: Springer-Verlag, p. 165–179, 1997.
 
 ---
-[Teste os seus conhecimentos sobre modelos alternativos de criptografia](qcriptoalternativo.html)
+### [Teste os seus conhecimentos sobre modelos alternativos de criptografia](https://mehranmisaghi.github.io/cybersecurity/Crypto/qcriptoalternativo.html)
