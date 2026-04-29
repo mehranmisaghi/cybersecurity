@@ -11,7 +11,7 @@ Com a inserção e crescimento de redes ad-hoc, comunicação móvel tolerante a
 
 ---
 
-## 2. CRIPTOGRAFIA DE CHAVE PÚBLICA BASEADA EM IDENTIDADE (IBE)
+## 2. CRIPTOGRAFIA BASEADA EM IDENTIDADE (IBE)
 
 ### 2.1 Conceitos Fundamentais
 A Criptografia Baseada em Identidade, ou Identity-Based Encryption (IBE), foi proposta inicialmente por Adi Shamir em 1984. O conceito matricial deste paradigma estabelece que a própria identidade individual do usuário (seu número de CPF, seu endereço de e-mail, telefone ou qualquer string unívoca) pode ser matematicamente convertida e interpretada como a sua Chave Pública. Uma Autoridade de Confiança (Geradora de Chaves - AC/PKG) recebe a identidade e, com o uso de um segredo mestre, produz e entrega o respectivo bloco decodificador privado ao requerente.
@@ -24,7 +24,7 @@ O sistema de ID-based (Baseado em Identidade) ostenta prós singulares:
 2. **Cifragem Precoce ou Assíncrona:** Diferente das exigências engessadas da técnica tradicional — onde quem deseja receber mensagens cifradas precisa, mandatoriamente, ter se antecipado, gerado uma chave e certificado na AC —, o transmissor em IBE pode criptografar todo o fluxo voltado ao endereço 'bob@empresa.com' ou CPF específico, antes sequer de Bob tomar conhecimento do sistema e dar entrada na produção do arquivo de decifragem.
 3. **Escalamento em Grupos Fechados:** A proposta preza pelo uso de sistemas fechados. Matrizes corporativas como Multinacionais, Redes Bancárias e Forças Armadas beneficiam-se estruturalmente como aponta Shamir, pois todos os filiados confiam numa gerência hierárquica e dispensam gastos altos num ecossistema de listagens revogatórias contínuas.
 
-### 2.3 Custódia de Chaves (Key Escrow) e as Fissuras do IBE
+### 2.3 Custódia de Chave
 O que torna o modelo prático embute também o seu "Calcanhar de Aquiles" irreversível, caracterizado largamente no modelo como "Custódia de Chave" ou *Key Escrow*. 
 
 Segundo o documento analisado e com base em restrições categorizadas por Girault (1991), o IBE coloca o emissor e o utilizador sob a vigência do "Nível 1 de Confiança". Como todo segredo de destravamento emerge inseparavelmente pelas mãos do centro unificador do sistema (a Autoridade da rede), nada inviabiliza física ou computacionalmente esta AC de promover varreduras internas aos pacotes e abrir todo o pacote particular (bisbilhotagem passiva ou ativa). Ela forja identidades falsas transparecendo a gênese, impossibilitando garantias sólidas nos critérios de não repúdio e irretratabilidade perante disputas legais. 
@@ -186,3 +186,6 @@ A literatura sobre evolução da segurança transacionada abarca avanços profun
 **ZHANG, Z. et al.** Certificateless public key signature: security model and efficient construction. In: INTERNATIONAL CONFERENCE ON APPLIED CRYPTOGRAPHY AND NETWORK SECURITY (ACNS), 4., 2006, Singapura. **Lecture Notes in Computer Science**, Berlin: Springer, v. 3989, 2006.
 
 **ZHENG, Y.** Digital signcryption or how to achieve cost(signature & encryption) << cost(signature) + cost(encryption). In: ANNUAL INTERNATIONAL CRYPTOLOGY CONFERENCE (CRYPTO), 17., 1997, Londres. **Lecture Notes in Computer Science**, Berlin: Springer-Verlag, p. 165–179, 1997.
+
+---
+[Teste os seus conhecimentos sobre modelos alternativos de criptografia](qcriptoalternativo.html)

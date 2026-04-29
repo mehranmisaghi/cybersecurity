@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!-- saved from url=(0125)https://tess-workflows-files.storage.googleapis.com/2d37fac1fa944a86ac4caea87afe33bed86ce1c6/quiz_criptografia_funcional.html -->
+<html lang="pt-BR"><div style="
+      all: initial!important;
+      z-index: 2147483647!important;
+      width: auto!important;
+      position: fixed!important;
+      bottom: 16px!important;
+      left: 16px!important;
+    "><template shadowrootmode="open"><style type="text/css">
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.snackbar-container {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 14px;
+  z-index: 2147483647;
+
+  .snackbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #322F35;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 14px 16px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: snackbar-opening 0.25s ease-in-out forwards;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+
+    &:not(.active) {
+      animation-name: snackbar-closing;
+      animation-duration: 0.35s;
+    }
+
+    .t-message {
+      color: #F5EFF7;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.28px;
+    }
+  }
+}
+
+@keyframes snackbar-opening {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes snackbar-closing {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  75% {
+    max-height: 30px;
+    padding: 16px;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    max-height: 0;
+    padding: 0;
+    transform: translateY(100%);
+  }
+}
+</style><div class="snackbar-container"></div></template><style type="text/css">
+@font-face {
+  font-family: 'Roboto';
+  src: url("chrome-extension://pogjckjponckompmmfngpcpkfggnnafi/assets/Roboto-Regular.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+</style></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>:root{--litepicker-container-months-color-bg: #fff;--litepicker-container-months-box-shadow-color: #ddd;--litepicker-footer-color-bg: #fafafa;--litepicker-footer-box-shadow-color: #ddd;--litepicker-tooltip-color-bg: #fff;--litepicker-month-header-color: #333;--litepicker-button-prev-month-color: #9e9e9e;--litepicker-button-next-month-color: #9e9e9e;--litepicker-button-prev-month-color-hover: #2196f3;--litepicker-button-next-month-color-hover: #2196f3;--litepicker-month-width: calc(var(--litepicker-day-width) * 7);--litepicker-month-weekday-color: #9e9e9e;--litepicker-month-week-number-color: #9e9e9e;--litepicker-day-width: 38px;--litepicker-day-color: #333;--litepicker-day-color-hover: #2196f3;--litepicker-is-today-color: #f44336;--litepicker-is-in-range-color: #bbdefb;--litepicker-is-locked-color: #9e9e9e;--litepicker-is-start-color: #fff;--litepicker-is-start-color-bg: #2196f3;--litepicker-is-end-color: #fff;--litepicker-is-end-color-bg: #2196f3;--litepicker-button-cancel-color: #fff;--litepicker-button-cancel-color-bg: #9e9e9e;--litepicker-button-apply-color: #fff;--litepicker-button-apply-color-bg: #2196f3;--litepicker-button-reset-color: #909090;--litepicker-button-reset-color-hover: #2196f3;--litepicker-highlighted-day-color: #333;--litepicker-highlighted-day-color-bg: #ffeb3b}.show-week-numbers{--litepicker-month-width: calc(var(--litepicker-day-width) * 8)}.litepicker{font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;font-size:0.8em;display:none}.litepicker button{border:none;background:none}.litepicker .container__main{display:-webkit-box;display:-ms-flexbox;display:flex}.litepicker .container__months{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;background-color:var(--litepicker-container-months-color-bg);border-radius:5px;-webkit-box-shadow:0 0 5px var(--litepicker-container-months-box-shadow-color);box-shadow:0 0 5px var(--litepicker-container-months-box-shadow-color);width:calc(var(--litepicker-month-width) + 10px);-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__months.columns-2{width:calc((var(--litepicker-month-width) * 2) + 20px)}.litepicker .container__months.columns-3{width:calc((var(--litepicker-month-width) * 3) + 30px)}.litepicker .container__months.columns-4{width:calc((var(--litepicker-month-width) * 4) + 40px)}.litepicker .container__months.split-view .month-item-header .button-previous-month,.litepicker .container__months.split-view .month-item-header .button-next-month{visibility:visible}.litepicker .container__months .month-item{padding:5px;width:var(--litepicker-month-width);-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__months .month-item-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;font-weight:500;padding:10px 5px;text-align:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:var(--litepicker-month-header-color)}.litepicker .container__months .month-item-header div{-webkit-box-flex:1;-ms-flex:1;flex:1}.litepicker .container__months .month-item-header div>.month-item-name{margin-right:5px}.litepicker .container__months .month-item-header div>.month-item-year{padding:0}.litepicker .container__months .month-item-header .reset-button{color:var(--litepicker-button-reset-color)}.litepicker .container__months .month-item-header .reset-button>svg{fill:var(--litepicker-button-reset-color)}.litepicker .container__months .month-item-header .reset-button *{pointer-events:none}.litepicker .container__months .month-item-header .reset-button:hover{color:var(--litepicker-button-reset-color-hover)}.litepicker .container__months .month-item-header .reset-button:hover>svg{fill:var(--litepicker-button-reset-color-hover)}.litepicker .container__months .month-item-header .button-previous-month,.litepicker .container__months .month-item-header .button-next-month{visibility:hidden;text-decoration:none;padding:3px 5px;border-radius:3px;-webkit-transition:color 0.3s, border 0.3s;transition:color 0.3s, border 0.3s;cursor:default}.litepicker .container__months .month-item-header .button-previous-month *,.litepicker .container__months .month-item-header .button-next-month *{pointer-events:none}.litepicker .container__months .month-item-header .button-previous-month{color:var(--litepicker-button-prev-month-color)}.litepicker .container__months .month-item-header .button-previous-month>svg,.litepicker .container__months .month-item-header .button-previous-month>img{fill:var(--litepicker-button-prev-month-color)}.litepicker .container__months .month-item-header .button-previous-month:hover{color:var(--litepicker-button-prev-month-color-hover)}.litepicker .container__months .month-item-header .button-previous-month:hover>svg{fill:var(--litepicker-button-prev-month-color-hover)}.litepicker .container__months .month-item-header .button-next-month{color:var(--litepicker-button-next-month-color)}.litepicker .container__months .month-item-header .button-next-month>svg,.litepicker .container__months .month-item-header .button-next-month>img{fill:var(--litepicker-button-next-month-color)}.litepicker .container__months .month-item-header .button-next-month:hover{color:var(--litepicker-button-next-month-color-hover)}.litepicker .container__months .month-item-header .button-next-month:hover>svg{fill:var(--litepicker-button-next-month-color-hover)}.litepicker .container__months .month-item-weekdays-row{display:-webkit-box;display:-ms-flexbox;display:flex;justify-self:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;color:var(--litepicker-month-weekday-color)}.litepicker .container__months .month-item-weekdays-row>div{padding:5px 0;font-size:85%;-webkit-box-flex:1;-ms-flex:1;flex:1;width:var(--litepicker-day-width);text-align:center}.litepicker .container__months .month-item:first-child .button-previous-month{visibility:visible}.litepicker .container__months .month-item:last-child .button-next-month{visibility:visible}.litepicker .container__months .month-item.no-previous-month .button-previous-month{visibility:hidden}.litepicker .container__months .month-item.no-next-month .button-next-month{visibility:hidden}.litepicker .container__days{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;justify-self:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:center;-webkit-box-sizing:content-box;box-sizing:content-box}.litepicker .container__days>div,.litepicker .container__days>a{padding:5px 0;width:var(--litepicker-day-width)}.litepicker .container__days .day-item{color:var(--litepicker-day-color);text-align:center;text-decoration:none;border-radius:3px;-webkit-transition:color 0.3s, border 0.3s;transition:color 0.3s, border 0.3s;cursor:default}.litepicker .container__days .day-item:hover{color:var(--litepicker-day-color-hover);-webkit-box-shadow:inset 0 0 0 1px var(--litepicker-day-color-hover);box-shadow:inset 0 0 0 1px var(--litepicker-day-color-hover)}.litepicker .container__days .day-item.is-today{color:var(--litepicker-is-today-color)}.litepicker .container__days .day-item.is-locked{color:var(--litepicker-is-locked-color)}.litepicker .container__days .day-item.is-locked:hover{color:var(--litepicker-is-locked-color);-webkit-box-shadow:none;box-shadow:none;cursor:default}.litepicker .container__days .day-item.is-in-range{background-color:var(--litepicker-is-in-range-color);border-radius:0}.litepicker .container__days .day-item.is-start-date{color:var(--litepicker-is-start-color);background-color:var(--litepicker-is-start-color-bg);border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:0;border-bottom-right-radius:0}.litepicker .container__days .day-item.is-start-date.is-flipped{border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-end-date{color:var(--litepicker-is-end-color);background-color:var(--litepicker-is-end-color-bg);border-top-left-radius:0;border-bottom-left-radius:0;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-end-date.is-flipped{border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:0;border-bottom-right-radius:0}.litepicker .container__days .day-item.is-start-date.is-end-date{border-top-left-radius:5px;border-bottom-left-radius:5px;border-top-right-radius:5px;border-bottom-right-radius:5px}.litepicker .container__days .day-item.is-highlighted{color:var(--litepicker-highlighted-day-color);background-color:var(--litepicker-highlighted-day-color-bg)}.litepicker .container__days .week-number{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:var(--litepicker-month-week-number-color);font-size:85%}.litepicker .container__footer{text-align:right;padding:10px 5px;margin:0 5px;background-color:var(--litepicker-footer-color-bg);-webkit-box-shadow:inset 0px 3px 3px 0px var(--litepicker-footer-box-shadow-color);box-shadow:inset 0px 3px 3px 0px var(--litepicker-footer-box-shadow-color);border-bottom-left-radius:5px;border-bottom-right-radius:5px}.litepicker .container__footer .preview-date-range{margin-right:10px;font-size:90%}.litepicker .container__footer .button-cancel{background-color:var(--litepicker-button-cancel-color-bg);color:var(--litepicker-button-cancel-color);border:0;padding:3px 7px 4px;border-radius:3px}.litepicker .container__footer .button-cancel *{pointer-events:none}.litepicker .container__footer .button-apply{background-color:var(--litepicker-button-apply-color-bg);color:var(--litepicker-button-apply-color);border:0;padding:3px 7px 4px;border-radius:3px;margin-left:10px;margin-right:10px}.litepicker .container__footer .button-apply:disabled{opacity:0.7}.litepicker .container__footer .button-apply *{pointer-events:none}.litepicker .container__tooltip{position:absolute;margin-top:-4px;padding:4px 8px;border-radius:4px;background-color:var(--litepicker-tooltip-color-bg);-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.25);box-shadow:0 1px 3px rgba(0,0,0,0.25);white-space:nowrap;font-size:11px;pointer-events:none;visibility:hidden}.litepicker .container__tooltip:before{position:absolute;bottom:-5px;left:calc(50% - 5px);border-top:5px solid rgba(0,0,0,0.12);border-right:5px solid transparent;border-left:5px solid transparent;content:""}.litepicker .container__tooltip:after{position:absolute;bottom:-4px;left:calc(50% - 4px);border-top:4px solid var(--litepicker-tooltip-color-bg);border-right:4px solid transparent;border-left:4px solid transparent;content:""}
+</style>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionário - Criptografia de Chave Pública</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f4f7fb; color: #1f2937; }
+    .container { max-width: 1000px; margin: 0 auto; background: #fff; padding: 24px; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,.08); }
+    h1 { margin-top: 0; color: #0f172a; }
+    .meta { background: #eef2ff; padding: 12px 14px; border-radius: 10px; margin-bottom: 20px; }
+    .question { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; margin: 16px 0; }
+    .question.correct { border-color: #16a34a; background: #f0fdf4; }
+    .question.incorrect { border-color: #dc2626; background: #fef2f2; }
+    .qtitle { font-weight: bold; margin-bottom: 12px; }
+    .option { display: block; margin: 8px 0; padding: 8px 10px; border-radius: 8px; }
+    .feedback { margin-top: 12px; padding: 10px; border-radius: 8px; display: none; }
+    .feedback.show { display: block; }
+    .feedback.correct { background: #dcfce7; color: #166534; }
+    .feedback.incorrect { background: #fee2e2; color: #991b1b; }
+    .actions { position: sticky; bottom: 0; background: #fff; padding-top: 12px; margin-top: 24px; }
+    button { background: #2563eb; color: #fff; border: 0; padding: 12px 18px; border-radius: 10px; cursor: pointer; font-size: 16px; }
+    button:hover { background: #1d4ed8; }
+    .result { margin-top: 16px; font-size: 18px; font-weight: bold; }
+    .warning { color: #b45309; margin-top: 10px; font-size: 14px; }
+  </style>
+<meta id="dcngeagmmhegagicpcmpinaoklddcgon"><link href="./qcriptoalternativo_files/css2" rel="stylesheet"></head>
+<body>
+  <div class="container">
+    <h1>Questionário: Criptografia de Chave Pública</h1>
+    <div class="meta">
+      25 questões • 5 alternativas • correção automática ao final.
+    </div>
+    <form id="quizForm"><div class="question" id="q0"><div class="qtitle">1. No modelo tradicional com ICP, a associação entre identidade e chave pública é feita por meio de:</div><label class="option"><input type="radio" name="q0" value="0"> A) Hash bilinear</label><label class="option"><input type="radio" name="q0" value="1"> B) Certificado digital</label><label class="option"><input type="radio" name="q0" value="2"> C) Assinatura cega</label><label class="option"><input type="radio" name="q0" value="3"> D) Canal anônimo</label><label class="option"><input type="radio" name="q0" value="4"> E) Pseudônimo temporal</label><div class="feedback" id="fb0"></div></div><div class="question" id="q1"><div class="qtitle">2. A principal proposta da criptografia baseada em identidade (IBE) é:</div><label class="option"><input type="radio" name="q1" value="0"> A) Eliminar a chave privada</label><label class="option"><input type="radio" name="q1" value="1"> B) Usar a identidade como chave pública</label><label class="option"><input type="radio" name="q1" value="2"> C) Dispensar funções hash</label><label class="option"><input type="radio" name="q1" value="3"> D) Eliminar a autoridade do sistema</label><label class="option"><input type="radio" name="q1" value="4"> E) Substituir toda cifra por assinatura</label><div class="feedback" id="fb1"></div></div><div class="question" id="q2"><div class="qtitle">3. Quem propôs originalmente o modelo baseado em identidade?</div><label class="option"><input type="radio" name="q2" value="0"> A) Gentry</label><label class="option"><input type="radio" name="q2" value="1"> B) Girault</label><label class="option"><input type="radio" name="q2" value="2"> C) Shamir</label><label class="option"><input type="radio" name="q2" value="3"> D) Boneh</label><label class="option"><input type="radio" name="q2" value="4"> E) Diffie</label><div class="feedback" id="fb2"></div></div><div class="question" id="q3"><div class="qtitle">4. Uma grande desvantagem do IBE puro é:</div><label class="option"><input type="radio" name="q3" value="0"> A) Exigir certificado X.509</label><label class="option"><input type="radio" name="q3" value="1"> B) Não permitir cifragem</label><label class="option"><input type="radio" name="q3" value="2"> C) Custódia de chaves</label><label class="option"><input type="radio" name="q3" value="3"> D) Impossibilidade de hash</label><label class="option"><input type="radio" name="q3" value="4"> E) Ausência de chave pública</label><div class="feedback" id="fb3"></div></div><div class="question" id="q4"><div class="qtitle">5. No IBE, a autoridade do sistema pode decifrar mensagens dos usuários porque:</div><label class="option"><input type="radio" name="q4" value="0"> A) Controla os certificados revogados</label><label class="option"><input type="radio" name="q4" value="1"> B) Conhece a chave mestra</label><label class="option"><input type="radio" name="q4" value="2"> C) Controla o navegador</label><label class="option"><input type="radio" name="q4" value="3"> D) Armazena as mensagens</label><label class="option"><input type="radio" name="q4" value="4"> E) Desativa o emparelhamento</label><div class="feedback" id="fb4"></div></div><div class="question" id="q5"><div class="qtitle">6. No modelo baseado em identidade, é possível cifrar para um usuário:</div><label class="option"><input type="radio" name="q5" value="0"> A) Só após emissão do certificado</label><label class="option"><input type="radio" name="q5" value="1"> B) Somente se ele estiver online</label><label class="option"><input type="radio" name="q5" value="2"> C) Antes mesmo de ele obter a chave secreta</label><label class="option"><input type="radio" name="q5" value="3"> D) Apenas após autenticação mútua presencial</label><label class="option"><input type="radio" name="q5" value="4"> E) Somente via OCSP</label><div class="feedback" id="fb5"></div></div><div class="question" id="q6"><div class="qtitle">7. Um problema importante na revogação em IBE é que:</div><label class="option"><input type="radio" name="q6" value="0"> A) A identidade pode ser imutável</label><label class="option"><input type="radio" name="q6" value="1"> B) Não existe hash</label><label class="option"><input type="radio" name="q6" value="2"> C) A chave pública não existe</label><label class="option"><input type="radio" name="q6" value="3"> D) Não há cifra de texto</label><label class="option"><input type="radio" name="q6" value="4"> E) Não há autoridade</label><div class="feedback" id="fb6"></div></div><div class="question" id="q7"><div class="qtitle">8. Uma estratégia para revogação em IBE é:</div><label class="option"><input type="radio" name="q7" value="0"> A) Concatenar período de validade à identidade</label><label class="option"><input type="radio" name="q7" value="1"> B) Excluir a chave pública</label><label class="option"><input type="radio" name="q7" value="2"> C) Trocar o grupo bilinear por RSA apenas</label><label class="option"><input type="radio" name="q7" value="3"> D) Remover a autoridade</label><label class="option"><input type="radio" name="q7" value="4"> E) Usar somente assinatura</label><div class="feedback" id="fb7"></div></div><div class="question" id="q8"><div class="qtitle">9. Boneh e Franklin são associados, no texto, a:</div><label class="option"><input type="radio" name="q8" value="0"> A) Primeiro esquema prático de IBE</label><label class="option"><input type="radio" name="q8" value="1"> B) Primeiro certificado X.509</label><label class="option"><input type="radio" name="q8" value="2"> C) Primeiro ataque DoD</label><label class="option"><input type="radio" name="q8" value="3"> D) Primeiro OCSP</label><label class="option"><input type="radio" name="q8" value="4"> E) Primeira CLR</label><div class="feedback" id="fb8"></div></div><div class="question" id="q9"><div class="qtitle">10. O esquema de Cocks (2001) se destaca por:</div><label class="option"><input type="radio" name="q9" value="0"> A) Usar emparelhamentos mais rápidos</label><label class="option"><input type="radio" name="q9" value="1"> B) Não usar emparelhamentos</label><label class="option"><input type="radio" name="q9" value="2"> C) Eliminar a necessidade de identidade</label><label class="option"><input type="radio" name="q9" value="3"> D) Dispensar chave mestra</label><label class="option"><input type="radio" name="q9" value="4"> E) Resolver revogação</label><div class="feedback" id="fb9"></div></div><div class="question" id="q10"><div class="qtitle">11. No modelo autocertificado de Girault, o usuário:</div><label class="option"><input type="radio" name="q10" value="0"> A) Não possui chave secreta</label><label class="option"><input type="radio" name="q10" value="1"> B) Escolhe sua própria chave secreta</label><label class="option"><input type="radio" name="q10" value="2"> C) Depende de certificado X.509 para tudo</label><label class="option"><input type="radio" name="q10" value="3"> D) Entrega o segredo à autoridade</label><label class="option"><input type="radio" name="q10" value="4"> E) Usa apenas chave simétrica</label><div class="feedback" id="fb10"></div></div><div class="question" id="q11"><div class="qtitle">12. A certificação implícita significa que:</div><label class="option"><input type="radio" name="q11" value="0"> A) A validade da chave é confirmada pelo sucesso da operação criptográfica</label><label class="option"><input type="radio" name="q11" value="1"> B) Toda chave tem certificado explícito</label><label class="option"><input type="radio" name="q11" value="2"> C) A AC publica a senha do usuário</label><label class="option"><input type="radio" name="q11" value="3"> D) Não há autenticação</label><label class="option"><input type="radio" name="q11" value="4"> E) A verificação ocorre só por OCSP</label><div class="feedback" id="fb11"></div></div><div class="question" id="q12"><div class="qtitle">13. O modelo autocertificado busca especialmente eliminar:</div><label class="option"><input type="radio" name="q12" value="0"> A) Emparelhamentos bilineares</label><label class="option"><input type="radio" name="q12" value="1"> B) Custódia de chaves</label><label class="option"><input type="radio" name="q12" value="2"> C) Funções hash</label><label class="option"><input type="radio" name="q12" value="3"> D) Assinaturas</label><label class="option"><input type="radio" name="q12" value="4"> E) A criptografia assimétrica</label><div class="feedback" id="fb12"></div></div><div class="question" id="q13"><div class="qtitle">14. A criptografia sem certificados foi proposta por:</div><label class="option"><input type="radio" name="q13" value="0"> A) Al-Riyami e Paterson</label><label class="option"><input type="radio" name="q13" value="1"> B) Shamir e Gentry</label><label class="option"><input type="radio" name="q13" value="2"> C) Diffie e Hellman</label><label class="option"><input type="radio" name="q13" value="3"> D) Boneh e Franklin</label><label class="option"><input type="radio" name="q13" value="4"> E) Waters e Cocks</label><div class="feedback" id="fb13"></div></div><div class="question" id="q14"><div class="qtitle">15. No modelo sem certificados, a chave secreta completa do usuário combina:</div><label class="option"><input type="radio" name="q14" value="0"> A) Somente a chave pública e o certificado</label><label class="option"><input type="radio" name="q14" value="1"> B) Parte da autoridade e segredo do usuário</label><label class="option"><input type="radio" name="q14" value="2"> C) Duas chaves públicas</label><label class="option"><input type="radio" name="q14" value="3"> D) Somente identidade e OCSP</label><label class="option"><input type="radio" name="q14" value="4"> E) Apenas a chave mestra</label><div class="feedback" id="fb14"></div></div><div class="question" id="q15"><div class="qtitle">16. Uma vantagem do modelo sem certificados é:</div><label class="option"><input type="radio" name="q15" value="0"> A) Eliminar completamente a autoridade</label><label class="option"><input type="radio" name="q15" value="1"> B) Eliminar a custódia total de chaves</label><label class="option"><input type="radio" name="q15" value="2"> C) Dispensar chaves públicas</label><label class="option"><input type="radio" name="q15" value="3"> D) Dispensar canal seguro sempre</label><label class="option"><input type="radio" name="q15" value="4"> E) Eliminar ataques</label><div class="feedback" id="fb15"></div></div><div class="question" id="q16"><div class="qtitle">17. O ataque DoD (Denial of Decryption) ocorre quando:</div><label class="option"><input type="radio" name="q16" value="0"> A) A função hash falha por colisão</label><label class="option"><input type="radio" name="q16" value="1"> B) Uma chave pública falsa é divulgada/substituída</label><label class="option"><input type="radio" name="q16" value="2"> C) A AC perde o relógio do sistema</label><label class="option"><input type="radio" name="q16" value="3"> D) O texto cifrado fica grande demais</label><label class="option"><input type="radio" name="q16" value="4"> E) O usuário esquece a senha local</label><div class="feedback" id="fb16"></div></div><div class="question" id="q17"><div class="qtitle">18. No DoD, uma consequência é que:</div><label class="option"><input type="radio" name="q17" value="0"> A) Mensagens cifradas podem não ser decifradas pelo destinatário legítimo</label><label class="option"><input type="radio" name="q17" value="1"> B) A identidade deixa de existir fisicamente</label><label class="option"><input type="radio" name="q17" value="2"> C) A ICP vira obrigatória</label><label class="option"><input type="radio" name="q17" value="3"> D) O hash H1 é apagado</label><label class="option"><input type="radio" name="q17" value="4"> E) A chave mestra se torna pública automaticamente</label><div class="feedback" id="fb17"></div></div><div class="question" id="q18"><div class="qtitle">19. Um problema adicional do modelo sem certificados é:</div><label class="option"><input type="radio" name="q18" value="0"> A) Não precisar de repositório nenhum</label><label class="option"><input type="radio" name="q18" value="1"> B) Autenticação implícita da chave pública</label><label class="option"><input type="radio" name="q18" value="2"> C) Impossibilidade de assinatura</label><label class="option"><input type="radio" name="q18" value="3"> D) Ausência de cifragem</label><label class="option"><input type="radio" name="q18" value="4"> E) Eliminação do sigilo</label><div class="feedback" id="fb18"></div></div><div class="question" id="q19"><div class="qtitle">20. Conforme o texto, originalmente o modelo sem certificados situa-se em qual nível de confiança na autoridade?</div><label class="option"><input type="radio" name="q19" value="0"> A) Nível 0</label><label class="option"><input type="radio" name="q19" value="1"> B) Nível 1</label><label class="option"><input type="radio" name="q19" value="2"> C) Nível 2</label><label class="option"><input type="radio" name="q19" value="3"> D) Nível 3</label><label class="option"><input type="radio" name="q19" value="4"> E) Nível 4</label><div class="feedback" id="fb19"></div></div><div class="question" id="q20"><div class="qtitle">21. A criptografia baseada em certificado (CBE) foi proposta por:</div><label class="option"><input type="radio" name="q20" value="0"> A) Gentry</label><label class="option"><input type="radio" name="q20" value="1"> B) Shamir</label><label class="option"><input type="radio" name="q20" value="2"> C) Girault</label><label class="option"><input type="radio" name="q20" value="3"> D) Liu</label><label class="option"><input type="radio" name="q20" value="4"> E) Joux</label><div class="feedback" id="fb20"></div></div><div class="question" id="q21"><div class="qtitle">22. No modelo CBE, o certificado atua como:</div><label class="option"><input type="radio" name="q21" value="0"> A) Elemento integrado ao processo criptográfico</label><label class="option"><input type="radio" name="q21" value="1"> B) Arquivo opcional sem uso</label><label class="option"><input type="radio" name="q21" value="2"> C) Substituto da identidade</label><label class="option"><input type="radio" name="q21" value="3"> D) Chave pública do usuário</label><label class="option"><input type="radio" name="q21" value="4"> E) Lista de revogação</label><div class="feedback" id="fb21"></div></div><div class="question" id="q22"><div class="qtitle">23. Uma motivação central do CBE é lidar melhor com:</div><label class="option"><input type="radio" name="q22" value="0"> A) Revogação de certificados</label><label class="option"><input type="radio" name="q22" value="1"> B) Ausência de emparelhamentos</label><label class="option"><input type="radio" name="q22" value="2"> C) Fim da chave privada</label><label class="option"><input type="radio" name="q22" value="3"> D) Eliminação da assinatura</label><label class="option"><input type="radio" name="q22" value="4"> E) Troca de senhas</label><div class="feedback" id="fb22"></div></div><div class="question" id="q23"><div class="qtitle">24. O texto compara os modelos mostrando que o IBE:</div><label class="option"><input type="radio" name="q23" value="0"> A) Dispensa certificados, mas tem key escrow</label><label class="option"><input type="radio" name="q23" value="1"> B) É igual à ICP tradicional</label><label class="option"><input type="radio" name="q23" value="2"> C) Não usa autoridade</label><label class="option"><input type="radio" name="q23" value="3"> D) Não usa chaves secretas</label><label class="option"><input type="radio" name="q23" value="4"> E) Resolve totalmente a revogação</label><div class="feedback" id="fb23"></div></div><div class="question" id="q24"><div class="qtitle">25. Em termos gerais, o texto conclui que:</div><label class="option"><input type="radio" name="q24" value="0"> A) Existe um modelo universalmente superior</label><label class="option"><input type="radio" name="q24" value="1"> B) Cada modelo apresenta vantagens e limitações conforme o contexto</label><label class="option"><input type="radio" name="q24" value="2"> C) A ICP deve ser abandonada sempre</label><label class="option"><input type="radio" name="q24" value="3"> D) Somente IBE é seguro</label><label class="option"><input type="radio" name="q24" value="4"> E) Modelos alternativos não têm aplicação prática</label><div class="feedback" id="fb24"></div></div></form>
+    <div class="actions">
+      <button type="button" id="submitBtn">Enviar respostas</button>
+      <div id="warning" class="warning"></div>
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+
+  <script>
+    const questions = [
+      {q:'1. No modelo tradicional com ICP, a associação entre identidade e chave pública é feita por meio de:', o:['Hash bilinear','Certificado digital','Assinatura cega','Canal anônimo','Pseudônimo temporal'], a:1},
+      {q:'2. A principal proposta da criptografia baseada em identidade (IBE) é:', o:['Eliminar a chave privada','Usar a identidade como chave pública','Dispensar funções hash','Eliminar a autoridade do sistema','Substituir toda cifra por assinatura'], a:1},
+      {q:'3. Quem propôs originalmente o modelo baseado em identidade?', o:['Gentry','Girault','Shamir','Boneh','Diffie'], a:2},
+      {q:'4. Uma grande desvantagem do IBE puro é:', o:['Exigir certificado X.509','Não permitir cifragem','Custódia de chaves','Impossibilidade de hash','Ausência de chave pública'], a:2},
+      {q:'5. No IBE, a autoridade do sistema pode decifrar mensagens dos usuários porque:', o:['Controla os certificados revogados','Conhece a chave mestra','Controla o navegador','Armazena as mensagens','Desativa o emparelhamento'], a:1},
+      {q:'6. No modelo baseado em identidade, é possível cifrar para um usuário:', o:['Só após emissão do certificado','Somente se ele estiver online','Antes mesmo de ele obter a chave secreta','Apenas após autenticação mútua presencial','Somente via OCSP'], a:2},
+      {q:'7. Um problema importante na revogação em IBE é que:', o:['A identidade pode ser imutável','Não existe hash','A chave pública não existe','Não há cifra de texto','Não há autoridade'], a:0},
+      {q:'8. Uma estratégia para revogação em IBE é:', o:['Concatenar período de validade à identidade','Excluir a chave pública','Trocar o grupo bilinear por RSA apenas','Remover a autoridade','Usar somente assinatura'], a:0},
+      {q:'9. Boneh e Franklin são associados, no texto, a:', o:['Primeiro esquema prático de IBE','Primeiro certificado X.509','Primeiro ataque DoD','Primeiro OCSP','Primeira CLR'], a:0},
+      {q:'10. O esquema de Cocks (2001) se destaca por:', o:['Usar emparelhamentos mais rápidos','Não usar emparelhamentos','Eliminar a necessidade de identidade','Dispensar chave mestra','Resolver revogação'], a:1},
+      {q:'11. No modelo autocertificado de Girault, o usuário:', o:['Não possui chave secreta','Escolhe sua própria chave secreta','Depende de certificado X.509 para tudo','Entrega o segredo à autoridade','Usa apenas chave simétrica'], a:1},
+      {q:'12. A certificação implícita significa que:', o:['A validade da chave é confirmada pelo sucesso da operação criptográfica','Toda chave tem certificado explícito','A AC publica a senha do usuário','Não há autenticação','A verificação ocorre só por OCSP'], a:0},
+      {q:'13. O modelo autocertificado busca especialmente eliminar:', o:['Emparelhamentos bilineares','Custódia de chaves','Funções hash','Assinaturas','A criptografia assimétrica'], a:1},
+      {q:'14. A criptografia sem certificados foi proposta por:', o:['Al-Riyami e Paterson','Shamir e Gentry','Diffie e Hellman','Boneh e Franklin','Waters e Cocks'], a:0},
+      {q:'15. No modelo sem certificados, a chave secreta completa do usuário combina:', o:['Somente a chave pública e o certificado','Parte da autoridade e segredo do usuário','Duas chaves públicas','Somente identidade e OCSP','Apenas a chave mestra'], a:1},
+      {q:'16. Uma vantagem do modelo sem certificados é:', o:['Eliminar completamente a autoridade','Eliminar a custódia total de chaves','Dispensar chaves públicas','Dispensar canal seguro sempre','Eliminar ataques'], a:1},
+      {q:'17. O ataque DoD (Denial of Decryption) ocorre quando:', o:['A função hash falha por colisão','Uma chave pública falsa é divulgada/substituída','A AC perde o relógio do sistema','O texto cifrado fica grande demais','O usuário esquece a senha local'], a:1},
+      {q:'18. No DoD, uma consequência é que:', o:['Mensagens cifradas podem não ser decifradas pelo destinatário legítimo','A identidade deixa de existir fisicamente','A ICP vira obrigatória','O hash H1 é apagado','A chave mestra se torna pública automaticamente'], a:0},
+      {q:'19. Um problema adicional do modelo sem certificados é:', o:['Não precisar de repositório nenhum','Autenticação implícita da chave pública','Impossibilidade de assinatura','Ausência de cifragem','Eliminação do sigilo'], a:1},
+      {q:'20. Conforme o texto, originalmente o modelo sem certificados situa-se em qual nível de confiança na autoridade?', o:['Nível 0','Nível 1','Nível 2','Nível 3','Nível 4'], a:2},
+      {q:'21. A criptografia baseada em certificado (CBE) foi proposta por:', o:['Gentry','Shamir','Girault','Liu','Joux'], a:0},
+      {q:'22. No modelo CBE, o certificado atua como:', o:['Elemento integrado ao processo criptográfico','Arquivo opcional sem uso','Substituto da identidade','Chave pública do usuário','Lista de revogação'], a:0},
+      {q:'23. Uma motivação central do CBE é lidar melhor com:', o:['Revogação de certificados','Ausência de emparelhamentos','Fim da chave privada','Eliminação da assinatura','Troca de senhas'], a:0},
+      {q:'24. O texto compara os modelos mostrando que o IBE:', o:['Dispensa certificados, mas tem key escrow','É igual à ICP tradicional','Não usa autoridade','Não usa chaves secretas','Resolve totalmente a revogação'], a:0},
+      {q:'25. Em termos gerais, o texto conclui que:', o:['Existe um modelo universalmente superior','Cada modelo apresenta vantagens e limitações conforme o contexto','A ICP deve ser abandonada sempre','Somente IBE é seguro','Modelos alternativos não têm aplicação prática'], a:1}
+    ];
+
+    const form = document.getElementById('quizForm');
+
+    questions.forEach((item, idx) => {
+      const qDiv = document.createElement('div');
+      qDiv.className = 'question';
+      qDiv.id = 'q' + idx;
+
+      const title = document.createElement('div');
+      title.className = 'qtitle';
+      title.textContent = item.q;
+      qDiv.appendChild(title);
+
+      item.o.forEach((opt, j) => {
+        const label = document.createElement('label');
+        label.className = 'option';
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.name = 'q' + idx;
+        input.value = j;
+        label.appendChild(input);
+        label.appendChild(document.createTextNode(' ' + String.fromCharCode(65 + j) + ') ' + opt));
+        qDiv.appendChild(label);
+      });
+
+      const fb = document.createElement('div');
+      fb.className = 'feedback';
+      fb.id = 'fb' + idx;
+      qDiv.appendChild(fb);
+
+      form.appendChild(qDiv);
+    });
+
+    document.getElementById('submitBtn').addEventListener('click', function() {
+      let score = 0;
+      let unanswered = [];
+      document.getElementById('warning').textContent = '';
+
+      questions.forEach((item, idx) => {
+        const qDiv = document.getElementById('q' + idx);
+        const fb = document.getElementById('fb' + idx);
+        qDiv.classList.remove('correct', 'incorrect');
+        fb.className = 'feedback';
+        fb.textContent = '';
+
+        const selected = document.querySelector('input[name="q' + idx + '"]:checked');
+        if (!selected) {
+          unanswered.push(idx + 1);
+          fb.textContent = 'Questão não respondida. Resposta correta: ' + String.fromCharCode(65 + item.a) + '. ' + item.o[item.a];
+          fb.classList.add('show', 'incorrect');
+          qDiv.classList.add('incorrect');
+          return;
+        }
+
+        const value = parseInt(selected.value, 10);
+        if (value === item.a) {
+          score++;
+          qDiv.classList.add('correct');
+          fb.textContent = 'Correta ✅';
+          fb.classList.add('show', 'correct');
+        } else {
+          qDiv.classList.add('incorrect');
+          fb.textContent = 'Incorreta ❌ Resposta correta: ' + String.fromCharCode(65 + item.a) + '. ' + item.o[item.a];
+          fb.classList.add('show', 'incorrect');
+        }
+      });
+
+      const result = document.getElementById('result');
+      result.textContent = 'Resultado final: ' + score + ' de ' + questions.length + ' acertos (' + Math.round((score / questions.length) * 100) + '%).';
+
+      if (unanswered.length) {
+        document.getElementById('warning').textContent = 'Questões sem resposta: ' + unanswered.join(', ') + '.';
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body><div><template shadowrootmode="closed"><div><main><div class="sc-1uwbbvd-0 cTwtgP"></div></main><style data-styled="active" data-styled-version="6.1.12"></style></div></template></div></html>
