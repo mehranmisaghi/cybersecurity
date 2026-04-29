@@ -12,7 +12,7 @@ permalink: Crypto/README.md
     - Modelos de avaliação
     - Ferramentas on-line de de modelos criptográficos
 
-  - [Modelos Alernativos de Criptografia](criptoalternativa.md)
+  - [Modelos Alternativos de Criptografia](criptoalternativa.md)
     - Criptografia Baseada na Identidade
     - Criptografia Sem Certificado
     - Criptografia Quântica e Pós Quântica

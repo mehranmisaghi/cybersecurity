@@ -74,7 +74,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - [Hash](https://canva.link/1bm6yc3lfezfm6i)
     - [PGP](https://canva.link/1bm6yc3lfezfm6i)
 
-  - [Modelos Alernativos de Criptografia:](Crypto/criptoalternativa.md)
+  - [Modelos Alternativos de Criptografia:](Crypto/criptoalternativa.md)
     - Criptografia Baseada na Identidade
     - Criptografia Sem Certificado
     - Criptografia Quântica e Pós Quântica
