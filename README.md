@@ -74,7 +74,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - [Hash](https://canva.link/1bm6yc3lfezfm6i)
     - [PGP](https://canva.link/1bm6yc3lfezfm6i)
 
-  - Modelos Alernativos de Criptografia:
+  - [Modelos Alernativos de Criptografia:](Crypto/criptoalternativa.md)
     - Criptografia Baseada na Identidade
     - Criptografia Sem Certificado
     - Criptografia Quântica e Pós Quântica
@@ -92,7 +92,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 ## **Prova Única (11/05/2026) - atualizado**
 
 
-[Gestão de Riscos (28/04/2026 - 05/05/2026)](Risks/README.md)
+[Gestão de Riscos (28/04/2026 - 05/05/2026) - redefinir data](Risks/README.md)
 
   - Riscos que rondam as organizações
   - Inteligência Artificial

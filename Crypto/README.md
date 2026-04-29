@@ -7,8 +7,8 @@ permalink: Crypto/README.md
 
   - Modelos Convencionais de Criptografia:
     - [Simétrica e Assimétrica](https://canva.link/5f4bwz4tecbg0r5)
-    - Cifras mais utilizadas (Rinadael - AES)
-    - Esteganografia
+    - [Cifras mais utilizadas (Rinadael - AES)](https://canva.link/1bm6yc3lfezfm6i)
+    - [Esteganografia](stag.md)
     - Modelos de avaliação
     - Ferramentas on-line de de modelos criptográficos
 
