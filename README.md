@@ -79,7 +79,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - Criptografia Sem Certificado
     - Criptografia Quântica e Pós Quântica
  
-[Protocolos Criptográrficos e ferramentas relacionadas (redefinir data)](Crypto/protocolos.md)
+[Protocolos Criptográrficos e ferramentas relacionadas (redefinir data)](Crypto/pseguros.md)
 
  **Assuntos serão vistos junto com outros tópicos de criptografia**
   - Protocolos criptográficos (HTTPS, HSTS, SSL, SSH, DNSSEC, PGP, Kerberos)

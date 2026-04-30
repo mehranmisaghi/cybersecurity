@@ -46,3 +46,17 @@ permalink: Crypto/README.md
   - [Questões dissertativas sobre AES](AES.md)
   - [Esteganografia](stag.md)
   - [Slides da Aula - Criptografia (II)](https://canva.link/1bm6yc3lfezfm6i)
+
+## Assuntos abordados no Criptografia (III) (04/05 - )
+  - [Protocolos seguros](pseguros.md)
+  - Assinatura Digital
+  - Certificado Digital (Tipos)
+  - ICP.BR
+  - Teste SSL
+  - Criptografia Quântica
+
+  ## Materiais para estudar Criptografia (III) (04/05 -)
+
+  - [Capítulo 17 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap17-stallings.pdf)
+  - [Protocolos Seguros](psegurs.md)
+  - [Slides da Aula - Criptografia (III)](https://canva.link/3imxx00leivyomj)
