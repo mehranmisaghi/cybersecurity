@@ -58,5 +58,5 @@ permalink: Crypto/README.md
   ## Materiais para estudar Criptografia (III) (04/05 -)
 
   - [Capítulo 17 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap17-stallings.pdf)
-  - [Protocolos Seguros](psegurs.md)
+  - [Protocolos Seguros](pseguros.md)
   - [Slides da Aula - Criptografia (III)](https://canva.link/3imxx00leivyomj)
