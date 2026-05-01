@@ -65,27 +65,29 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 
 
 [Fundamentos de Criptografia e Ferramentas utilizadas (13/04/2026 - 20/04/2026)](Crypto/README.md)
-
+- Criptografia (I)
   - Modelos Convencionais de Criptografia:
     - [Simétrica e Assimétrica](https://canva.link/5f4bwz4tecbg0r5)
+- Criptografia (II)   
     - [Cifras mais utilizadas (Rinadael - AES)](https://canva.link/1bm6yc3lfezfm6i)
     - [Esteganografia](https://canva.link/1bm6yc3lfezfm6i)
     - [Modelos de avaliação](https://canva.link/1bm6yc3lfezfm6i)
     - [Hash](https://canva.link/1bm6yc3lfezfm6i)
     - [PGP](https://canva.link/1bm6yc3lfezfm6i)
+- Criptorafia (III)
+    - [Autenticação e Kerberos](autentica.md)
+    - [Protocolos seguros](pseguros.md)
+      - Assinatura Digital
+      - Certificado Digital (Tipos)
+      - ICP.BR
+      - Teste SSL
+    - Criptografia Quântica
 
-  - [Modelos Alternativos de Criptografia:](Crypto/criptoalternativa.md)
+- [Modelos Alternativos de Criptografia: (Opcional)](Crypto/criptoalternativa.md)
     - Criptografia Baseada na Identidade
     - Criptografia Sem Certificado
-    - Criptografia Quântica e Pós Quântica
  
-[Protocolos Criptográrficos e ferramentas relacionadas (redefinir data)](Crypto/pseguros.md)
-
- **Assuntos serão vistos junto com outros tópicos de criptografia**
-  - Protocolos criptográficos (HTTPS, HSTS, SSL, SSH, DNSSEC, PGP, Kerberos)
-  - Ferramentas utilizadas
- 
-[Perímetro de Segurança (20/04/2026 - 21/04/2026)](firewall.md)
+[Perímetro de Segurança (20/04/2026 - 21/04/2026) redefinir data](firewall.md)
   - Conceitos e Tipos
   - Ferramentas de simulação
 
