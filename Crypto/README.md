@@ -60,3 +60,5 @@ permalink: Crypto/README.md
   - [Capítulo 17 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap17-stallings.pdf)
   - [Protocolos Seguros](pseguros.md)
   - [Slides da Aula - Criptografia (III)](https://canva.link/3imxx00leivyomj)
+
+  ### [Teste os seus conhecimentos em protocolos seguros](https://mehranmisaghi.github.io/cybersecurity/Crypto/pseguros.htm)
