@@ -199,3 +199,5 @@ User --> Verify[Verificação de Identidade]
 - Certificados digitais
 - Assinaturas digitais
 - Autoridades certificadoras
+
+## [Voltar para Criptografia](README.md)
