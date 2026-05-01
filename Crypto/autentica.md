@@ -5,7 +5,7 @@
 ![Kerberos](https://img.shields.io/badge/Protocol-Kerberos-orange)
 ![Status](https://img.shields.io/badge/Status-Study%20Notes-success)
 
-> 📘 Resumo do capítulo sobre autenticação de usuários em redes, com foco em segurança da informação, criptografia e protocolos modernos.
+> 📘 Resumo gerado com auxílio de IA do capítulo 15, a respeito de autenticação
 
 ---
 

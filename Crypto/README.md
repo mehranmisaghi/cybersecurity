@@ -48,6 +48,7 @@ permalink: Crypto/README.md
   - [Slides da Aula - Criptografia (II)](https://canva.link/1bm6yc3lfezfm6i)
 
 ## Assuntos abordados no Criptografia (III) (04/05 - )
+  - [Autenticação e Kerberos](autentica.md)
   - [Protocolos seguros](pseguros.md)
   - Assinatura Digital
   - Certificado Digital (Tipos)
@@ -56,9 +57,12 @@ permalink: Crypto/README.md
   - Criptografia Quântica
 
   ## Materiais para estudar Criptografia (III) (04/05 -)
-
+  - [Capítulo 15 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap15-stallings.pdf)
   - [Capítulo 17 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap17-stallings.pdf)
+  - [Autenticação e Kerberos](autentica.md)
   - [Protocolos Seguros](pseguros.md)
   - [Slides da Aula - Criptografia (III)](https://canva.link/3imxx00leivyomj)
-
-    ### [Teste os seus conhecimentos em protocolos seguros](https://mehranmisaghi.github.io/cybersecurity/Crypto/pseguros3.html)
+   ### [Teste os seus conhecimentos em protocolos seguros](https://mehranmisaghi.github.io/cybersecurity/Crypto/pseguros3.html)
+---
+  ## Material extra (opcional) de criptorafia
+  - [Modelos de Criptografia de Chave Pública Alternativos](criptoalternativa.md)
