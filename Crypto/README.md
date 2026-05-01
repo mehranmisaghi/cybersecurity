@@ -61,4 +61,4 @@ permalink: Crypto/README.md
   - [Protocolos Seguros](pseguros.md)
   - [Slides da Aula - Criptografia (III)](https://canva.link/3imxx00leivyomj)
 
-    ### [Teste os seus conhecimentos em protocolos seguros](https://mehranmisaghi.github.io/cybersecurity/Crypto/pseguros2.html)
+    ### [Teste os seus conhecimentos em protocolos seguros](https://mehranmisaghi.github.io/cybersecurity/Crypto/pseguros3.html)
