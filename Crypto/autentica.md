@@ -199,5 +199,8 @@ User --> Verify[Verificação de Identidade]
 - Certificados digitais
 - Assinaturas digitais
 - Autoridades certificadoras
+---
+##  [Slides da Aula - Criptografia (III)](https://canva.link/3imxx00leivyomj)
+
 
 ## [Voltar para Criptografia](README.md)
