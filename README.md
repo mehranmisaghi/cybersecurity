@@ -75,8 +75,8 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - [Hash](https://canva.link/1bm6yc3lfezfm6i)
     - [PGP](https://canva.link/1bm6yc3lfezfm6i)
 - Criptorafia (III)
-    - [Autenticação e Kerberos](autentica.md)
-    - [Protocolos seguros](pseguros.md)
+    - [Autenticação e Kerberos](Crypto/autentica.md)
+    - [Protocolos seguros](Crypto/pseguros.md)
       - Assinatura Digital
       - Certificado Digital (Tipos)
       - ICP.BR
