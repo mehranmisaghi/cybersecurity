@@ -1,23 +1,12 @@
-# 🔐 Autenticação de Usuário Remoto (Stallings)
-
+# 🔐 Autenticação e Kerberos 
+  
 ![Security](https://img.shields.io/badge/Security-Authentication-blue)
 ![Criptografia](https://img.shields.io/badge/Cryptography-Symmetric%20%26%20Asymmetric-green)
 ![Kerberos](https://img.shields.io/badge/Protocol-Kerberos-orange)
 ![Status](https://img.shields.io/badge/Status-Study%20Notes-success)
 
-> 📘 Resumo gerado com auxílio de IA do capítulo 15, a respeito de autenticação
-
----
-
-## 📌 Visão Geral
-
-A autenticação é essencial para garantir que apenas usuários autorizados tenham acesso a sistemas e dados. Este material aborda:
-
-- Conceitos fundamentais
-- Técnicas de autenticação
-- Protocolos como **Kerberos**
-- Criptografia simétrica e assimétrica
-- Identidade federada
+> 📘 Resumo gerado com auxílio de IA do capítulo 15 (autenticação) e revisado.
+- [Capítulo 15 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap15-stallings.pdf)
 
 ---
 
@@ -38,10 +27,10 @@ C --> D[Acesso Permitido]
 
 | Tipo | Exemplo |
 |------|--------|
-| 🧠 Algo que sabe | Senha, PIN |
-| 📱 Algo que possui | Token, Cartão |
-| 👤 Algo que é | Biometria |
-| ⌨️ Algo que faz | Padrão de digitação |
+| 🧠 Algo que tem conhecimento | Senha, PIN |
+| 📱 Dispositivo | Token, Cartão |
+| 👤 Característica física | Biometria |
+| ⌨️ Padrão de comportamento | Padrão de digitação |
 
 ---
 
