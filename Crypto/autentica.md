@@ -77,7 +77,7 @@ A --> C
 
 ### ✔️ Características:
 - Uso de chave compartilhada
-- Alta performance
+- Alto desempenho
 
 ### ❌ Desvantagens:
 - Distribuição de chaves complexa
