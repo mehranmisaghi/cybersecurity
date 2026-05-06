@@ -91,7 +91,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Conceitos e Tipos
   - Ferramentas de simulação
 
-## **Prova Única (11/05/2026) - atualizado**
+## **Prova Única (11/05/2026) - Será no B4**
 
 
 [Gestão de Riscos (28/04/2026 - 05/05/2026) - redefinir data](Risks/README.md)
