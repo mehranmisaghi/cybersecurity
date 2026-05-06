@@ -136,15 +136,8 @@ Protocolos seguros são conjuntos de regras de comunicação que usam recursos d
 
 ---
 
-## ✅ 6. Conclusão
 
-Os protocolos seguros são essenciais para proteger informações na internet. Eles estão presentes no acesso a sites, no envio de e-mails, em conexões remotas, na transferência de arquivos e até no uso do Wi-Fi.
-
-Compreender esses protocolos ajuda a entender como a segurança digital funciona no dia a dia e por que ela é tão importante para empresas, escolas e usuários comuns.
-
----
-
-## 📚 7. Referências Atualizadas
+## 📚 7. Referências utilizada
 
 **IETF.** *The Transport Layer Security (TLS) Protocol Version 1.3*. RFC 8446, 2018. Disponível em: https://datatracker.ietf.org/doc/html/rfc8446
 
@@ -167,6 +160,8 @@ Compreender esses protocolos ajuda a entender como a segurança digital funciona
 **NIST.** *Digital Signature Standard (DSS)*. FIPS PUB 186-5, 2023. Disponível em: https://csrc.nist.gov
 
 ---
+
+### [Teste os seus conhecimentos sobre protocolos seguros](https://mehranmisaghi.github.io/cybersecurity/Crypto/pseguros3.html)
 ### [Voltar](README.md)
 ---
 
