@@ -64,5 +64,5 @@ permalink: Crypto/README.md
   - [Slides da Aula - Criptografia (III)](https://canva.link/3imxx00leivyomj)
    ### [Teste os seus conhecimentos em protocolos seguros](https://mehranmisaghi.github.io/cybersecurity/Crypto/pseguros3.html)
 ---
-  ## Material extra (opcional) de criptorafia
+  ## Material extra (opcional) de criptografia
   - [Modelos de Criptografia de Chave Pública Alternativos](criptoalternativa.md)

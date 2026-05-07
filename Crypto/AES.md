@@ -39,7 +39,7 @@ e) Faça um programa para rotacionamento de um bit de entrada de um arquivo.
 ---
 
 
-## Questão 4 — Escalinamento de Chave (Key Schedule)
+## Questão 4 — Escaloamento de Chave (Key Schedule)
 
 a) Qual é o objetivo do processo de **Key Schedule** no AES?
 
