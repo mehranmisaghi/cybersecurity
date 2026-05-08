@@ -69,6 +69,7 @@ classDef verde fill:#2ecc71,color:#fff
 classDef amarelo fill:#f1c40f,color:#000
 classDef vermelho fill:#e74c3c,color:#fff
 
+```
 
 # 🛡️ 6. Tratamento de Riscos
 
