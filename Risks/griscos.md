@@ -116,3 +116,55 @@ flowchart LR
 
 classDef etapa fill:#3498db,color:#fff
 class A,B,C,D,E etapa
+```
+
+
+# 🧪 10. Atividade Prática
+
+## 💡 Cenário:
+Uma escola depende de um sistema online para funcionar.
+
+## 🎯 Tarefas dos alunos:
+1. Identificar 5 riscos  
+2. Criar uma tabela de riscos  
+3. Definir ações de mitigação  
+4. Criar um plano de contingência  
+
+---
+
+## 📄 Modelo para preenchimento:
+
+| Risco | Probabilidade | Impacto | Ação |
+|------|-------------|--------|------|
+| | | | |
+
+---
+
+# 🎤 11. Perguntas para discussão
+
+- Qual risco é mais perigoso?  
+- Todo risco deve ser eliminado?  
+- O que é mais importante: prevenir ou reagir?  
+
+---
+
+# 🧠 12. Resumo
+
+- Risco = problema possível  
+- Tratamento = estratégia  
+- Contingência = reação  
+- Continuidade = manter funcionamento  
+
+---
+
+# 🚀 13. Exemplo de Classificação Visual
+
+```mermaid
+graph TD
+    A[Erro humano] -->|Alta Probabilidade| B[Impacto Médio]
+    B --> C[Risco Alto]
+
+classDef alto fill:#e74c3c,color:#fff
+class C alto
+```
+
