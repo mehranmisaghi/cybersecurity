@@ -1,47 +1,44 @@
-# 📘 Aula: Gestão de Riscos, Contingência e Continuidade
+---
+title: 'Gestão de Riscos'
+description: 'Gestão de Riscos na Segurança da Informação'
+permalink: griscos.md
+---
+> Este material foi preparado com auxílio de IA e revisado.
+---
 
-## 🎯 Objetivo da aula
-Ao final, o aluno será capaz de:
-- Identificar riscos  
-- Classificar impacto e probabilidade  
-- Montar uma tabela de riscos  
-- Entender contingência e continuidade  
+# O que é Risco?
+
+> Risco pode ser definido como a chance de algo dar errado e causar prejuízo.
+
+### Alguns exemplos de risco:
+- Indisponibilidade de um sistema.  
+- Vazamento de dados.  
+- Falta de energia.  
+- Erro humano.  
 
 ---
 
-# 🧠 1. O que é RISCO?
+# Componentes do Risco
 
-> Risco é a chance de algo dar errado e causar prejuízo.
+- **Ameaça** → o que pode acontecer?  
+- **Vulnerabilidade** → fraqueza a ser explorada  
+- **Impacto** → consequência de materialização/concretização do risco 
 
-### 📌 Exemplos:
-- Sistema cair  
-- Vazamento de dados  
-- Falta de energia  
-- Erro humano  
-
----
-
-# ⚠️ 2. Componentes do risco
-
-- **Ameaça** → o que pode acontecer  
-- **Vulnerabilidade** → fraqueza  
-- **Impacto** → consequência  
-
-### Exemplo:
+### Exemplo de compoentnes de Risco:
 - Ameaça: hacker  
 - Vulnerabilidade: senha fraca  
 - Impacto: roubo de dados  
 
 ---
 
-# 📊 3. Probabilidade x Impacto
+# Probabilidade x Impacto
 
 - Probabilidade: Baixa / Média / Alta  
 - Impacto: Baixo / Médio / Alto  
 
 ---
 
-# 📋 4. Tabela de Riscos
+# Tabela de Riscos
 
 | ID | Risco | Probabilidade | Impacto | Nível | Ação |
 |----|------|-------------|--------|------|------|
@@ -52,12 +49,14 @@ Ao final, o aluno será capaz de:
 
 ---
 
-## 🧮 Cálculo do risco
-Nível de Risco = Probabilidade x Impacto
+## Como calcular o risco?
+Para calcular o risco:
+
+> _Nível de Risco = Probabilidade x Impacto_
 
 ---
 
-# 📊 5. Matriz de Risco
+# Matriz de Risco
 
 ```mermaid
 graph TD
@@ -70,42 +69,33 @@ classDef amarelo fill:#f1c40f,color:#000
 classDef vermelho fill:#e74c3c,color:#fff
 
 ```
-
-# 🛡️ 6. Tratamento de Riscos
-
-| Estratégia | Descrição |
-|----------|----------|
-| Evitar | eliminar o risco |
-| Reduzir | diminuir impacto ou probabilidade |
-| Transferir | passar para terceiros (ex: seguro) |
-| Aceitar | assumir o risco |
-
 ---
 
-# 🚨 7. Plano de Contingência
+# Plano de Contingência
 
-> Plano para agir quando o problema acontece.
+> É um plano para agir quando o problema acontece.
 
-## 📌 Exemplos:
+## Exemplos:
 - Sistema caiu → usar servidor reserva  
 - Falta de energia → usar gerador  
 - Ataque hacker → isolar sistema  
 
 ---
 
-# 🔄 8. Plano de Continuidade
+# Plano de Continuidade
 
-> Plano para manter o negócio funcionando mesmo durante falhas.
+> É um plano para manter o negócio funcionando mesmo durante falhas.
 
 | Contingência | Continuidade |
 |------------|------------|
 | Reação ao problema | Manutenção do serviço |
-| Curto prazo | Longo prazo |
+| Curto prazo | Médio/Longo prazo |
 | Emergencial | Estratégico |
 
 ---
-
-# 🔁 9. Fluxo de Gestão de Riscos
+# Contingêndia X Continuidade
+---
+# Fluxo de Gestão de Riscos
 
 ```mermaid
 flowchart LR
@@ -117,14 +107,11 @@ flowchart LR
 classDef etapa fill:#3498db,color:#fff
 class A,B,C,D,E etapa
 ```
+# Vamos praticar?
 
+## Vamos praticar isto numa escola que utiliza um sistema online para funcionar:
 
-# 🧪 10. Atividade Prática
-
-## 💡 Cenário:
-Uma escola depende de um sistema online para funcionar.
-
-## 🎯 Tarefas dos alunos:
+### O que deve ser feito?
 1. Identificar 5 riscos  
 2. Criar uma tabela de riscos  
 3. Definir ações de mitigação  
@@ -132,7 +119,7 @@ Uma escola depende de um sistema online para funcionar.
 
 ---
 
-## 📄 Modelo para preenchimento:
+### Modelo sugerido:
 
 | Risco | Probabilidade | Impacto | Ação |
 |------|-------------|--------|------|
@@ -140,24 +127,15 @@ Uma escola depende de um sistema online para funcionar.
 
 ---
 
-# 🎤 11. Perguntas para discussão
-
-- Qual risco é mais perigoso?  
-- Todo risco deve ser eliminado?  
-- O que é mais importante: prevenir ou reagir?  
-
----
-
-# 🧠 12. Resumo
+## Resumo
 
 - Risco = problema possível  
-- Tratamento = estratégia  
 - Contingência = reação  
 - Continuidade = manter funcionamento  
 
 ---
 
-# 🚀 13. Exemplo de Classificação Visual
+# Exemplo de Classificação Visual
 
 ```mermaid
 graph TD
