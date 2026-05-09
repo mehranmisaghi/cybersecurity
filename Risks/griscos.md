@@ -4,7 +4,7 @@ description: 'Gestão de Riscos na Segurança da Informação'
 permalink: griscos.md
 ---
 > Este material foi preparado com auxílio de IA e revisado.
----
+--- 
 
 # O que é Risco?
 
@@ -134,4 +134,8 @@ class A,B,C,D,E etapa
 - Continuidade = manter funcionamento  
 
 ---
-## [Teste os seus conhecimentos sobre Gestão de Riscos](https://mehranmisaghi.github.io/cybersecurity/Risks/riscos.html)
+# Materiais para esta aula
+
+ - [Slides da aula](https://canva.link/cvq0o0rn53aif4n)
+
+ - [Teste os seus conhecimentos sobre Gestão de Riscos](https://mehranmisaghi.github.io/cybersecurity/Risks/riscos.html)
