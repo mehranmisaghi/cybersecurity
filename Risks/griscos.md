@@ -134,15 +134,4 @@ class A,B,C,D,E etapa
 - Continuidade = manter funcionamento  
 
 ---
-
-# Exemplo de Classificação Visual
-
-```mermaid
-graph TD
-    A[Erro humano] -->|Alta Probabilidade| B[Impacto Médio]
-    B --> C[Risco Alto]
-
-classDef alto fill:#e74c3c,color:#fff
-class C alto
-```
-
+## [Teste os seus conhecimentos sobre Gestão de Riscos](https://mehranmisaghi.github.io/cybersecurity/Risks/griscos.html)

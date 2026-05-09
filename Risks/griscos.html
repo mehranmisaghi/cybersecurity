@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Quiz - Gestão de Riscos</title>
+
+<style>
+body { font-family: Arial; margin: 20px; }
+.question { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; }
+.correct { background-color: #c8e6c9; }
+.wrong { background-color: #ffcdd2; }
+button { padding: 10px; margin-top: 20px; }
+</style>
+
+</head>
+<body>
+
+<h1>Quiz - Gestão de Riscos</h1>
+
+<form id="quizForm"></form>
+
+<button onclick="corrigir()">Corrigir</button>
+
+<h2 id="resultado"></h2>
+
+<script>
+
+const perguntas = [
+{q:"Risco é definido como:",a:["Evento certo","Chance de prejuízo","Falha técnica","Erro humano","Solução"],c:1},
+{q:"Ameaça + vulnerabilidade resulta em:",a:["Controle","Risco","Backup","Plano","Sistema"],c:1},
+{q:"Eliminar risco significa:",a:["Aceitar","Evitar","Transferir","Monitorar","Reduzir"],c:1},
+{q:"Risco alto é:",a:["Baixo impacto","Alta prob + alto impacto","Baixa prob","Sem impacto","Aleatório"],c:1},
+{q:"Contingência é:",a:["Prevenção","Ação após falha","Plano futuro","Auditoria","Controle"],c:1},
+{q:"Continuidade foca em:",a:["Parar sistema","Manter operação","Excluir risco","Ignorar","Testar"],c:1},
+{q:"Ransomware afeta:",a:["Energia","Dados","Internet","Hardware","Usuário"],c:1},
+{q:"Backup offline protege contra:",a:["Apagão","Internet","Ransomware","Erro humano","Hardware"],c:2},
+{q:"Erro humano é:",a:["Ameaça externa","Vulnerabilidade","Controle","Sistema","Backup"],c:1},
+{q:"Firewall serve para:",a:["Backup","Segurança","Energia","Rede física","Hardware"],c:1},
+{q:"Impacto mede:",a:["Chance","Consequência","Tempo","Custo","Erro"],c:1},
+{q:"Probabilidade mede:",a:["Impacto","Chance","Tempo","Erro","Custo"],c:1},
+{q:"Transferir risco significa:",a:["Eliminar","Passar a terceiros","Aceitar","Reduzir","Ignorar"],c:1},
+{q:"Aceitar risco é:",a:["Eliminar","Ignorar conscientemente","Transferir","Controlar","Monitorar"],c:1},
+{q:"Plano de continuidade visa:",a:["Parar operação","Manter serviço","Excluir dados","Backup","Ignorar"],c:1},
+{q:"Apagão afeta:",a:["Dados","Energia","Software","Firewall","Usuário"],c:1},
+{q:"Internet fora impacta:",a:["Energia","Comunicação","Backup","Hardware","Usuário"],c:1},
+{q:"Vazamento de dados afeta:",a:["Energia","Confidencialidade","Hardware","Rede","Sistema"],c:1},
+{q:"Tabela de risco serve para:",a:["Excluir dados","Organizar riscos","Ignorar falhas","Backup","Monitorar rede"],c:1},
+{q:"Mitigar risco significa:",a:["Eliminar","Reduzir impacto","Ignorar","Transferir","Aceitar"],c:1}
+];
+
+const form = document.getElementById("quizForm");
+
+perguntas.forEach((p,i)=>{
+    let div = document.createElement("div");
+    div.className = "question";
+    div.innerHTML = `<p>${i+1}. ${p.q}</p>`;
+    
+    p.a.forEach((alt,j)=>{
+        div.innerHTML += `<label>
+        <input type="radio" name="q${i}" value="${j}"> ${alt}
+        </label><br>`;
+    });
+
+    form.appendChild(div);
+});
+
+function corrigir(){
+    let acertos = 0;
+
+    perguntas.forEach((p,i)=>{
+        let selecionada = document.querySelector(`input[name=q${i}]:checked`);
+        let div = form.children[i];
+
+        if(selecionada){
+            if(parseInt(selecionada.value) === p.c){
+                acertos++;
+                div.classList.add("correct");
+            } else {
+                div.classList.add("wrong");
+            }
+        } else {
+            div.classList.add("wrong");
+        }
+
+        // Mostrar resposta correta
+        let resposta = document.createElement("p");
+        resposta.innerHTML = "<b>Resposta correta:</b> " + p.a[p.c];
+        div.appendChild(resposta);
+    });
+
+    document.getElementById("resultado").innerText =
+        "Resultado: " + acertos + " de 20 acertos";
+}
+
+</script>
+
+</body>
+</html>
