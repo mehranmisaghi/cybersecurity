@@ -110,7 +110,7 @@ class A,B,C,D,E etapa
 ## Etapas mais detalhadas para Gestão de Riscos
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Identificação de  Riscos] --> B[Avaliação de Riscos]
     B --> C[Mitigação de Riscos]
     C --> D[Aceitação de Riscos]
