@@ -11,7 +11,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 - Aulas invertidas (trazer um caso real e chegar no problema raíz e discutir os conceitos)
 - Estudos de casos reais
 
-## Avaliação
+## Avaliação (atualizado)
 
 - Exercícios e revisão de conceitos apreendidos
 - Uma Prova objetiva/dissertativa com peso 4.
@@ -90,9 +90,11 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 [Perímetro de Segurança (20/04/2026 - 21/04/2026) redefinir data](firewall.md)
   - Conceitos e Tipos
   - Ferramentas de simulação
-
+---
 ## **Prova Única (11/05/2026) - Será na sala D204**
-
+- Conteúdo da prova será todo material que foi apresentado em aula até dia 05/05.
+> **[Agradeço Gabriel Pereira que fez um site para ajudar os alunos para estudar](https://cybercards.lspr.dev/)**
+---
 
 [Gestão de Riscos (28/04/2026 - 05/05/2026) - redefinir data](Risks/README.md)
 
