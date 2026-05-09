@@ -107,6 +107,21 @@ flowchart LR
 classDef etapa fill:#3498db,color:#fff
 class A,B,C,D,E etapa
 ```
+## Etapas mais detalhadas para Gestão de Riscos
+1. Identificação de Riscos
+2. Avaliação de Riscos
+3. Mitigação de Riscos
+4. Aceitação de Riscos
+5. Transferência dos Riscos
+6. Controle dos Riscos
+7. Anãlise dos Riscos
+8. Monitoramento dos Riscos
+9. Comunicação dos Riscos
+10. Plano de Resposta a Riscos
+11. Cultura de Riscos
+
+[Etapas](egriscos.png)
+
 # Vamos praticar?
 
 ## Vamos praticar isto numa escola que utiliza um sistema online para funcionar:
