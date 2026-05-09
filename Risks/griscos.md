@@ -134,4 +134,4 @@ class A,B,C,D,E etapa
 - Continuidade = manter funcionamento  
 
 ---
-## [Teste os seus conhecimentos sobre Gestão de Riscos](https://mehranmisaghi.github.io/cybersecurity/Risks/griscos.html)
+## [Teste os seus conhecimentos sobre Gestão de Riscos](https://mehranmisaghi.github.io/cybersecurity/Risks/riscos.html)
