@@ -108,19 +108,37 @@ classDef etapa fill:#3498db,color:#fff
 class A,B,C,D,E etapa
 ```
 ## Etapas mais detalhadas para Gestão de Riscos
+
+```mermaid
+flowchart LR
+    A[Identificação de  Riscos] --> B[Avaliação de Riscos]
+    B --> C[Mitigação de Riscos]
+    C --> D[Aceitação de Riscos]
+    D --> E[Transferência de Riscos]
+    E --> F[Controle de Riscos]
+    F --> G[Análise de Riscos]
+    G --> H[Monitoramento de Riscos]
+    H --> I[Comunicação dos Riscos]
+    I --> J[Plano de Resposta a Riscos]
+    J --> K[Cultura de Riscos]
+
+classDef etapa fill:#3498db,color:#fff
+class A,B,C,D,E,F,G,H,I,J,K etapa
+```
+
+
 1. Identificação de Riscos
 2. Avaliação de Riscos
 3. Mitigação de Riscos
 4. Aceitação de Riscos
 5. Transferência dos Riscos
 6. Controle dos Riscos
-7. Anãlise dos Riscos
+7. Análise dos Riscos
 8. Monitoramento dos Riscos
 9. Comunicação dos Riscos
 10. Plano de Resposta a Riscos
 11. Cultura de Riscos
 
-![etapas](egriscos.png)
 
 # Vamos praticar?
 
