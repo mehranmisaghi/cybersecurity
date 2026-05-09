@@ -120,7 +120,7 @@ class A,B,C,D,E etapa
 10. Plano de Resposta a Riscos
 11. Cultura de Riscos
 
-[Etapas](egriscos.png)
+!(egriscos.png)
 
 # Vamos praticar?
 
