@@ -115,11 +115,11 @@ flowchart TD
     B --> C[Mitigação de Riscos]
     C --> D[Aceitação de Riscos]
     D --> E[Transferência de Riscos]
- flochart LR
+ flowchart LR
         E --> F[Controle de Riscos]
         F --> G[Análise de Riscos]
         G --> H[Monitoramento de Riscos]
-florchart TD
+flowchart TD
     H --> I[Comunicação dos Riscos]
     I --> J[Plano de Resposta a Riscos]
     J --> K[Cultura de Riscos]
