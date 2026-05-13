@@ -1,4 +1,4 @@
-# Projeto de Segurança I (PSI) 12/ a 25 de maio
+# Projeto de Segurança I (PSI) 12 a 25 de maio
 Como os conceitos apreendidos os alunos precisam desenvolver uma ferramenta que auxilie no diagnóstico da conoformidade.
 - O que sistema deve ter?
     - Um módulo para 27001 e outro para 27701.
