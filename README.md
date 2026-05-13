@@ -11,7 +11,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 - Aulas invertidas (trazer um caso real e chegar no problema raíz e discutir os conceitos)
 - Estudos de casos reais
 
-## Avaliação (atualizado)
+## Avaliação 
 
 - Exercícios e revisão de conceitos apreendidos
 - Uma Prova objetiva/dissertativa com peso 4.
@@ -87,16 +87,16 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - Criptografia Baseada na Identidade
     - Criptografia Sem Certificado
  
-[Perímetro de Segurança (20/04/2026 - 21/04/2026) redefinir data](firewall.md)
-  - Conceitos e Tipos
-  - Ferramentas de simulação
 ---
 ## **Prova Única (11/05/2026) - Será na sala D204**
 - Conteúdo da prova será todo material que foi apresentado em aula até dia 05/05.
 > **[Agradeço Gabriel Pereira que fez um site para ajudar os alunos para estudar](https://cybercards.lspr.dev/)**
 ---
+[Perímetro de Segurança - redefinir data](firewall.md)
+  - Conceitos e Tipos
+  - Ferramentas de simulação
 
-[Gestão de Riscos (28/04/2026 - 05/05/2026) - redefinir data](Risks/README.md)
+[Gestão de Riscos - redefinir data](Risks/README.md)
 
   - Riscos que rondam as organizações
   - Inteligência Artificial
@@ -107,14 +107,11 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 
 ## Projeto de Segurança I (PSI) (12/05/2026 - 25/05/2026)
 
-Como os conceitos apreendidos os alunos precisam desenvolver uma ferramenta de Diagnóstico ou (C)onformidade que apresente no formato de um dashboard, uma das seguintes opções:
-  - Conformidade:
-    - NBR ISO/IEC 27001
-    - NBR ISO/IEC 27701
-
-  - Diagnóstico:
-    - Gestão de Riscos
-
+Como os conceitos apreendidos os alunos precisam desenvolver uma ferramenta que auxilie no diagnóstico da conoformidade (27001 e 27701) e apresente no formato de um dashboar. O que o sistema deve fazer?
+  -
+  - 
+----
+ 
 [Políticas de Segurança e Políticas de Privacidade da Informação (26/05/2026 - 01/06/2026)](politicas.md)
 
   - Etapas para elaboração de políticas de segurança e políticas de privacidade da informação.
