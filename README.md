@@ -105,18 +105,13 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Contingência e Continuidade de Negócios
   - Framework de Cibersegurança para IA (NIST)
 
-## Projeto de Segurança I (PSI) (12/05/2026 - 25/05/2026)
+## [Projeto de Segurança I (PSI) 12 a 25 de maio](projetos.md)
 
-Como os conceitos apreendidos os alunos precisam desenvolver uma ferramenta que auxilie no diagnóstico da conoformidade (27001 e 27701) e apresente no formato de um dashboar. O que o sistema deve fazer?
-  -
-  - 
-----
- 
 [Políticas de Segurança e Políticas de Privacidade da Informação (26/05/2026 - 01/06/2026)](politicas.md)
 
   - Etapas para elaboração de políticas de segurança e políticas de privacidade da informação.
 
-## Projeto de Segurança II (PSII) (02/06/2026 - 15/06/2026)
+## [Projeto de Segurança II (PSII) 02 a 15 de junho](projetos.md)
 
 Elaboração de Políticas de segurança para ambientes específicos conforme anunciados na sala de aula no momento oportuno.
 
@@ -129,14 +124,6 @@ Elaboração de Políticas de segurança para ambientes específicos conforme an
   - Certificações
   - IA Agêntica X confecção desenfreada de malware (apocalipse digital)
 
-## Projeto de Segurança III (PSIII) (23/06/2026 - 30/06/2026)
-
-Com auxílio de agentes de automação de IA (n8n ou ferramentas semelhantes) automatize e crie uma ferramenta para um dos seguintes cenários (detalhes serão fornecidos no momento oportuno):
-  - Diagnóstico de vulnerabilidades de um servidor web:
-    - Examinar os protocolos criptográficos e detalhar e sugerir ações corretivas
-
-  - Diagnóstico de vulnerabilidades de um banco de dados via web:
-    - SQL injection e ferramentas semelhantes
 
 
 [def]: Codes/recon.md
