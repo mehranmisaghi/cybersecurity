@@ -124,6 +124,7 @@ Elaboração de Políticas de segurança para ambientes específicos conforme an
   - Certificações
   - IA Agêntica X confecção desenfreada de malware (apocalipse digital)
 
+## [Projeto de Segurança III (PSIII) 23 a 30 de junho](projetos.md)
 
 
 [def]: Codes/recon.md
