@@ -6,6 +6,7 @@ permalink: /firewall.md
 
 # Conceitos e Tipos de Firewall
 > Este material foi gerado com auxílio de **IA** e foi revisado.
+- [Slides sobre Firewall](https://canva.link/gn07dfmbaz71jzk)
 # O que é Firewall?
 
 Firewall pode ser definido como um sistema de segurança que controla o tráfego de rede, **permitindo ou bloqueando** conexões com base em _regras estabelecidas_.

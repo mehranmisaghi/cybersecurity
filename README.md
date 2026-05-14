@@ -92,7 +92,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 - Conteúdo da prova será todo material que foi apresentado em aula até dia 05/05.
 > **[Agradeço Gabriel Pereira que fez um site para ajudar os alunos para estudar](https://cybercards.lspr.dev/)**
 ---
-[Perímetro de Segurança - redefinir data](firewall.md)
+[Perímetro de Segurança - 18/05](firewall.md)
   - Conceitos e Tipos
   - Ferramentas de simulação
 
