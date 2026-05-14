@@ -1,10 +1,3 @@
----
-title: 'Firewall'
-description: 'Conceitos e Tipos de Firewall'
-permalink: /firewall.md
----
-
-# Conceitos e Tipos de Firewall
 > Este material foi gerado com auxílio de **IA** e foi revisado.
 # O que é Firewall?
 
@@ -171,10 +164,3 @@ Limpar regras:
 iptables -F
 ```
 ---
-
-
-# Ferramentas de Simulação de Firewall
-  - [usar simuladores de firewall](https://www.firewall.com.br/)
-
-# Varredura de vulnerabilidades
-  - [HackerTarget](https://hackertarget.com/)
