@@ -1,11 +1,19 @@
 # Projeto de Segurança I (PSI) 12 a 25 de maio
-Como os conceitos apreendidos os alunos precisam desenvolver uma ferramenta que auxilie no diagnóstico da conoformidade.
-- O que sistema deve ter?
+Como os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvolver uma ferramenta que auxilie no diagnóstico da conoformidade (conforme, não conforme ou não aplica). As apresentações poderão ser feitas até dia **25/05**.
+- _O que o seu sistema deve ter?_
     - Um módulo para 27001 e outro para 27701.
     - Utilizar 27002 para diagnóstico da conformidade de 27001.
     - Apresentar os dados no formato de dashboard
     - Armazenar os dados e data de diagnóstico para efeitos comparativos.
     - Fazer UML da ferramenta.
+--- 
+
+## Grupos de Trabalhom(18/05)
+1. Maria Fernanda e Pedro
+2. Ricardo, Paulo e Gabriel Gomes
+3. João, Stephine e Alexssandro
+4. Sidnei, Luiz e Gabriel Lopes
+---
 
 # Projeto de Segurança II (PSII) 02 a 15 de junho
 
