@@ -14,7 +14,7 @@ Como os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvo
 3. João, Stephine e Alexssandro
 4. Sidnei, Luiz e Gabriel Lopes
 5. Otavio, José e Fábio
-6. Camila, Gabriela, Sidiclei
+6. Camila, Gabriela e Sidiclei
 ---
 
 # Projeto de Segurança II (PSII) 02 a 15 de junho
