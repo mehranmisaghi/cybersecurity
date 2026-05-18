@@ -96,6 +96,8 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Conceitos e Tipos
   - Ferramentas de simulação
 
+## [Projeto de Segurança I (PSI) 12 a 25 de maio](projetos.md)
+
 [Gestão de Riscos - redefinir data](Risks/README.md)
 
   - Riscos que rondam as organizações
@@ -104,8 +106,6 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Gestão de Riscos
   - Contingência e Continuidade de Negócios
   - Framework de Cibersegurança para IA (NIST)
-
-## [Projeto de Segurança I (PSI) 12 a 25 de maio](projetos.md)
 
 [Políticas de Segurança e Políticas de Privacidade da Informação (26/05/2026 - 01/06/2026)](politicas.md)
 

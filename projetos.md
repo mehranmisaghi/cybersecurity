@@ -8,7 +8,7 @@ Como os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvo
     - Fazer UML da ferramenta.
 --- 
 
-## Grupos de Trabalhom(18/05)
+## Grupos de Trabalho(18/05)
 1. Maria Fernanda e Pedro
 2. Ricardo, Paulo e Gabriel Gomes
 3. João, Stephine e Alexssandro
