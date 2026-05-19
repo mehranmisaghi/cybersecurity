@@ -8,7 +8,7 @@ Com os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvol
     - Apresentar os dados no formato de dashboard:
       - Agrupar os dados por tipos de controle (27002)
       - Apresentar gráficos de conformidade agrupado por tipos de controles (parciais) e total.
-    - Armazenar os dados e data de diagnóstico para efeitos comparativos.
+    - Armazenar os dados e data de auditoria para efeitos comparativos (3 últimas auditorias).
     - Fazer UML da ferramenta.
     - Apresentar relatórios por tipos de controle ou relatório completo de conformidade.
 --- 
@@ -26,8 +26,8 @@ Com os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvol
 4. Funcionalidade de comparativo
     - comparar com as auditorias anteriores
     - mostrar evolução de conformidade
-5. Relatórios
-    - parcial (por tipo de controle)
+5. Relatórios (somente após a conclusão de auditoria)
+    - por tipos de controles
     - completo
     - opções:
         - comparativos
@@ -48,7 +48,7 @@ flowchart TD
     D --> F[Informar nome da empresa]
     E --> F
 
-    F --> G[Data de Auditoria]
+    F --> G[Registro de Data de Auditoria]
 
     G --> H[Iniciar Auditoria]
 
@@ -93,10 +93,10 @@ flowchart TD
     Z -->|Sim| AA{Tipo}
     Z -->|Nao| AB{Tipo}
 
-    AA -->|Parcial| AC[Relatorio Parcial Comparativo]
+    AA -->|Tipos de Controles| AC[Relatorio Tipos de Controles Comparativo]
     AA -->|Completo| AD[Relatorio Completo Comparativo]
 
-    AB -->|Parcial| AE[Relatorio Parcial Atual]
+    AB -->|Por Tipos de Controles| AE[Relatorio Por tipo de Controles Atual]
     AB -->|Completo| AG[Relatorio Completo Atual]
 
     AC --> AF
