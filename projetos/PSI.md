@@ -12,8 +12,29 @@ Com os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvol
     - Fazer UML da ferramenta.
     - Apresentar relatórios por tipos de controle ou relatório completo de conformidade.
 --- 
-## Fluxograma para PSI (sugestão)
+## Artefatos esperados do PSI
 
+1. Descrição do sistema
+2. Diagramas utilizados
+    - classe
+    - caso
+    - UML
+3. Dashboard de conformidade
+    - % geral de conformidade
+    - % por tipo de controle
+    - gráficos (pizza ou barra)
+4. Funcionalidade de comparativo
+    - comparar com as auditorias anteriores
+    - mostrar evolução de conformidade
+5. Relatórios
+    - parcial (por tipo de controle)
+    - completo
+    - opções:
+        - comparativos
+        - atual
+---
+## Fluxograma para PSI (sugestão)
+> Diagrama propositalmente não acentuado
 ```mermaid
 flowchart TD
 
@@ -84,7 +105,7 @@ flowchart TD
     AG --> AF
 ```
 ---
-
+  
 ## Grupos de Trabalho(18/05)
 1. Maria Fernanda e Pedro
 2. Ricardo, Paulo e Gabriel Gomes
