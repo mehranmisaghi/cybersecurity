@@ -45,7 +45,7 @@ flowchart TD
     C -->|27001| D[Carregar Controles SI]
     C -->|27701| E[Carregar Controles PI]
 
-    D --> F[Informar nome da empresa]
+    D --> F[Informar CNPJ/nome da empresa]
     E --> F
 
     F --> G[Registro de Data de Auditoria]
