@@ -121,6 +121,89 @@ _Oportunidades de Pesquisa_
 - Cultura organizacional digital
 - Segurança como política pública
 - **Formação profissional**
+---
+## Resumo
+```mermaid
+mindmap
+  root((Tendencias 2026))
+
+    Introducao
+      Integracao tecnologia sociedade organizacoes
+      Transformacao digital consolidada
+
+    Inteligencia Artificial
+      Infraestrutura estrategica
+      Automacao de processos
+      Sistemas preditivos
+      Personalizacao em escala
+      Assistentes inteligentes
+
+    Cultura Data Driven
+      Dados como ativo
+      Qualidade e seguranca
+      Decisoes baseadas em dados
+      Analise em tempo real
+
+    Ciberseguranca
+      Ameacas sofisticadas
+      Uso de IA por criminosos
+      Riscos cadeia digital
+      Vulnerabilidades sistemas
+
+      Estrategia
+        Seguranca preditiva
+        Monitoramento continuo
+        Cultura de prevencao
+        Resposta a incidentes
+        Gestao de riscos
+
+    Trabalho
+      Modelo hibrido
+      Estruturas flexiveis
+      Equipes multidisciplinares
+      Colaboracao digital
+
+      Competencias
+        Pensamento critico
+        Adaptabilidade
+        Alfabetizacao digital
+        Analise de dados
+        Colaboracao
+
+    Experiencia Usuario
+      Hiperpersonalizacao
+        Comunicacao direcionada
+        Produtos adaptaveis
+
+      Etica
+        Privacidade
+        Autonomia usuario
+        Influencia algoritmos
+
+    Governanca
+      Transparencia algoritmos
+      Politicas de dados
+      Auditoria sistemas
+      Responsabilidade institucional
+
+      Sustentabilidade
+        Impacto ambiental
+        Consumo energia
+        Cadeia digital sustentavel
+
+    Resumo Final
+      Integracao tecnologia estrategia
+      Dependencia de dados e IA
+      Crescimento riscos digitais
+      Mudancas no trabalho
+
+      Pesquisa
+        Automacao
+        Regulacao IA
+        Cultura digital
+        Seguranca publica
+        Formacao profissional
+```
 
 # Aula 1 - Exercícios
 
