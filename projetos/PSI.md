@@ -17,66 +17,66 @@ Com os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvol
 ```mermaid
 flowchart TD
 
-    A[Início] --> B[Selecionar Módulo]
+    A[Inicio] --> B[Selecionar Modulo]
 
-    B --> C{Qual módulo?}
+    B --> C{Modulo}
 
-    C -->|ISO 27001| D[Carregar Controles via ISO 27002]
-    C -->|ISO 27701| E[Carregar Controles de Privacidade]
+    C -->|27001| D[Carregar Controles 27002]
+    C -->|27701| E[Carregar Controles Privacidade]
 
-    D --> F[Informar Nome da Empresa]
+    D --> F[Informar Empresa]
     E --> F
 
-    F --> G[Informar Data da Auditoria]
+    F --> G[Informar Data Auditoria]
 
-    G --> H[Iniciar Diagnóstico]
+    G --> H[Iniciar Diagnostico]
 
     H --> I[Exibir Controle]
 
-    I --> J{Status do Controle?}
+    I --> J{Status}
 
-    J -->|Conforme| K[Registrar como Conforme]
-    J -->|Não Conforme| L[Perguntar se há trabalho em andamento]
-    J -->|Não se aplica| M[Registrar como Não Aplicável]
+    J -->|Conforme| K[Registrar Conforme]
+    J -->|Nao Conforme| L[Perguntar andamento]
+    J -->|Nao Aplica| M[Registrar Nao Aplica]
 
-    L --> N{Existe trabalho em andamento?}
+    L --> N{Existe andamento}
 
-    N -->|Sim| O[Registrar como Em Andamento]
-    N -->|Não| P[Registrar como Não Conforme]
+    N -->|Sim| O[Registrar Em Andamento]
+    N -->|Nao| P[Registrar Nao Conforme]
 
-    K --> Q{Há mais controles?}
+    K --> Q{Mais controles}
     M --> Q
     O --> Q
     P --> Q
 
     Q -->|Sim| I
-    Q -->|Não| R[Finalizar Diagnóstico]
+    Q -->|Nao| R[Finalizar Diagnostico]
 
-    R --> S[Armazenar Dados + Data]
+    R --> S[Armazenar Dados]
 
     S --> T[Gerar Dashboard]
 
-    T --> U[Calcular % Conformidade Geral]
-    T --> V[Agrupar por Tipo de Controle (ISO 27002)]
-    T --> W[Gerar Gráficos (Pizza/Barra)]
+    T --> U[Calcular Conformidade]
+    T --> V[Agrupar Controles]
+    T --> W[Gerar Graficos]
 
     U --> X[Exibir Dashboard]
     V --> X
     W --> X
 
-    X --> Y{Deseja relatório?}
+    X --> Y{Gerar relatorio}
 
-    Y -->|Sim| Z[Gerar Relatório]
-    Y -->|Não| AA[Fim]
+    Y -->|Sim| Z[Gerar Relatorio]
+    Y -->|Nao| AA[Fim]
 
-    Z --> AB{Tipo de Relatório}
+    Z --> AB{Tipo}
 
-    AB -->|Por tipo de controle| AC[Relatório Parcial]
-    AB -->|Completo| AD[Relatório Geral]
+    AB -->|Parcial| AC[Relatorio por Controle]
+    AB -->|Completo| AD[Relatorio Geral]
 
     AC --> AA
     AD --> AA
-    ```
+```
 ---
 
 ## Grupos de Trabalho(18/05)
