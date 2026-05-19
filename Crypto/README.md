@@ -47,7 +47,7 @@ permalink: Crypto/README.md
   - [Esteganografia](stag.md)
   - [Slides da Aula - Criptografia (II)](https://canva.link/1bm6yc3lfezfm6i)
 
-## Assuntos abordados no Criptografia (III) (04/05 - )
+## Assuntos abordados no Criptografia (III) (04/05 - 05/05)
   - [Autenticação e Kerberos](autentica.md)
   - [Protocolos seguros](pseguros.md)
   - Assinatura Digital
@@ -56,7 +56,7 @@ permalink: Crypto/README.md
   - Teste SSL
   - Criptografia Quântica
 
-  ## Materiais para estudar Criptografia (III) (04/05 -)
+  ## Materiais para estudar Criptografia (III) (04/05 -05/05)
   - [Capítulo 15 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap15-stallings.pdf)
   - [Capítulo 17 do livro Stallings](https://mehranmisaghi.github.io/cybersecurity/materiais/cap17-stallings.pdf)
   - [Autenticação e Kerberos](autentica.md)
