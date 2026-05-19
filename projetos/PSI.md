@@ -1,5 +1,5 @@
 # Projeto de Segurança I (PSI) 12 a 25 de maio
-Com os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvolver uma ferramenta que auxilie no diagnóstico da conoformidade (conforme, não conforme ou não aplica). As apresentações poderão ser feitas até dia **25/05**. Escolham cenários reais para aplicação.
+Com os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvolver uma ferramenta que auxilie no diagnóstico da conoformidade (conforme, não conforme ou não aplica). As apresentações de PSI poderão ser feitas até dia **26/05**. 
 - _O que o seu sistema deve ter?_
     - Um módulo para 27001 e outro para 27701.
     - Utilizar 27002 para diagnóstico da conformidade de 27001.
