@@ -21,17 +21,17 @@ flowchart TD
 
     B --> C{Modulo}
 
-    C -->|27001| D[Carregar Controles 27002]
-    C -->|27701| E[Carregar Controles Privacidade]
+    C -->|27001| D[Carregar Controles SI]
+    C -->|27701| E[Carregar Controles PI]
 
-    D --> F[Informar Empresa]
+    D --> F[Informar nome da empresa]
     E --> F
 
-    F --> G[Informar Data Auditoria]
+    F --> G[Informar Data de Auditoria]
 
-    G --> H[Iniciar Diagnostico]
+    G --> H[Iniciar Auditoria]
 
-    H --> I[Exibir Controle]
+    H --> I[Exibir Controles]
 
     I --> J{Status}
 
@@ -66,16 +66,22 @@ flowchart TD
 
     X --> Y{Gerar relatorio}
 
-    Y -->|Sim| Z[Gerar Relatorio]
-    Y -->|Nao| AA[Fim]
+    Y -->|Sim| Z{Relatorio comparativo?}
+    Y -->|Nao| AF[Fim]
 
-    Z --> AB{Tipo}
+    Z -->|Sim| AA{Tipo}
+    Z -->|Nao| AB{Tipo}
 
-    AB -->|Parcial| AC[Relatorio por Controle]
-    AB -->|Completo| AD[Relatorio Geral]
+    AA -->|Parcial| AC[Relatorio Parcial Comparativo]
+    AA -->|Completo| AD[Relatorio Completo Comparativo]
 
-    AC --> AA
-    AD --> AA
+    AB -->|Parcial| AE[Relatorio Parcial Atual]
+    AB -->|Completo| AG[Relatorio Completo Atual]
+
+    AC --> AF
+    AD --> AF
+    AE --> AF
+    AG --> AF
 ```
 ---
 
