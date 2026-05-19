@@ -3,7 +3,7 @@ Com os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvol
 - _O que o seu sistema deve ter?_
     - Um módulo para 27001 e outro para 27701.
     - Utilizar 27002 para diagnóstico da conformidade de 27001.
-    - Perguntar none da data e data de auditoria.
+    - Perguntar nome da empresa
     - Para cada controle, perguntar se está conforme ou não está conforme ou não se aplica. Caso não esteja conforme, perguntar se existe alguma trabalho em andamento.
     - Apresentar os dados no formato de dashboard:
       - Agrupar os dados por tipos de controle (27002)
@@ -48,7 +48,7 @@ flowchart TD
     D --> F[Informar nome da empresa]
     E --> F
 
-    F --> G[Informar Data de Auditoria]
+    F --> G[Data de Auditoria]
 
     G --> H[Iniciar Auditoria]
 
