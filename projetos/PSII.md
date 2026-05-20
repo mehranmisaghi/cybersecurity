@@ -21,7 +21,7 @@ Não esqueça de tratar:
 - Uso de redes sociais em ambiente clínico
 ---
 ## 2. Agronegócio 4.0 
-É uma fazend inteligente com sensores, drones e sistemas em nuvem.
+É uma fazenda inteligente com sensores e drones.
 
 Problemas:
 
