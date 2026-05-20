@@ -6,7 +6,8 @@ Com os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvol
 # Projeto de Segurança II (PSII) 02 a 15 de junho
 
 Elaboração de Políticas de segurança para ambientes específicos conforme anunciados na sala de aula no momento oportuno.
-
+- [Detalhamento de PSII](PSII.md)
+---
    
 # Projeto de Segurança III (PSIII) 23 a 30 de junho
 
