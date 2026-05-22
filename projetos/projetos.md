@@ -1,5 +1,5 @@
 # Projeto de Segurança I (PSI) 12 a 26 de maio
-Com os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvolver uma ferramenta que auxilie no diagnóstico da conoformidade (conforme, não conforme ou não aplica). As apresentações poderão ser feitas até dia **26/05**. Escolham cenários reais para aplicação.
+Com os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvolver uma ferramenta que auxilie no diagnóstico da conoformidade (conforme, não conforme ou não aplica). As apresentações poderão ser feitas até  o dia **26/05**. 
 - [Detalhamento de PSI](PSI.md)
 --- 
 
