@@ -106,7 +106,7 @@ flowchart TD
 ```
 ---
   
-## Grupos de Trabalho(18/05)
+## Grupos de Trabalho(apresentações 25 e 26 de maio)
 1. Maria Fernanda e Pedro
 2. Ricardo, Paulo e Gabriel Gomes
 3. João, Stephane e Alexssandro
