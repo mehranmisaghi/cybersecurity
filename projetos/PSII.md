@@ -2,7 +2,7 @@
 > Elaborar políticas de segurança da informação com as particulidades de cada cenário
 - Cada grupo deve escolher um cenário.
 
-## 1. Centro Hospitalar Digital (CHD)
+## 1. Centro Hospitalar Digital (CHD) (Maria e Pedro)
 É um centro hospitalar que possui prontuário eletrônico integrado com os laboratório e acesso remoto por médicos.
 
 Elabore uma política para abordar:
