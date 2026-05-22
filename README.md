@@ -96,7 +96,12 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Conceitos e Tipos
   - Ferramentas de simulação
 
-## [Projeto de Segurança I (PSI) 12 a 26 de maio](projetos/projetos.md)
+## [Projetos de Segurança I (PSI) 12 a 26 de maio](projetos/README.md)
+ - [PSI  (12 a 26 de maio)](projetos/PSI.md)
+ - [PSII (02 a 15 de junho)](projetos/PSII.md)
+ - [PSIII (16 a 30 de junho)](projetos/PSIII.md)
+  
+[Políticas de Segurança e Políticas de Privacidade da Informação (01/06/2026)](politicas.md)
 
 [Gestão de Riscos - redefinir data](Risks/README.md)
 
@@ -107,13 +112,9 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Contingência e Continuidade de Negócios
   - Framework de Cibersegurança para IA (NIST)
 
-[Políticas de Segurança e Políticas de Privacidade da Informação (01/06/2026)](politicas.md)
 
   - Etapas para elaboração de políticas de segurança e políticas de privacidade da informação.
 
-## [Projeto de Segurança II (PSII) 02 a 15 de junho](projetos.md)
-
-Elaboração de Políticas de segurança para ambientes específicos conforme anunciados na sala de aula no momento oportuno.
 
 [Monitoramento e auditoria (16/06/2026 - 16/06/2026)](auditoria.md)
 
@@ -124,7 +125,3 @@ Elaboração de Políticas de segurança para ambientes específicos conforme an
   - Certificações
   - IA Agêntica X confecção desenfreada de malware (apocalipse digital)
 
-## [Projeto de Segurança III (PSIII) 23 a 30 de junho](projetos.md)
-
-
-[def]: Codes/recon.md
