@@ -109,9 +109,10 @@ flowchart TD
 ## Grupos de Trabalho(18/05)
 1. Maria Fernanda e Pedro
 2. Ricardo, Paulo e Gabriel Gomes
-3. João, Stephine e Alexssandro
+3. João, Stephane e Alexssandro
 4. Sidnei, Luiz e Gabriel Lopes
 5. Otavio, José e Fábio
 6. Camila, Gabriela e Sidiclei
 7. Ana, Henrique e Sara
+8. Gustavo, Maria Eduardo e Rafael
 ---
