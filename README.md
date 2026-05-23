@@ -96,7 +96,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Conceitos e Tipos
   - Ferramentas de simulação
 
-## [Projetos de Segurança I (PSI) 12 a 26 de maio](projetos/README.md)
+## [Projetos de Segurança](projetos/README.md)
  - [PSI  (12 a 26 de maio)](projetos/PSI.md)
  - [PSII (02 a 15 de junho)](projetos/PSII.md)
  - [PSIII (16 a 30 de junho)](projetos/PSIII.md)
