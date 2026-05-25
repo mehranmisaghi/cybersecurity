@@ -111,7 +111,7 @@ flowchart TD
 1. [Maria Fernanda e Pedro](https://auditpremium.lsx.li/)
 2. Ricardo, Paulo e Gabriel Gomes
 3. João, Stephane e Alexssandro
-4. Sidnei, Luiz e Gabriel Lopes
+4. [Sidnei, Luiz e Gabriel Lopes](https://whoiso.lsx.li)
 5. Otavio, José e Fábio
 6. Camila, Gabriela e Sidiclei
 7. Ana, Henrique e Sara
