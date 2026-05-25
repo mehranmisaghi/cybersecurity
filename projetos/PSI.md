@@ -108,13 +108,13 @@ flowchart TD
 ---
   
 ## Grupos de Trabalho(apresentações 25 e 26 de maio)
-1. Maria Fernanda e Pedro
+1. [Maria Fernanda e Pedro](https://auditpremium.lsx.li/)
 2. Ricardo, Paulo e Gabriel Gomes
 3. João, Stephane e Alexssandro
 4. Sidnei, Luiz e Gabriel Lopes
 5. Otavio, José e Fábio
 6. Camila, Gabriela e Sidiclei
 7. Ana, Henrique e Sara
-8. Gustavo, Maria Eduardo e Rafael
+8. [Gustavo, Maria Eduardo e Rafael](https://github.com/securityprojecti)
 9. [Gabriel Alves](https://github.com/gabriel04alves/psi-1)
 ---
