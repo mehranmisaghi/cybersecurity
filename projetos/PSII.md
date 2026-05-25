@@ -219,6 +219,7 @@ G --> H
 ---
 ## Artefatos esperados:
 - Entregar o documento de política citando as partes de cada norma utilizada.
+- Entregar a tabela de riscos preenchida
 - Elaborar uma apresentação
 - Apresentar a política elaborada.
 
