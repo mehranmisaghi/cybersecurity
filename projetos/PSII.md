@@ -225,7 +225,7 @@ G --> H
 - Apresentar a política elaborada.
 
 ## Grupos de Trabalho(02/06)
-1. 
+1. Maria Fernanda e Pedro (CHD)
 2. 
 3. 
 4. 
