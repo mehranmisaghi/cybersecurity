@@ -26,14 +26,8 @@ A Política de Privacidade define como os dados pessoais são (tendo em foco a p
 
 ---
 
-## Conceito de Risco
-
-Risco é a possibilidade de um evento causar impacto negativo à organização.
-
-### Elementos do risco:
-- Ameaça → hacker  
-- Vulnerabilidade → senha fraca  
-- Impacto → vazamento de dados  
+## Gestão de Riscos
+Risco é a possibilidade de um evento causar impacto negativo à organização. [Para melhor entendimento verifique aqui](griscos.md)
 
 ---
 
