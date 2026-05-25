@@ -74,7 +74,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
     - [Modelos de avaliação](https://canva.link/1bm6yc3lfezfm6i)
     - [Hash](https://canva.link/1bm6yc3lfezfm6i)
     - [PGP](https://canva.link/1bm6yc3lfezfm6i)
-- Criptorafia (III)
+- Criptografia (III)
     - [Autenticação e Kerberos](Crypto/autentica.md)
     - [Protocolos seguros](Crypto/pseguros.md)
       - Assinatura Digital
