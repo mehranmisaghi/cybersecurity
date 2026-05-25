@@ -99,26 +99,10 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 ## [Projetos de Segurança](projetos/README.md)
  - [PSI  (12 a 26 de maio)](projetos/PSI.md)
  - [PSII (02 a 15 de junho)](projetos/PSII.md)
+  - [Políticas de Segurança e Políticas de Privacidade da Informação](projetos/politica.md)
+  - [Gestão de Riscos](projetos/griscos.md)
+
  - [PSIII (16 a 30 de junho)](projetos/PSIII.md)
-  
-[Políticas de Segurança e Políticas de Privacidade da Informação (01/06/2026)](politicas.md)
-
-[Gestão de Riscos - redefinir data](Risks/README.md)
-
-  - Riscos que rondam as organizações
-  - Inteligência Artificial
-  - NBR ISO/IEC 27005 e 31000
-  - Gestão de Riscos
-  - Contingência e Continuidade de Negócios
-  - Framework de Cibersegurança para IA (NIST)
-
-
-  - Etapas para elaboração de políticas de segurança e políticas de privacidade da informação.
-
-
-[Monitoramento e auditoria (16/06/2026 - 16/06/2026)](auditoria.md)
-
-  - Conceitos de monitoramento e auditoria. Questões normativas e regulatórias.
 
 [Tendências e Oportunidades em Cibersegurança (22/06/2026 - 22/06/2026)](tendencias.md)
   - Carreiras
