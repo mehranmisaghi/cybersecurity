@@ -32,6 +32,7 @@ Com os conceitos apreendidos os alunos **(em até 3 pessoas)** precisam desenvol
     - opções:
         - comparativos
         - atual
+6. Disponbilizar link do portal(repositório)
 ---
 ## Fluxograma para PSI (sugestão)
 > Diagrama propositalmente não acentuado

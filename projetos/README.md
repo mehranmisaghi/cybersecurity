@@ -17,3 +17,5 @@ Com auxílio de agentes de automação de IA (n8n ou ferramentas semelhantes) au
 
   - Diagnóstico de vulnerabilidades de um banco de dados via web:
     - SQL injection e ferramentas semelhantes
+    
+  - [Detalhamento de PSIII](PSIII.md)
