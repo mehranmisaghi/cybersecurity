@@ -109,12 +109,12 @@ flowchart TD
   
 ## Grupos de Trabalho(apresentações 25 e 26 de maio)
 1. [Maria Fernanda e Pedro](https://auditpremium.lsx.li/)
-2. Ricardo, Paulo e Gabriel Gomes
-3. João, Stephane e Alexssandro
-4. [Sidnei, Luiz e Gabriel Lopes](https://whoiso.lsx.li)
-5. Otavio, José e Fábio
-6. Camila, Gabriela e Sidiclei
-7. Ana, Henrique e Sara
-8. [Gustavo, Maria Eduardo e Rafael](https://github.com/securityprojecti)
-9. [Gabriel Alves](https://github.com/gabriel04alves/psi-1)
+2. [Ricardo, Paulo e Gabriel Gomes](https://github.com/gabrielgomes14/ciberseguranca-projeto1) 
+3. [João, Stephane e Alexssandro](https://github.com/Alexssandro49/CyberSec)
+4. [Sidnei, Luiz e Gabriel Lopes](https://whoiso.lsx.li) 
+5. [Otavio, José e Fábio](https://github.com/victtows/Sistema-de-Normas)
+6. [Camila, Gabriela e Sidiclei](https://psi-si-auditoria.streamlit.app/) 
+7. Ana, Henrique e Sara 
+8. [Gustavo, Maria Eduardo e Rafael](https://github.com/securityprojecti) 
+9. [Gabriel Alves](https://github.com/gabriel04alves/psi-1) 
 ---
