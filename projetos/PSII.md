@@ -97,7 +97,7 @@ F --> H
 G --> H
 ```
 ---
-## 4. EducaOnline 
+## 4. EducaOnline (Camila, Gabriel e Sidiclei)
 É uma instituição de ensino com cursos online, permitinado acesso online aos seus cursos.
 
 Elaborae uma política para abordar:
