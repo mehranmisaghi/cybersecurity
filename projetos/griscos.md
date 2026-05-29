@@ -1,3 +1,4 @@
+---
 title: 'Gestão de Riscos'
 description: 'Gestão de Riscos na Segurança da Informação'
 permalink: griscos.md
@@ -139,4 +140,4 @@ class A,B,C,D,E etapa
 
  - [Teste os seus conhecimentos sobre Gestão de Riscos](https://mehranmisaghi.github.io/cybersecurity/projetos/riscos.html)
 ---
-## [Voltar para Política de Segurança](politica.md)
+## [Política de Segurança](politica.md)
