@@ -4,9 +4,10 @@ description: 'Tendências em Cibersegurança'
 permalink: Intro/tendencias.md
 ---
 
-## Tendências 2026: Transformações Tecnológicas, Sociais e Organizacionais
+## Tendências em 2026: Transformações Tecnológicas, Sociais e Organizacionais
 
 Como foi comentado na [Introdução de segurança](intro.md), estamos vivenciando uma forte integração entre tecnologia, mudanças organizacionais e novos comportamentos sociais.
+
 ---
 ### Inteligência Artificial como Infraestrutura Estratégica
 
@@ -90,7 +91,7 @@ _Oportunidades de Pesquisa_
 - Segurança como política pública
 - **Formação profissional**
 ---
-## Um panorma geral das tendências
+## Um panorama geral das tendências
 ```mermaid
 mindmap
   root((Tendencias 2026))
@@ -172,3 +173,4 @@ mindmap
         Seguranca publica
         Formacao profissional
 ```
+
