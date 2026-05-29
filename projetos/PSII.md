@@ -229,7 +229,7 @@ G --> H
 2. 
 3. 
 4. Camila, Gabriela e Sidiclei (EducaOnline)
-5. Sidnei, Gabriel Lopes e Luiz
+5. Sidnei, Gabriel Lopes e Luiz (e-commerce)
 6. 
 7. 
 ---
