@@ -68,7 +68,7 @@ F --> H
 G --> H
 ```
 ---
- ## 3. Sistema de Pagamento Digital (SPD)
+ ## 3. Sistema de Pagamento Digital (SPD) (Gustavo, Maria Eduarda e Rafael)
 É ume empresa que processa pagamentos e dados financeiros de clientes.
 
 Elabore uma política para abordar:
@@ -229,7 +229,7 @@ G --> H
 ## Grupos de Trabalho(02/06)
 1. Maria Fernanda e Pedro (CHD)
 2. 
-3. 
+3. Gustavo, Maria Eduarda e Rafael (SPD)
 4. Camila, Gabriela e Sidiclei (EducaOnline)
 5. Sidnei, Gabriel Lopes e Luiz (e-commerce)
 6. Ana, Henrique e Sara (Órgão Público)
