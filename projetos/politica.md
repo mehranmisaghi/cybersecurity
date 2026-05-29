@@ -94,4 +94,8 @@ G --> G2[Logs]
 H --> H1[Melhoria continua]
 ```
 ---
+## Material da aula
+ - [Slides da aula](https://canva.link/nbjwd28b55odu95)
+---
+
 ## [Projeto de Segurança II](PSII.md)
