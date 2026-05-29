@@ -1,7 +1,9 @@
 # Projeto de Segurança II (PSII) 01/06
 > Elaborar políticas de segurança da informação com as particulidades de cada cenário
 - Cada grupo deve escolher um cenário.
-- Para melhor entedimento, revise os conceitos de [Poítica de Segurança e Política de Privacidade](politica.md)
+- Para melhor entedimento, revise 
+    - Os conceitos de [Gestão de Riscos](griscos.md)
+    - Os conceitos de [Poítica de Segurança e Política de Privacidade](politica.md)
 
 ## 1. Centro Hospitalar Digital (CHD) (Maria e Pedro)
 É um centro hospitalar que possui prontuário eletrônico integrado com os laboratório e acesso remoto por médicos.
