@@ -187,7 +187,7 @@ F --> H
 G --> H
 ```
 ---
-## 7. Uma indústria de tubos
+## 7. Uma indústria de tubos (Stephane, Alexssandro e João)
 É uma fábrica com sistemas industriais conectados à internet.
 
 Elaborar umapolítica que inclua:
@@ -231,5 +231,5 @@ G --> H
 4. Camila, Gabriela e Sidiclei (EducaOnline)
 5. Sidnei, Gabriel Lopes e Luiz (e-commerce)
 6. Ana, Henrique e Sara (Órgão Público)
-7. 
+7. Stephane, Alexssandro e João (Indústria de tubos)
 ---
