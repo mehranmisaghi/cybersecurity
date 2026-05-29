@@ -127,7 +127,7 @@ F --> H
 G --> H
 ```
 ---
-## 5. Sistema de e-commerce
+## 5. Sistema de e-commerce (Sidnei, Gabriel Lopes e Luiz)
 É uma Loja online com dados pessoais e histórico de compras.
 
 Elaborar uma política para tratar:
