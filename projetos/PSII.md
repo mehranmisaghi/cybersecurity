@@ -156,7 +156,7 @@ F --> H
 G --> H
 ```
 ---
-## 6. Órgão Público
+## 6. Órgão Público (Ana, Henrique e Sara)
 É uma instituição governamental com dados de cidadãos.
 
 Elaborar uma política para tatar:
@@ -230,6 +230,6 @@ G --> H
 3. 
 4. Camila, Gabriela e Sidiclei (EducaOnline)
 5. Sidnei, Gabriel Lopes e Luiz (e-commerce)
-6. 
+6. Ana, Henrique e Sara (Órgão Público)
 7. 
 ---
