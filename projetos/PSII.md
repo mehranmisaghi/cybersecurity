@@ -97,7 +97,7 @@ F --> H
 G --> H
 ```
 ---
-## 4. EducaOnline (Camila, Gabriel e Sidiclei)
+## 4. EducaOnline (Camila, Gabriela e Sidiclei)
 É uma instituição de ensino com cursos online, permitinado acesso online aos seus cursos.
 
 Elaborae uma política para abordar:
@@ -228,8 +228,8 @@ G --> H
 1. Maria Fernanda e Pedro (CHD)
 2. 
 3. 
-4. 
-5. 
+4. Camila, Gabriela e Sidiclei (EducaOnline)
+5. Sidnei, Gabriel Lopes e Luiz
 6. 
 7. 
 ---
