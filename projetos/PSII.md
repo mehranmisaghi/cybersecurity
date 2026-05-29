@@ -1,4 +1,4 @@
-# Projeto de Segurança II (PSII) 02/06
+# Projeto de Segurança II (PSII) 01/06
 > Elaborar políticas de segurança da informação com as particulidades de cada cenário
 - Cada grupo deve escolher um cenário.
 - Para melhor entedimento, revise os conceitos de [Poítica de Segurança e Política de Privacidade](politica.md)
