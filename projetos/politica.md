@@ -1,3 +1,9 @@
+---
+title: 'PSI e PPI'
+description: 'Política de Segurança da Informação e Política de Privacidade da Informação'
+permalink: politica.md
+---
+
 #  Política de Segurança da Informação e Política de Privacidade da Informação
 
 ---
@@ -27,7 +33,7 @@ A Política de Privacidade define como os dados pessoais são (tendo em foco a p
 ---
 
 ## Gestão de Riscos
-Risco é a possibilidade de um evento causar impacto negativo à organização. [Para melhor entendimento verifique aqui](griscos.md)
+Risco é a possibilidade de um evento causar impacto negativo à organização. [Para melhor entendimento veja novamente os conceitos de riscos](griscos.md)
 
 ---
 
