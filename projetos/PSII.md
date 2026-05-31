@@ -240,3 +240,12 @@ G --> H
 6. Ana, Henrique e Sara (Órgão Público)
 7. Stephane, Alexssandro e João (Indústria de tubos)
 ---
+## Ordem das Apresentações (15 e 16 de junho)
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+---
