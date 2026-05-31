@@ -2,9 +2,9 @@
 > Elaborar políticas de segurança da informação com as particulidades de cada cenário
 - Cada grupo deve escolher um cenário.
 - Elaborar políticas necessárias.
-- **Enviar/compartilhar as políticas até dia 12/06**
-- **Preparar uma apresentação, comentando o que cada membro fez**
-- **Apresentar nos dia 15 e dias de junho**
+- **Enviar/compartilhar as políticas até dia 12/06.**
+- **Preparar uma apresentação, comentando o que cada membro fez.**
+- **Apresentar nos dia 15 e 16 de junho.**
 
 - Para melhor entedimento, revise 
     - Os conceitos de [Gestão de Riscos](griscos.md)
