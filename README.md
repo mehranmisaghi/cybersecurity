@@ -10,6 +10,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 - Aulas expositiva dialogadas com uso de ferramentas de simulação de ambientes.
 - Aulas invertidas (trazer um caso real e chegar no problema raíz e discutir os conceitos)
 - Estudos de casos reais
+- Projetos de Segurança 
 
 ## Avaliação 
 
