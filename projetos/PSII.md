@@ -10,7 +10,7 @@
     - Os conceitos de [Gestão de Riscos](griscos.md)
     - Os conceitos de [Poítica de Segurança e Política de Privacidade](politica.md)
 
-## 1. Centro Hospitalar Digital (CHD) (Maria e Pedro)
+## 1. Centro Hospitalar Digital (CHD) (Luiza, Maria Fernanda e Pedro)
 É um centro hospitalar que possui prontuário eletrônico integrado com os laboratório e acesso remoto por médicos.
 
 Elabore uma política para abordar:
@@ -42,7 +42,7 @@ F --> H
 G --> H
 ```
 ---
-## 2. Agronegócio 4.0 
+## 2. Agronegócio 4.0 (Fábio, José e Otávio)
 É uma fazenda inteligente com sensores e drones.
 
 Elabore uma política para abordar:
@@ -194,7 +194,7 @@ F --> H
 G --> H
 ```
 ---
-## 7. Uma indústria de tubos (Stephane, Alexssandro e João)
+## 7. Uma indústria de tubos (Stephane, Alexssandro e João) (Gabriel Gomes, Ricardo e Paulo)
 É uma fábrica com sistemas industriais conectados à internet.
 
 Elaborar umapolítica que inclua:
@@ -232,13 +232,13 @@ G --> H
 - Apresentar a política elaborada.
 
 ## Grupos de Trabalho(Apresentações no dia 15 e 16 de junho)
-1. Maria Fernanda e Pedro (CHD)
-2. 
+1. Luiza, Maria Fernanda e Pedro (CHD)
+2. Fábio, José e Otávio (Agronegócio)
 3. Gustavo, Maria Eduarda e Rafael (SPD)
 4. Camila, Gabriela e Sidiclei (EducaOnline)
 5. Sidnei, Gabriel Lopes e Luiz (e-commerce)
 6. Ana, Henrique e Sara (Órgão Público)
-7. Stephane, Alexssandro e João (Indústria de tubos)
+7. (Stephane, Alexssandro e João)(Gabriel Gomes, Ricardo e Paulo) (Indústria de tubos)
 ---
 ## Ordem das Apresentações (15 e 16 de junho)
 1. 
