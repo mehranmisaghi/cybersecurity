@@ -1,7 +1,8 @@
 # Projeto de Segurança II (PSII) (01/06)
 > Elaborar políticas de segurança da informação com as particulidades de cada cenário
 - Cada grupo deve escolher um cenário.
-- Elaborar políticas necessárias.
+- Elaborar políticas necessárias: 
+    - Não esquecer de tratar o que acontecerá no caso de violação da política
 - **Enviar/compartilhar as políticas até dia 12/06.**
 - **Preparar uma apresentação, comentando o que cada membro fez.**
 - **Apresentar nos dia 15 e 16 de junho.**
