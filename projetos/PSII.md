@@ -5,7 +5,7 @@
     - Não esquecer de tratar o que acontecerá no caso de violação da política
 - **Enviar/compartilhar as políticas até dia 12/06.**
 - **Preparar uma apresentação, comentando o que cada membro fez.**
-- **Apresentar nos dia 15 e 16 de junho.**
+- **Apresentar nos dias 15 e 16 de junho.**
 
 - Para melhor entedimento, revise 
     - Os conceitos de [Gestão de Riscos](griscos.md)
