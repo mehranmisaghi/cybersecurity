@@ -2,7 +2,7 @@
 > Elaborar políticas de segurança da informação com as particulidades de cada cenário
 - Cada grupo deve escolher um cenário.
 - Elaborar políticas necessárias: 
-    - Não esquecer de tratar o que acontecerá no caso de violação da política (penalidades). L
+    - Não esquecer de tratar o que acontecerá no caso de violação da política (penalidades). 
     - Lembrando que para aplicação de penalidade, o funcionário deve ter ciência da política. Para esta finalidade, empresa deve utilizar meios adequeados para divulgação de procedimentos adotados.
 - O seu documento (política) ter:
     - Uma descrição do ambiente/cenário escolhido
