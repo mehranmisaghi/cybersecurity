@@ -2,7 +2,8 @@
 > Elaborar políticas de segurança da informação com as particulidades de cada cenário
 - Cada grupo deve escolher um cenário.
 - Elaborar políticas necessárias: 
-    - Não esquecer de tratar o que acontecerá no caso de violação da política (penalidades). Lembrando que para aplicação de penalidade, o funcionário deve ter ciência da política. Para esta finalidade, empresa deve utilizar meios adequeados para divulgação de procedimentos adotados.
+    - Não esquecer de tratar o que acontecerá no caso de violação da política (penalidades). L
+    - Lembrando que para aplicação de penalidade, o funcionário deve ter ciência da política. Para esta finalidade, empresa deve utilizar meios adequeados para divulgação de procedimentos adotados.
 - O seu documento (política) ter:
     - Uma descrição do ambiente/cenário escolhido
     - Para cada procedimento:
@@ -14,11 +15,37 @@
 - **Enviar/compartilhar as políticas até dia 12/06.**
 - **Preparar uma apresentação, comentando o que cada membro fez.**
 - **Apresentar nos dias 15 e 16 de junho.**
-
 - Para melhor entedimento, revise 
     - Os conceitos de [Gestão de Riscos](griscos.md)
     - Os conceitos de [Poítica de Segurança e Política de Privacidade](politica.md)
 
+# Fluxo de Documento da Política
+> Segue o fluxo sugerido. Podem acrescentar, caso haja necessidade.
+
+```mermaid 
+flowchart TD
+
+A[Documento de Politica de Seguranca] --> B[Descricao do Ambiente ou Cenario]
+
+
+B --> C[Procedimento 1]
+B --> D[Procedimento N]
+
+C --> C1[Finalidade ou Objetivo]
+C --> C2[Autoria]
+C --> C3[Versao]
+C --> C4[Aprovacao]
+C --> C5[Vigencia]
+
+D --> D1[Finalidade ou Objetivo]
+D --> D2[Autoria]
+D --> D3[Versao]
+D --> D4[Aprovacao]
+D --> D5[Vigencia]
+
+
+```
+---
 ## 1. Centro Hospitalar Digital (CHD) (Luiza, Maria Fernanda e Pedro)
 É um centro hospitalar que possui prontuário eletrônico integrado com os laboratório e acesso remoto por médicos.
 
