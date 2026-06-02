@@ -13,7 +13,8 @@
         - Aprovação (nome e data)
         - Vigência (a partir de que data, e quando expira)
 - **Enviar/compartilhar as políticas até dia 12/06.**
-- **Preparar uma apresentação, comentando o que cada membro fez.**
+- **Preparar uma apresentação, comentando o que cada membro fez:**
+    - Tempo de apresentação pode estar de 10 a 15 minutos (no máximo).
 - **Apresentar nos dias 15 e 16 de junho.**
 - Para melhor entedimento, revise 
     - Os conceitos de [Gestão de Riscos](griscos.md)
@@ -42,8 +43,44 @@ D --> D2[Autoria]
 D --> D3[Versao]
 D --> D4[Aprovacao]
 D --> D5[Vigencia]
+```
+---
+# Critérios da Avaliação
+- Pontualidade (enviar/compartilhar até o dia 12/06)
+- Completude de elementos obrigatórios da política, conforme descrito
+- Clareza e objetividade na escrita do documento
+- Segregação das funções para cada membro do grupo de forma clara
+- Apresentação do trabalho:
+    - Qualidade do material apresentado (cores, distribuição do texto, uso de elementos visuais, quantidade de slides)
+    - Participação na apresaentação
+    - Domíncio do tema abordado
+    - Resposta aos questionamentos realizados
+    - Administração do tempo de apresentação (entre 10 a 15 minutos)
 
+```mermaid
+flowchart TD
 
+A[Avaliacao do Trabalho] --> B[Entrega]
+A --> C[Politica elaborada]
+A --> D[Organizacao do Grupo]
+A --> E[Apresentacao]
+
+%% Entrega
+B --> B1[Pontualidade]
+
+%% Documento
+C --> C1[Completude]
+C --> C2[Clareza e objetividade]
+
+%% Grupo
+D --> D1[Segregacao de funcoes]
+
+%% Apresentacao
+E --> E1[Qualidade do material]
+E --> E2[Participacao]
+E --> E3[Dominio do tema]
+E --> E4[questionamentos]
+E --> E5[Gestao do tempo]
 ```
 ---
 ## 1. Centro Hospitalar Digital (CHD) (Luiza, Maria Fernanda e Pedro)
