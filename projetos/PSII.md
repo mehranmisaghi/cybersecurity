@@ -10,7 +10,7 @@
         - Autoria (nome da pessoa ou setor e data)
         - Versão (Versão em vigor. Por esemplo Versão 1.3)
         - Aprovação (nome e data)
-        - Vigência (a partir de data e quando expira)
+        - Vigência (a partir de que data, e quando expira)
 - **Enviar/compartilhar as políticas até dia 12/06.**
 - **Preparar uma apresentação, comentando o que cada membro fez.**
 - **Apresentar nos dias 15 e 16 de junho.**
