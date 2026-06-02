@@ -9,7 +9,7 @@
     - Para cada procedimento:
         - Finalidade ou objetivo 
         - Autoria (nome da pessoa ou setor e data)
-        - Versão (Versão em vigor. Por esemplo Versão 1.3)
+        - Versão (Versão em vigor. Por exemplo Versão 1.3)
         - Aprovação (nome e data)
         - Vigência (a partir de que data, e quando expira)
 - **Enviar/compartilhar as políticas até dia 12/06.**
