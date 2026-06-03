@@ -57,31 +57,29 @@ D --> D5[Vigencia]
     - Resposta aos questionamentos realizados
     - Administração do tempo de apresentação (entre 10 a 15 minutos)
 
-```mermaid
-flowchart TD
 
-A[Avaliacao do Trabalho] --> B[Entrega]
-A --> C[Politica elaborada]
-A --> D[Organizacao do Grupo]
+```mermaid
+flowchart LR
+
+A[Avaliacao] --> B[Entrega]
+A --> C[Documento]
+A --> D[Equipe]
 A --> E[Apresentacao]
 
-%% Entrega
 B --> B1[Pontualidade]
 
-%% Documento
 C --> C1[Completude]
-C --> C2[Clareza e objetividade]
+C --> C2[Clareza]
 
-%% Grupo
 D --> D1[Segregacao de funcoes]
 
-%% Apresentacao
-E --> E1[Qualidade do material]
+E --> E1[Qualidade visual]
 E --> E2[Participacao]
-E --> E3[Dominio do tema]
-E --> E4[questionamentos]
-E --> E5[Gestao do tempo]
-```
+E --> E3[Dominio]
+E --> E4[Respostas]
+E --> E5[Tempo]
+````
+
 ---
 ## 1. Centro Hospitalar Digital (CHD) (Luiza, Maria Fernanda e Pedro)
 É um centro hospitalar que possui prontuário eletrônico integrado com os laboratório e acesso remoto por médicos.
