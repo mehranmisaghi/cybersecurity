@@ -307,7 +307,7 @@ G --> H
 2. Fábio, José e Otávio (Agronegócio)
 3. Gustavo, Maria Eduarda e Rafael (SPD)
 4. Camila, Gabriela e Sidiclei (EducaOnline)
-5. Sidnei, Gabriel Lopes e Luiz (e-commerce)
+5. Sidnei, Gabriel [Alves, Lopes] e Luiz (e-commerce)
 6. Ana, Henrique e Sara (Órgão Público)
 7. (Stephane, Alexssandro e João)(Gabriel Gomes, Ricardo e Paulo) (Indústria de tubos)
 ---
