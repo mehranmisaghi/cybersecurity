@@ -301,6 +301,7 @@ G --> H
 - Entregar a tabela de riscos preenchida
 - Elaborar uma apresentação
 - Apresentar a política elaborada.
+- Prompt utilizado no IA(Caso tenha utilizado IA) mencionando modelo e versão utilizada
 
 ## Grupos de Trabalho(Apresentações no dia 15 e 16 de junho)
 1. Luiza, Maria Fernanda e Pedro (CHD)
