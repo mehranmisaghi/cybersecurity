@@ -122,3 +122,6 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
   - Certificações
   - IA Agêntica X confecção desenfreada de malware (apocalipse digital)
 
+---
+![Contador de Visitas](https://visitor-badge.laobi.icu/badge?page_id=mehranmisaghi.visitor-badg)
+
