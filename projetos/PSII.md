@@ -65,6 +65,7 @@ A[Avaliacao] --> B[Entrega]
 A --> C[Documento]
 A --> D[Equipe]
 A --> E[Apresentacao]
+A --> F[IA?]
 
 B --> B1[Pontualidade]
 
@@ -78,6 +79,9 @@ E --> E2[Participacao]
 E --> E3[Dominio]
 E --> E4[Respostas]
 E --> E5[Tempo]
+
+F --> F1[Qual IA]
+F --> F2[Prompt utilizado]
 ````
 
 ---
