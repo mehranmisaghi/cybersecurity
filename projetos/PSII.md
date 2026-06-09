@@ -321,4 +321,4 @@ G --> H
 6. 
 7. 
 ---
-![Visitantes](https://visitor-badge.laobi.icu/badge?page_id=mehranmisaghi/PSII.visitor-badge&left-text=true&Visitantes&format=true&logo=github)
+![V](https://visitor-badge.laobi.icu/badge?page_id=mehranmisaghi/PSII.visitor-badge&left_text=Visitantes&format=true&logo=github)
