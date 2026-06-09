@@ -56,6 +56,9 @@ D --> D5[Vigencia]
     - Domíncio do tema abordado
     - Resposta aos questionamentos realizados
     - Administração do tempo de apresentação (entre 10 a 15 minutos)
+- Usou IA?
+    - Qual IA
+    - Prompt utilizado
 
 
 ```mermaid
