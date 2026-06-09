@@ -24,7 +24,7 @@
 > Segue o fluxo sugerido. Podem acrescentar, caso haja necessidade.
 
 ```mermaid 
-flowchart TD
+flowchart LR
 
 A[Documento de Politica de Seguranca] --> B[Descricao do Ambiente ou Cenario]
 
