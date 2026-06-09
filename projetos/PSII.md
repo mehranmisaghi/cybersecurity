@@ -320,12 +320,16 @@ G --> H
 7. (Stephane, Alexssandro e João)(Gabriel Gomes, Ricardo e Paulo) (Indústria de tubos)
 ---
 ## Ordem das Apresentações (15 e 16 de junho)
+### Apresentações do dia 15/06
 1. 
+2. Ana, Henrique e Sara (Órgão Público)
+3. 
+4. 
+
+### Apresentações do dia 16/06
+1.
 2. 
 3. 
 4. 
-5. 
-6. 
-7. 
 ---
 ![V](https://visitor-badge.laobi.icu/badge?page_id=mehranmisaghi/PSII.visitor-badge&left_text=Visitantes&format=true&logo=github)
