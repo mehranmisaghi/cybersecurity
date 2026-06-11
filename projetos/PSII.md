@@ -323,7 +323,7 @@ G --> H
 ### Apresentações do dia 15/06
 1. 
 2. Ana, Henrique e Sara (Órgão Público)
-3. 
+3. Sidnei, Gabriel [Alves, Lopes] e Luiz (e-commerce)
 4. 
 
 ### Apresentações do dia 16/06
