@@ -324,7 +324,7 @@ G --> H
 1. Luiza, Maria Fernanda e Pedro (CHD)
 2. Ana, Henrique e Sara (Órgão Público)
 3. Sidnei, Gabriel [Alves, Lopes] e Luiz (e-commerce)
-4. 
+4. Gabriel Gomes, Ricardo e Paulo
 
 ### Apresentações do dia 16/06
 1.
