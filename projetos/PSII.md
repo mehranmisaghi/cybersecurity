@@ -185,7 +185,7 @@ G --> H
 ## 4. EducaOnline (Camila, Gabriela e Sidiclei)
 É uma instituição de ensino com cursos online, permitinado acesso online aos seus cursos.
 
-Elaborae uma política para abordar:
+Elabore uma política para abordar:
 
 - Controle de acesso de alunos e professores (MFA)
 - Armazenamento de dados acadêmicos (criptografia - especificar)
@@ -275,7 +275,7 @@ G --> H
 ## 7. Uma indústria de tubos (Stephane, Alexssandro e João) (Gabriel Gomes, Ricardo e Paulo)
 É uma fábrica com sistemas industriais conectados à internet.
 
-Elaborar umapolítica que inclua:
+Elaborar uma política que inclua:
 
 - Controle de acesso físico e lógico (segmentado por setor)
 - Armazenamento de dados industriais (criptografia - especificar)
