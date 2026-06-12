@@ -317,7 +317,8 @@ G --> H
 4. Camila, Gabriela e Sidiclei (EducaOnline)
 5. Sidnei, Gabriel [Alves, Lopes] e Luiz (e-commerce)
 6. Ana, Henrique e Sara (Órgão Público)
-7. (Stephane, Alexssandro e João)(Gabriel Gomes, Ricardo e Paulo) (Indústria de tubos)
+7. Gabriel Gomes, Ricardo e Paulo (Indústria de tubos)
+8. Stephane, Alexssandro e João (Indústria de tubos)
 ---
 ## Ordem das Apresentações (15 e 16 de junho)
 ### Apresentações do dia 15/06
