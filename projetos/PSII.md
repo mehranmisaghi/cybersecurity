@@ -311,14 +311,14 @@ G --> H
 - Prompt utilizado no IA(Caso tenha utilizado IA) mencionando modelo e versão utilizada
 
 ## Grupos de Trabalho(Apresentações no dia 15 e 16 de junho)
-1. Luiza, Maria Fernanda e Pedro (CHD)
-2. Fábio, José e Otávio (Agronegócio)
-3. Gustavo, Maria Eduarda e Rafael (SPD)
-4. Camila, Gabriela e Sidiclei (EducaOnline)
-5. Sidnei, Gabriel [Alves, Lopes] e Luiz (e-commerce)
-6. Ana, Henrique e Sara (Órgão Público)
-7. Gabriel Gomes, Ricardo e Paulo (Indústria de tubos)
-8. Stephane, Alexssandro e João (Indústria de tubos)
+1. [Luiza, Maria Fernanda e Pedro (CHD)](https://mehranmisaghi.github.io/cybersecurity/projetos/chd.pdf)
+2. [Fábio, José e Otávio (Agronegócio)](https://mehranmisaghi.github.io/cybersecurity/projetos/agro.pdf)
+3. [Gustavo, Maria Eduarda e Rafael (SPD)](https://mehranmisaghi.github.io/cybersecurity/projetos/spd.pdf)
+4. [Camila, Gabriela e Sidiclei (EducaOnline)](https://mehranmisaghi.github.io/cybersecurity/projetos/educaonline.pdf)
+5. [Sidnei, Gabriel [Alves, Lopes] e Luiz (e-commerce)](https://mehranmisaghi.github.io/cybersecurity/projetos/ecommerce1.pdf)
+6. [Ana, Henrique e Sara (Órgão Público)](https://mehranmisaghi.github.io/cybersecurity/projetos/publico.pdf)
+7. [Gabriel Gomes, Ricardo e Paulo (Indústria de tubos)](https://mehranmisaghi.github.io/cybersecurity/projetos/tubo1.pdf)
+8. [Stephane, Alexssandro e João (Indústria de tubos)](https://mehranmisaghi.github.io/cybersecurity/projetos/tubo2.pdf)
 ---
 ## Ordem das Apresentações (15 e 16 de junho)
 ### Apresentações do dia 15/06
