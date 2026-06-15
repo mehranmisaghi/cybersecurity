@@ -110,7 +110,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
 ---
 ## [Projetos de Segurança](projetos/README.md)
  - [PSI  (12 a 26 de maio)](projetos/PSI.md)
- - [PSII (01 a 16 de junho)](projetos/PSII.md)
+ - [PSII (01 a 22 de junho)](projetos/PSII.md)
     - [Gestão de Riscos](projetos/griscos.md)
     - [Políticas de Segurança e Políticas de Privacidade da Informação](projetos/politica.md)
 
