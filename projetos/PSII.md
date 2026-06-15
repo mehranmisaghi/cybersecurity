@@ -328,8 +328,8 @@ G --> H
 4. Gabriel Gomes, Ricardo e Paulo (Indústria de tubos)
 
 ### Apresentações do dia 16/06
-1.
-2. 
+1. Fábio, José e Otávio (Agronegócio)
+2. Stephane, Alexssandro e João (Indústria de tubos)
 3. 
 4. 
 ---
