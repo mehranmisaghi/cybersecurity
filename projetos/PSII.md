@@ -320,17 +320,19 @@ G --> H
 7. [Gabriel Gomes, Ricardo e Paulo (Indústria de tubos)](https://mehranmisaghi.github.io/cybersecurity/projetos/tubo1.pdf)
 8. [Stephane, Alexssandro e João (Indústria de tubos)](https://mehranmisaghi.github.io/cybersecurity/projetos/tubo2.pdf)
 ---
-## Ordem das Apresentações (15 e 16 de junho)
+## Ordem das Apresentações (15, 16 e 22 de junho)
 ### Apresentações do dia 15/06
 1. Luiza, Maria Fernanda e Pedro (CHD)
 2. Ana, Henrique e Sara (Órgão Público)
-3. Sidnei, Gabriel [Alves, Lopes] e Luiz (e-commerce)
-4. Gabriel Gomes, Ricardo e Paulo (Indústria de tubos)
 
 ### Apresentações do dia 16/06
-1. Fábio, José e Otávio (Agronegócio)
+1. Sidnei, Gabriel [Alves, Lopes] e Luiz (e-commerce)
+2. Gabriel Gomes, Ricardo e Paulo (Indústria de tubos)
+3. Fábio, José e Otávio (Agronegócio) ou Camila, Gabriela e Sidiclei (EducaOnline)
+
+### Apresentações do dia 22/06
+1. Fábio, José e Otávio (Agronegócio) ou Camila, Gabriela e Sidiclei (EducaOnline)
 2. Stephane, Alexssandro e João (Indústria de tubos)
-3. 
-4. 
+3. Gustavo, Maria Eduarda e Rafael (SPD)
 ---
 ![V](https://visitor-badge.laobi.icu/badge?page_id=mehranmisaghi/PSII.visitor-badge&left_text=Visitantes&format=true&logo=github)
