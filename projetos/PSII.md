@@ -52,7 +52,7 @@ D --> D5[Vigencia]
 - Segregação das funções para cada membro do grupo de forma clara
 - Apresentação do trabalho:
     - Qualidade do material apresentado (cores, distribuição do texto, uso de elementos visuais, quantidade de slides)
-    - Participação na apresaentação
+    - Participação na apresentação
     - Domíncio do tema abordado
     - Resposta aos questionamentos realizados
     - Administração do tempo de apresentação (entre 10 a 15 minutos)
