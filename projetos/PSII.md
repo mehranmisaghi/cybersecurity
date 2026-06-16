@@ -326,13 +326,14 @@ G --> H
 2. Ana, Henrique e Sara (Órgão Público)
 
 ### Apresentações do dia 16/06
-1. Sidnei, Gabriel [Alves, Lopes] e Luiz (e-commerce)
-2. Gabriel Gomes, Ricardo e Paulo (Indústria de tubos)
-3. Fábio, José e Otávio (Agronegócio) ou Camila, Gabriela e Sidiclei (EducaOnline)
+1. Gabriel Gomes, Ricardo e Paulo (Indústria de tubos)
+2. Camila, Gabriela e Sidiclei (EducaOnline)
 
 ### Apresentações do dia 22/06
-1. Fábio, José e Otávio (Agronegócio) ou Camila, Gabriela e Sidiclei (EducaOnline)
+1. Fábio, José e Otávio (Agronegócio) 
 2. Stephane, Alexssandro e João (Indústria de tubos)
 3. Gustavo, Maria Eduarda e Rafael (SPD)
+4. Sidnei, Gabriel [Alves, Lopes] e Luiz (e-commerce)
+
 ---
 ![V](https://visitor-badge.laobi.icu/badge?page_id=mehranmisaghi/PSII.visitor-badge&left_text=Visitantes&format=true&logo=github)
