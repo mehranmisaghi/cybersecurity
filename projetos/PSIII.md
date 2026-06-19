@@ -13,6 +13,8 @@
 - Caso tenha utilizado IA:
     - Qual IA?
     - Prompt(s) utilizado
+- Agendar apresentação da ferramenta (para professor):
+    - Dias 29 a 2 de julho.
 ---
 
 ## Descrição
@@ -166,5 +168,7 @@ D --> E[Classificacao de risco]
 E --> F[Geracao de recomendacoes]
 F --> G[Relatorio ou Dashboard]
 ```
+---
+## Grupos de Trabalho
 ---
 ![V](https://visitor-badge.laobi.icu/badge?page_id=mehranmisaghi/PSIII.visitor-badge&left_text=Visitantes&format=true&logo=github)
