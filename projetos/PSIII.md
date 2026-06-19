@@ -1,31 +1,34 @@
-# Projeto de Segurança III: Automação de Diagnóstico de Vulnerabilidades com IA
+# Projeto de Segurança III: Automação de Diagnóstico de Vulnerabilidades com IA (22/06)
 
 ---
 
 ## Objetivo
 
-Desenvolver uma ferramenta automatizada utilizando agentes de IA (como n8n ou similares) capaz de realizar diagnóstico de vulnerabilidades, identificando riscos e sugerindo ações corretivas.
+>Desenvolver uma ferramenta automatizada utilizando agentes de IA (como n8n ou similares) capaz de realizar diagnóstico de vulnerabilidades, identificando riscos e sugerindo ações corretivas.
 
+---
+- Cada grupo (até 3 pessoas) deve escolher um cenário.
+- Estar atento aos artefatos solicitados:
+    - Não esquecer de requistos técnicos de cada cenário
+- Caso tenha utilizado IA:
+    - Qual IA?
+    - Prompt(s) utilizado
 ---
 
 ## Descrição
 
-A solução deve:
+A ferramenta desenvolvida deve:
 
 - Coletar informações do sistema alvo  
 - Identificar vulnerabilidades  
-- Classificar riscos  
-- Sugerir medidas de mitigação  
+- Classificar e apresentar riscos  
+- Sugerir medidas e ações correctivas
 
 A ferramenta deve operar de forma automatizada, simulando um processo de auditoria de segurança.
 
 ---
 
 ## Cenários Disponíveis
-
-Escolher **um dos cenários abaixo**:
-
----
 
 ### Cenário 1 – Servidor Web
 
@@ -163,3 +166,5 @@ D --> E[Classificacao de risco]
 E --> F[Geracao de recomendacoes]
 F --> G[Relatorio ou Dashboard]
 ```
+---
+![V](https://visitor-badge.laobi.icu/badge?page_id=mehranmisaghi/PSIII.visitor-badge&left_text=Visitantes&format=true&logo=github)
