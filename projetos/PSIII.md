@@ -170,5 +170,6 @@ F --> G[Relatorio ou Dashboard]
 ```
 ---
 ## Grupos de Trabalho
+1. Maria Fernanda e Pedro (Cenário 1) - Primeiro grupo a a apresentar.
 ---
 ![V](https://visitor-badge.laobi.icu/badge?page_id=mehranmisaghi/PSIII.visitor-badge&left_text=Visitantes&format=true&logo=github)
