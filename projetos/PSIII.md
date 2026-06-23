@@ -173,4 +173,9 @@ F --> G[Relatorio ou Dashboard]
 1. Maria Fernanda e Pedro (Cenário 1) - Primeiro grupo a a apresentar.
 2. (Sidnei, Gabriel [Alves, Lopes] e Luiz (Cenário 1))
 ---
+## Agendamento e realização das apresentações
+ - Poderão agendar até dia 02 de julho para apresentar.
+ - As apresentações poderão ser presenciais ou remotas.
+ - Marque a sua apresentação na [minha agenda](https://calendar.app.google/L1uq7QfhzMSMurQT7)
+ ---
 ![V](https://visitor-badge.laobi.icu/badge?page_id=mehranmisaghi/PSIII.visitor-badge&left_text=Visitantes&format=true&logo=github)
