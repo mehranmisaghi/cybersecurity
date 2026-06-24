@@ -174,6 +174,13 @@ F --> G[Relatorio ou Dashboard]
 2. Sidnei, Gabriel [Alves, Lopes] e Luiz (Cenário 1)
 3. Camila, Gabriela e Sidiclei (Cenário 1)
 ---
+## Apresentações de Trabalho
+| Data | Horário | Grupo      |
+|------|---------|-------------|
+|26/06|8h30|Maria Fernanda e Pedro|
+|29/06 |9h00 |Ana, Henrique e Sara | 
+
+---
 ## Agendamento e realização das apresentações
  - Poderão agendar até dia 02 de julho para apresentar.
  - As apresentações poderão ser presenciais ou remotas.
