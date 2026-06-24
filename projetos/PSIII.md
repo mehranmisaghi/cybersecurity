@@ -170,9 +170,10 @@ F --> G[Relatorio ou Dashboard]
 ```
 ---
 ## Grupos de Trabalho
-1. Maria Fernanda e Pedro (Cenário 1) - Primeiro grupo a a apresentar.
+1. Maria Fernanda e Pedro (Cenário 1) 
 2. Sidnei, Gabriel [Alves, Lopes] e Luiz (Cenário 1)
 3. Camila, Gabriela e Sidiclei (Cenário 1)
+4. Ana, Henrique e Sara (Cenário 1)
 ---
 ## Apresentações de Trabalho
 | Data | Horário | Grupo      |
