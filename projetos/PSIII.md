@@ -170,18 +170,18 @@ F --> G[Relatorio ou Dashboard]
 ```
 ---
 ## Grupos de Trabalho
-1. [Maria Fernanda e Pedro (Cenário 1)](https://github.com/mariaacaetano/Verificador/tree/main)
+1. Maria Fernanda e Pedro (Cenário 1)
 2. Sidnei, Gabriel [Alves, Lopes] e Luiz (Cenário 1)
 3. Camila, Gabriela e Sidiclei (Cenário 1)
 4. Ana, Henrique e Sara (Cenário 1)
 5. Paulo, Gabriel Gomes e Ricardo
 ---
-## Apresentações de Trabalho
+## Apresentações e link de Trabalhos
 | Data | Horário | Grupo      |
 |------|---------|-------------|
-|26/06|8h30|Maria Fernanda e Pedro|
+|26/06|8h30|[Maria Fernanda e Pedro](https://github.com/mariaacaetano/Verificador/tree/main)
 |26/06|10h00|Paulo, Gabriel Gomes e Ricardo|
-|29/06 |9h00 |Ana, Henrique e Sara | 
+|01/07 |9h00 |Ana, Henrique e Sara | 
 
 ---
 ## Agendamento e realização das apresentações
