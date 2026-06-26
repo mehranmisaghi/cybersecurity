@@ -117,7 +117,7 @@ Introdução à segurança da informação. Normas de segurança. Serviços de s
  - [PSIII (16 a 30 de junho)](projetos/PSIII.md)
 
 ---
-[Tendências e Oportunidades em Cibersegurança (22/06/2026 - 22/06/2026)](Intro/tendencias.md)
+[Tendências e Oportunidades em Cibersegurança (29/06/2026 - 29/06/2026)](Intro/tendencias.md)
   - Carreiras
   - Certificações
   - IA Agêntica X confecção desenfreada de malware (apocalipse digital)
