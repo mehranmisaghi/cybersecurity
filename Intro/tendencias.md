@@ -177,3 +177,7 @@ mindmap
 
 - [Meu artigo no linkedin](https://www.linkedin.com/posts/mehranmisaghi_mente-artificial-ep-30-ia-ciberseguranca-share-7435689227654172672-F7Ir/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAFr4hwBj8IIIfdQXgZ87nD1v4n1v-F79PA)
 - [Entrevista no canal Mente Artifical](https://youtu.be/FoD440khpp8?si=ncOkThq-ruuNBMPn)
+
+---
+![V](https://visitor-badge.laobi.icu/badge?page_id=mehranmisaghi/tend.visitor-badge&left_text=Visitantes&format=true&logo=github)
+
