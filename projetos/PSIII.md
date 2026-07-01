@@ -179,7 +179,7 @@ F --> G[Relatorio ou Dashboard]
 |------|---------|-------------|
 |26/06|8h30|[Maria Fernanda e Pedro](https://github.com/mariaacaetano/Verificador/tree/main)
 |26/06|10h00|[Paulo, Gabriel Gomes e Ricardo](https://github.com/paulorolinski/ciberseguranca-PSIII)
-|01/07 |9h15 |Ana, Henrique e Sara | 
+|01/07 |9h15 |[Ana, Henrique e Sara](https://github.com/analauramuller/automacao_vulnerabilidades) 
 |01/07 |10h00 |Fábio, José e Otávio | 
 ---
 ## Agendamento e realização das apresentações
