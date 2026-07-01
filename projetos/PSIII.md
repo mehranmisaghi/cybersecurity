@@ -1,7 +1,5 @@
 # Projeto de Segurança III: Automação de Diagnóstico de Vulnerabilidades com IA (22/06)
-
 ---
-
 ## Objetivo
 
 >Desenvolver uma ferramenta automatizada utilizando agentes de IA (como n8n ou similares) capaz de realizar diagnóstico de vulnerabilidades, identificando riscos e sugerindo ações corretivas.
@@ -16,7 +14,6 @@
 - Agendar apresentação da ferramenta (para professor):
     - Dias 29 a 2 de julho.
 ---
-
 ## Descrição
 
 A ferramenta desenvolvida deve:
@@ -27,7 +24,6 @@ A ferramenta desenvolvida deve:
 - Sugerir medidas e ações correctivas
 
 A ferramenta deve operar de forma automatizada, simulando um processo de auditoria de segurança.
-
 ---
 
 ## Cenários Disponíveis
@@ -185,7 +181,6 @@ F --> G[Relatorio ou Dashboard]
 |26/06|10h00|[Paulo, Gabriel Gomes e Ricardo](https://github.com/paulorolinski/ciberseguranca-PSIII)
 |01/07 |9h00 |Ana, Henrique e Sara | 
 |01/07 |9h00 |Fábio, José e Otávio | 
-
 ---
 ## Agendamento e realização das apresentações
  - Poderão agendar até dia 02 de julho para apresentar.
