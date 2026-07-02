@@ -183,6 +183,7 @@ F --> G[Relatorio ou Dashboard]
 |01/07 |10h00 |[Fábio, José e Otávio](https://github.com/victtows/PSI-III.git)  
 |01/07 |10h30|[Gabriel {Alves, Pereira}, Luis, Sidnei](https://github.com/gabriel04alves/ps3/)
 |01/07 |14h00|[Gustavo e Maria Eduarda](https://github.com/mariaeduardanichelle/psiii/)
+|02/07 |09h15|[Camila, Gabriela e Sidiclei](https://github.com/GabrielaSchubert/Projeto-de-Seguranca-III.git)
 
 ---
 ## Agendamento e realização das apresentações
