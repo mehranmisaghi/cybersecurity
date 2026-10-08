@@ -173,9 +173,12 @@ mindmap
         Seguranca publica
         Formacao profissional
 ```
-### Você quer trabalhar na área de cibersegurança na era de IA?
+### Você quer trabalhar na área de cibersegurança na era de IA? 
+Leia meus artigos e assista as  minhas apresentações a respeito:
 
-- [Meu artigo no linkedin](https://www.linkedin.com/posts/mehranmisaghi_mente-artificial-ep-30-ia-ciberseguranca-share-7435689227654172672-F7Ir/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAFr4hwBj8IIIfdQXgZ87nD1v4n1v-F79PA)
+- [Cibersegurança: Carreiras e Oprtunidades na Era da IA - SEPE 2026](https://canva.link/b45l676c2d8bt3a)
+- [Meu artigo no linkedin (II)](https://www.linkedin.com/pulse/ciberseguran%C3%A7a-carreiras-e-oportunidades-na-era-da-ia-mehran-misaghi-pqjbf/)
+- [Meu artigo no linkedin (I)](https://www.linkedin.com/posts/mehranmisaghi_mente-artificial-ep-30-ia-ciberseguranca-share-7435689227654172672-F7Ir/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAFr4hwBj8IIIfdQXgZ87nD1v4n1v-F79PA)
 - [Entrevista no canal Mente Artifical](https://youtu.be/FoD440khpp8?si=ncOkThq-ruuNBMPn)
 
 ---
